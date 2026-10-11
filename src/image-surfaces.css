@@ -1,0 +1,258 @@
+.image-surface {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 3 / 2;
+  padding: clamp(14px, 2vw, 24px);
+  isolation: isolate;
+  overflow: hidden;
+  border-radius: 24px;
+  background: #e9f6ff;
+  border: 1px solid #d1eafa;
+}
+.image-surface::before,
+.marquee-logo::before,
+.hero-stage-backdrop::after {
+  content: '';
+  position: absolute;
+  inset: -45% -35%;
+  z-index: -1;
+  border-radius: 44% 56% 37% 63%;
+  background: linear-gradient(135deg, #0072bc, #078fd0);
+  transform: translateY(110%) rotate(-14deg);
+  transition:
+    transform 800ms cubic-bezier(0.22, 0.61, 0.36, 1),
+    border-radius 800ms ease;
+  pointer-events: none;
+}
+.image-surface:hover::before,
+.bento-service:is(:hover, :focus-within) .image-surface::before,
+.product-card:is(:hover, :focus-within) .image-surface::before,
+a:focus-visible .image-surface::before,
+.marquee-logo:hover::before,
+.hero-technology-stage:hover .hero-stage-backdrop::after {
+  transform: translateY(0) rotate(0deg);
+  border-radius: 24% 38% 0 0;
+}
+.image-surface.image-surface img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  max-height: 100%;
+  margin: 0;
+  padding: 0;
+  object-fit: contain;
+  background: transparent;
+  position: relative;
+  z-index: 1;
+  transition:
+    transform 650ms cubic-bezier(0.22, 0.61, 0.36, 1),
+    filter 650ms ease;
+  transform-origin: center;
+}
+.image-surface:hover img,
+.bento-service:is(:hover, :focus-within) .image-surface img,
+.product-card:is(:hover, :focus-within) .image-surface img,
+a:focus-visible .image-surface img {
+  transform: perspective(900px) rotateY(-4deg) rotateZ(-1deg) scale(1.035);
+  filter: drop-shadow(0 16px 18px #003f6b30);
+}
+.marquee-group {
+  gap: 16px;
+  padding-right: 16px;
+}
+.marquee-row + .marquee-row {
+  margin-top: 16px;
+}
+.marquee-logo {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  width: 186px;
+  height: 126px;
+  padding: 18px;
+  background: #eef8ff;
+  border: 1px solid #d8eafa;
+  border-radius: 20px;
+}
+.marquee-logo img {
+  position: relative;
+  width: 140px;
+  height: 88px;
+  object-fit: contain;
+  transition: transform 550ms ease;
+}
+.marquee-logo:hover img {
+  transform: rotate(-2deg) scale(1.055);
+}
+.hero-stage-backdrop {
+  isolation: isolate;
+  background: radial-gradient(ellipse at 65% 20%, #dbf1ff, transparent 65%), #e9f6ff;
+}
+.hero-stage-backdrop::after {
+  z-index: -1;
+}
+.hero-stage-backdrop i {
+  border-color: #0072bc30;
+  transition: border-color 650ms ease;
+}
+.hero-technology-stage:hover .hero-stage-backdrop i {
+  border-color: #bce9ff45;
+}
+.hero-stage-object img {
+  transition: transform 650ms ease;
+}
+.hero-technology-stage:hover .hero-stage-object img {
+  transform: rotate(-1deg) scale(1.035);
+}
+.hero-stage-base {
+  border-color: #0072bc30;
+}
+.zoom-parallax .image-surface {
+  height: 100%;
+  aspect-ratio: auto;
+  border: 0;
+  border-radius: inherit;
+}
+.image-surface > picture {
+  width: 100%;
+  height: 100%;
+}
+.company-value-card {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 24px;
+}
+.company-value-card h3 {
+  margin: 0;
+  font-size: 20px;
+  line-height: 1.45;
+}
+.company-value-card .image-surface {
+  flex-shrink: 0;
+}
+.bento-erp .bento-art {
+  margin-top: 24px;
+}
+.bento-custom .bento-art,
+.bento-web .bento-art {
+  min-width: 0;
+}
+.bento-custom .image-surface,
+.bento-web .image-surface {
+  aspect-ratio: 1;
+  padding: 12px;
+  border-radius: 18px;
+}
+.product-image {
+  padding: 16px;
+  height: 240px;
+}
+.product-image .image-surface {
+  height: 100%;
+  aspect-ratio: auto;
+  padding: 16px;
+}
+.product-card-body {
+  padding: 24px;
+}
+.product-card-body h3 {
+  line-height: 1.4;
+}
+.product-card-body p {
+  line-height: 1.75;
+  margin-top: 12px;
+}
+.solution-hero-art .image-surface {
+  margin-block: 20px;
+}
+.career-hero-art > .image-surface {
+  padding: 20px;
+}
+.restored-why-art {
+  padding: 0 0 38px;
+}
+.restored-split {
+  gap: clamp(32px, 5vw, 72px);
+}
+.capability-illustrated {
+  gap: 40px;
+  padding: 40px 0;
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
+}
+.capability-copy,
+.company-copy {
+  min-width: 0;
+}
+.capability-copy h3 {
+  line-height: 1.4;
+  overflow-wrap: break-word;
+}
+.capability-panel .source-content {
+  max-width: 65ch;
+}
+.source-gallery figure {
+  margin: 0;
+}
+@media (max-width: 900px) {
+  .capability-illustrated {
+    grid-template-columns: 1fr;
+    gap: 28px;
+    padding-block: 28px;
+  }
+  .capability-illustrated:nth-child(even) .capability-copy {
+    order: 0;
+  }
+  .about-history-grid,
+  .about-purpose-row {
+    gap: 32px;
+  }
+}
+@media (max-width: 600px) {
+  .bento-custom .bento-art,
+  .bento-web .bento-art {
+    margin-top: 20px;
+  }
+  .bento-custom .image-surface,
+  .bento-web .image-surface {
+    aspect-ratio: 3 / 2;
+    padding: 16px;
+  }
+  .image-surface {
+    border-radius: 18px;
+  }
+  .marquee-logo {
+    width: 150px;
+    height: 110px;
+    padding: 16px;
+  }
+  .marquee-logo img {
+    width: 118px;
+    height: 76px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .hero-stage-object img,
+  .hero-technology-stage:hover .hero-stage-object img {
+    transform: none;
+    transition: none;
+  }
+  .image-surface img,
+  .marquee-logo img {
+    transition: none;
+  }
+  .image-surface:hover img,
+  .bento-service:is(:hover, :focus-within) .image-surface img,
+  .product-card:is(:hover, :focus-within) .image-surface img,
+  a:focus-visible .image-surface img,
+  .marquee-logo:hover img {
+    transform: none;
+  }
+  .image-surface::before,
+  .marquee-logo::before,
+  .hero-stage-backdrop::after {
+    transition: none;
+  }
+}

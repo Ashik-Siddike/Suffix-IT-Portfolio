@@ -1,5 +1,26 @@
 import { test, expect } from '@playwright/test';
 
+test('Home hero reacts to the pointer, resets on leave and stays still with reduced motion', async ({
+  page,
+}) => {
+  await page.emulateMedia({ reducedMotion: 'no-preference' });
+  await page.goto('/');
+  const stage = page.locator('.hero-technology-stage');
+  await expect(stage).toHaveCSS('opacity', '1');
+  const rect = await stage.boundingBox();
+  await page.mouse.move(rect.x + rect.width * 0.9, rect.y + rect.height * 0.3);
+  await expect
+    .poll(() => stage.evaluate((el) => parseFloat(el.style.getPropertyValue('--stage-x'))))
+    .toBeGreaterThan(4);
+  await page.mouse.move(0, 0);
+  await expect
+    .poll(() => stage.evaluate((el) => el.style.getPropertyValue('--stage-x')))
+    .toBe('0px');
+  await page.emulateMedia({ reducedMotion: 'reduce' });
+  await page.mouse.move(rect.x + rect.width * 0.9, rect.y + rect.height * 0.3);
+  await expect(page.locator('.hero-stage-object')).toHaveCSS('transform', 'none');
+});
+
 test('ambient canvases respond, pause offscreen and follow live motion preferences', async ({
   page,
 }) => {

@@ -6,7 +6,6 @@ import { PrimaryButton } from '../ui';
 // Adapted to the existing JSX project from the supplied carousel-squeeze reference.
 export default function SqueezeCarousel({ slides, label = 'Our products', duration = 1000 }) {
   const [active, setActive] = useState(0);
-  const [hovered, setHovered] = useState(null);
   const [paused, setPaused] = useState(false);
   const [interacting, setInteracting] = useState(false);
   const [pointerWithin, setPointerWithin] = useState(false);
@@ -92,7 +91,6 @@ export default function SqueezeCarousel({ slides, label = 'Our products', durati
       onMouseEnter={() => setPointerWithin(true)}
       onMouseLeave={() => {
         setPointerWithin(false);
-        setHovered(null);
       }}
     >
       <div className="squeeze-toolbar">
@@ -163,11 +161,13 @@ export default function SqueezeCarousel({ slides, label = 'Our products', durati
               }}
               onClick={() => select(index)}
               onPointerEnter={(event) => {
-                if (event.pointerType === 'mouse') setHovered(index);
+                if (event.pointerType === 'mouse') {
+                  setPointerWithin(true);
+                  select(index);
+                }
               }}
-              onPointerLeave={() => setHovered(null)}
               className={`squeeze-panel ${index === active ? 'is-active' : ''} ${index === wrap(active + 1) ? 'is-adjacent' : ''}`}
-              style={{ '--panel-weight': weight + (hovered === index && !reduced ? 0.3 : 0) }}
+              style={{ '--panel-weight': weight }}
             >
               <img
                 src={item.image}

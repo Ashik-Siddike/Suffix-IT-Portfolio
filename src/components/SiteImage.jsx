@@ -6,6 +6,7 @@ export default function SiteImage({
   sizes = '(max-width: 600px) 90vw, (max-width: 900px) 45vw, 420px',
   reveal = true,
   revealDelay = 0,
+  surface = true,
   ...props
 }) {
   const reduced = useReducedMotion();
@@ -20,8 +21,9 @@ export default function SiteImage({
     },
   };
   const variants = optimized[src];
-  if (!variants) return <Motion.img src={src} {...entrance} {...props} />;
-  return (
+  const image = !variants ? (
+    <Motion.img src={src} {...entrance} {...props} />
+  ) : (
     <picture>
       <source
         type="image/webp"
@@ -31,4 +33,8 @@ export default function SiteImage({
       <Motion.img src={src} {...entrance} {...props} />
     </picture>
   );
+  const transparentArt =
+    src?.startsWith('/assets/generated/unique/') ||
+    src?.startsWith('/assets/generated/illustrations/');
+  return surface && transparentArt ? <span className="image-surface">{image}</span> : image;
 }

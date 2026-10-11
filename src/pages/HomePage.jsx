@@ -1,7 +1,8 @@
 import visuals from '../data/unique-visuals.json';
 import SonarGrid from '../components/ui/SonarGrid';
 import AnimatedText from '../components/AnimatedText';
-import TechnologyVector from '../components/TechnologyVector';
+import HeroTechnologyStage from '../components/ui/HeroTechnologyStage';
+import HeroNeonFlow from '../components/ui/HeroNeonFlow';
 import SiteImage from '../components/SiteImage';
 import { Container, PrimaryButton, ScrollReveal, SectionHeading } from '../components/ui';
 import { FeatureCard } from '../components/cards';
@@ -18,7 +19,8 @@ import original from '../data/home-original.json';
 export default function HomePage() {
   return (
     <>
-      <SonarGrid as="section" className="home-hero">
+      <SonarGrid as="section" className="home-hero home-hero-premium">
+        <HeroNeonFlow />
         <Container className="hero-grid">
           <div className="hero-copy">
             <h1>
@@ -29,17 +31,18 @@ export default function HomePage() {
               <PrimaryButton to="#why-choose-us">LET'S EXPLORE</PrimaryButton>
             </div>
           </div>
-          <ScrollReveal variant="right" className="hero-visual hero-visual-refined">
-            <TechnologyVector />
+          <HeroTechnologyStage>
             <SiteImage
               src={visuals.static.homeHero}
               alt="Software and mobile application concept illustration"
               width="2000"
               height="1300"
               fetchPriority="high"
+              reveal={false}
+              surface={false}
               sizes="(max-width: 900px) 90vw, 640px"
             />
-          </ScrollReveal>
+          </HeroTechnologyStage>
         </Container>
       </SonarGrid>
       <WhyChooseSection />

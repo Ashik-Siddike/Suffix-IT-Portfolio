@@ -1210,7 +1210,8 @@ summary::-webkit-details-marker {
   position: relative;
   width: 360px;
 }
-.search-field svg {
+.search-field svg,
+.search-field > .generated-icon {
   position: absolute;
   left: 14px;
   top: 15px;

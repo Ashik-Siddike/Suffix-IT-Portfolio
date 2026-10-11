@@ -25,7 +25,9 @@ function ZoomImage({
   const opacity = useTransform(progress, [0, 0.7, 1], [1, 1, index === 0 ? 1 : 0.2]);
   return (
     <motion.figure className={`zoom-tile zoom-tile-${index}`} style={{ scale, opacity }}>
-      <img src={image.src} alt={image.alt || ''} width="1200" height="800" loading="lazy" />
+      <span className="image-surface">
+        <img src={image.src} alt={image.alt || ''} width="1200" height="800" loading="lazy" />
+      </span>
     </motion.figure>
   );
 }
@@ -59,7 +61,15 @@ export function ZoomParallax({
             <ZoomImage key={image.src} image={image} index={index} progress={scrollYProgress} />
           ) : (
             <figure key={image.src}>
-              <img src={image.src} alt={image.alt || ''} width="1200" height="800" loading="lazy" />
+              <span className="image-surface">
+                <img
+                  src={image.src}
+                  alt={image.alt || ''}
+                  width="1200"
+                  height="800"
+                  loading="lazy"
+                />
+              </span>
             </figure>
           ),
         )}

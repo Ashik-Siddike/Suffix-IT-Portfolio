@@ -18,6 +18,8 @@ import './home-restored.css';
 import './about-original.css';
 import './generated-visuals.css';
 import './premium-effects.css';
+import './hero-premium.css';
+import './image-surfaces.css';
 import PageLayout from './components/PageLayout';
 import { LoadingState } from './components/ui';
 
