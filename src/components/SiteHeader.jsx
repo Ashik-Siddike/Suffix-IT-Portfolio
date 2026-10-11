@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 import { Link, NavLink, useLocation } from 'react-router-dom';
-import { ArrowUpRight, ChevronDown, Menu, X } from 'lucide-react';
+import { ArrowUpRight, ChevronDown, Menu, X } from './GeneratedIcons';
 import Icon from './Icon';
 import SiteImage from './SiteImage';
 import { navigation } from '../data/navigation';

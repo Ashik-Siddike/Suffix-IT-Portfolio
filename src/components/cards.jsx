@@ -1,7 +1,7 @@
 import SiteImage from './SiteImage';
 import { ScrollReveal } from './ui';
 import { Link } from 'react-router-dom';
-import { ArrowUpRight, Quote } from 'lucide-react';
+import { ArrowUpRight, Quote } from './GeneratedIcons';
 import Icon from './Icon';
 import { TechnologyIcon } from './TechnologyVector';
 
@@ -28,13 +28,13 @@ export function ServiceCard({ item, number }) {
   );
 }
 
-export function ProductCard({ item }) {
+export function ProductCard({ item, image = item.image }) {
   return (
     <ScrollReveal as="article" variant="unfold" className="product-card">
       <div className="product-image">
         <SiteImage
-          src={item.image}
-          alt={`${item.title} — original product visual`}
+          src={image}
+          alt={`${item.title} concept illustration`}
           loading="lazy"
           width="480"
           height="300"

@@ -1,7 +1,7 @@
+import visuals from '../data/unique-visuals.json';
 import SourceContent from './SourceContent';
 import { SectionHeading, ScrollReveal } from './ui';
 import SiteImage from './SiteImage';
-import { solutionVisuals } from '../data/solution-visuals';
 
 export default function SolutionContent({ blocks = [], slug, introText }) {
   const groups = [];
@@ -18,7 +18,8 @@ export default function SolutionContent({ blocks = [], slug, introText }) {
       <SectionHeading eyebrow="INSIDE THE SOLUTION" title="A closer look at the capabilities." />
       <div className="capability-grid">
         {groups.map((group, index) => {
-          const visual = solutionVisuals[slug]?.find((item) => item.match.test(group.title));
+          const image = visuals.capabilities[`${slug}:${index}`];
+          const visual = image ? { image } : null;
           if (!group.blocks.length)
             return (
               <h3 className="capability-divider" key={`${group.title}-${index}`}>
@@ -39,7 +40,7 @@ export default function SolutionContent({ blocks = [], slug, introText }) {
                 <ScrollReveal variant={index % 2 ? 'left' : 'right'} delay={0.1}>
                   <SiteImage
                     src={visual.image}
-                    alt={`${group.title} — illustration from the original product page`}
+                    alt={`${group.title} — conceptual technology illustration`}
                     width="480"
                     height="320"
                     loading="lazy"

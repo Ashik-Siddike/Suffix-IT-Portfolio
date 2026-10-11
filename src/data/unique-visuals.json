@@ -1,0 +1,194 @@
+{
+  "static": {
+    "homeHero": "/assets/generated/illustrations/software.webp",
+    "homeWhy": "/assets/generated/illustrations/team.webp",
+    "homeCall": "/assets/generated/about/call-center.webp",
+    "homeField": "/assets/generated/unique/home-field.webp",
+    "aboutHistory": "/assets/generated/unique/about-history.webp",
+    "aboutTeam": "/assets/generated/unique/about-team.webp",
+    "aboutSoftware": "/assets/generated/unique/about-software.webp",
+    "aboutAmbition": "/assets/generated/illustrations/growth.webp",
+    "aboutVision": "/assets/generated/about/vision.webp",
+    "aboutMission": "/assets/generated/about/mission.webp",
+    "career": "/assets/generated/unique/career-team.webp",
+    "bentoErp": "/assets/generated/unique/home-service-erp.webp",
+    "bentoCustom": "/assets/generated/unique/home-service-custom.webp",
+    "bentoWeb": "/assets/generated/unique/home-service-web.webp",
+    "menuProducts": "/assets/generated/unique/menu-products.webp",
+    "menuServices": "/assets/generated/unique/menu-services.webp",
+    "menuIoT": "/assets/generated/unique/menu-iot.webp"
+  },
+  "heroes": {
+    "/service/erp-consulting": "/assets/generated/unique/hero-service-erp-consulting.webp",
+    "/service/custom-applications": "/assets/generated/unique/hero-service-custom-applications.webp",
+    "/service/mobile-apps": "/assets/generated/unique/hero-service-mobile-apps.webp",
+    "/service/it-ot-security-solution": "/assets/generated/illustrations/security.webp",
+    "/service/consultancy-system-integrator": "/assets/generated/unique/hero-service-consultancy-system-integrator.webp",
+    "/service/field-force-management": "/assets/generated/unique/hero-service-field-force-management.webp",
+    "/service/domain-hosting": "/assets/generated/illustrations/infrastructure.webp",
+    "/service/web-ecommerce": "/assets/generated/unique/hero-service-web-ecommerce.webp",
+    "/service/video-conferencing": "/assets/generated/unique/hero-service-video-conferencing.webp",
+    "/service/hospital-management": "/assets/generated/illustrations/hospital.webp",
+    "/service/learning-management": "/assets/generated/illustrations/learning.webp",
+    "/service/storage-backup": "/assets/generated/unique/hero-service-storage-backup.webp",
+    "/service/bulk-sms": "/assets/generated/unique/hero-service-bulk-sms.webp",
+    "/service/it-infrastructure": "/assets/generated/unique/hero-service-it-infrastructure.webp",
+    "/service/power-cooling": "/assets/generated/unique/hero-service-power-cooling.webp",
+    "/service/iot": "/assets/generated/illustrations/industrial.webp",
+    "/service/Industrial-Monitoring": "/assets/generated/unique/hero-service-industrial-monitoring.webp",
+    "/service/pos-system": "/assets/generated/unique/hero-service-pos-system.webp",
+    "/product/rupantor-erp": "/assets/generated/unique/hero-product-rupantor-erp.webp",
+    "/product/field-force-management": "/assets/generated/unique/hero-product-field-force-management.webp",
+    "/product/payroll-system": "/assets/generated/unique/hero-product-payroll-system.webp",
+    "/product/pos-system": "/assets/generated/unique/hero-product-pos-system.webp",
+    "/product/interconnect-billing": "/assets/generated/unique/hero-product-interconnect-billing.webp",
+    "/product/provident-fund": "/assets/generated/unique/hero-product-provident-fund.webp",
+    "/product/e-commerce": "/assets/generated/unique/hero-product-e-commerce.webp",
+    "/product/hotel-booking-system": "/assets/generated/unique/hero-product-hotel-booking-system.webp",
+    "/product/rupantor-inventory": "/assets/generated/unique/hero-product-rupantor-inventory.webp",
+    "/product/transformer-monitoring": "/assets/generated/unique/hero-product-transformer-monitoring.webp"
+  },
+  "productCards": {
+    "/product/rupantor-erp": "/assets/generated/unique/catalogue-rupantor-erp.webp",
+    "/product/field-force-management": "/assets/generated/unique/catalogue-field-force-management.webp",
+    "/product/payroll-system": "/assets/generated/unique/catalogue-payroll-system.webp",
+    "/product/pos-system": "/assets/generated/unique/catalogue-pos-system.webp",
+    "/product/interconnect-billing": "/assets/generated/unique/catalogue-interconnect-billing.webp",
+    "/product/provident-fund": "/assets/generated/unique/catalogue-provident-fund.webp",
+    "/product/e-commerce": "/assets/generated/unique/catalogue-e-commerce.webp",
+    "/product/hotel-booking-system": "/assets/generated/unique/catalogue-hotel-booking-system.webp",
+    "/product/rupantor-inventory": "/assets/generated/unique/catalogue-rupantor-inventory.webp",
+    "/product/transformer-monitoring": "/assets/generated/unique/catalogue-transformer-monitoring.webp"
+  },
+  "relatedCards": {
+    "/product/rupantor-erp": {
+      "/product/field-force-management": "/assets/generated/unique/related-rupantor-erp-field-force-management.webp",
+      "/product/payroll-system": "/assets/generated/unique/related-rupantor-erp-payroll-system.webp",
+      "/product/pos-system": "/assets/generated/unique/related-rupantor-erp-pos-system.webp"
+    },
+    "/product/field-force-management": {
+      "/product/rupantor-erp": "/assets/generated/unique/related-field-force-management-rupantor-erp.webp",
+      "/product/payroll-system": "/assets/generated/unique/related-field-force-management-payroll-system.webp",
+      "/product/pos-system": "/assets/generated/unique/related-field-force-management-pos-system.webp"
+    },
+    "/product/payroll-system": {
+      "/product/rupantor-erp": "/assets/generated/unique/related-payroll-system-rupantor-erp.webp",
+      "/product/field-force-management": "/assets/generated/unique/related-payroll-system-field-force-management.webp",
+      "/product/pos-system": "/assets/generated/unique/related-payroll-system-pos-system.webp"
+    },
+    "/product/pos-system": {
+      "/product/rupantor-erp": "/assets/generated/unique/related-pos-system-rupantor-erp.webp",
+      "/product/field-force-management": "/assets/generated/unique/related-pos-system-field-force-management.webp",
+      "/product/payroll-system": "/assets/generated/unique/related-pos-system-payroll-system.webp"
+    },
+    "/product/interconnect-billing": {
+      "/product/rupantor-erp": "/assets/generated/unique/related-interconnect-billing-rupantor-erp.webp",
+      "/product/field-force-management": "/assets/generated/unique/related-interconnect-billing-field-force-management.webp",
+      "/product/payroll-system": "/assets/generated/unique/related-interconnect-billing-payroll-system.webp"
+    },
+    "/product/provident-fund": {
+      "/product/rupantor-erp": "/assets/generated/unique/related-provident-fund-rupantor-erp.webp",
+      "/product/field-force-management": "/assets/generated/unique/related-provident-fund-field-force-management.webp",
+      "/product/payroll-system": "/assets/generated/unique/related-provident-fund-payroll-system.webp"
+    },
+    "/product/e-commerce": {
+      "/product/rupantor-erp": "/assets/generated/unique/related-e-commerce-rupantor-erp.webp",
+      "/product/field-force-management": "/assets/generated/unique/related-e-commerce-field-force-management.webp",
+      "/product/payroll-system": "/assets/generated/unique/related-e-commerce-payroll-system.webp"
+    },
+    "/product/hotel-booking-system": {
+      "/product/rupantor-erp": "/assets/generated/unique/related-hotel-booking-system-rupantor-erp.webp",
+      "/product/field-force-management": "/assets/generated/unique/related-hotel-booking-system-field-force-management.webp",
+      "/product/payroll-system": "/assets/generated/unique/related-hotel-booking-system-payroll-system.webp"
+    },
+    "/product/rupantor-inventory": {
+      "/product/rupantor-erp": "/assets/generated/unique/related-rupantor-inventory-rupantor-erp.webp",
+      "/product/field-force-management": "/assets/generated/unique/related-rupantor-inventory-field-force-management.webp",
+      "/product/payroll-system": "/assets/generated/unique/related-rupantor-inventory-payroll-system.webp"
+    },
+    "/product/transformer-monitoring": {
+      "/product/rupantor-erp": "/assets/generated/unique/related-transformer-monitoring-rupantor-erp.webp",
+      "/product/field-force-management": "/assets/generated/unique/related-transformer-monitoring-field-force-management.webp",
+      "/product/payroll-system": "/assets/generated/unique/related-transformer-monitoring-payroll-system.webp"
+    }
+  },
+  "capabilities": {
+    "payroll-system:0": "/assets/generated/illustrations/payments.webp",
+    "payroll-system:1": "/assets/generated/unique/detail-payroll-system-1.webp",
+    "payroll-system:2": "/assets/generated/unique/detail-payroll-system-2.webp",
+    "payroll-system:4": "/assets/generated/illustrations/time.webp",
+    "payroll-system:5": "/assets/generated/unique/detail-payroll-system-5.webp",
+    "payroll-system:6": "/assets/generated/unique/detail-payroll-system-6.webp",
+    "e-commerce:1": "/assets/generated/unique/detail-e-commerce-1.webp",
+    "e-commerce:2": "/assets/generated/unique/detail-e-commerce-2.webp",
+    "e-commerce:3": "/assets/generated/unique/detail-e-commerce-3.webp",
+    "rupantor-erp:1": "/assets/generated/unique/detail-rupantor-erp-1.webp",
+    "rupantor-erp:7": "/assets/generated/unique/detail-rupantor-erp-7.webp",
+    "rupantor-erp:10": "/assets/generated/unique/detail-rupantor-erp-10.webp",
+    "rupantor-erp:16": "/assets/generated/unique/detail-rupantor-erp-16.webp"
+  },
+  "galleries": {
+    "/service/field-force-management": [
+      {
+        "src": "/assets/generated/unique/gallery-service-field-force-management-0.webp",
+        "alt": "Field force management concept illustration 1"
+      }
+    ],
+    "/service/learning-management": [
+      {
+        "src": "/assets/generated/unique/gallery-service-learning-management-0.webp",
+        "alt": "Learning management concept illustration 1"
+      }
+    ],
+    "/service/Industrial-Monitoring": [
+      {
+        "src": "/assets/generated/unique/gallery-service-industrial-monitoring-0.webp",
+        "alt": "Industrial monitoring concept illustration 1"
+      },
+      {
+        "src": "/assets/generated/unique/gallery-service-industrial-monitoring-1.webp",
+        "alt": "Industrial monitoring concept illustration 2"
+      },
+      {
+        "src": "/assets/generated/unique/gallery-service-industrial-monitoring-2.webp",
+        "alt": "Industrial monitoring concept illustration 3"
+      }
+    ],
+    "/product/field-force-management": [
+      {
+        "src": "/assets/generated/unique/gallery-product-field-force-management-0.webp",
+        "alt": "Suffix Field Force concept illustration 1"
+      }
+    ],
+    "/product/transformer-monitoring": [
+      {
+        "src": "/assets/generated/unique/gallery-product-transformer-monitoring-0.webp",
+        "alt": "Smart Transformer Monitoring concept illustration 1"
+      },
+      {
+        "src": "/assets/generated/unique/gallery-product-transformer-monitoring-1.webp",
+        "alt": "Smart Transformer Monitoring concept illustration 2"
+      },
+      {
+        "src": "/assets/generated/unique/gallery-product-transformer-monitoring-2.webp",
+        "alt": "Smart Transformer Monitoring concept illustration 3"
+      },
+      {
+        "src": "/assets/generated/unique/gallery-product-transformer-monitoring-3.webp",
+        "alt": "Smart Transformer Monitoring concept illustration 4"
+      },
+      {
+        "src": "/assets/generated/unique/gallery-product-transformer-monitoring-4.webp",
+        "alt": "Smart Transformer Monitoring concept illustration 5"
+      },
+      {
+        "src": "/assets/generated/unique/gallery-product-transformer-monitoring-5.webp",
+        "alt": "Smart Transformer Monitoring concept illustration 6"
+      },
+      {
+        "src": "/assets/generated/unique/gallery-product-transformer-monitoring-6.webp",
+        "alt": "Smart Transformer Monitoring concept illustration 7"
+      }
+    ]
+  }
+}

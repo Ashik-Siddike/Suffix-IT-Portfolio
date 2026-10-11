@@ -1,10 +1,11 @@
+import visuals from './unique-visuals.json' with { type: 'json' };
 const serviceEntries = [
   [
     'erp-consulting',
     'ERP consulting',
     'Bring your business processes together with implementation, customization, and technical support.',
     'Workflow',
-    'erp.d84b0931.svg',
+    'generated/products/erp.webp',
     [
       'ERP implementation',
       'Strategic IT planning',
@@ -17,7 +18,7 @@ const serviceEntries = [
     'Custom applications',
     'Purpose-built software that starts with your unique needs and a clearly defined project scope.',
     'Code2',
-    'customApp.720f0b6b.jpg',
+    'generated/illustrations/software.webp',
     ['Discovery and scoping', 'Application development', 'Business-specific solutions'],
   ],
   [
@@ -25,7 +26,7 @@ const serviceEntries = [
     'Mobile applications',
     'Enterprise mobile experiences across native Android, iOS, and cross-platform technologies.',
     'Smartphone',
-    'Mobile testing-pana.95610bd4.svg',
+    'generated/illustrations/software.webp',
     ['Native Android and iOS', 'Flutter and React Native', 'Native, web, and hybrid applications'],
   ],
   [
@@ -33,7 +34,7 @@ const serviceEntries = [
     'IT & OT security',
     'Protect digital infrastructure and operational technologies with comprehensive security solutions.',
     'ShieldCheck',
-    'protectingImage.370bbabe.png',
+    'generated/illustrations/security.webp',
     [
       'Network and endpoint security',
       'Application security',
@@ -46,7 +47,7 @@ const serviceEntries = [
     'Consultancy & system integration',
     'Align technology with your vision through expert consultancy and seamless system integration.',
     'Network',
-    'module-integration.f9781494.png',
+    'generated/illustrations/software.webp',
     ['IT audit', 'Forensic investigation', 'IT implementation', 'Monitoring and support'],
   ],
   [
@@ -54,7 +55,7 @@ const serviceEntries = [
     'Field force management',
     'Real-time visibility into field operations, with mobile tools that keep your workforce connected.',
     'MapPin',
-    'field-force.497227c8.png',
+    'generated/products/field.webp',
     [
       'Job scheduling and live tracking',
       'Offline data synchronization',
@@ -67,7 +68,7 @@ const serviceEntries = [
     'Domain & hosting',
     'Domain and hosting services for your organization’s digital presence.',
     'Globe2',
-    'hosting.9019177e.jpg',
+    'generated/illustrations/infrastructure.webp',
     [],
   ],
   [
@@ -75,7 +76,7 @@ const serviceEntries = [
     'Web & e-commerce',
     'Websites and e-business solutions for companies within and across borders.',
     'ShoppingBag',
-    'eCommerce.d3e8ec01.svg',
+    'generated/products/commerce.webp',
     [],
   ],
   [
@@ -83,7 +84,7 @@ const serviceEntries = [
     'Video conferencing',
     'A conferencing platform for sharing audio, images, and chat.',
     'Video',
-    'webcam1.a7b72ec9.png',
+    'generated/about/call-center.webp',
     [],
   ],
   [
@@ -91,7 +92,7 @@ const serviceEntries = [
     'Hospital management',
     'An easy-to-use system for hospital operations and administration.',
     'HeartPulse',
-    'hospitalBanner.bd65d0c1.jpg',
+    'generated/illustrations/hospital.webp',
     [],
   ],
   [
@@ -99,7 +100,7 @@ const serviceEntries = [
     'Learning management',
     'Explore learning management solutions for your organization.',
     'GraduationCap',
-    'learning-management-system.32b72d34.png',
+    'generated/illustrations/learning.webp',
     [],
   ],
   [
@@ -107,7 +108,7 @@ const serviceEntries = [
     'Storage & backup',
     'Centrally controlled protection and storage for enterprise data.',
     'Database',
-    'storage.ca9ff3cd.jpg',
+    'generated/illustrations/infrastructure.webp',
     [],
   ],
   [
@@ -115,7 +116,7 @@ const serviceEntries = [
     'Bulk SMS',
     'Explore business messaging services from Suffix IT.',
     'MessageSquare',
-    'bulkSms.c89209db.jpg',
+    'generated/about/call-center.webp',
     [],
   ],
   [
@@ -123,7 +124,7 @@ const serviceEntries = [
     'IT infrastructure',
     'Explore infrastructure solutions and services for your business.',
     'Server',
-    'itInfrastructureBannerImg.05279ca5.png',
+    'generated/illustrations/infrastructure.webp',
     [],
   ],
   [
@@ -131,7 +132,7 @@ const serviceEntries = [
     'Power & cooling',
     'Explore power and cooling solutions for your technology infrastructure.',
     'Zap',
-    'powercoolImage.c6ea46fa.png',
+    'generated/illustrations/infrastructure.webp',
     [],
   ],
   [
@@ -139,7 +140,7 @@ const serviceEntries = [
     'Internet of Things',
     'Explore connected technologies and IoT solutions from Suffix IT.',
     'Cpu',
-    'iot.5d017fa2.png',
+    'generated/illustrations/industrial.webp',
     [],
   ],
   [
@@ -147,7 +148,7 @@ const serviceEntries = [
     'Industrial monitoring',
     'Explore industrial equipment monitoring and operational visibility.',
     'Activity',
-    'IEMS Diagram.d39e87e4.png',
+    'generated/illustrations/industrial.webp',
     [],
   ],
   [
@@ -155,7 +156,7 @@ const serviceEntries = [
     'Smart POS & billing',
     'Point of sale and billing for retail stores, super shops, and restaurants.',
     'ScanLine',
-    'point_of.5725318c.png',
+    'generated/products/commerce.webp',
     [],
   ],
 ];
@@ -167,7 +168,7 @@ const productEntries = [
     'Enterprise resource planning',
     'Integrate the processes needed to run your business in one connected platform.',
     'Workflow',
-    'erp.d84b0931.svg',
+    'generated/products/erp.webp',
     [
       'Inventory management',
       'Sales orders and invoicing',
@@ -181,7 +182,7 @@ const productEntries = [
     'Workforce management',
     'Schedule, track, and coordinate your field operations with real-time visibility.',
     'MapPin',
-    'field-force.497227c8.png',
+    'generated/products/field.webp',
     ['Live tracking', 'Task management', 'Offline synchronization', 'Attendance management'],
   ],
   [
@@ -190,7 +191,7 @@ const productEntries = [
     'Human resource management',
     'Automate and streamline your HR services with Suffix Payroll.',
     'Users',
-    'illustration-payroll.192fe824.svg',
+    'generated/products/payroll.webp',
     [],
   ],
   [
@@ -199,7 +200,7 @@ const productEntries = [
     'Retail operations',
     'An easy-to-use point of sale system for retail stores, super shops, and restaurants.',
     'ScanLine',
-    'point_of.5725318c.png',
+    'generated/products/commerce.webp',
     [
       'Sales and purchase management',
       'Stock management',
@@ -213,7 +214,7 @@ const productEntries = [
     'Telecommunications',
     'Support accurate billing, rating, and settlement between network and content partners.',
     'Radio',
-    'iterconnectBilling.52ddc1c8.svg',
+    'generated/products/billing.webp',
     ['Partner settlement', 'Revenue sharing', 'Billing and rating', 'IP and content models'],
   ],
   [
@@ -222,7 +223,7 @@ const productEntries = [
     'Employee fund management',
     'Manage employee funding, investment, loans, and profit distribution.',
     'Landmark',
-    'fund.d623ba98.svg',
+    'generated/products/fund.webp',
     [
       'Employee information',
       'Configurable chart of accounts',
@@ -236,7 +237,7 @@ const productEntries = [
     'Digital commerce',
     'Full-cycle retail and e-commerce application solutions for B2B and B2C businesses.',
     'ShoppingBag',
-    'e-commerce-intro.123b351f.svg',
+    'generated/products/commerce.webp',
     [],
   ],
   [
@@ -245,7 +246,7 @@ const productEntries = [
     'Hospitality',
     'A cloud-based hotel booking management system from Suffix IT.',
     'BedDouble',
-    'Hotel Booking-pana.c7923eb8.svg',
+    'generated/products/hotel.webp',
     [],
   ],
   [
@@ -254,7 +255,7 @@ const productEntries = [
     'Inventory management',
     'Manage inventory and cash flow, reduce costs, and support business operations.',
     'Package',
-    'inventory.b0d9ca0b.svg',
+    'generated/products/inventory.webp',
     [],
   ],
   [
@@ -263,7 +264,7 @@ const productEntries = [
     'Industrial monitoring',
     'Monitor transformer status, view history, and receive remote alarms and notifications.',
     'Activity',
-    'STMS.42b12aa1.png',
+    'generated/illustrations/industrial.webp',
     [
       'Multiple transformer status',
       'Transformer history',
@@ -278,7 +279,7 @@ export const services = serviceEntries.map(([slug, title, description, icon, ima
   title,
   description,
   icon,
-  image: `/assets/${image}`,
+  image: visuals.heroes[`/service/${slug}`] || `/assets/${image}`,
   features,
   path: `/service/${slug}`,
   source: `https://www.suffixit.com/service/${slug}`,
@@ -290,7 +291,7 @@ export const products = productEntries.map(
     category,
     description,
     icon,
-    image: `/assets/${image}`,
+    image: visuals.heroes[`/product/${slug}`] || `/assets/${image}`,
     features,
     path: `/product/${slug}`,
     source: `https://www.suffixit.com/product/${slug}`,

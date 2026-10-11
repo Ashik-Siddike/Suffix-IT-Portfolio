@@ -1,5 +1,6 @@
+import visuals from '../data/unique-visuals.json';
 import { useParams } from 'react-router-dom';
-import { ArrowUpRight } from 'lucide-react';
+import { ArrowUpRight } from '../components/GeneratedIcons';
 import published from '../data/published-pages.json';
 import {
   Accordion,
@@ -27,13 +28,12 @@ export default function ContentPage({ kind }) {
           visual={
             <div className="career-hero-art">
               <SiteImage
-                src="/assets/company-original.png"
-                alt="Suffix IT team at Corporate Day 2022"
+                src={visuals.static.career}
+                alt="Technology team collaboration illustration"
                 width="2032"
                 height="1335"
                 sizes="(max-width: 900px) 90vw, 550px"
               />
-              <span>THE PEOPLE BEHIND THE TECHNOLOGY · CORPORATE DAY 2022</span>
             </div>
           }
         />

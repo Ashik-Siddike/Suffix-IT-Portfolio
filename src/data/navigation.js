@@ -1,3 +1,4 @@
+import visuals from './unique-visuals.json' with { type: 'json' };
 import { services, products } from './catalog';
 
 // Preserve the original visible menu labels without changing detail-page data.
@@ -29,7 +30,7 @@ export const navigation = [
       ],
       services,
     ),
-    visual: '/assets/Visual data-cuate.e5c31c08.svg',
+    visual: visuals.static.menuServices,
     featuredTitle: 'Expertise with purpose.',
     description:
       'Software, consulting, infrastructure and security. Find the right expertise for your business.',
@@ -50,7 +51,7 @@ export const navigation = [
       ],
       products,
     ),
-    visual: '/assets/field-force.497227c8.png',
+    visual: visuals.static.menuProducts,
     featuredTitle: 'A better way to work.',
     description: 'Explore software that connects your people, processes and everyday operations.',
   },
@@ -67,7 +68,7 @@ export const navigation = [
         services,
       ),
     ],
-    visual: '/assets/iot.5d017fa2.png',
+    visual: visuals.static.menuIoT,
     featuredTitle: 'See your operations clearly.',
     description: 'Discover automation, transformer monitoring and industrial energy monitoring.',
   },

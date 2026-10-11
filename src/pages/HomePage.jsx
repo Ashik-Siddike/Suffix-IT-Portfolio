@@ -1,4 +1,5 @@
-﻿import SonarGrid from '../components/ui/SonarGrid';
+import visuals from '../data/unique-visuals.json';
+import SonarGrid from '../components/ui/SonarGrid';
 import AnimatedText from '../components/AnimatedText';
 import TechnologyVector from '../components/TechnologyVector';
 import SiteImage from '../components/SiteImage';
@@ -31,8 +32,8 @@ export default function HomePage() {
           <ScrollReveal variant="right" className="hero-visual hero-visual-refined">
             <TechnologyVector />
             <SiteImage
-              src="/assets/fieldForce.svg.815b7443.png"
-              alt="Suffix IT desktop dashboard and mobile applications"
+              src={visuals.static.homeHero}
+              alt="Software and mobile application concept illustration"
               width="2000"
               height="1300"
               fetchPriority="high"
@@ -49,7 +50,7 @@ export default function HomePage() {
             <SectionHeading title={original.callTitle} description={original.callDescription} />
             <ScrollReveal variant="right">
               <SiteImage
-                src="/assets/generated/about/call-center.webp"
+                src={visuals.static.homeCall}
                 alt=""
                 width="1200"
                 height="675"

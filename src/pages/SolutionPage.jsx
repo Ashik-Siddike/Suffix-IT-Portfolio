@@ -1,6 +1,8 @@
+import visuals from '../data/unique-visuals.json';
+import { ZoomParallax } from '../components/ui/zoom-parallax';
 import SiteImage from '../components/SiteImage';
 import { useLocation } from 'react-router-dom';
-import { Check } from 'lucide-react';
+import { Check } from '../components/GeneratedIcons';
 import { findSolution, products, services } from '../data/catalog';
 import published from '../data/published-pages.json';
 import {
@@ -22,6 +24,7 @@ export default function SolutionPage() {
   if (!item) return <NotFoundPage />;
   const isProduct = pathname.startsWith('/product/');
   const original = published[pathname] || {};
+  const gallery = visuals.galleries[pathname] || [];
   const related = (isProduct ? products : services)
     .filter((other) => other.path !== pathname)
     .slice(0, 3);
@@ -41,7 +44,7 @@ export default function SolutionPage() {
             </span>
             <SiteImage
               src={item.image}
-              alt={`${item.title} — original product illustration`}
+              alt={`${item.title} — conceptual product illustration`}
               width="600"
               height="440"
               sizes="(max-width: 900px) 90vw, 550px"
@@ -111,23 +114,26 @@ export default function SolutionPage() {
               </TextLink>
             </div>
           )}
-          {original.gallery?.length > 0 && (
-            <div className="source-gallery">
-              {original.gallery
-                .filter((img) => img.src !== item.image)
-                .map((img) => (
-                  <figure key={img.src}>
-                    <SiteImage
-                      src={img.src}
-                      alt={img.alt}
-                      width="900"
-                      height="500"
-                      loading="lazy"
-                    />
-                    <figcaption>{img.alt}</figcaption>
-                  </figure>
-                ))}
-            </div>
+          {gallery.length === 7 ? (
+            <ZoomParallax images={gallery} label={`${item.title} illustration gallery`} />
+          ) : (
+            gallery.length > 0 && (
+              <div className="source-gallery">
+                {gallery
+                  .filter((img) => img.src !== item.image)
+                  .map((img) => (
+                    <figure key={img.src}>
+                      <SiteImage
+                        src={img.src}
+                        alt={img.alt}
+                        width="900"
+                        height="500"
+                        loading="lazy"
+                      />
+                    </figure>
+                  ))}
+              </div>
+            )
           )}
           {item.slug === 'web-ecommerce' && (
             <div className="package-links">
@@ -171,7 +177,11 @@ export default function SolutionPage() {
           <div className="three-grid">
             {related.map((other) =>
               isProduct ? (
-                <ProductCard item={other} key={other.path} />
+                <ProductCard
+                  item={other}
+                  key={other.path}
+                  image={visuals.relatedCards[pathname][other.path]}
+                />
               ) : (
                 <ServiceCard item={other} key={other.path} />
               ),

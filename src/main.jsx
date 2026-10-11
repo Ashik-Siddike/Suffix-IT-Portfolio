@@ -16,6 +16,8 @@ import './clients-footer.css';
 import './products-carousel.css';
 import './home-restored.css';
 import './about-original.css';
+import './generated-visuals.css';
+import './premium-effects.css';
 import PageLayout from './components/PageLayout';
 import { LoadingState } from './components/ui';
 

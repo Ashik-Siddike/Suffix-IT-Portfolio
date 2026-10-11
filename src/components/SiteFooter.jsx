@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { Facebook, Linkedin, Mail, MapPin, Phone } from 'lucide-react';
+import { Facebook, Linkedin, Mail, MapPin, Phone } from './GeneratedIcons';
 import { company } from '../data/company';
 import { Container } from './ui';
 import SiteImage from './SiteImage';

@@ -1,6 +1,7 @@
+import visuals from '../data/unique-visuals.json';
 import original from '../data/home-original.json';
 import { Link } from 'react-router-dom';
-import { ArrowUpRight } from 'lucide-react';
+import { ArrowUpRight } from './GeneratedIcons';
 import { services } from '../data/catalog';
 import Icon from './Icon';
 import SiteImage from './SiteImage';
@@ -61,8 +62,14 @@ export default function ServicesBento() {
             {['erp', 'custom', 'web'].includes(area) && (
               <div className="bento-art">
                 <SiteImage
-                  src={item.image}
-                  alt={`${item.title} illustration from the original website`}
+                  src={
+                    {
+                      erp: visuals.static.bentoErp,
+                      custom: visuals.static.bentoCustom,
+                      web: visuals.static.bentoWeb,
+                    }[area]
+                  }
+                  alt={`${item.title} conceptual technology illustration`}
                   width="480"
                   height="300"
                   loading="lazy"

@@ -1,17 +1,53 @@
-import { useId, useLayoutEffect, useRef, useState } from 'react';
-import { motion as Motion, useReducedMotion } from 'motion/react';
-import { ArrowLeft, ArrowRight } from 'lucide-react';
+import { useEffect, useId, useLayoutEffect, useRef, useState } from 'react';
+import { motion as Motion, useInView } from 'motion/react';
+import { ArrowLeft, ArrowRight, Pause, Play } from '../GeneratedIcons';
 import { PrimaryButton } from '../ui';
 
 // Adapted to the existing JSX project from the supplied carousel-squeeze reference.
 export default function SqueezeCarousel({ slides, label = 'Our products', duration = 1000 }) {
   const [active, setActive] = useState(0);
   const [hovered, setHovered] = useState(null);
+  const [paused, setPaused] = useState(false);
+  const [interacting, setInteracting] = useState(false);
+  const [pointerWithin, setPointerWithin] = useState(false);
+  const [tabVisible, setTabVisible] = useState(true);
+  const carousel = useRef(null);
+  const inView = useInView(carousel, { amount: 0.25 });
   const focusIntent = useRef(null);
   const tabs = useRef([]);
   const gesture = useRef(null);
-  const reduced = useReducedMotion();
+  const [reduced, setReduced] = useState(
+    () =>
+      typeof window !== 'undefined' &&
+      window.matchMedia('(prefers-reduced-motion: reduce)').matches,
+  );
   const id = useId();
+  useEffect(() => {
+    const preference = window.matchMedia('(prefers-reduced-motion: reduce)');
+    const update = () => setReduced(preference.matches);
+    preference.addEventListener('change', update);
+    return () => preference.removeEventListener('change', update);
+  }, []);
+  useEffect(() => {
+    const update = () => setTabVisible(!document.hidden);
+    update();
+    document.addEventListener('visibilitychange', update);
+    return () => document.removeEventListener('visibilitychange', update);
+  }, []);
+  useEffect(() => {
+    if (
+      reduced ||
+      paused ||
+      interacting ||
+      pointerWithin ||
+      !inView ||
+      !tabVisible ||
+      slides.length < 2
+    )
+      return;
+    const timer = window.setInterval(() => setActive((index) => (index + 1) % slides.length), 2000);
+    return () => window.clearInterval(timer);
+  }, [active, reduced, paused, interacting, pointerWithin, inView, tabVisible, slides.length]);
   const wrap = (index) => (index + slides.length) % slides.length;
   const select = (index, focus = false) => {
     const next = wrap(index);
@@ -43,18 +79,38 @@ export default function SqueezeCarousel({ slides, label = 'Our products', durati
   const slide = slides[active];
   return (
     <div
+      ref={carousel}
       className="squeeze-carousel"
       role="region"
       aria-roledescription="carousel"
       aria-label={label}
       style={{ '--squeeze-duration': reduced ? '0ms' : `${duration}ms` }}
+      onFocusCapture={() => setInteracting(true)}
+      onBlurCapture={(event) => {
+        if (!event.currentTarget.contains(event.relatedTarget)) setInteracting(false);
+      }}
+      onMouseEnter={() => setPointerWithin(true)}
+      onMouseLeave={() => {
+        setPointerWithin(false);
+        setHovered(null);
+      }}
     >
       <div className="squeeze-toolbar">
-        <p aria-live="polite">
+        <p aria-live={paused || interacting || reduced ? 'polite' : 'off'}>
           <span>{String(active + 1).padStart(2, '0')}</span> /{' '}
           {String(slides.length).padStart(2, '0')} products
         </p>
         <div>
+          {!reduced && (
+            <button
+              type="button"
+              aria-label={paused ? 'Resume product autoplay' : 'Pause product autoplay'}
+              aria-pressed={paused}
+              onClick={() => setPaused((value) => !value)}
+            >
+              {paused ? <Play size={19} /> : <Pause size={19} />}
+            </button>
+          )}
           <button type="button" aria-label="Previous product" onClick={() => select(active - 1)}>
             <ArrowLeft size={19} aria-hidden="true" />
           </button>

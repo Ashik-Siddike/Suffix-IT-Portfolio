@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import AnimatedText from './AnimatedText';
 import { motion as Motion, useReducedMotion } from 'motion/react';
-import { ArrowRight, ChevronRight, CircleAlert, LoaderCircle } from 'lucide-react';
+import { ArrowRight, ChevronRight, CircleAlert, LoaderCircle } from './GeneratedIcons';
 
 export function Container({ as: Tag = 'div', children, className = '', ...props }) {
   return (

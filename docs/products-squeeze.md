@@ -1,3 +1,5 @@
+Current update: the carousel now advances every two seconds with pause/hover/focus/visibility/reduced-motion handling. See generated-visual-refresh.md. The original interaction design below is historical.
+
 # Our Products squeeze carousel
 
 The supplied `carousel-squeeze.tsx` reference is adapted to the established React JSX/Vite project in `src/components/ui/SqueezeCarousel.jsx`. `ProductsSection.jsx` provides the original eight products, descriptions, destination routes and generated image paths. `HomePage.jsx` now renders this section instead of the former three-product showcase and extra card row. `src/products-carousel.css` owns panel proportions, caption overlays, responsive layout and reduced-motion styles. Existing local fonts and blue brand colors are retained; no new dependency or TypeScript/shadcn migration was required.

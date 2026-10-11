@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight } from './GeneratedIcons';
 import ClientMarquee from './ClientMarquee';
 import { Container, PrimaryButton, ScrollReveal } from './ui';
 

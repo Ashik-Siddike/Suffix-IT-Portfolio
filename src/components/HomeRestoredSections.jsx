@@ -1,10 +1,10 @@
+import visuals from '../data/unique-visuals.json';
 import original from '../data/home-original.json';
-import { useState } from 'react';
-import { ArrowLeft, ArrowRight, Check, Quote, Users, Cpu } from 'lucide-react';
-import { motion as Motion, useReducedMotion } from 'motion/react';
+import { Check, Quote, Users, Cpu } from './GeneratedIcons';
 import { Container, PrimaryButton, ScrollReveal, SectionHeading } from './ui';
 import SiteImage from './SiteImage';
 import testimonials from '../data/home-testimonials.json';
+import useBorderGlow from './useBorderGlow';
 
 const promises = [
   '24/7 support service',
@@ -30,8 +30,8 @@ export function WhyChooseSection() {
       <Container className="restored-split">
         <ScrollReveal variant="left" className="restored-why-art">
           <SiteImage
-            src="/assets/fieldForce.svg.815b7443.png"
-            alt="Suffix IT desktop dashboard and mobile applications"
+            src={visuals.static.homeWhy}
+            alt="Technology engineering team illustration"
             width="2000"
             height="1300"
             loading="lazy"
@@ -69,9 +69,11 @@ export function WhyChooseSection() {
 }
 
 export function CompanyValuesSection() {
-  const values = ['team.2ef9cf98.svg', 'software.0c032998.svg', 'web.88ae012d.svg'].map(
-    (image, index) => [image, original.companyCards[index]],
-  );
+  const values = [
+    visuals.static.aboutTeam,
+    visuals.static.aboutSoftware,
+    visuals.static.aboutAmbition,
+  ].map((image, index) => [image, original.companyCards[index]]);
   return (
     <section className="section restored-company" id="our-company">
       <Container>
@@ -87,7 +89,7 @@ export function CompanyValuesSection() {
               delay={index * 0.1}
               key={title}
             >
-              <SiteImage src={`/assets/${image}`} alt="" width="400" height="250" loading="lazy" />
+              <SiteImage src={image} alt="" width="400" height="250" loading="lazy" />
               <h3>{title}</h3>
             </ScrollReveal>
           ))}
@@ -115,8 +117,8 @@ export function FieldForceSection() {
         </ScrollReveal>
         <ScrollReveal variant="right">
           <SiteImage
-            src="/assets/field-force.497227c8.png"
-            alt="Original Suffix Field Force mobile application screens"
+            src={visuals.static.homeField}
+            alt="Field Force Management concept illustration"
             width="650"
             height="500"
             loading="lazy"
@@ -128,79 +130,51 @@ export function FieldForceSection() {
 }
 
 export function TestimonialsSection() {
-  const [selected, setSelected] = useState(0);
-  const reduced = useReducedMotion();
-  const select = (index) => setSelected((index + testimonials.length) % testimonials.length);
-  const item = testimonials[selected];
+  const glow = useBorderGlow();
   return (
     <section className="section restored-testimonials" id="testimonials">
       <Container>
-        <ScrollReveal>
-          <SectionHeading
-            title={original.testimonialTitle}
-            description={original.testimonialDescription}
-          />
-        </ScrollReveal>
-        <ScrollReveal variant="fade">
-          <div
-            className="testimonial-carousel"
-            role="region"
-            aria-roledescription="carousel"
-            aria-label="Client testimonials"
-          >
-            <div className="testimonial-controls">
-              <button
-                type="button"
-                aria-label="Previous testimonial"
-                onClick={() => select(selected - 1)}
-              >
-                <ArrowLeft size={20} aria-hidden="true" />
-              </button>
-              <p role="status">
-                {selected + 1} / {testimonials.length}
-              </p>
-              <button
-                type="button"
-                aria-label="Next testimonial"
-                onClick={() => select(selected + 1)}
-              >
-                <ArrowRight size={20} aria-hidden="true" />
-              </button>
-            </div>
-            <Motion.figure
+        <div
+          className="testimonials-editorial"
+          role="region"
+          aria-label="Client testimonials"
+          {...glow}
+        >
+          <ScrollReveal variant="left" className="testimonials-intro">
+            <SectionHeading
+              title={original.testimonialTitle}
+              description={original.testimonialDescription}
+            />
+          </ScrollReveal>
+          {testimonials.map((item, index) => (
+            <ScrollReveal
+              as="figure"
+              variant={index === 0 ? 'rise' : 'right'}
+              delay={index * 0.1}
+              className={`testimonial-story testimonial-story-${index + 1}`}
               key={item.name}
-              className="restored-quote"
-              initial={reduced ? false : { opacity: 0, y: 10 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: reduced ? 0 : 0.6 }}
             >
-              <Quote size={34} aria-hidden="true" />
+              <Quote size={30} aria-hidden="true" />
               <h3>{item.title}</h3>
               <blockquote>{item.quote}</blockquote>
               <figcaption>
-                <SiteImage src={item.image} alt={item.name} width="64" height="64" reveal={false} />
+                <SiteImage
+                  src={item.image}
+                  alt={item.name}
+                  className="testimonial-avatar"
+                  width="48"
+                  height="48"
+                  loading="lazy"
+                  reveal={false}
+                />
                 <div>
                   <strong>{item.name}</strong>
                   <span>{item.role}</span>
-                  <span>{item.organization}</span>
                 </div>
               </figcaption>
-            </Motion.figure>
-            <div className="testimonial-dots">
-              {testimonials.map((person, index) => (
-                <button
-                  type="button"
-                  key={person.name}
-                  aria-label={`Show testimonial from ${person.name}`}
-                  aria-current={selected === index ? 'true' : undefined}
-                  onClick={() => select(index)}
-                >
-                  <span />
-                </button>
-              ))}
-            </div>
-          </div>
-        </ScrollReveal>
+            </ScrollReveal>
+          ))}
+        </div>
       </Container>
     </section>
   );

@@ -1,5 +1,5 @@
 import { useRef, useState } from 'react';
-import { Play, X } from 'lucide-react';
+import { Play, X } from './GeneratedIcons';
 // Source: the captured original /service/iot demonstration, not an invented hero video.
 const demo = { url: 'https://www.youtube.com/watch?v=wufBLKnsFLE' };
 const videoId = new URL(demo.url).searchParams.get('v');

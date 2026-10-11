@@ -107,3 +107,9 @@ Added missing original Why Choose Us, three company cards, dedicated seven-featu
 Direct About navigation restored. Company introduction/team and original company cards moved to About. Home uses original copy and drops extra capability/industry/process/CTA blocks. Added decorative Vision, Mission and Call Center imagery with saved prompts. See about-original-redesign.md.
 
 Validation completed: build/lint/format, browser source-copy comparison, route/image checks, responsive layouts, navigation/interactions and WCAG AA including About. Desktop/mobile screenshots reviewed.
+
+## 11 October 2026 - Generated visual refresh
+
+Added two-second Products autoplay and staggered What They Said cards. Generated ten transparent illustrations and a 36-icon raster atlas; retired 71 SVG files and replaced legacy visuals throughout public routes. Company/client/partner logos retained. Exact prompts: generated-visual-prompts.json; implementation map: generated-visual-refresh.md.
+
+Build/lint passed. Full route/image, original-copy/logo, responsive, navigation and WCAG AA checks passed. Dynamic reduced-motion autoplay update was fixed and verified by the final focused autoplay/carousel tests. All generated outputs were visually inspected; alpha transparency verified.

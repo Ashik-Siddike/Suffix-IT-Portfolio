@@ -1,5 +1,6 @@
+import visuals from '../data/unique-visuals.json';
 import { useState } from 'react';
-import { Search } from 'lucide-react';
+import { Search } from '../components/GeneratedIcons';
 import { products, services } from '../data/catalog';
 import { Container, EmptyState, PageHero } from '../components/ui';
 import { ProductCard, ServiceCard } from '../components/cards';
@@ -52,7 +53,11 @@ export default function CataloguePage({ type }) {
             <div className="three-grid">
               {filtered.map((item, index) =>
                 isProduct ? (
-                  <ProductCard key={item.path} item={item} />
+                  <ProductCard
+                    key={item.path}
+                    item={item}
+                    image={visuals.productCards[item.path]}
+                  />
                 ) : (
                   <ServiceCard key={item.path} item={item} number={index + 1} />
                 ),

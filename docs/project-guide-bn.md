@@ -1,6 +1,6 @@
 # Suffix IT project: কোথায় কী আছে
 
-এই guide বর্তমান implementation অনুযায়ী লেখা। Project React + Vite frontend; routing-এর জন্য React Router, animation-এর জন্য Motion, icons-এর জন্য Lucide, styling-এর জন্য Tailwind integration ও custom CSS আছে। Backend, database বা CMS এখন যুক্ত নেই।
+এই guide বর্তমান implementation অনুযায়ী লেখা। Project React + Vite frontend; routing-এর জন্য React Router, animation-এর জন্য Motion, icons-এর জন্য নতুন generated raster atlas, styling-এর জন্য Tailwind integration ও custom CSS আছে। Backend, database বা CMS এখন যুক্ত নেই। Lucide ও পুরোনো SVG illustrations সরানো হয়েছে।
 
 ## ১. একটি page কীভাবে তৈরি হয়
 
@@ -89,11 +89,11 @@ Home no longer contains the extra capability links, industry cards, invented pro
 | `ui.jsx`                                   | Container, buttons, section headings ও ScrollReveal                                       |
 | `AnimatedText.jsx`                         | Word-by-word heading animation; accessible full text ও reduced-motion handling            |
 | `SiteImage.jsx`                            | Responsive image source, optimized fallback ও image reveal                                |
-| `TechnologyVector.jsx`                     | SVG technology icons ও connection-path animation                                          |
+| `TechnologyVector.jsx`                     | Generated technology icons ও নতুন CSS aura                                                |
 | `ui/SonarGrid.jsx`                         | Hero canvas waves, pointer interaction, resize ও offscreen/reduced-motion handling        |
 | `ClientMarquee.jsx`                        | দুই সারির opposite-direction logo animation, pause/resume ও reduced-motion layout         |
 | `ui/SqueezeCarousel.jsx`                   | Product selection, keyboard arrows/Home/End, swipe, pagination ও wrapping controls        |
-| `HomeRestoredSections.jsx`                 | Original Why Choose Us, company cards, Field Force ও testimonial slider                   |
+| `HomeRestoredSections.jsx`                 | Original Why Choose Us, company cards, Field Force ও staggered testimonial cards          |
 | `cards.jsx`                                | Reusable service, product ও feature cards                                                 |
 | `sections.jsx`                             | Reusable marquee wrapper, CTA ও stats; Home/About-এ বাড়তি CTA/stats এখন ব্যবহার হয় না     |
 | `ScrollTools.jsx`                          | Scroll progress ও back-to-top control                                                     |
@@ -115,7 +115,7 @@ Original images `public/assets/`-এ। Responsive optimized images `public/opti
 | `homepage.css`          | Home hero sonar ও services bento/liquid hover                       |
 | `clients-footer.css`    | Client marquee ও dark footer                                        |
 | `products-carousel.css` | Squeeze carousel desktop/mobile layout                              |
-| `home-restored.css`     | Why Choose Us, company cards, Field Force ও testimonial slider      |
+| `home-restored.css`     | Why Choose Us, company cards ও Field Force base styling             |
 | `about-original.css`    | About wave hero/history/Vision/Mission এবং Call Center illustration |
 
 CSS import order `main.jsx`-এ আছে। `dist/` edit করবে না; source edit করে build করবে।
@@ -129,3 +129,15 @@ CSS import order `main.jsx`-এ আছে। `dist/` edit করবে না; s
 `npm run dev` local preview চালায়। `npm run build` production output তৈরি করে; `npm run preview` সেটি দেখায়। `npm run lint` code lint এবং `npm run format:check` formatting যাচাই করে। `npm test` unit tests; `npm run test:e2e` browser tests চালায়। Browser tests `tests/website.spec.js`-এ; route/image coverage, responsive overflow, navigation, animation, carousel, contact validation ও accessibility checks রয়েছে।
 
 Audit evidence ও design notes `docs/`-এ, preview captures `artifacts/`-এ। নতুন Home/About পরিবর্তনের পূর্ণ map `docs/about-original-redesign.md`-এ এবং image prompts `docs/about-image-prompts.json`-এ আছে।
+
+সর্বশেষ visual refresh-এর map `docs/generated-visual-refresh.md`-এ। নতুন ১০টি transparent illustration ও ৩৬-icon atlas-এর file/prompt `docs/generated-visual-prompts.json`-এ। `GeneratedIcons.jsx` ও `Icon.jsx` নতুন icons দেখায়; `generated-visuals.css` icon atlas, testimonial grid এবং CSS wave/aura style করে। `ui/SqueezeCarousel.jsx`-এ এখন প্রতি ২ সেকেন্ডে autoplay আছে, সঙ্গে pause/hover/focus/reduced-motion handling। নতুন assets `public/assets/generated/illustrations/`-এ; company/client/partner logo অপরিবর্তিত।
+
+## Unique image mapping ও testimonial glow
+
+`src/data/unique-visuals.json`-এ প্রতিটি জায়গার আলাদা image path আছে। নতুন ৯৮টি illustration `public/assets/generated/unique/`-এ, exact generation prompts `docs/unique-visual-generation-jobs.json`-এ। Catalogue ও related-product cards-এর `image` prop আলাদা artwork নেয়; detail sections slug/index দিয়ে ছবি খুঁজে পায়। `solution-visuals.js` পুরনো planning source, rendered image mapping এখন নতুন manifest-এ।
+
+`src/components/useBorderGlow.js` testimonial cards-এর mouse position track করে। `src/generated-visuals.css` rounded border-এ blue glow দেখায়। আসল client portraits ও company/client/partner logos রাখা হয়েছে। পূর্ণ implementation notes এবং validation `docs/unique-art-and-pointer-glow.md`-এ।
+
+## নতুন premium effects
+
+About hero-এর fractal `src/components/ui/fractal-bloom-tree.tsx`-এ; Contact hero-এর pointer flow `neon-flow.tsx`-এ; Transformer gallery-এর zoom `zoom-parallax.tsx`-এ। Shared lifecycle `useAmbientCanvas.ts`, styling `src/premium-effects.css`। TypeScript ও shadcn configuration `tsconfig.json` এবং `components.json`-এ; alias Vite-এ। বিস্তারিত setup/placement/validation `docs/premium-component-integration.md`-এ।

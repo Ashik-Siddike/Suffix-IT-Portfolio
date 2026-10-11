@@ -1,0 +1,71 @@
+{
+  "generator": "Built-in image_gen",
+  "assets": [
+    {
+      "name": "team",
+      "prompt": "Create a premium Suffix IT enterprise website illustration. Isolated sculptural 3D arrangement in azure #0072bc, cyan, white porcelain and transparent blue glass. Sophisticated clean studio lighting, balanced horizontal 3:2 composition, centered entire subject, generous transparent padding on every edge, no cropping. True transparent alpha background, no ground rectangle, no text, no letters, no numbers, no logos, no photographic people. NOT a software screenshot. Three abstract faceless porcelain professionals collaborating around a translucent blue technology table, connected small cubes, teamwork and shared ambition.",
+      "file": "public/assets/generated/illustrations/team.webp",
+      "transparent_background": true
+    },
+    {
+      "name": "software",
+      "prompt": "Create a premium Suffix IT enterprise website illustration. Isolated sculptural 3D arrangement in azure #0072bc, cyan, white porcelain and transparent blue glass. Sophisticated clean studio lighting, balanced horizontal 3:2 composition, centered entire subject, generous transparent padding on every edge, no cropping. True transparent alpha background, no ground rectangle, no text, no letters, no numbers, no logos, no photographic people. NOT a software screenshot. Elegant floating smartphone and browser window with abstract blue interface tiles and interlocking modular blocks, custom applications and web development.",
+      "file": "public/assets/generated/illustrations/software.webp",
+      "transparent_background": true
+    },
+    {
+      "name": "infrastructure",
+      "prompt": "Create a premium Suffix IT enterprise website illustration. Isolated sculptural 3D arrangement in azure #0072bc, cyan, white porcelain and transparent blue glass. Sophisticated clean studio lighting, balanced horizontal 3:2 composition, centered entire subject, generous transparent padding on every edge, no cropping. True transparent alpha background, no ground rectangle, no text, no letters, no numbers, no logos, no photographic people. NOT a software screenshot. Two blue glass server racks, a compact cloud, network nodes and a database cylinder, secure enterprise infrastructure and storage.",
+      "file": "public/assets/generated/illustrations/infrastructure.webp",
+      "transparent_background": true
+    },
+    {
+      "name": "learning",
+      "prompt": "Create a premium Suffix IT enterprise website illustration. Isolated sculptural 3D arrangement in azure #0072bc, cyan, white porcelain and transparent blue glass. Sophisticated clean studio lighting, balanced horizontal 3:2 composition, centered entire subject, generous transparent padding on every edge, no cropping. True transparent alpha background, no ground rectangle, no text, no letters, no numbers, no logos, no photographic people. NOT a software screenshot. An open porcelain book with blue glass graduation cap and small learning modules, modern education platform.",
+      "file": "public/assets/generated/illustrations/learning.webp",
+      "transparent_background": true
+    },
+    {
+      "name": "security",
+      "prompt": "Premium enterprise technology 3D illustration, isolated on TRUE transparent alpha background. Suffix IT brand azure #0072bc, cyan, white porcelain, translucent blue glass. Entire subject centered, wide 3:2 composition, ample clear padding, refined studio lighting. No letters, no numbers, no logos, no text, no real people, no background rectangle. A substantial blue glass protective shield and small padlock guarding a network of server nodes, elegant secure ICT technology.",
+      "file": "public/assets/generated/illustrations/security.webp",
+      "transparent_background": true
+    },
+    {
+      "name": "hospital",
+      "prompt": "Premium enterprise technology 3D illustration, isolated on TRUE transparent alpha background. Suffix IT brand azure #0072bc, cyan, white porcelain, translucent blue glass. Entire subject centered, wide 3:2 composition, ample clear padding, refined studio lighting. No letters, no numbers, no logos, no text, no real people, no background rectangle. An elegant porcelain hospital building with a simple blue medical cross, a glass health-monitor tile and small connected modules, hospital management.",
+      "file": "public/assets/generated/illustrations/hospital.webp",
+      "transparent_background": true
+    },
+    {
+      "name": "industrial",
+      "prompt": "Premium enterprise technology 3D illustration, isolated on TRUE transparent alpha background. Suffix IT brand azure #0072bc, cyan, white porcelain, translucent blue glass. Entire subject centered, wide 3:2 composition, ample clear padding, refined studio lighting. No letters, no numbers, no logos, no text, no real people, no background rectangle. Blue glass industrial transformer and factory automation module, small connected sensor nodes and an energy bolt, industrial monitoring and IoT.",
+      "file": "public/assets/generated/illustrations/industrial.webp",
+      "transparent_background": true
+    },
+    {
+      "name": "payments",
+      "prompt": "Premium Suffix IT enterprise illustration, isolated on TRUE transparent alpha background, 3:2 horizontal, whole subject centered with generous padding. Azure #0072bc, cyan, white porcelain and clear blue glass. Refined 3D studio lighting, no text, no numbers, no logos, no people, no background rectangle. A polished blue glass payment card, porcelain invoice with blank abstract lines, small coin stack and secure payment token, finance management and payment integration.",
+      "file": "public/assets/generated/illustrations/payments.webp",
+      "transparent_background": true
+    },
+    {
+      "name": "time",
+      "prompt": "Premium Suffix IT enterprise illustration, isolated on TRUE transparent alpha background, 3:2 horizontal, whole subject centered with generous padding. Azure #0072bc, cyan, white porcelain and clear blue glass. Refined 3D studio lighting, no text, no numbers, no logos, no people, no background rectangle. A large elegant porcelain clock with blue hands and a translucent calendar, small completed task tiles and attendance token, payroll scheduling and time management.",
+      "file": "public/assets/generated/illustrations/time.webp",
+      "transparent_background": true
+    },
+    {
+      "name": "growth",
+      "prompt": "Premium Suffix IT enterprise illustration, isolated on TRUE transparent alpha background, 3:2 horizontal, whole subject centered with generous padding. Azure #0072bc, cyan, white porcelain and clear blue glass. Refined 3D studio lighting, no text, no numbers, no logos, no people, no background rectangle. A sculptural transparent blue globe held within an ascending arrangement of interlocking porcelain and azure blocks, shared ambition and collaboration for global technology success. No trophy or award.",
+      "file": "public/assets/generated/illustrations/growth.webp",
+      "transparent_background": true
+    },
+    {
+      "name": "icon-atlas",
+      "prompt": "Create one production UI icon sprite atlas image, square 1:1, exactly 6 columns and 6 rows of equal square cells, no gutters, grid fills entire image. EXACTLY 36 distinct crisp simple azure blue #0072bc flat solid icons on TRUE TRANSPARENT alpha background, one icon perfectly centered in each cell, each uses central 50% of cell with large clear padding, consistent stroke and size. No text, labels, boxes, borders, grid lines, shadows, backgrounds or decorations. Read left to right per row: ROW1 arrow right, arrow left, arrow up, chevron down, diagonal arrow up-right, checkmark. ROW2 hamburger menu 3 horizontal lines, X close, pause 2 bars, play triangle, magnifying glass, quotation mark pair. ROW3 two people, microchip, linked workflow modules, code angle brackets, telephone handset, globe. ROW4 database cylinder, graduation cap, hospital cross, shopping bag, smartphone, video camera. ROW5 map pin, network nodes, server rack, package cube, lightning bolt, shield. ROW6 office building, hotel bed, scan corners, radio broadcast signal, stacked layers, envelope. These are action and technology icons for a real website, must be recognizable at 24 pixels, clean precise silhouettes, no 3D material for this atlas.",
+      "file": "public/assets/generated/illustrations/icon-atlas.webp",
+      "transparent_background": true
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { motion as Motion, useScroll, useMotionValueEvent, useReducedMotion } from 'motion/react';
-import { ArrowUp } from 'lucide-react';
+import { ArrowUp } from './GeneratedIcons';
 
 export default function ScrollTools() {
   const { scrollY, scrollYProgress } = useScroll();

@@ -62,7 +62,7 @@ const keyRoutes = [
   ...products.map((item) => item.path),
 ];
 
-test('restored homepage sections show original content and testimonial controls work', async ({
+test('restored homepage sections and staggered testimonial cards preserve original content', async ({
   page,
 }) => {
   await page.goto('/');
@@ -73,12 +73,17 @@ test('restored homepage sections show original content and testimonial controls 
   await expect(page.locator('#field-force')).toContainText('Chat and Collaboration');
   const testimonials = page.getByRole('region', { name: 'Client testimonials' });
   await expect(testimonials).toContainText('Awesome Design');
-  await testimonials.getByRole('button', { name: 'Next testimonial' }).click();
+  await expect(testimonials.locator('.testimonial-story')).toHaveCount(3);
   await expect(testimonials).toContainText('Great Flexibility');
-  await testimonials.getByRole('button', { name: 'Next testimonial' }).click();
   await expect(testimonials).toContainText('Super Support!');
-  await testimonials.getByRole('button', { name: 'Next testimonial' }).click();
-  await expect(testimonials).toContainText('Awesome Design');
+  await expect(testimonials.locator('blockquote')).toHaveCount(3);
+  await expect(testimonials.locator('img.testimonial-avatar')).toHaveCount(3);
+  await expect(page.locator('.brand img').first()).toHaveAttribute(
+    'src',
+    '/assets/Suffix-Logo.73142c9b.png',
+  );
+  await expect(page.locator('.marquee-group:not([aria-hidden]) .marquee-logo')).toHaveCount(21);
+  await expect(page.locator('.footer-credentials img')).toHaveCount(6);
   expect(
     await page
       .locator('#testimonials')
@@ -113,6 +118,64 @@ test('About navigation and original About copy are preserved with moved company 
   await expect(page.locator('#our-company')).toContainText(
     'Working In Software Industry Since 2017',
   );
+});
+
+test('products autoplay every two seconds and pause for hover, controls and reduced motion', async ({
+  page,
+}) => {
+  await page.emulateMedia({ reducedMotion: 'no-preference' });
+  await page.goto('/#products');
+  const carousel = page.getByRole('region', { name: 'Our products' });
+  await carousel.scrollIntoViewIfNeeded();
+  await page.mouse.move(0, 0);
+  const selected = () =>
+    carousel.locator('[role="tab"][aria-selected="true"]').getAttribute('aria-label');
+  const first = await selected();
+  await expect.poll(selected, { timeout: 4500 }).not.toBe(first);
+  await carousel.hover();
+  const hovered = await selected();
+  await page.waitForTimeout(2300);
+  expect(await selected()).toBe(hovered);
+  await carousel.getByRole('button', { name: 'Pause product autoplay' }).click();
+  await page.evaluate(() => document.activeElement?.blur());
+  await page.mouse.move(0, 0);
+  const paused = await selected();
+  await page.waitForTimeout(2300);
+  expect(await selected()).toBe(paused);
+  await carousel.getByRole('button', { name: 'Resume product autoplay' }).click();
+  await page.evaluate(() => document.activeElement?.blur());
+  await page.mouse.move(0, 0);
+  await expect.poll(selected, { timeout: 4500 }).not.toBe(paused);
+  await page.emulateMedia({ reducedMotion: 'reduce' });
+  await expect(carousel.getByRole('button', { name: 'Pause product autoplay' })).toHaveCount(0);
+  const reduced = await selected();
+  await page.waitForTimeout(2300);
+  expect(await selected()).toBe(reduced);
+});
+
+test('testimonial border light follows the pointer and keeps client portraits', async ({
+  page,
+}) => {
+  await page.goto('/');
+  const group = page.getByRole('region', { name: 'Client testimonials' });
+  await group.scrollIntoViewIfNeeded();
+  const card = group.locator('.testimonial-story').first();
+  const rect = await card.boundingBox();
+  await page.mouse.move(rect.x + 12, rect.y + 8);
+  await expect(group).toHaveAttribute('data-glow-active', 'true');
+  await expect
+    .poll(() => card.evaluate((el) => parseFloat(el.style.getPropertyValue('--glow-x'))))
+    .toBeCloseTo(12, 0);
+  await page.mouse.move(rect.x + rect.width - 15, rect.y + rect.height - 10);
+  await expect
+    .poll(() => card.evaluate((el) => parseFloat(el.style.getPropertyValue('--glow-x'))))
+    .toBeCloseTo(rect.width - 15, 0);
+  await expect(card.locator('img.testimonial-avatar')).toHaveAttribute(
+    'src',
+    '/assets/testimonials/rafique.jpg',
+  );
+  await page.mouse.move(0, 0);
+  await expect(group).toHaveAttribute('data-glow-active', 'false');
 });
 
 test('hero sonar draws blue waves and becomes static with reduced motion', async ({ page }) => {
@@ -219,9 +282,11 @@ test('all public routes render, images load, metadata and internal links resolve
   const errors = [];
   page.on('pageerror', (error) => errors.push(error.message));
   const allowed = new Set([...keyRoutes, '/home']);
+  const artworkLocations = new Map();
   for (const path of keyRoutes) {
     await page.goto(path);
     await expect(page.locator('main h1')).toHaveCount(1);
+    await expect(page.locator('svg')).toHaveCount(0);
     await expect(page.locator('main h1')).not.toContainText('back on track');
     await expect(page).toHaveTitle(/Suffix IT Limited/);
     expect(await page.locator('link[rel="canonical"]').getAttribute('href')).toBe(
@@ -242,6 +307,16 @@ test('all public routes render, images load, metadata and internal links resolve
       return images.filter((image) => !image.naturalWidth).map((image) => image.src);
     });
     expect(brokenImages, path).toEqual([]);
+    const artwork = await page
+      .locator('main img[src*="/assets/generated/"]')
+      .evaluateAll((images) => images.map((image) => image.getAttribute('src')));
+    for (const src of artwork) {
+      expect(
+        artworkLocations.has(src),
+        `${src} reused on ${path}; previously on ${artworkLocations.get(src)}`,
+      ).toBe(false);
+      artworkLocations.set(src, path);
+    }
   }
   await page.goto('/home');
   await expect(page).toHaveURL('http://127.0.0.1:4173/');

@@ -1,15 +1,17 @@
-﻿import SiteImage from '../components/SiteImage';
+import visuals from '../data/unique-visuals.json';
+import FractalBloomHero from '../components/ui/fractal-bloom-tree';
+import SiteImage from '../components/SiteImage';
 import { Container, ScrollReveal } from '../components/ui';
 import AnimatedText from '../components/AnimatedText';
 import { CompanyValuesSection } from '../components/HomeRestoredSections';
 import published from '../data/published-pages.json';
-import { ChevronDown } from 'lucide-react';
+import { ChevronDown } from '../components/GeneratedIcons';
 
 const paragraphs = published['/about'].blocks.filter((block) => block.tag === 'p');
 export default function CompanyPage() {
   return (
     <>
-      <section className="about-original-hero">
+      <FractalBloomHero className="about-original-hero">
         <Container>
           <h1>
             <AnimatedText text="About Us" onLoad />
@@ -18,17 +20,8 @@ export default function CompanyPage() {
             <ChevronDown size={28} aria-hidden="true" />
           </a>
         </Container>
-        <svg
-          className="about-wave"
-          viewBox="0 0 1440 90"
-          preserveAspectRatio="none"
-          aria-hidden="true"
-        >
-          <path d="M0 34 Q420 105 820 54 T1440 24 V90 H0Z" fill="#ffffff" opacity=".3" />
-          <path d="M0 45 Q420 116 820 65 T1440 35 V90 H0Z" fill="#ffffff" opacity=".55" />
-          <path d="M0 57 Q420 126 820 76 T1440 47 V90 H0Z" fill="#ffffff" />
-        </svg>
-      </section>
+        <div className="about-wave" aria-hidden="true" />
+      </FractalBloomHero>
       <section className="section about-history" id="whoWeAre">
         <Container className="about-history-grid">
           <ScrollReveal variant="left" className="company-copy">
@@ -38,8 +31,8 @@ export default function CompanyPage() {
           </ScrollReveal>
           <ScrollReveal variant="right" className="company-photo">
             <SiteImage
-              src="/assets/company-original.png"
-              alt="Suffix IT team at Corporate Day, 15 October 2022"
+              src={visuals.static.aboutHistory}
+              alt="Technology team collaboration illustration"
               width="2032"
               height="1335"
               sizes="(max-width: 800px) 90vw, 620px"
@@ -57,7 +50,7 @@ export default function CompanyPage() {
               </ScrollReveal>
               <ScrollReveal variant={index ? 'left' : 'right'} className="about-purpose-art">
                 <SiteImage
-                  src={`/assets/generated/about/${title.toLowerCase()}.webp`}
+                  src={index ? visuals.static.aboutMission : visuals.static.aboutVision}
                   alt=""
                   width="1536"
                   height="1024"

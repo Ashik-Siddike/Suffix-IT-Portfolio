@@ -7,6 +7,24 @@
   --color-muted: #536475;
   --color-soft: #eff7fc;
   --color-line: #e2eaf1;
+  --color-background: #ffffff;
+  --color-foreground: #172433;
+  --color-card: #ffffff;
+  --color-card-foreground: #172433;
+  --color-popover: #ffffff;
+  --color-popover-foreground: #172433;
+  --color-primary: #0072bc;
+  --color-primary-foreground: #ffffff;
+  --color-secondary: #eff7fc;
+  --color-secondary-foreground: #075a91;
+  --color-muted-foreground: #536475;
+  --color-accent: #e0f2fb;
+  --color-accent-foreground: #075a91;
+  --color-destructive: #b42318;
+  --color-border: #e2eaf1;
+  --color-input: #e2eaf1;
+  --color-ring: #0072bc;
+  --radius: 0.75rem;
   --font-sans: 'Inter', sans-serif;
   --font-heading: 'Manrope', sans-serif;
 }

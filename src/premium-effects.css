@@ -1,0 +1,127 @@
+.ambient-canvas {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+.fractal-bloom-hero > .container {
+  position: relative;
+  z-index: 1;
+}
+.fractal-bloom-canvas {
+  opacity: 0.8;
+  mask-image: linear-gradient(to right, black, #0005 42%, #0005 58%, black);
+}
+.neon-flow {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  background: linear-gradient(110deg, #f5faff 45%, #e0f2fb);
+}
+.neon-flow-content {
+  position: relative;
+  z-index: 1;
+  background: linear-gradient(90deg, #f5faff 12%, #f5faffdd 48%, transparent 82%);
+}
+.neon-flow .page-hero {
+  background: transparent;
+}
+.zoom-parallax {
+  position: relative;
+  margin-block: 64px;
+}
+.zoom-parallax figure {
+  margin: 0;
+  border-radius: 24px;
+  border: 1px solid #dcebf4;
+  background: radial-gradient(ellipse at center, #e9f7ff, #f8fcff);
+  overflow: hidden;
+}
+.zoom-parallax img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  padding: 12px;
+}
+.zoom-parallax.is-static .zoom-parallax-stage {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+}
+.zoom-parallax.is-static figure {
+  aspect-ratio: 3 / 2;
+}
+.zoom-parallax.is-zooming {
+  height: 180svh;
+}
+.is-zooming .zoom-parallax-stage {
+  position: sticky;
+  top: 110px;
+  height: calc(100svh - 140px);
+  min-height: 440px;
+  max-height: 760px;
+  overflow: hidden;
+  border-radius: 28px;
+  background: #eff8fd;
+}
+.zoom-tile {
+  position: absolute;
+  width: 21%;
+  height: 31%;
+  box-shadow: 0 16px 40px #075a910a;
+  will-change: transform;
+}
+.zoom-tile-0 {
+  left: 29%;
+  top: 25%;
+  width: 42%;
+  height: 50%;
+  z-index: 2;
+}
+.zoom-tile-1 {
+  left: 5%;
+  top: 8%;
+}
+.zoom-tile-2 {
+  left: 5%;
+  top: 43%;
+  height: 46%;
+}
+.zoom-tile-3 {
+  right: 5%;
+  top: 11%;
+  height: 39%;
+}
+.zoom-tile-4 {
+  right: 5%;
+  bottom: 11%;
+}
+.zoom-tile-5 {
+  left: 29%;
+  top: -12%;
+  width: 42%;
+}
+.zoom-tile-6 {
+  left: 29%;
+  bottom: -12%;
+  width: 42%;
+}
+@media (max-width: 899px) {
+  .zoom-parallax.is-static .zoom-parallax-stage {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+  }
+  .zoom-parallax figure {
+    border-radius: 16px;
+  }
+  .neon-flow-canvas {
+    opacity: 0.45;
+  }
+}
+@media (max-width: 480px) {
+  .zoom-parallax.is-static .zoom-parallax-stage {
+    grid-template-columns: 1fr;
+  }
+}

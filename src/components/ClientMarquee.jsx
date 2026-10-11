@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Pause, Play } from 'lucide-react';
+import { Pause, Play } from './GeneratedIcons';
 import logos from '../data/client-logos.json';
 import SiteImage from './SiteImage';
 import { Container } from './ui';

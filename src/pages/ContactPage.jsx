@@ -1,17 +1,20 @@
-import { Mail, MapPin, Phone } from 'lucide-react';
+import { Mail, MapPin, Phone } from '../components/GeneratedIcons';
 import { company } from '../data/company';
 import { Container, PageHero, ScrollReveal } from '../components/ui';
 import ContactForm from '../components/ContactForm';
+import { TubesBackground } from '../components/ui/neon-flow';
 
 export default function ContactPage() {
   return (
     <>
-      <PageHero
-        eyebrow="LET’S START A CONVERSATION"
-        title="Good things start with hello."
-        description="A new project, a product demo, or a technology challenge. Tell us what’s on your mind."
-        breadcrumbs={[{ label: 'Contact' }]}
-      />
+      <TubesBackground>
+        <PageHero
+          eyebrow="LET’S START A CONVERSATION"
+          title="Good things start with hello."
+          description="A new project, a product demo, or a technology challenge. Tell us what’s on your mind."
+          breadcrumbs={[{ label: 'Contact' }]}
+        />
+      </TubesBackground>
       <section className="section">
         <Container className="contact-grid">
           <ScrollReveal variant="left" className="contact-info">

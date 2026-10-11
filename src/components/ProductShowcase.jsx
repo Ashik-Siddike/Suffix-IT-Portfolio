@@ -1,5 +1,5 @@
 import { useRef, useState } from 'react';
-import { Check } from 'lucide-react';
+import { Check } from './GeneratedIcons';
 import { motion as Motion, useReducedMotion } from 'motion/react';
 import { products } from '../data/catalog';
 import SiteImage from './SiteImage';
