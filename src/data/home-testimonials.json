@@ -1,0 +1,26 @@
+[
+  {
+    "title": "\"Awesome Design\"",
+    "quote": "\"SuffixIT brings all together software platform.It measures, analyzes and improves customer satisfaction.leading company for Customer Support & Service Software.",
+    "name": "Kazi Anowarul Rafique",
+    "role": "Head of Operations New Generation Telecom Ltd.",
+    "organization": "",
+    "image": "/assets/testimonials/rafique.jpg"
+  },
+  {
+    "title": "\"Great Flexibility\"",
+    "quote": "\"SuffixIT Essentials makes it easy for small businesses and startups build stronger customer relationships with an all-in-one sales and support solution that is easy to use",
+    "name": "Md. Ashif Imran Rana",
+    "role": "Chief Technical Officer Mother Telecommunication",
+    "organization": "",
+    "image": "/assets/testimonials/rana.jpg"
+  },
+  {
+    "title": "\"Super Support!\"",
+    "quote": "\"SuffixIT- A reliable Part has with great satisfaction been working with Suffixit since 2015. Suffix is always delivering honest,rock-solid work of good quality.\" Regards",
+    "name": "Md. Ahsanul Moyeen",
+    "role": "Senior Manager CrossWorld Telecom Ltd.",
+    "organization": "",
+    "image": "/assets/testimonials/moyeen.jpg"
+  }
+]

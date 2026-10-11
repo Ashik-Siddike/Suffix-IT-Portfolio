@@ -1,0 +1,221 @@
+.squeeze-products-section {
+  background: #f4faff;
+  scroll-margin-top: 112px;
+}
+.squeeze-carousel {
+  min-width: 0;
+}
+.squeeze-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  gap: 20px;
+}
+.squeeze-toolbar p {
+  color: #536475;
+  font-size: 13px;
+}
+.squeeze-toolbar p > span {
+  color: #075a91;
+  font-weight: 600;
+}
+.squeeze-toolbar > div {
+  display: flex;
+  gap: 10px;
+}
+.squeeze-toolbar button {
+  width: 44px;
+  height: 44px;
+  display: grid;
+  place-items: center;
+  border: 1px solid #d2e5f2;
+  border-radius: 10px;
+  background: white;
+  color: #075a91;
+  cursor: pointer;
+}
+.squeeze-toolbar button:hover {
+  background: #0072bc;
+  color: white;
+}
+.squeeze-panels {
+  display: flex;
+  height: clamp(260px, 30vw, 400px);
+  gap: 12px;
+  touch-action: pan-y;
+}
+.squeeze-panel {
+  position: relative;
+  isolation: isolate;
+  flex: var(--panel-weight) 1 0%;
+  min-width: 24px;
+  padding: 0;
+  border: 0;
+  border-radius: 12px;
+  background: #d9edfa;
+  overflow: hidden;
+  cursor: pointer;
+  transition: flex-grow var(--squeeze-duration) cubic-bezier(0.16, 1, 0.3, 1);
+}
+.squeeze-panel img {
+  position: absolute;
+  height: 100%;
+  width: max(100%, 660px);
+  max-width: none;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  object-fit: cover;
+  pointer-events: none;
+}
+.squeeze-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 28px;
+  background: linear-gradient(transparent 45%, #062c4ce6);
+  color: white;
+  opacity: 0;
+  transition: opacity 450ms ease;
+  pointer-events: none;
+}
+.squeeze-panel.is-active .squeeze-overlay {
+  opacity: 1;
+}
+.squeeze-overlay > span {
+  font-size: 12px;
+  margin-bottom: 8px;
+}
+.squeeze-overlay strong {
+  font-family: Manrope, sans-serif;
+  font-size: clamp(24px, 2.5vw, 34px);
+  line-height: 1.25;
+  text-align: left;
+  white-space: nowrap;
+}
+.squeeze-details {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 40px;
+  padding-top: 28px;
+  min-height: 130px;
+}
+.squeeze-details h3 {
+  font-size: 23px;
+  letter-spacing: -0.025em;
+}
+.squeeze-details p {
+  color: #536475;
+  font-size: 16px;
+  line-height: 1.75;
+  max-width: 650px;
+  margin-top: 10px;
+}
+.squeeze-details .button {
+  flex-shrink: 0;
+}
+.squeeze-pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+  margin-top: 20px;
+}
+.squeeze-pagination button {
+  display: grid;
+  place-items: center;
+  width: 32px;
+  height: 36px;
+  background: none;
+  border: 0;
+  cursor: pointer;
+}
+.squeeze-pagination span {
+  width: 7px;
+  height: 7px;
+  border-radius: 5px;
+  background: #adcce2;
+  transition:
+    width 250ms ease,
+    background 250ms ease;
+}
+.squeeze-pagination [aria-current='true'] span {
+  width: 24px;
+  background: #0072bc;
+}
+.squeeze-carousel button:focus-visible,
+.squeeze-details:focus-visible {
+  outline: 3px solid #0072bc;
+  outline-offset: 4px;
+}
+@media (max-width: 900px) {
+  .squeeze-panels {
+    gap: 8px;
+    height: 320px;
+  }
+  .squeeze-panel {
+    min-width: 24px;
+  }
+  .squeeze-panel:not(.is-active) {
+    flex-grow: 0.25;
+  }
+  .squeeze-panel.is-active {
+    flex-grow: 6;
+  }
+  .squeeze-details {
+    gap: 24px;
+  }
+  .squeeze-details .button {
+    font-size: 13px;
+  }
+}
+@media (max-width: 600px) {
+  .squeeze-panels {
+    height: 290px;
+    gap: 5px;
+  }
+  .squeeze-panel {
+    border-radius: 8px;
+    min-width: 24px;
+  }
+  .squeeze-panel:not(.is-active) {
+    display: none;
+  }
+  .squeeze-panel.is-adjacent:not(.is-active) {
+    display: block;
+    flex: 0 0 24px;
+  }
+  .squeeze-panel img {
+    width: 516px;
+  }
+  .squeeze-overlay {
+    padding: 20px;
+  }
+  .squeeze-overlay strong {
+    font-size: 23px;
+    white-space: normal;
+  }
+  .squeeze-details {
+    flex-direction: column;
+    gap: 20px;
+    min-height: 220px;
+  }
+  .squeeze-details p {
+    font-size: 15px;
+  }
+  .squeeze-pagination {
+    margin-top: 12px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .squeeze-panel,
+  .squeeze-overlay,
+  .squeeze-pagination span {
+    transition: none;
+  }
+}

@@ -1,0 +1,658 @@
+[
+  {
+    "route": "/",
+    "url": "https://www.suffixit.com/",
+    "headings": [
+      "Home",
+      "About",
+      "Products",
+      "IoT",
+      "Services",
+      "Career",
+      "Contact",
+      "We care about the IT Solution you need",
+      "We are working with  9+ years experience",
+      "Our Company",
+      "We are working with  Field Force Management",
+      "Our Call Center Service",
+      "Inbound Call",
+      "Outbound Call",
+      "Live Chat Support",
+      "Our Services",
+      "Our Products",
+      "Payroll System",
+      "Interconnect Billing",
+      "E-Commerce",
+      "Rupantor ERP",
+      "Provident Fund ",
+      "Hotel Booking System",
+      "Rupantor Inventory",
+      "Field Force Management ",
+      "Payroll System",
+      "Interconnect Billing",
+      "E-Commerce",
+      "Rupantor ERP",
+      "Provident Fund ",
+      "Hotel Booking System",
+      "Rupantor Inventory",
+      "Field Force Management ",
+      "Payroll System",
+      "Interconnect Billing",
+      "E-Commerce",
+      "Rupantor ERP",
+      "Provident Fund ",
+      "Hotel Booking System",
+      "Rupantor Inventory",
+      "Field Force Management ",
+      "What They Said!",
+      "",
+      "\"Awesome Design\"",
+      "",
+      "\"Great Flexibility\"",
+      "",
+      "\"Super Support!\"",
+      "",
+      "\"Awesome Design\"",
+      "",
+      "\"Great Flexibility\"",
+      "",
+      "\"Super Support!\"",
+      "",
+      "\"Awesome Design\"",
+      "Our Happy Clients"
+    ],
+    "images": [
+      {
+        "src": "/static/media/Suffix-Logo.73142c9b.png",
+        "alt": "logo"
+      },
+      {
+        "src": "/static/media/try2.cb8d5a81.png",
+        "alt": "navimage"
+      },
+      {
+        "src": "/static/media/try8.8a1c4181.png",
+        "alt": "navimage"
+      },
+      {
+        "src": "/static/media/try5.92e7c293.png",
+        "alt": "navimage"
+      },
+      {
+        "src": "/static/media/Suffix-Logo.73142c9b.png",
+        "alt": "logo"
+      },
+      {
+        "src": "/static/media/banner_image.a079af09.png",
+        "alt": "hero hero-it-solution "
+      },
+      {
+        "src": "/static/media/fieldForce.svg.815b7443.png",
+        "alt": "filedManagement"
+      },
+      {
+        "src": "/static/media/pie-chart.3c8a2401.png",
+        "alt": "pie"
+      },
+      {
+        "src": "/static/media/team.461ec09b.png",
+        "alt": "team"
+      },
+      {
+        "src": "/static/media/team.2ef9cf98.svg",
+        "alt": "payroll"
+      },
+      {
+        "src": "/static/media/software.0c032998.svg",
+        "alt": "payroll"
+      },
+      {
+        "src": "/static/media/web.88ae012d.svg",
+        "alt": "payroll"
+      },
+      {
+        "src": "/static/media/field-force.497227c8.png",
+        "alt": "filedManagement"
+      },
+      {
+        "src": "/static/media/service1.e061ab16.gif",
+        "alt": ""
+      },
+      {
+        "src": "/static/media/service2.49b0cd79.gif",
+        "alt": ""
+      },
+      {
+        "src": "/static/media/service3.41efe6d3.gif",
+        "alt": ""
+      },
+      {
+        "src": "/static/media/payroll.4bb65f22.svg",
+        "alt": ""
+      },
+      {
+        "src": "/static/media/billing.f9c0cbaa.svg",
+        "alt": ""
+      },
+      {
+        "src": "/static/media/eCommerce.d3e8ec01.svg",
+        "alt": ""
+      },
+      {
+        "src": "/static/media/erp.d84b0931.svg",
+        "alt": ""
+      },
+      {
+        "src": "/static/media/fund.d623ba98.svg",
+        "alt": ""
+      },
+      {
+        "src": "/static/media/hotel.5b98d81a.svg",
+        "alt": ""
+      },
+      {
+        "src": "/static/media/inventory.b0d9ca0b.svg",
+        "alt": ""
+      },
+      {
+        "src": "/static/media/location.9c6949b3.svg",
+        "alt": ""
+      },
+      {
+        "src": "/static/media/payroll.4bb65f22.svg",
+        "alt": ""
+      },
+      {
+        "src": "/static/media/billing.f9c0cbaa.svg",
+        "alt": ""
+      },
+      {
+        "src": "/static/media/eCommerce.d3e8ec01.svg",
+        "alt": ""
+      },
+      {
+        "src": "/static/media/erp.d84b0931.svg",
+        "alt": ""
+      },
+      {
+        "src": "/static/media/fund.d623ba98.svg",
+        "alt": ""
+      },
+      {
+        "src": "/static/media/hotel.5b98d81a.svg",
+        "alt": ""
+      },
+      {
+        "src": "/static/media/inventory.b0d9ca0b.svg",
+        "alt": ""
+      },
+      {
+        "src": "/static/media/location.9c6949b3.svg",
+        "alt": ""
+      },
+      {
+        "src": "/static/media/payroll.4bb65f22.svg",
+        "alt": ""
+      },
+      {
+        "src": "/static/media/billing.f9c0cbaa.svg",
+        "alt": ""
+      },
+      {
+        "src": "/static/media/eCommerce.d3e8ec01.svg",
+        "alt": ""
+      },
+      {
+        "src": "/static/media/erp.d84b0931.svg",
+        "alt": ""
+      },
+      {
+        "src": "/static/media/fund.d623ba98.svg",
+        "alt": ""
+      },
+      {
+        "src": "/static/media/hotel.5b98d81a.svg",
+        "alt": ""
+      },
+      {
+        "src": "/static/media/inventory.b0d9ca0b.svg",
+        "alt": ""
+      },
+      {
+        "src": "/static/media/location.9c6949b3.svg",
+        "alt": ""
+      },
+      {
+        "src": "/static/media/1.a2a785dc.png",
+        "alt": "logo-0"
+      },
+      {
+        "src": "/static/media/biwta-logo.71989be7.png",
+        "alt": "logo-2"
+      },
+      {
+        "src": "/static/media/WasaLogo.f0000e68.png",
+        "alt": "logo-3"
+      },
+      {
+        "src": "/static/media/sq.c8f27df4.png",
+        "alt": "logo-4"
+      },
+      {
+        "src": "/static/media/pass.3bd39071.png",
+        "alt": "logo-5"
+      },
+      {
+        "src": "/static/media/bepza.6b95450d.jpg",
+        "alt": "logo-6"
+      },
+      {
+        "src": "/static/media/19.7051bd96.png",
+        "alt": "logo-7"
+      },
+      {
+        "src": "/static/media/21.a57e013c.png",
+        "alt": "logo-9"
+      },
+      {
+        "src": "/static/media/5.8075929a.png",
+        "alt": "logo-10"
+      },
+      {
+        "src": "/static/media/7.f650ebcd.png",
+        "alt": "logo-11"
+      },
+      {
+        "src": "/static/media/8.1d17ea2c.png",
+        "alt": "logo-12"
+      },
+      {
+        "src": "/static/media/2.94dbe157.png",
+        "alt": "logo-13"
+      },
+      {
+        "src": "/static/media/30.e507ee11.png",
+        "alt": "logo-14"
+      },
+      {
+        "src": "/static/media/4.4a081b12.png",
+        "alt": "logo-15"
+      },
+      {
+        "src": "/static/media/34.67e3afcd.png",
+        "alt": "logo-17"
+      },
+      {
+        "src": "/static/media/japan.5213734c.png",
+        "alt": "logo-18"
+      },
+      {
+        "src": "/static/media/apex.674a7c51.png",
+        "alt": "logo-19"
+      },
+      {
+        "src": "/static/media/vision.466e9b76.png",
+        "alt": "logo-20"
+      },
+      {
+        "src": "/static/media/certificate (1).b2ea00ce.png",
+        "alt": "ISO 9001"
+      },
+      {
+        "src": "/static/media/certificate (2).336c9402.png",
+        "alt": "ISO 27001"
+      },
+      {
+        "src": "/static/media/basis.e4d85a47.png",
+        "alt": "Basis"
+      },
+      {
+        "src": "/static/media/bacco.1c028dc0.png",
+        "alt": "Bacco"
+      },
+      {
+        "src": "/static/media/cisco.6cef068a.png",
+        "alt": "Cisco"
+      },
+      {
+        "src": "/static/media/fort.975c6027.png",
+        "alt": "Fortinet"
+      }
+    ]
+  },
+  {
+    "route": "/about",
+    "url": "https://www.suffixit.com/about",
+    "headings": [
+      "Home",
+      "About",
+      "Products",
+      "IoT",
+      "Services",
+      "Career",
+      "Contact",
+      "About Us",
+      "Who we are?"
+    ],
+    "images": [
+      {
+        "src": "/static/media/Suffix-Logo.73142c9b.png",
+        "alt": "logo"
+      },
+      {
+        "src": "/static/media/try2.cb8d5a81.png",
+        "alt": "navimage"
+      },
+      {
+        "src": "/static/media/try8.8a1c4181.png",
+        "alt": "navimage"
+      },
+      {
+        "src": "/static/media/try5.92e7c293.png",
+        "alt": "navimage"
+      },
+      {
+        "src": "/static/media/Suffix-Logo.73142c9b.png",
+        "alt": "logo"
+      },
+      {
+        "src": "https://i.ibb.co/KN8Rb5c/IMG-4808.png",
+        "alt": "about"
+      },
+      {
+        "src": "/static/media/certificate (1).b2ea00ce.png",
+        "alt": "ISO 9001"
+      },
+      {
+        "src": "/static/media/certificate (2).336c9402.png",
+        "alt": "ISO 27001"
+      },
+      {
+        "src": "/static/media/basis.e4d85a47.png",
+        "alt": "Basis"
+      },
+      {
+        "src": "/static/media/bacco.1c028dc0.png",
+        "alt": "Bacco"
+      },
+      {
+        "src": "/static/media/cisco.6cef068a.png",
+        "alt": "Cisco"
+      },
+      {
+        "src": "/static/media/fort.975c6027.png",
+        "alt": "Fortinet"
+      }
+    ]
+  },
+  {
+    "route": "/product/payroll-system",
+    "url": "https://www.suffixit.com/product/payroll-system",
+    "headings": [
+      "Home",
+      "About",
+      "Products",
+      "IoT",
+      "Services",
+      "Career",
+      "Contact",
+      "HR & Payroll Modules",
+      "",
+      "HR & Payroll Modules",
+      "The ‘HR & Payroll’ module integrates to",
+      "Benefits of HR & Payroll",
+      "Features of HR & Payroll",
+      "More Information ",
+      "  Time & Attendance",
+      "  How it works ?",
+      "Features",
+      "Schedule a Live Demo"
+    ],
+    "images": [
+      {
+        "src": "/static/media/Suffix-Logo.73142c9b.png",
+        "alt": "logo"
+      },
+      {
+        "src": "/static/media/try2.cb8d5a81.png",
+        "alt": "navimage"
+      },
+      {
+        "src": "/static/media/try8.8a1c4181.png",
+        "alt": "navimage"
+      },
+      {
+        "src": "/static/media/try5.92e7c293.png",
+        "alt": "navimage"
+      },
+      {
+        "src": "/static/media/Suffix-Logo.73142c9b.png",
+        "alt": "logo"
+      },
+      {
+        "src": "/static/media/Payment Information-rafiki.965edb1c.svg",
+        "alt": ""
+      },
+      {
+        "src": "/static/media/illustration-payroll.192fe824.svg",
+        "alt": "interconnect billing"
+      },
+      {
+        "src": "/static/media/Sponsor-bro.fe1a6b99.svg",
+        "alt": "interconnect billing"
+      },
+      {
+        "src": "/static/media/Audit-rafiki.58a65c7d.svg",
+        "alt": "interconnect billing"
+      },
+      {
+        "src": "/static/media/Credit card-rafiki.05a08610.svg",
+        "alt": "interconnect billing"
+      },
+      {
+        "src": "/static/media/Time management-rafiki.9ce8fbde.svg",
+        "alt": "interconnect billing"
+      },
+      {
+        "src": "/static/media/Telecommuting-rafiki.6436ded2.svg",
+        "alt": "Field Force Demo"
+      },
+      {
+        "src": "/static/media/certificate (1).b2ea00ce.png",
+        "alt": "ISO 9001"
+      },
+      {
+        "src": "/static/media/certificate (2).336c9402.png",
+        "alt": "ISO 27001"
+      },
+      {
+        "src": "/static/media/basis.e4d85a47.png",
+        "alt": "Basis"
+      },
+      {
+        "src": "/static/media/bacco.1c028dc0.png",
+        "alt": "Bacco"
+      },
+      {
+        "src": "/static/media/cisco.6cef068a.png",
+        "alt": "Cisco"
+      },
+      {
+        "src": "/static/media/fort.975c6027.png",
+        "alt": "Fortinet"
+      }
+    ]
+  },
+  {
+    "route": "/product/e-commerce",
+    "url": "https://www.suffixit.com/product/e-commerce",
+    "headings": [
+      "Home",
+      "About",
+      "Products",
+      "IoT",
+      "Services",
+      "Career",
+      "Contact",
+      "E-Commerce Solutions",
+      "",
+      "E-Commerce Solutions",
+      "E-Commerce Solutions We Provide",
+      "The integrated reservation",
+      "Multiple Payment options",
+      "More Information",
+      "Schedule a Live Demo"
+    ],
+    "images": [
+      {
+        "src": "/static/media/Suffix-Logo.73142c9b.png",
+        "alt": "logo"
+      },
+      {
+        "src": "/static/media/try2.cb8d5a81.png",
+        "alt": "navimage"
+      },
+      {
+        "src": "/static/media/try8.8a1c4181.png",
+        "alt": "navimage"
+      },
+      {
+        "src": "/static/media/try5.92e7c293.png",
+        "alt": "navimage"
+      },
+      {
+        "src": "/static/media/Suffix-Logo.73142c9b.png",
+        "alt": "logo"
+      },
+      {
+        "src": "/static/media/eCom.a9125831.svg",
+        "alt": ""
+      },
+      {
+        "src": "/static/media/e-commerce-intro.123b351f.svg",
+        "alt": "interconnect billing"
+      },
+      {
+        "src": "/static/media/Online shopping-amico.5b7c34c3.svg",
+        "alt": "interconnect billing"
+      },
+      {
+        "src": "/static/media/Payment Information-rafiki.e3d961a1.svg",
+        "alt": "interconnect billing"
+      },
+      {
+        "src": "/static/media/moreInfo.b711057f.svg",
+        "alt": "interconnect billing"
+      },
+      {
+        "src": "/static/media/Telecommuting-rafiki.6436ded2.svg",
+        "alt": "Field Force Demo"
+      },
+      {
+        "src": "/static/media/certificate (1).b2ea00ce.png",
+        "alt": "ISO 9001"
+      },
+      {
+        "src": "/static/media/certificate (2).336c9402.png",
+        "alt": "ISO 27001"
+      },
+      {
+        "src": "/static/media/basis.e4d85a47.png",
+        "alt": "Basis"
+      },
+      {
+        "src": "/static/media/bacco.1c028dc0.png",
+        "alt": "Bacco"
+      },
+      {
+        "src": "/static/media/cisco.6cef068a.png",
+        "alt": "Cisco"
+      },
+      {
+        "src": "/static/media/fort.975c6027.png",
+        "alt": "Fortinet"
+      }
+    ]
+  },
+  {
+    "route": "/service/iot",
+    "url": "https://www.suffixit.com/service/iot",
+    "headings": [
+      "Home",
+      "About",
+      "Products",
+      "IoT",
+      "Services",
+      "Career",
+      "Contact",
+      "Industrial Automation & IoT",
+      "IOT(Internet of Things)",
+      "SCADA Features",
+      "PLC Programing Features",
+      "Our Focusing area & Products",
+      "Schedule a Live Demo"
+    ],
+    "images": [
+      {
+        "src": "/static/media/Suffix-Logo.73142c9b.png",
+        "alt": "logo"
+      },
+      {
+        "src": "/static/media/try2.cb8d5a81.png",
+        "alt": "navimage"
+      },
+      {
+        "src": "/static/media/try8.8a1c4181.png",
+        "alt": "navimage"
+      },
+      {
+        "src": "/static/media/try5.92e7c293.png",
+        "alt": "navimage"
+      },
+      {
+        "src": "/static/media/Suffix-Logo.73142c9b.png",
+        "alt": "logo"
+      },
+      {
+        "src": "/static/media/internet-things.3f5a2fa9.jpg",
+        "alt": "IOT"
+      },
+      {
+        "src": "/static/media/scada.04e49583.jpg",
+        "alt": "scada"
+      },
+      {
+        "src": "/static/media/iot.5d017fa2.png",
+        "alt": "interconnect billing"
+      },
+      {
+        "src": "/static/media/Telecommuting-rafiki.6436ded2.svg",
+        "alt": "Field Force Demo"
+      },
+      {
+        "src": "/static/media/certificate (1).b2ea00ce.png",
+        "alt": "ISO 9001"
+      },
+      {
+        "src": "/static/media/certificate (2).336c9402.png",
+        "alt": "ISO 27001"
+      },
+      {
+        "src": "/static/media/basis.e4d85a47.png",
+        "alt": "Basis"
+      },
+      {
+        "src": "/static/media/bacco.1c028dc0.png",
+        "alt": "Bacco"
+      },
+      {
+        "src": "/static/media/cisco.6cef068a.png",
+        "alt": "Cisco"
+      },
+      {
+        "src": "/static/media/fort.975c6027.png",
+        "alt": "Fortinet"
+      }
+    ]
+  }
+]

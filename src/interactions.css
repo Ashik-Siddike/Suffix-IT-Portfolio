@@ -1,0 +1,181 @@
+:root {
+  --interaction-ease: cubic-bezier(0.22, 1, 0.36, 1);
+}
+/* Side entrances stay inside the page, including before they reach the viewport. */
+main {
+  overflow-x: clip;
+}
+[data-reveal]:focus-within {
+  opacity: 1 !important;
+  clip-path: none !important;
+}
+@media (prefers-reduced-motion: reduce) {
+  [data-reveal] {
+    opacity: 1 !important;
+    transform: none !important;
+    clip-path: none !important;
+  }
+}
+
+.button {
+  transition:
+    background-color 180ms ease,
+    color 180ms ease,
+    box-shadow 220ms ease,
+    transform 220ms var(--interaction-ease);
+}
+.button:active {
+  transform: translateY(1px);
+}
+.button:focus-visible {
+  box-shadow: 0 0 0 5px #0072bc20;
+}
+.nav-trigger svg,
+.mobile-nav summary svg,
+.accordion summary svg {
+  transition: transform 220ms var(--interaction-ease);
+}
+.nav-trigger[aria-expanded='true'] svg,
+.mobile-nav details[open] summary svg {
+  transform: rotate(180deg);
+}
+.mobile-nav {
+  animation: panel-enter 200ms var(--interaction-ease) both;
+}
+.dropdown-links a {
+  transition:
+    background-color 180ms ease,
+    color 180ms ease;
+}
+.dropdown-links a .menu-arrow,
+.service-card h3 svg,
+.product-card h3 svg,
+.card-bottom svg,
+.service-card .icon-box,
+.product-image img {
+  transition:
+    transform 280ms var(--interaction-ease),
+    background-color 200ms ease;
+}
+.service-card:focus-within,
+.product-card:focus-within {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 40px #075a9112;
+  border-color: #0072bc55;
+}
+.service-card:focus-within h3 svg,
+.product-card:focus-within h3 svg,
+.dropdown-links a:focus-visible .menu-arrow {
+  transform: translate(2px, -2px);
+}
+.product-image {
+  overflow: hidden;
+}
+.product-card:focus-within .product-image img {
+  transform: scale(1.025);
+}
+.showcase-tabs button {
+  position: relative;
+  border-bottom-color: transparent !important;
+}
+.tab-indicator {
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: #0072bc;
+  border-radius: 3px 3px 0 0;
+  pointer-events: none;
+}
+.accordion details[open] > div {
+  animation: panel-enter 240ms var(--interaction-ease) both;
+}
+.scroll-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  transform-origin: left;
+  background: #0072bc;
+  z-index: 100;
+  pointer-events: none;
+}
+.back-to-top {
+  position: fixed;
+  right: max(20px, env(safe-area-inset-right));
+  bottom: max(20px, env(safe-area-inset-bottom));
+  z-index: 40;
+  width: 46px;
+  height: 46px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  border: 1px solid #0072bc30;
+  color: #075a91;
+  background: #fff;
+  box-shadow: 0 6px 24px #075a9120;
+  cursor: pointer;
+  transition:
+    background-color 180ms ease,
+    box-shadow 180ms ease;
+}
+.back-to-top:hover {
+  background: #edf7ff;
+  box-shadow: 0 8px 28px #075a9130;
+}
+.back-to-top:focus-visible {
+  outline: 3px solid #0072bc;
+  outline-offset: 4px;
+}
+@media (hover: hover) {
+  .button:hover {
+    transform: translateY(-2px);
+  }
+  .button:active {
+    transform: translateY(1px);
+  }
+  .service-card:hover h3 svg,
+  .product-card:hover h3 svg,
+  .service-card:hover .card-bottom svg,
+  .dropdown-links a:hover .menu-arrow {
+    transform: translate(2px, -2px);
+  }
+  .service-card:hover .icon-box {
+    transform: translateY(-2px);
+  }
+  .product-card:hover .product-image img {
+    transform: scale(1.025);
+  }
+}
+@keyframes panel-enter {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .mobile-nav,
+  .accordion details[open] > div {
+    animation: none;
+  }
+  .button,
+  .service-card,
+  .product-card,
+  .product-image img,
+  .service-card .icon-box,
+  .service-card h3 svg,
+  .product-card h3 svg,
+  .card-bottom svg,
+  .dropdown-links a .menu-arrow {
+    transform: none !important;
+  }
+  .scroll-progress {
+    display: none;
+  }
+}

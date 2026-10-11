@@ -1,0 +1,5715 @@
+{
+  "/contact": {
+    "source": "https://www.suffixit.com/contact",
+    "captured": "2026-10-10",
+    "introTitle": "Our Location",
+    "blocks": [
+      {
+        "tag": "p",
+        "text": "We don't want to push our ideas on to customers, we simply want to make what they want."
+      },
+      {
+        "tag": "h3",
+        "text": "Our Location"
+      },
+      {
+        "tag": "p",
+        "text": "Cha-70,70/A, Rupayan Millennium Square (9A), Progoti Sharoni, North Badda, Gulshan, Dhaka-1212, Bangladesh."
+      },
+      {
+        "tag": "p",
+        "text": "+88 01958 424000"
+      },
+      {
+        "tag": "h3",
+        "text": "For more information:"
+      },
+      {
+        "tag": "p",
+        "text": "info@suffixit.com"
+      }
+    ],
+    "gallery": [],
+    "videos": []
+  },
+  "/about": {
+    "source": "https://www.suffixit.com/about",
+    "captured": "2026-10-10",
+    "introTitle": "Our History",
+    "blocks": [
+      {
+        "tag": "h3",
+        "text": "Our History"
+      },
+      {
+        "tag": "h2",
+        "text": "Who we are?"
+      },
+      {
+        "tag": "p",
+        "text": "At Suffix IT, we develop innovative and creative products and services that provide total communication and information solutions. Among a plethora of services, web design and development, tailor made applications, ERPs, CRMs, e-commerce solutions, business-to-business applications, business-to-client applications, managed hosting and internet portal management are few that we offer. Satisfied clients around the globe bear testimony to the quality of our work. As a leader in technology exploring, Suffix IT is committed to exporting quality software worldwide."
+      },
+      {
+        "tag": "h4",
+        "text": "Vision"
+      },
+      {
+        "tag": "p",
+        "text": "Our goal is to become a well-known global ICT solution provider that meets societal needs and contributes favorably to humanity's interests."
+      },
+      {
+        "tag": "h4",
+        "text": "Mission"
+      },
+      {
+        "tag": "p",
+        "text": "To use our enthusiasm for technology to bring success and happiness to our clients and staff thus also providing high-growth possibilities for rewarding employment and thereby serve humanity."
+      }
+    ],
+    "gallery": [],
+    "videos": []
+  },
+  "/astha-policy": {
+    "source": "https://www.suffixit.com/astha-policy",
+    "captured": "2026-10-10",
+    "introTitle": "Interpretation and Definitions",
+    "blocks": [
+      {
+        "tag": "p",
+        "text": "Last updated: August 01, 2022"
+      },
+      {
+        "tag": "p",
+        "text": "This Privacy Policy describes Our policies and procedures on the collection, use and disclosure of Your information when You use the Service and tells You about Your privacy rights and how the law protects You."
+      },
+      {
+        "tag": "h1",
+        "text": "Interpretation and Definitions"
+      },
+      {
+        "tag": "h2",
+        "text": "Interpretation"
+      },
+      {
+        "tag": "p",
+        "text": "The words of which the initial letter is capitalized have meanings defined under the following conditions. The following definitions shall have the same meaning regardless of whether they appear in singular or in plural."
+      },
+      {
+        "tag": "h2",
+        "text": "Definitions"
+      },
+      {
+        "tag": "p",
+        "text": "For the purposes of this Privacy Policy:"
+      },
+      {
+        "tag": "li",
+        "text": "Account means a unique account created for You to access our Service or parts of our Service."
+      },
+      {
+        "tag": "li",
+        "text": "Affiliate means an entity that controls, is controlled by or is under common control with a party, where \"control\" means ownership of 50% or more of the shares, equity interest or other securities entitled to vote for election of directors or other managing authority."
+      },
+      {
+        "tag": "li",
+        "text": "Application means the software program provided by the Company downloaded by You on any electronic device, named Astha"
+      },
+      {
+        "tag": "li",
+        "text": "Company (referred to as either \"the Company\", \"We\", \"Us\" or \"Our\" in this Agreement) refers to Suffix IT Ltd., Cha-70,70/A, Rupayan Millennium Square (9A), Progoti Sharoni, North Badda, Gulshan, Dhaka-1212, Bangladesh.."
+      },
+      {
+        "tag": "li",
+        "text": "Country refers to: Bangladesh"
+      },
+      {
+        "tag": "li",
+        "text": "Device means any device that can access the Service such as a computer, a cellphone or a digital tablet."
+      },
+      {
+        "tag": "li",
+        "text": "Personal Data is any information that relates to an identified or identifiable individual."
+      },
+      {
+        "tag": "li",
+        "text": "Service refers to the Application."
+      },
+      {
+        "tag": "li",
+        "text": "Service Provider means any natural or legal person who processes the data on behalf of the Company. It refers to third-party companies or individuals employed by the Company to facilitate the Service, to provide the Service on behalf of the Company, to perform services related to the Service or to assist the Company in analyzing how the Service is used."
+      },
+      {
+        "tag": "li",
+        "text": "Usage Data refers to data collected automatically, either generated by the use of the Service or from the Service infrastructure itself (for example, the duration of a page visit)."
+      },
+      {
+        "tag": "li",
+        "text": "You means the individual accessing or using the Service, or the company, or other legal entity on behalf of which such individual is accessing or using the Service, as applicable."
+      },
+      {
+        "tag": "h1",
+        "text": "Collecting and Using Your Personal Data"
+      },
+      {
+        "tag": "h2",
+        "text": "Types of Data Collected"
+      },
+      {
+        "tag": "h3",
+        "text": "Personal Data"
+      },
+      {
+        "tag": "p",
+        "text": "While using Our Service, We may ask You to provide Us with certain personally identifiable information that can be used to contact or identify You. Personally identifiable information may include, but is not limited to:"
+      },
+      {
+        "tag": "li",
+        "text": "Usage Data"
+      },
+      {
+        "tag": "p",
+        "text": "Usage Data is collected automatically when using the Service."
+      },
+      {
+        "tag": "p",
+        "text": "Usage Data may include information such as Your Device's Internet Protocol address (e.g. IP address), browser type, browser version, the pages of our Service that You visit, the time and date of Your visit, the time spent on those pages, unique device identifiers and other diagnostic data."
+      },
+      {
+        "tag": "p",
+        "text": "When You access the Service by or through a mobile device, We may collect certain information automatically, including, but not limited to, the type of mobile device You use, Your mobile device unique ID, the IP address of Your mobile device, Your mobile operating system, the type of mobile Internet browser You use, unique device identifiers and other diagnostic data."
+      },
+      {
+        "tag": "p",
+        "text": "We may also collect information that Your browser sends whenever You visit our Service or when You access the Service by or through a mobile device."
+      },
+      {
+        "tag": "h3",
+        "text": "Information Collected while Using the Application"
+      },
+      {
+        "tag": "p",
+        "text": "While using Our Application, in order to provide features of Our Application, We may collect, with Your prior permission:"
+      },
+      {
+        "tag": "li",
+        "text": "Pictures and other information from your Device's camera and photo library"
+      },
+      {
+        "tag": "p",
+        "text": "We use this information to provide features of Our Service, to improve and customize Our Service. The information may be uploaded to the Company's servers and/or a Service Provider's server or it may be simply stored on Your device."
+      },
+      {
+        "tag": "p",
+        "text": "You can enable or disable access to this information at any time, through Your Device settings."
+      },
+      {
+        "tag": "h2",
+        "text": "Use of Your Personal Data"
+      },
+      {
+        "tag": "p",
+        "text": "The Company may use Personal Data for the following purposes:"
+      },
+      {
+        "tag": "li",
+        "text": "To provide and maintain our Service, including to monitor the usage of our Service."
+      },
+      {
+        "tag": "li",
+        "text": "To manage Your Account: to manage Your registration as a user of the Service. The Personal Data You provide can give You access to different functionalities of the Service that are available to You as a registered user."
+      },
+      {
+        "tag": "li",
+        "text": "For the performance of a contract: the development, compliance and undertaking of the purchase contract for the products, items or services You have purchased or of any other contract with Us through the Service."
+      },
+      {
+        "tag": "li",
+        "text": "To contact You: To contact You by email, telephone calls, SMS, or other equivalent forms of electronic communication, such as a mobile application's push notifications regarding updates or informative communications related to the functionalities, products or contracted services, including the security updates, when necessary or reasonable for their implementation."
+      },
+      {
+        "tag": "li",
+        "text": "To provide You with news, special offers and general information about other goods, services and events which we offer that are similar to those that you have already purchased or enquired about unless You have opted not to receive such information."
+      },
+      {
+        "tag": "li",
+        "text": "To manage Your requests: To attend and manage Your requests to Us."
+      },
+      {
+        "tag": "li",
+        "text": "For business transfers: We may use Your information to evaluate or conduct a merger, divestiture, restructuring, reorganization, dissolution, or other sale or transfer of some or all of Our assets, whether as a going concern or as part of bankruptcy, liquidation, or similar proceeding, in which Personal Data held by Us about our Service users is among the assets transferred."
+      },
+      {
+        "tag": "li",
+        "text": "For other purposes: We may use Your information for other purposes, such as data analysis, identifying usage trends, determining the effectiveness of our promotional campaigns and to evaluate and improve our Service, products, services, marketing and your experience."
+      },
+      {
+        "tag": "p",
+        "text": "We may share Your personal information in the following situations:"
+      },
+      {
+        "tag": "li",
+        "text": "With Service Providers: We may share Your personal information with Service Providers to monitor and analyze the use of our Service, to contact You."
+      },
+      {
+        "tag": "li",
+        "text": "For business transfers: We may share or transfer Your personal information in connection with, or during negotiations of, any merger, sale of Company assets, financing, or acquisition of all or a portion of Our business to another company."
+      },
+      {
+        "tag": "li",
+        "text": "With Affiliates: We may share Your information with Our affiliates, in which case we will require those affiliates to honor this Privacy Policy. Affiliates include Our parent company and any other subsidiaries, joint venture partners or other companies that We control or that are under common control with Us."
+      },
+      {
+        "tag": "li",
+        "text": "With business partners: We may share Your information with Our business partners to offer You certain products, services or promotions."
+      },
+      {
+        "tag": "li",
+        "text": "With other users: when You share personal information or otherwise interact in the public areas with other users, such information may be viewed by all users and may be publicly distributed outside."
+      },
+      {
+        "tag": "li",
+        "text": "With Your consent: We may disclose Your personal information for any other purpose with Your consent."
+      },
+      {
+        "tag": "h2",
+        "text": "Retention of Your Personal Data"
+      },
+      {
+        "tag": "p",
+        "text": "The Company will retain Your Personal Data only for as long as is necessary for the purposes set out in this Privacy Policy. We will retain and use Your Personal Data to the extent necessary to comply with our legal obligations (for example, if we are required to retain your data to comply with applicable laws), resolve disputes, and enforce our legal agreements and policies."
+      },
+      {
+        "tag": "p",
+        "text": "The Company will also retain Usage Data for internal analysis purposes. Usage Data is generally retained for a shorter period of time, except when this data is used to strengthen the security or to improve the functionality of Our Service, or We are legally obligated to retain this data for longer time periods."
+      },
+      {
+        "tag": "h2",
+        "text": "Transfer of Your Personal Data"
+      },
+      {
+        "tag": "p",
+        "text": "Your information, including Personal Data, is processed at the Company's operating offices and in any other places where the parties involved in the processing are located. It means that this information may be transferred to — and maintained on — computers located outside of Your state, province, country or other governmental jurisdiction where the data protection laws may differ than those from Your jurisdiction."
+      },
+      {
+        "tag": "p",
+        "text": "Your consent to this Privacy Policy followed by Your submission of such information represents Your agreement to that transfer."
+      },
+      {
+        "tag": "p",
+        "text": "The Company will take all steps reasonably necessary to ensure that Your data is treated securely and in accordance with this Privacy Policy and no transfer of Your Personal Data will take place to an organization or a country unless there are adequate controls in place including the security of Your data and other personal information."
+      },
+      {
+        "tag": "h2",
+        "text": "Disclosure of Your Personal Data"
+      },
+      {
+        "tag": "h3",
+        "text": "Business Transactions"
+      },
+      {
+        "tag": "p",
+        "text": "If the Company is involved in a merger, acquisition or asset sale, Your Personal Data may be transferred. We will provide notice before Your Personal Data is transferred and becomes subject to a different Privacy Policy."
+      },
+      {
+        "tag": "h3",
+        "text": "Law enforcement"
+      },
+      {
+        "tag": "p",
+        "text": "Under certain circumstances, the Company may be required to disclose Your Personal Data if required to do so by law or in response to valid requests by public authorities (e.g. a court or a government agency)."
+      },
+      {
+        "tag": "h3",
+        "text": "Other legal requirements"
+      },
+      {
+        "tag": "p",
+        "text": "The Company may disclose Your Personal Data in the good faith belief that such action is necessary to:"
+      },
+      {
+        "tag": "li",
+        "text": "Comply with a legal obligation"
+      },
+      {
+        "tag": "li",
+        "text": "Protect and defend the rights or property of the Company"
+      },
+      {
+        "tag": "li",
+        "text": "Prevent or investigate possible wrongdoing in connection with the Service"
+      },
+      {
+        "tag": "li",
+        "text": "Protect the personal safety of Users of the Service or the public"
+      },
+      {
+        "tag": "li",
+        "text": "Protect against legal liability"
+      },
+      {
+        "tag": "h2",
+        "text": "Security of Your Personal Data"
+      },
+      {
+        "tag": "p",
+        "text": "The security of Your Personal Data is important to Us, but remember that no method of transmission over the Internet, or method of electronic storage is 100% secure. While We strive to use commercially acceptable means to protect Your Personal Data, We cannot guarantee its absolute security."
+      },
+      {
+        "tag": "h1",
+        "text": "Children's Privacy"
+      },
+      {
+        "tag": "p",
+        "text": "Our Service does not address anyone under the age of 13. We do not knowingly collect personally identifiable information from anyone under the age of 13. If You are a parent or guardian and You are aware that Your child has provided Us with Personal Data, please contact Us. If We become aware that We have collected Personal Data from anyone under the age of 13 without verification of parental consent, We take steps to remove that information from Our servers."
+      },
+      {
+        "tag": "p",
+        "text": "If We need to rely on consent as a legal basis for processing Your information and Your country requires consent from a parent, We may require Your parent's consent before We collect and use that information."
+      },
+      {
+        "tag": "h1",
+        "text": "Links to Other Websites"
+      },
+      {
+        "tag": "p",
+        "text": "Our Service may contain links to other websites that are not operated by Us. If You click on a third party link, You will be directed to that third party's site. We strongly advise You to review the Privacy Policy of every site You visit."
+      },
+      {
+        "tag": "p",
+        "text": "We have no control over and assume no responsibility for the content, privacy policies or practices of any third party sites or services."
+      },
+      {
+        "tag": "h1",
+        "text": "Changes to this Privacy Policy"
+      },
+      {
+        "tag": "p",
+        "text": "We may update Our Privacy Policy from time to time. We will notify You of any changes by posting the new Privacy Policy on this page."
+      },
+      {
+        "tag": "p",
+        "text": "We will let You know via email and/or a prominent notice on Our Service, prior to the change becoming effective and update the \"Last updated\" date at the top of this Privacy Policy."
+      },
+      {
+        "tag": "p",
+        "text": "You are advised to review this Privacy Policy periodically for any changes. Changes to this Privacy Policy are effective when they are posted on this page."
+      },
+      {
+        "tag": "h1",
+        "text": "Contact Us"
+      },
+      {
+        "tag": "p",
+        "text": "If you have any questions about this Privacy Policy, You can contact us:"
+      }
+    ],
+    "gallery": [],
+    "videos": []
+  },
+  "/career": {
+    "source": "https://www.suffixit.com/career",
+    "captured": "2026-10-10",
+    "introTitle": "Find a job",
+    "blocks": [
+      {
+        "tag": "h2",
+        "text": "Find a job"
+      },
+      {
+        "tag": "h3",
+        "text": "Choose from the list of most popular categories."
+      },
+      {
+        "tag": "h4",
+        "text": "Head of Business Development"
+      },
+      {
+        "tag": "p",
+        "text": "1 open position"
+      }
+    ],
+    "gallery": [],
+    "videos": []
+  },
+  "/service/domain-hosting": {
+    "source": "https://www.suffixit.com/service/domain-hosting",
+    "captured": "2026-10-10",
+    "introTitle": "BASIC",
+    "blocks": [
+      {
+        "tag": "h3",
+        "text": "BASIC"
+      },
+      {
+        "tag": "li",
+        "text": "1 GB RAM"
+      },
+      {
+        "tag": "li",
+        "text": "1 CPU Core"
+      },
+      {
+        "tag": "li",
+        "text": "25 GB Storage"
+      },
+      {
+        "tag": "li",
+        "text": "1 TB Transfer"
+      },
+      {
+        "tag": "li",
+        "text": "40 Gbps Network In"
+      },
+      {
+        "tag": "li",
+        "text": "1000 Mbps Network Out"
+      },
+      {
+        "tag": "h3",
+        "text": "PRO"
+      },
+      {
+        "tag": "li",
+        "text": "2 GB RAM"
+      },
+      {
+        "tag": "li",
+        "text": "1 CPU Core"
+      },
+      {
+        "tag": "li",
+        "text": "80 GB Storage"
+      },
+      {
+        "tag": "li",
+        "text": "4 TB Transfer"
+      },
+      {
+        "tag": "li",
+        "text": "40 Gbps Network In"
+      },
+      {
+        "tag": "li",
+        "text": "4000 Mbps Network Out"
+      },
+      {
+        "tag": "h3",
+        "text": "PREMIUM"
+      },
+      {
+        "tag": "li",
+        "text": "4 GB RAM"
+      },
+      {
+        "tag": "li",
+        "text": "2 CPU Core"
+      },
+      {
+        "tag": "li",
+        "text": "80 GB Storage"
+      },
+      {
+        "tag": "li",
+        "text": "4 TB Transfer"
+      },
+      {
+        "tag": "li",
+        "text": "40 Gbps Network In"
+      },
+      {
+        "tag": "li",
+        "text": "4000 Mbps Network Out"
+      }
+    ],
+    "gallery": [],
+    "videos": []
+  },
+  "/service/erp-consulting": {
+    "source": "https://www.suffixit.com/service/erp-consulting",
+    "captured": "2026-10-10",
+    "introTitle": "ERP Implementation",
+    "blocks": [
+      {
+        "tag": "h1",
+        "text": "ERP Implementation"
+      },
+      {
+        "tag": "p",
+        "text": "We provide IT consulting services which includes project management, application development, web design and development, telecom services, Infrastructure and maintenance services."
+      },
+      {
+        "tag": "h1",
+        "text": "Key Features"
+      },
+      {
+        "tag": "h1",
+        "text": "ERP Promotion"
+      },
+      {
+        "tag": "p",
+        "text": "We provide IT consulting services which includes project management, application development, web design and development, telecom services, Infrastructure and maintenance services."
+      },
+      {
+        "tag": "h1",
+        "text": "IT planning"
+      },
+      {
+        "tag": "p",
+        "text": "We examine your firm and develop a strategy to work on your purpose, vision, and values, as well as your long-term business goals, using our Strategic IT planning."
+      },
+      {
+        "tag": "h1",
+        "text": "System Upgrade and Technical Service"
+      },
+      {
+        "tag": "p",
+        "text": "From time to time, Suffix IT Limited also provides post-delivery services such as upgrading and technical maintenance and support."
+      },
+      {
+        "tag": "h1",
+        "text": "ERP System Customization and Development"
+      },
+      {
+        "tag": "p",
+        "text": "We construct a procedure for software implementation to facilitate your operations with a customized ERP system and development."
+      },
+      {
+        "tag": "h1",
+        "text": "Operation and Maintenance"
+      },
+      {
+        "tag": "p",
+        "text": "We create, build, and deliver corporate software systems, as well as oversee their management and maintenance to ensure optimal performance."
+      },
+      {
+        "tag": "h1",
+        "text": "Training"
+      },
+      {
+        "tag": "p",
+        "text": "We provide proper training to our employees, invest in the greatest personnel, and encourage them to learn and experiment with new and emerging technology."
+      }
+    ],
+    "gallery": [],
+    "videos": []
+  },
+  "/service/web-ecommerce": {
+    "source": "https://www.suffixit.com/service/web-ecommerce",
+    "captured": "2026-10-10",
+    "introTitle": "Basic",
+    "blocks": [
+      {
+        "tag": "h3",
+        "text": "Basic"
+      },
+      {
+        "tag": "h1",
+        "text": "Front End Site"
+      },
+      {
+        "tag": "li",
+        "text": "10 Dynamic Pages"
+      },
+      {
+        "tag": "li",
+        "text": "A Custom CMS(Python,java,php)"
+      },
+      {
+        "tag": "li",
+        "text": "Admin, Editor & Moderator Role"
+      },
+      {
+        "tag": "li",
+        "text": "Design Revision(1)"
+      },
+      {
+        "tag": "li",
+        "text": "URL Forwarding"
+      },
+      {
+        "tag": "li",
+        "text": "Menu Builder"
+      },
+      {
+        "tag": "li",
+        "text": "Image Explorer"
+      },
+      {
+        "tag": "h3",
+        "text": "Classic"
+      },
+      {
+        "tag": "h1",
+        "text": "Front End Site"
+      },
+      {
+        "tag": "li",
+        "text": "Front page Design Revision(3)"
+      },
+      {
+        "tag": "li",
+        "text": "Custom Page: 10 (Python,Java,Php)"
+      },
+      {
+        "tag": "li",
+        "text": "About us"
+      },
+      {
+        "tag": "li",
+        "text": "Contact Us"
+      },
+      {
+        "tag": "li",
+        "text": "Terms of Service"
+      },
+      {
+        "tag": "li",
+        "text": "Privacy Policy"
+      },
+      {
+        "tag": "li",
+        "text": "Social Media Links"
+      },
+      {
+        "tag": "h3",
+        "text": "Premium"
+      },
+      {
+        "tag": "h1",
+        "text": "Front End Site"
+      },
+      {
+        "tag": "li",
+        "text": "Front page Design Revision(5)"
+      },
+      {
+        "tag": "li",
+        "text": "Custom Page: 15 (Python,Java,Php)"
+      },
+      {
+        "tag": "li",
+        "text": "About us"
+      },
+      {
+        "tag": "li",
+        "text": "Contact Us"
+      },
+      {
+        "tag": "li",
+        "text": "Terms of Service"
+      },
+      {
+        "tag": "li",
+        "text": "Privacy Policy"
+      },
+      {
+        "tag": "li",
+        "text": "Social Media Links"
+      }
+    ],
+    "gallery": [],
+    "videos": []
+  },
+  "/service/custom-applications": {
+    "source": "https://www.suffixit.com/service/custom-applications",
+    "captured": "2026-10-10",
+    "introTitle": "Custom Application",
+    "blocks": [
+      {
+        "tag": "h1",
+        "text": "Custom Application"
+      },
+      {
+        "tag": "p",
+        "text": "Work smarter with custom-made applications for more efficient services. We collaborate with clients to determine their unique requirements during a discovery process, build a realistic employment opportunity, and promptly deliver well-crafted online systems that boost businesses and delight customers through their simple, clean interfaces.We provide custom software application development and maintenance services for all types of businesses."
+      },
+      {
+        "tag": "h1",
+        "text": "Key Features"
+      },
+      {
+        "tag": "h2",
+        "text": "Software Application Consulting"
+      },
+      {
+        "tag": "p",
+        "text": "Investigate and uncover complex business needs in order to better understand their needs and provide software consulting services. From project ideation to initialization to designing, development, and post-development advising, our tech mavens fend off important business obstacles that arise at various stages of software lifecycle development."
+      },
+      {
+        "tag": "h2",
+        "text": "Migration of Applications"
+      },
+      {
+        "tag": "p",
+        "text": "To fulfill the unique requirements of clients and their application development deadlines, accelerate time to market with easy application conversion services. Our application migration services ensure that applications are deployed or redeployed on newer or more advanced platforms, allowing businesses to be more flexible and sustainable."
+      },
+      {
+        "tag": "h2",
+        "text": "Product development for software"
+      },
+      {
+        "tag": "p",
+        "text": "Explore, analyze, and implement the client's software development requirements to create resilient software products that can withstand changing market trends. For enterprises with a strategic development strategy, robust backend services, and interactive frontend services that promise maximum revenue, we offer ground-breaking services."
+      },
+      {
+        "tag": "h2",
+        "text": "Application Maintenance"
+      },
+      {
+        "tag": "p",
+        "text": "We focus on improving application performance by streamlining its operations and maintaining it to remain high-performing and efficient, using cutting-edge technologies. Our development teams provide hassle-free application maintenance, streamlined migration, painless reengineering, and seamless redesigning services to meet every business demand."
+      },
+      {
+        "tag": "h1",
+        "text": "Providing the Best Solution for"
+      },
+      {
+        "tag": "h2",
+        "text": "Fintech & Insurance"
+      },
+      {
+        "tag": "h2",
+        "text": "Retail & Ecommerce"
+      },
+      {
+        "tag": "h2",
+        "text": "Travel & Hospitality"
+      },
+      {
+        "tag": "h2",
+        "text": "Consumer Goods"
+      },
+      {
+        "tag": "h2",
+        "text": "Education"
+      }
+    ],
+    "gallery": [],
+    "videos": []
+  },
+  "/service/video-conferencing": {
+    "source": "https://www.suffixit.com/service/video-conferencing",
+    "captured": "2026-10-10",
+    "introTitle": "Get Ultimate Experience",
+    "blocks": [
+      {
+        "tag": "h1",
+        "text": "Get Ultimate Experience"
+      },
+      {
+        "tag": "h2",
+        "text": "Internet meetings, training & technical assistance"
+      },
+      {
+        "tag": "h2",
+        "text": "Building collaboration-enabled meeting rooms"
+      },
+      {
+        "tag": "h2",
+        "text": "Next-generation business phone system"
+      },
+      {
+        "tag": "h2",
+        "text": "Marketing activities & discussions in Town Hall"
+      },
+      {
+        "tag": "h1",
+        "text": "Key Features"
+      },
+      {
+        "tag": "h1",
+        "text": "Chat"
+      },
+      {
+        "tag": "p",
+        "text": "Send public and private messages."
+      },
+      {
+        "tag": "h1",
+        "text": "Audio"
+      },
+      {
+        "tag": "p",
+        "text": "Communicate using high quality audio."
+      },
+      {
+        "tag": "h1",
+        "text": "Webcams"
+      },
+      {
+        "tag": "p",
+        "text": "Hold visual meetings."
+      },
+      {
+        "tag": "h1",
+        "text": "Emojis"
+      },
+      {
+        "tag": "p",
+        "text": "Express yourself."
+      },
+      {
+        "tag": "h1",
+        "text": "Breakout Rooms"
+      },
+      {
+        "tag": "p",
+        "text": "Group users into breakout rooms for team collaboration."
+      },
+      {
+        "tag": "h1",
+        "text": "Screen Sharing"
+      },
+      {
+        "tag": "p",
+        "text": "Share your screen."
+      },
+      {
+        "tag": "h1",
+        "text": "Polling"
+      },
+      {
+        "tag": "p",
+        "text": "Poll your users anytime."
+      },
+      {
+        "tag": "h1",
+        "text": "Multi-user whiteboard"
+      },
+      {
+        "tag": "p",
+        "text": "Draw together."
+      },
+      {
+        "tag": "h1",
+        "text": "Why Suffix Video Conferencing"
+      },
+      {
+        "tag": "h2",
+        "text": "Simple to use, Purchase & Scale"
+      },
+      {
+        "tag": "h2",
+        "text": "Most affordable"
+      },
+      {
+        "tag": "h2",
+        "text": "Built & configured to work reliably"
+      },
+      {
+        "tag": "h2",
+        "text": "One clear client experience for all use cases"
+      },
+      {
+        "tag": "h1",
+        "text": "Resources designed to match teachers"
+      },
+      {
+        "tag": "p",
+        "text": "The Suffix Video Conferencing Platform allows students to share their audio, images, chat, video and screen. Built-in polling makes it easy for students to engage and recording your lectures means you can make them available for later review."
+      },
+      {
+        "tag": "h1",
+        "text": "Anybody can share a webcam"
+      },
+      {
+        "tag": "p",
+        "text": "There's no limit to how many webcams you can share in a session (limited by bandwidth only."
+      },
+      {
+        "tag": "h1",
+        "text": "Whiteboard live for presenters and groups"
+      },
+      {
+        "tag": "p",
+        "text": "Annotations are automatically shown back to the students in real-time while using the whiteboard device. Presenters do have the option to zoom, highlight, draw and write on presentations to make the points easier for students who are far away."
+      }
+    ],
+    "gallery": [],
+    "videos": []
+  },
+  "/service/it-infrastructure": {
+    "source": "https://www.suffixit.com/service/it-infrastructure",
+    "captured": "2026-10-10",
+    "introTitle": "Our IT Infrastructure Services",
+    "blocks": [
+      {
+        "tag": "p",
+        "text": "In today's digital era, a robust IT infrastructure forms the backbone of successful enterprises. At Suffix IT Limited,we specialize in designing, implementing, and managing comprehensive IT infrastructure solutions that drive efficiency, scalability, and security"
+      },
+      {
+        "tag": "h1",
+        "text": "Our IT Infrastructure Services"
+      },
+      {
+        "tag": "p",
+        "text": "Explore how we design, implement, and manage tailored IT infrastructure solutions.  To power your business operations seamlessly and securely"
+      },
+      {
+        "tag": "h3",
+        "text": "Network Design and Implementation"
+      },
+      {
+        "tag": "p",
+        "text": "Developing scalable and secure network architectures tailored to your organizational needs"
+      },
+      {
+        "tag": "p",
+        "text": "Implementing high-performance wired and wireless networks to ensure seamless connectivity"
+      },
+      {
+        "tag": "h3",
+        "text": "Server Management"
+      },
+      {
+        "tag": "p",
+        "text": "Provisioning and maintaining physical and virtual servers to support your applications and services"
+      },
+      {
+        "tag": "p",
+        "text": "Ensuring optimal server performance through regular monitoring and updates"
+      },
+      {
+        "tag": "h3",
+        "text": "Cloud Services"
+      },
+      {
+        "tag": "p",
+        "text": "Assisting in the migration to cloud platforms for enhanced flexibility and scalability"
+      },
+      {
+        "tag": "p",
+        "text": "Managing cloud resources to optimize performance and cost-efficiency"
+      },
+      {
+        "tag": "h3",
+        "text": "Data Storage Solutions"
+      },
+      {
+        "tag": "p",
+        "text": "Designing and implementing reliable data storage systems to safeguard your critical information"
+      },
+      {
+        "tag": "p",
+        "text": "Offering backup and disaster recovery solutions to ensure business continuity"
+      },
+      {
+        "tag": "h3",
+        "text": "Cybersecurity Services"
+      },
+      {
+        "tag": "p",
+        "text": "Implementing robust security measures to protect your IT infrastructure from threats"
+      },
+      {
+        "tag": "p",
+        "text": "Conducting regular security assessments and compliance audits"
+      },
+      {
+        "tag": "h3",
+        "text": "IT Support and Maintenance"
+      },
+      {
+        "tag": "p",
+        "text": "Providing 24/7 technical support to promptly address any IT issues"
+      },
+      {
+        "tag": "p",
+        "text": "Performing routine maintenance to ensure the longevity and reliability of your IT systems"
+      },
+      {
+        "tag": "h1",
+        "text": "Our Commitment To Your Success"
+      },
+      {
+        "tag": "p",
+        "text": "Solutions That Grow With Your Vision And Goals"
+      },
+      {
+        "tag": "h2",
+        "text": "Expertise"
+      },
+      {
+        "tag": "p",
+        "text": "Our team comprises seasoned professionals with extensive experience in IT infrastructure services."
+      },
+      {
+        "tag": "h2",
+        "text": "Customized Solutions"
+      },
+      {
+        "tag": "p",
+        "text": "We tailor our services to meet the unique requirements of your business."
+      },
+      {
+        "tag": "h2",
+        "text": "Proactive Approach"
+      },
+      {
+        "tag": "p",
+        "text": "We emphasize proactive monitoring and maintenance to prevent issues before they arise."
+      },
+      {
+        "tag": "h2",
+        "text": "Client-Centric Focus"
+      },
+      {
+        "tag": "p",
+        "text": "Your business success is our priority; we work closely with you to achieve your IT goals."
+      }
+    ],
+    "gallery": [],
+    "videos": []
+  },
+  "/service/mobile-apps": {
+    "source": "https://www.suffixit.com/service/mobile-apps",
+    "captured": "2026-10-10",
+    "introTitle": "Mobile Application",
+    "blocks": [
+      {
+        "tag": "h1",
+        "text": "Mobile Application"
+      },
+      {
+        "tag": "p",
+        "text": "We know how to transfer our solutions into the result of your business success, thanks to our extensive portfolio of industry-leading mobile application development services. We develop mobile apps that are cross-platform and responsive. Where others fail, we succeed in creating the most appealing user interface and secure backend. Suffix IT offers cutting-edge mobile app development to a wide range of industries and client.Our developers create enterprise-grade mobile apps that are tailored to your company's needs. We build a consistent digital presence and improve consumer engagement for you by integrating stylish and smart notification features and safe payment gateways. Our team has already created specialized mobile apps for the consumer product industries. ."
+      },
+      {
+        "tag": "h1",
+        "text": "The Service We Offer"
+      },
+      {
+        "tag": "li",
+        "text": "Applications of superb quality for a wide range of specialty markets"
+      },
+      {
+        "tag": "li",
+        "text": "Increasing business effect and attracting a wider user base"
+      },
+      {
+        "tag": "li",
+        "text": "Functionality and features of the highest caliber"
+      },
+      {
+        "tag": "li",
+        "text": "Enhancing the visual appeal and providing a rich user interface"
+      },
+      {
+        "tag": "li",
+        "text": "Mobile app development supporting cross-platform"
+      },
+      {
+        "tag": "li",
+        "text": "Apps are available in a variety of formats, including native, web, and hybrid."
+      },
+      {
+        "tag": "li",
+        "text": "Support for all operating systems"
+      },
+      {
+        "tag": "h1",
+        "text": "Industries We Serve"
+      },
+      {
+        "tag": "li",
+        "text": "CONSUMER GOODS"
+      },
+      {
+        "tag": "li",
+        "text": "E-COMMERCE"
+      },
+      {
+        "tag": "li",
+        "text": "FIN-TECH"
+      },
+      {
+        "tag": "li",
+        "text": "TELECOMMUNICATION"
+      },
+      {
+        "tag": "li",
+        "text": "HEALTH SECTOR"
+      },
+      {
+        "tag": "li",
+        "text": "LOCAL ENTERPRISES"
+      },
+      {
+        "tag": "li",
+        "text": "MNC'S"
+      },
+      {
+        "tag": "li",
+        "text": "START UPS"
+      },
+      {
+        "tag": "h1",
+        "text": "The Technologies We Use"
+      },
+      {
+        "tag": "li",
+        "text": "Native Android"
+      },
+      {
+        "tag": "li",
+        "text": "Native iOS"
+      },
+      {
+        "tag": "li",
+        "text": "Cross Platform Application (Flutter, React Native)"
+      }
+    ],
+    "gallery": [],
+    "videos": []
+  },
+  "/service/hospital-management": {
+    "source": "https://www.suffixit.com/service/hospital-management",
+    "captured": "2026-10-10",
+    "introTitle": "Key Features",
+    "blocks": [
+      {
+        "tag": "h1",
+        "text": "Key Features"
+      },
+      {
+        "tag": "h1",
+        "text": "Patient enrolment"
+      },
+      {
+        "tag": "p",
+        "text": "Patients should register with their demographics, name, touch, relationships and other information. Patients searching. Print Identification cards for patients."
+      },
+      {
+        "tag": "h1",
+        "text": "Laboratory"
+      },
+      {
+        "tag": "p",
+        "text": "Manage ordering, screening, and monitoring of patients. A bird's eye view of the workload from the laboratory. Turn in referral samples."
+      },
+      {
+        "tag": "h1",
+        "text": "Clinical Benefits"
+      },
+      {
+        "tag": "p",
+        "text": "Capture, keep, and access patient health information. Establish different forms of the general and the disease. Capture prescriptions for medications, and order hospital, radiology, other examinations or procedures. Using prescription templates pre-created for the drug."
+      },
+      {
+        "tag": "h1",
+        "text": "Inpatient care"
+      },
+      {
+        "tag": "p",
+        "text": "Manage admission of patients, conduct bed assignments and monitor occupancy of the room."
+      },
+      {
+        "tag": "h1",
+        "text": "Stock Execution"
+      },
+      {
+        "tag": "p",
+        "text": "Manage, register and reorder medical drugs and other supplies. Switch and keep track of stock rates.Group users into breakout rooms for team collaboration."
+      },
+      {
+        "tag": "h1",
+        "text": "Reports"
+      },
+      {
+        "tag": "p",
+        "text": "Perform reports on financial, clinical, and public health."
+      },
+      {
+        "tag": "h1",
+        "text": "Billing, Accounting"
+      },
+      {
+        "tag": "p",
+        "text": "Manage and maintain precise track of all payments and financial transactions."
+      },
+      {
+        "tag": "h1",
+        "text": "Why Suffix Hospital Management System"
+      },
+      {
+        "tag": "h2",
+        "text": "Installation, configuration, and support"
+      },
+      {
+        "tag": "h2",
+        "text": "Modules and Integrations"
+      },
+      {
+        "tag": "h2",
+        "text": "High Security Ensure"
+      },
+      {
+        "tag": "h2",
+        "text": "Link troubles? Using Module Offline"
+      },
+      {
+        "tag": "h1",
+        "text": "Usability The Movement and User Interface."
+      },
+      {
+        "tag": "p",
+        "text": "Suffix Hospital Management System has a user interface that is very easy and quick to use, and that suits different users from different IT backgrounds. It's easy to navigate with only a few clicks to the appropriate pages, using Information Cards to show priority-based information and highlight the important details.It has several data analysis tools to view results over their clinic visits as growth map, BMI map, and very useful patient tracking time.Follow-up description on drugs. It is one of doctors 'most popular and featured devices to keep track of patient medicines."
+      }
+    ],
+    "gallery": [],
+    "videos": []
+  },
+  "/service/learning-management": {
+    "source": "https://www.suffixit.com/service/learning-management",
+    "captured": "2026-10-10",
+    "introTitle": "Top things to think about when choosing Suffix LMS",
+    "blocks": [
+      {
+        "tag": "h1",
+        "text": "Top things to think about when choosing Suffix LMS"
+      },
+      {
+        "tag": "p",
+        "text": "It's time to make a decision and find out what sort of LMS would be the best choice for you. That is a tough one. We were all there and it's fully understandable. Was your budget adequate to gain your own LMS? Is there a cloud-based LMS solution you can look for? What if your limit is small, money-wise, and you need to consider trying out an open-source LMS solution? No worries, here are the top items to consider when selecting an LMS for you."
+      },
+      {
+        "tag": "h1",
+        "text": "Which is your justification for having Suffix LMS?"
+      },
+      {
+        "tag": "p",
+        "text": "First of all, this is the basic clue which will decide what sort of LMS will help you achieve your goals. There are many ways an LMS can help an organization expand. You may need an LMS for the onboarding of workers , for example. It is probably one of the most common use instances. Several businesses plan to use an LMS in their onboarding process to help their new employees. It will help beginners learn more about their company culture, understand common business practices, learn about their goods and services, and develop those skills so that they can perform when they finally get their first projects, etc. Another common case for use of LMS is to improve staff growth and retention. An LMS will provide tremendous support for the training and growth goals. You can develop courses to help your workers strengthen their skills, provide them with an opportunity to learn about new product features, or simply help them stay up to date with current trends, etc. Another reason you may want to use an LMS is to offer your clients training. Especially when it's software for your product."
+      },
+      {
+        "tag": "p",
+        "text": "Even, if you've got a business in the software industry, you would need to teach consumers so they can use your product effectively. You can, of course , take advantage of an LMS to concentrate on compliance training for your staff, improve your sales potential to raise more money, extend your partner training if you own a multinational company or even provide exclusive member training."
+      },
+      {
+        "tag": "h1",
+        "text": "Benefits Of E-Learning For Students"
+      },
+      {
+        "tag": "h2",
+        "text": "Student will enjoy the total solution"
+      },
+      {
+        "tag": "h2",
+        "text": "Lectures Can Be Taken Any Number Of Times"
+      },
+      {
+        "tag": "h2",
+        "text": "Offers Access To Updated Content"
+      },
+      {
+        "tag": "h2",
+        "text": "Online Learning Accommodates Everyone’s Needs"
+      },
+      {
+        "tag": "h2",
+        "text": "Quick Delivery Of Lessons"
+      },
+      {
+        "tag": "h1",
+        "text": "Suffix LMS Key Features"
+      },
+      {
+        "tag": "h2",
+        "text": "All you need to know about Suffix LMS."
+      },
+      {
+        "tag": "h2",
+        "text": "Modern, easy to use interface"
+      },
+      {
+        "tag": "h2",
+        "text": "Personalized Dashboard"
+      },
+      {
+        "tag": "h2",
+        "text": "Collaborative tools and activities"
+      },
+      {
+        "tag": "h2",
+        "text": "All-in-one calendar"
+      },
+      {
+        "tag": "h2",
+        "text": "Convenient file management"
+      },
+      {
+        "tag": "h2",
+        "text": "Simple and intuitive text editor"
+      },
+      {
+        "tag": "h2",
+        "text": "Notifications"
+      },
+      {
+        "tag": "h2",
+        "text": "Track progress"
+      }
+    ],
+    "gallery": [
+      {
+        "src": "/assets/learning-management-system.32b72d34.png",
+        "alt": "justification — original Suffix IT visual"
+      }
+    ],
+    "videos": []
+  },
+  "/service/storage-backup": {
+    "source": "https://www.suffixit.com/service/storage-backup",
+    "captured": "2026-10-10",
+    "introTitle": "Managed storage and data backup solutions that are both efficient and cost-effective",
+    "blocks": [
+      {
+        "tag": "h1",
+        "text": "Managed storage and data backup solutions that are both efficient and cost-effective"
+      },
+      {
+        "tag": "p",
+        "text": "With its Managed Storage & Backup services, Suffix IT makes it easier to protect business-critical data. We use a centralized storage approach that follows the ITIL service delivery principles. ISO and IEC operating criteria are also meticulously observed in order to maintain a highly efficient and well-oiled system. A daily backup service is also available, as well as a self-service portal that makes billing information and other specific reports more accessible."
+      },
+      {
+        "tag": "h1",
+        "text": "Benefits Of Storage & Backup"
+      },
+      {
+        "tag": "h1",
+        "text": "Continual Risk Management"
+      },
+      {
+        "tag": "p",
+        "text": "Our skilled and experienced specialists maintain a thorough 24/7 proactive data monitoring system, making us one of the most trusted platforms for high-quality Managed Storage & Backup services."
+      },
+      {
+        "tag": "h1",
+        "text": "Customized Data Storage Services"
+      },
+      {
+        "tag": "p",
+        "text": "Our self-service portal provides detailed billing, usage, and other report information. In addition, our daily backup service helps you improve the operational efficiency of your company."
+      },
+      {
+        "tag": "h1",
+        "text": "Strict Adherence To Industry Norms"
+      },
+      {
+        "tag": "p",
+        "text": "We provide outstanding services by painstakingly following best practices and adhering to industry standards, such as the ITIL service delivery guidelines and ISO and IEC operating criteria."
+      },
+      {
+        "tag": "h1",
+        "text": "Responsible Backup And Recovery"
+      },
+      {
+        "tag": "p",
+        "text": "With our online application backup and restoration capabilities, we protect your mission-critical IT resources while also improving performance and managing business risk."
+      }
+    ],
+    "gallery": [],
+    "videos": []
+  },
+  "/service/bulk-sms": {
+    "source": "https://www.suffixit.com/service/bulk-sms",
+    "captured": "2026-10-10",
+    "introTitle": "Bulk SMS for Business",
+    "blocks": [
+      {
+        "tag": "h1",
+        "text": "Bulk SMS for Business"
+      },
+      {
+        "tag": "p",
+        "text": "SMS PACKAGE & PRICE"
+      },
+      {
+        "tag": "p",
+        "text": "#SMS QUANTITYNON MASKING SMS PRICE/SMSTOTALVALIDITYMASKING SMS PRICE/SMSTOTALVALIDITY"
+      },
+      {
+        "tag": "p",
+        "text": "150000.4522501 Year0.6532501 Year"
+      },
+      {
+        "tag": "p",
+        "text": "2100000.3737001 Year0.6060001 Year"
+      },
+      {
+        "tag": "p",
+        "text": "3200000.3570001 Year0.57114001 Year"
+      },
+      {
+        "tag": "p",
+        "text": "4500000.33165001 Year0.55275001 Year"
+      },
+      {
+        "tag": "p",
+        "text": "51000000.31310001 Year0.53530001 Year"
+      },
+      {
+        "tag": "p",
+        "text": "65000000.301500001 Year0.512550001 Year"
+      },
+      {
+        "tag": "h1",
+        "text": "TERMS & CONDITION"
+      },
+      {
+        "tag": "p",
+        "text": "All prices are tax, vat and SD charge excluded. Masking Name Registration Cost: 5000 Taka(One Time)."
+      },
+      {
+        "tag": "h1",
+        "text": "SMS marketing requirement:"
+      },
+      {
+        "tag": "li",
+        "text": "Masking / Sender name / Phone no(11 characters)"
+      },
+      {
+        "tag": "li",
+        "text": "SMS text (160 characters)"
+      },
+      {
+        "tag": "h1",
+        "text": "SMS text character limit:"
+      },
+      {
+        "tag": "li",
+        "text": "English SMS:1-160 characters- 1 SMS, 161-300 characters- 2 SMS, 301-440 characters- 3 SMS"
+      },
+      {
+        "tag": "li",
+        "text": "Bangla SMS:A single SMS supports up to 70 characters. If your message exceeds this limit, it will be split into multiple SMS segments, with each additional segment allowing up to 67 characters. For example, a message that spans two segments can contain up to (67+67) = 134 characters in total."
+      },
+      {
+        "tag": "h1",
+        "text": "What you will get in report?"
+      },
+      {
+        "tag": "li",
+        "text": "All number with delivery report (2 number will replaced by XY)"
+      },
+      {
+        "tag": "li",
+        "text": "Undelivered report"
+      },
+      {
+        "tag": "li",
+        "text": "Failed Report"
+      },
+      {
+        "tag": "h1",
+        "text": "Payment Procedure:"
+      },
+      {
+        "tag": "li",
+        "text": "100 % advance payment"
+      },
+      {
+        "tag": "li",
+        "text": "Payment will goes to “Suffix IT Limited” account pay check or cash."
+      }
+    ],
+    "gallery": [],
+    "videos": []
+  },
+  "/service/consultancy-system-integrator": {
+    "source": "https://www.suffixit.com/service/consultancy-system-integrator",
+    "captured": "2026-10-10",
+    "introTitle": "Helping Businesses Align Technology with Vision",
+    "blocks": [
+      {
+        "tag": "h1",
+        "text": "Helping Businesses Align Technology with Vision"
+      },
+      {
+        "tag": "p",
+        "text": "At Suffix IT Limited, we specialize in providing expert consultancy and seamless system integration services to ensure your business thrives in the digital landscape. Whether you're looking to optimize your IT operations, implement new technologies, or safeguard your infrastructure, we offer tailored solutions that meet your unique needs"
+      },
+      {
+        "tag": "h1",
+        "text": "A powerful and innovative feature set"
+      },
+      {
+        "tag": "h5",
+        "text": "Special title treatment"
+      },
+      {
+        "tag": "p",
+        "text": "With supporting text below as a natural lead-in to additional content."
+      },
+      {
+        "tag": "li",
+        "text": "Proactive Monitoring"
+      },
+      {
+        "tag": "li",
+        "text": "24/7 Support"
+      },
+      {
+        "tag": "li",
+        "text": "Customized Solutions"
+      },
+      {
+        "tag": "h5",
+        "text": "IT Audit"
+      },
+      {
+        "tag": "p",
+        "text": "Gain deeper insights into your IT environment and identify areas for improvement."
+      },
+      {
+        "tag": "li",
+        "text": "Comprehensive Assessments"
+      },
+      {
+        "tag": "li",
+        "text": "Risk Mitigation"
+      },
+      {
+        "tag": "li",
+        "text": "Optimization Opportunities"
+      },
+      {
+        "tag": "h5",
+        "text": "Forensic Investigation"
+      },
+      {
+        "tag": "p",
+        "text": "Protect your business by uncovering and addressing potential cybersecurity breaches."
+      },
+      {
+        "tag": "li",
+        "text": "Incident Response"
+      },
+      {
+        "tag": "li",
+        "text": "Digital Evidence Gathering"
+      },
+      {
+        "tag": "li",
+        "text": "Compliance Support"
+      },
+      {
+        "tag": "h5",
+        "text": "IT Implementation"
+      },
+      {
+        "tag": "p",
+        "text": "Seamlessly integrate new technologies into your existing infrastructure."
+      },
+      {
+        "tag": "li",
+        "text": "Project Planning"
+      },
+      {
+        "tag": "li",
+        "text": "System Deployment"
+      },
+      {
+        "tag": "li",
+        "text": "Training & Support"
+      },
+      {
+        "tag": "h1",
+        "text": "Our Commitment To Your Success"
+      },
+      {
+        "tag": "p",
+        "text": "Solutions That Grow With Your Vision And Goals"
+      },
+      {
+        "tag": "h2",
+        "text": "Expertise"
+      },
+      {
+        "tag": "p",
+        "text": "Our team comprises seasoned professionals with extensive experience in IT infrastructure services."
+      },
+      {
+        "tag": "h2",
+        "text": "Customized Solutions"
+      },
+      {
+        "tag": "p",
+        "text": "We tailor our services to meet the unique requirements of your business."
+      },
+      {
+        "tag": "h2",
+        "text": "Proactive Approach"
+      },
+      {
+        "tag": "p",
+        "text": "We emphasize proactive monitoring and maintenance to prevent issues before they arise."
+      },
+      {
+        "tag": "h2",
+        "text": "Client-Centric Focus"
+      },
+      {
+        "tag": "p",
+        "text": "Your business success is our priority; we work closely with you to achieve your IT goals."
+      }
+    ],
+    "gallery": [],
+    "videos": []
+  },
+  "/service/it-ot-security-solution": {
+    "source": "https://www.suffixit.com/service/it-ot-security-solution",
+    "captured": "2026-10-10",
+    "introTitle": "Protecting Your Digital and Operational Assets",
+    "blocks": [
+      {
+        "tag": "h1",
+        "text": "Protecting Your Digital and Operational Assets"
+      },
+      {
+        "tag": "p",
+        "text": "In an era where cyber threats are ever-evolving, ensuring robust security across your IT and OT systems is no longer optional. it’s essential. At Suffix IT Limited, we provide comprehensive security solutions to safeguard your digital infrastructure and operational technologies, enabling you to operate confidently and securely."
+      },
+      {
+        "tag": "h1",
+        "text": "Our Key Focus Areas"
+      },
+      {
+        "tag": "h3",
+        "text": "Network Security"
+      },
+      {
+        "tag": "p",
+        "text": "Firewall Implementation: Advanced firewalls to monitor and control network traffic."
+      },
+      {
+        "tag": "p",
+        "text": "Intrusion Detection & Prevention: Real-time threat detection and response mechanisms."
+      },
+      {
+        "tag": "p",
+        "text": "Secure VPN Solutions: Enable safe remote access for your team."
+      },
+      {
+        "tag": "h3",
+        "text": "Endpoint Security"
+      },
+      {
+        "tag": "p",
+        "text": "Antivirus & Malware Protection: Advanced tools to detect and eliminate threats."
+      },
+      {
+        "tag": "p",
+        "text": "Patch Management: Regular updates to keep devices secure and compliant."
+      },
+      {
+        "tag": "p",
+        "text": "Device Encryption: Safeguard data stored on endpoints."
+      },
+      {
+        "tag": "h3",
+        "text": "Application Security"
+      },
+      {
+        "tag": "p",
+        "text": "Web Application Firewalls (WAF): Protect against web-based attacks like SQL injection and XSS."
+      },
+      {
+        "tag": "p",
+        "text": "Code Review & Testing: Identify and fix security loopholes in your applications."
+      },
+      {
+        "tag": "p",
+        "text": "Secure Development Practices: Build secure applications from the ground up."
+      },
+      {
+        "tag": "h3",
+        "text": "Cybersecurity"
+      },
+      {
+        "tag": "p",
+        "text": "Threat Intelligence: Stay ahead of attackers with proactive threat identification."
+      },
+      {
+        "tag": "p",
+        "text": "Incident Response: Swift action to minimize the impact of breaches."
+      },
+      {
+        "tag": "p",
+        "text": "Compliance Management: Ensure adherence to cybersecurity regulations and standards."
+      },
+      {
+        "tag": "h3",
+        "text": "Operational Technology (OT) Security"
+      },
+      {
+        "tag": "p",
+        "text": "SCADA System Security: Safeguard critical control systems in industrial environments."
+      },
+      {
+        "tag": "p",
+        "text": "Real-Time Monitoring: Detect and mitigate threats to operational technologie."
+      },
+      {
+        "tag": "p",
+        "text": "Network Segmentation: Isolate critical OT systems from potential attack vectors."
+      },
+      {
+        "tag": "p",
+        "text": "Don’t leave your IT and OT systems vulnerable to attacks. Partner with Suffix IT Limited for state-of-the-art security solutions designed to protect your digital and operational assets. Contact us now to discuss how we can help secure your business."
+      },
+      {
+        "tag": "h1",
+        "text": "Our Commitment To Your Success"
+      },
+      {
+        "tag": "p",
+        "text": "Solutions That Grow With Your Vision And Goals"
+      },
+      {
+        "tag": "h2",
+        "text": "Expertise"
+      },
+      {
+        "tag": "p",
+        "text": "Our team comprises seasoned professionals with extensive experience in IT infrastructure services."
+      },
+      {
+        "tag": "h2",
+        "text": "Customized Solutions"
+      },
+      {
+        "tag": "p",
+        "text": "We tailor our services to meet the unique requirements of your business."
+      },
+      {
+        "tag": "h2",
+        "text": "Proactive Approach"
+      },
+      {
+        "tag": "p",
+        "text": "We emphasize proactive monitoring and maintenance to prevent issues before they arise."
+      },
+      {
+        "tag": "h2",
+        "text": "Client-Centric Focus"
+      },
+      {
+        "tag": "p",
+        "text": "Your business success is our priority; we work closely with you to achieve your IT goals."
+      }
+    ],
+    "gallery": [],
+    "videos": []
+  },
+  "/service/power-cooling": {
+    "source": "https://www.suffixit.com/service/power-cooling",
+    "captured": "2026-10-10",
+    "introTitle": "Ensuring Uninterrupted Performance and Reliability",
+    "blocks": [
+      {
+        "tag": "p",
+        "text": "Our Power & Cooling Solutions"
+      },
+      {
+        "tag": "li",
+        "text": "Uninterruptible Power Supply (UPS)"
+      },
+      {
+        "tag": "li",
+        "text": "Power Distribution Units (PDU)"
+      },
+      {
+        "tag": "li",
+        "text": "Generator Backup Systems"
+      },
+      {
+        "tag": "li",
+        "text": "Power Monitoring and Management"
+      },
+      {
+        "tag": "li",
+        "text": "Precision Air Conditioning"
+      },
+      {
+        "tag": "li",
+        "text": "In-Row Cooling"
+      },
+      {
+        "tag": "li",
+        "text": "Chilled Beam and Radiant Cooling"
+      },
+      {
+        "tag": "li",
+        "text": "Hot Aisle/Cold Aisle Containment"
+      },
+      {
+        "tag": "li",
+        "text": "Energy-Efficient Cooling Systems"
+      },
+      {
+        "tag": "li",
+        "text": "Green Data Center Solutions"
+      },
+      {
+        "tag": "li",
+        "text": "Thermal Energy Storage"
+      },
+      {
+        "tag": "h1",
+        "text": "Ensuring Uninterrupted Performance and Reliability"
+      },
+      {
+        "tag": "p",
+        "text": "In today’s digital landscape, data centers are the backbone of business operations, housing critical infrastructure and sensitive data. Ensuring optimal power and cooling is essential to maintaining the reliability, efficiency, and performance of your data center. At Suffix IT Limited, we specialize in providing top-tier power and cooling solutions designed to maximize uptime, minimize operational costs, and enhance energy efficiency."
+      },
+      {
+        "tag": "h1",
+        "text": "Our Power & Cooling Solutions"
+      },
+      {
+        "tag": "h1",
+        "text": "Future-Proof Your Data Center Today"
+      },
+      {
+        "tag": "h1",
+        "text": "Our Commitment To Your Success"
+      },
+      {
+        "tag": "p",
+        "text": "Solutions That Grow With Your Vision And Goals"
+      },
+      {
+        "tag": "h2",
+        "text": "Expertise"
+      },
+      {
+        "tag": "p",
+        "text": "Our team comprises seasoned professionals with extensive experience in IT infrastructure services."
+      },
+      {
+        "tag": "h2",
+        "text": "Customized Solutions"
+      },
+      {
+        "tag": "p",
+        "text": "We tailor our services to meet the unique requirements of your business."
+      },
+      {
+        "tag": "h2",
+        "text": "Proactive Approach"
+      },
+      {
+        "tag": "p",
+        "text": "We emphasize proactive monitoring and maintenance to prevent issues before they arise."
+      },
+      {
+        "tag": "h2",
+        "text": "Client-Centric Focus"
+      },
+      {
+        "tag": "p",
+        "text": "Your business success is our priority; we work closely with you to achieve your IT goals."
+      }
+    ],
+    "gallery": [],
+    "videos": []
+  },
+  "/service/pos-system": {
+    "source": "https://www.suffixit.com/service/pos-system",
+    "captured": "2026-10-10",
+    "introTitle": "Leading Retail Pos Software That Retailers Love To Use",
+    "blocks": [
+      {
+        "tag": "h2",
+        "text": "Leading Retail Pos Software That Retailers Love To Use"
+      },
+      {
+        "tag": "h1",
+        "text": "What is Smart POS & Billing System?"
+      },
+      {
+        "tag": "p",
+        "text": "Smart POS & billing system is a easy to use point of sales system for retail store, super shop and restaurants. You can use it in any device such as your phone , laptop or desktop computer. By connecting POS printer, bar-code scanner and cash drawer you can make it a full functional Point Of Sales system. It has almost all the facility including inventory management system, sales and purchase management system, customer and employee management system which can automate your organization the way you never did before. With real time reporting you can get a clear view of your business anytime you want."
+      },
+      {
+        "tag": "h1",
+        "text": "Key Features"
+      },
+      {
+        "tag": "h1",
+        "text": "Mobile Supported Point of Sale"
+      },
+      {
+        "tag": "li",
+        "text": "Elegant Point Of Sale"
+      },
+      {
+        "tag": "li",
+        "text": "Support for Multiple Payments"
+      },
+      {
+        "tag": "li",
+        "text": "POS Registers Log"
+      },
+      {
+        "tag": "li",
+        "text": "Dedicated POS Style and Settings for each employee"
+      },
+      {
+        "tag": "li",
+        "text": "QR Code Due Invoices"
+      },
+      {
+        "tag": "h1",
+        "text": "Subscriptions Invoice Module"
+      },
+      {
+        "tag": "li",
+        "text": "Subscription Management Module for recurring invoices"
+      },
+      {
+        "tag": "li",
+        "text": "Support for Online Card Payment"
+      },
+      {
+        "tag": "li",
+        "text": "Performance Invoice"
+      },
+      {
+        "tag": "li",
+        "text": "Integrated Stock Manager"
+      },
+      {
+        "tag": "li",
+        "text": "Get online payment with unique invoice link"
+      },
+      {
+        "tag": "li",
+        "text": "Decent Invoice A4 & Compact POS Printing"
+      },
+      {
+        "tag": "h1",
+        "text": "Quotations"
+      },
+      {
+        "tag": "li",
+        "text": "Send Quotes with proposal as Email"
+      },
+      {
+        "tag": "li",
+        "text": "Convert quotes to invoices"
+      },
+      {
+        "tag": "li",
+        "text": "Customer can approve quote"
+      },
+      {
+        "tag": "h1",
+        "text": "Stock Purchase Orders"
+      },
+      {
+        "tag": "li",
+        "text": "Send Purchase receipt with your stock requirement to suppliers"
+      },
+      {
+        "tag": "li",
+        "text": "Integrated to Inventory Manager"
+      },
+      {
+        "tag": "h1",
+        "text": "Stock Management"
+      },
+      {
+        "tag": "li",
+        "text": "Improved & Intelligent Product Variations System"
+      },
+      {
+        "tag": "li",
+        "text": "Track Stock Worth with category ,warehouse"
+      },
+      {
+        "tag": "li",
+        "text": "Add Product Serials"
+      },
+      {
+        "tag": "li",
+        "text": "Manage products with live stock status"
+      },
+      {
+        "tag": "li",
+        "text": "Get Email Alerts of low stock items"
+      },
+      {
+        "tag": "h1",
+        "text": "Accounts & Transactions"
+      },
+      {
+        "tag": "li",
+        "text": "Custom Type Company Accounts"
+      },
+      {
+        "tag": "li",
+        "text": "Organized Balance Sheet"
+      },
+      {
+        "tag": "li",
+        "text": "Optional Dual Entry System"
+      },
+      {
+        "tag": "li",
+        "text": "Custom Transactions and Transaction Categories"
+      },
+      {
+        "tag": "h1",
+        "text": "Client Management"
+      },
+      {
+        "tag": "li",
+        "text": "Manage Customer and Contacts"
+      },
+      {
+        "tag": "li",
+        "text": "Customer Wallet"
+      },
+      {
+        "tag": "li",
+        "text": "Customer Reports"
+      },
+      {
+        "tag": "h1",
+        "text": "Stock Suppliers"
+      },
+      {
+        "tag": "li",
+        "text": "Manage Stock Purchase orders"
+      },
+      {
+        "tag": "li",
+        "text": "Payment records"
+      },
+      {
+        "tag": "li",
+        "text": "Suppliers Reports"
+      },
+      {
+        "tag": "h1",
+        "text": "Billing"
+      },
+      {
+        "tag": "li",
+        "text": "Custom tax,discount and grouped units per products"
+      },
+      {
+        "tag": "li",
+        "text": "Delivery Note"
+      },
+      {
+        "tag": "h1",
+        "text": "HRM"
+      },
+      {
+        "tag": "li",
+        "text": "Custom Roles & 70+ Permissions"
+      },
+      {
+        "tag": "li",
+        "text": "Salary management with Payroll"
+      },
+      {
+        "tag": "li",
+        "text": "Attendance with Self Attendance or Manual"
+      }
+    ],
+    "gallery": [],
+    "videos": []
+  },
+  "/service/field-force-management": {
+    "source": "https://www.suffixit.com/service/field-force-management",
+    "captured": "2026-10-10",
+    "introTitle": "Real-Time Field Force Tracking and Monitoring Solution.",
+    "blocks": [
+      {
+        "tag": "h2",
+        "text": "Real-Time Field Force Tracking and Monitoring Solution."
+      },
+      {
+        "tag": "h2",
+        "text": "Field Force Management Platform"
+      },
+      {
+        "tag": "p",
+        "text": "This application incorporates cutting-edge technologies to provide advanced scheduling and workforce management solutions that are accessible to the organization. SFFMS provides you with an end-to-end visibility of the field operations and business processes, with native mobile app support across all major mobile platforms for you to know in real-time about your business."
+      },
+      {
+        "tag": "h1",
+        "text": "Job Scheduling"
+      },
+      {
+        "tag": "p",
+        "text": "Schedule jobs to the local agent automatically. Share records, as well as other appointment detailing together with field force without possessing to be in business office."
+      },
+      {
+        "tag": "h1",
+        "text": "Live Tracking"
+      },
+      {
+        "tag": "p",
+        "text": "Auto assigned task to local and free field push agent after creation of recent task. Field force broker gets instant notification to take new task."
+      },
+      {
+        "tag": "h1",
+        "text": "Automate Assignment"
+      },
+      {
+        "tag": "p",
+        "text": "Auto assigned task to nearest and free field force agent upon creation of new task. Field force agent gets instant notification to accept new task"
+      },
+      {
+        "tag": "h1",
+        "text": "Offline Data Synchronization"
+      },
+      {
+        "tag": "p",
+        "text": "The employees, using our field support mobile app, can employ this software in offline function in case there is internet connectivity concerns. Automatic syncing with net starts as soon for the reason that network connection will end up being restored. The intelligent harmonisation feature activates data safe-keeping in offline mode to be able to make sure the information can be very easily downloaded inside online setting."
+      },
+      {
+        "tag": "h1",
+        "text": "Key Features"
+      },
+      {
+        "tag": "h1",
+        "text": "Attendance Management"
+      },
+      {
+        "tag": "p",
+        "text": "Monitor attendance and leave of each and every field force. Allow discipline force to mark presence on agent app together with selfie and location checking."
+      },
+      {
+        "tag": "h1",
+        "text": "Task Management"
+      },
+      {
+        "tag": "p",
+        "text": "Let your field force and consumers to review the other person inside a quick, and effortless way. Manage rating regarding each task to help to make intelligent decisions for your current business."
+      },
+      {
+        "tag": "h1",
+        "text": "Order, Invoice and Payment"
+      },
+      {
+        "tag": "p",
+        "text": "Deliver quotes, invoice to the particular customer through mobile application. All access and up-date to field force regarding payments made by client in real-time."
+      },
+      {
+        "tag": "h1",
+        "text": "Chat and Collaboration"
+      },
+      {
+        "tag": "p",
+        "text": "Exchange information on chat method from admin to field force agent or conversely. Share documents, image together with group of men and women or a new particular person."
+      },
+      {
+        "tag": "h1",
+        "text": "Performance Analysis"
+      },
+      {
+        "tag": "p",
+        "text": "Catch all type of data inside a structured way and instantly calculate the number associated with tasks completed by every field force to evaluate performance in a month"
+      },
+      {
+        "tag": "h1",
+        "text": "Expense Management"
+      },
+      {
+        "tag": "p",
+        "text": "Successful reporting highlights all PF history for each and every employee, guaranteeing your oversight of just about all funds and transactions."
+      },
+      {
+        "tag": "h1",
+        "text": "Roster Plan"
+      },
+      {
+        "tag": "p",
+        "text": "Let your field force and clients to review the other person within a quick, and simple way. Manage rating associated with each task to create intelligent selections for your own business."
+      },
+      {
+        "tag": "h1",
+        "text": "Integration"
+      },
+      {
+        "tag": "p",
+        "text": "Integrate suffix field force management system into your existing erp. Opens up your capabilities on the operational and customer-facing part of your business."
+      },
+      {
+        "tag": "h1",
+        "text": "How it Work"
+      },
+      {
+        "tag": "h2",
+        "text": "Auto assign tasks to field force agent"
+      },
+      {
+        "tag": "h2",
+        "text": "Monitor & track all activities of field force in real-time"
+      },
+      {
+        "tag": "h2",
+        "text": "Field Force agent gets instant notification on mobile app"
+      },
+      {
+        "tag": "h2",
+        "text": "Field Force agents completes the task at service location"
+      },
+      {
+        "tag": "h2",
+        "text": "Field Force Agents heads to next assign task"
+      }
+    ],
+    "gallery": [
+      {
+        "src": "/assets/field-force.497227c8.png",
+        "alt": "field1 — original Suffix IT visual"
+      }
+    ],
+    "videos": []
+  },
+  "/service/iot": {
+    "source": "https://www.suffixit.com/service/iot",
+    "captured": "2026-10-10",
+    "introTitle": "IOT(Internet of Things)",
+    "blocks": [
+      {
+        "tag": "h1",
+        "text": "IOT(Internet of Things)"
+      },
+      {
+        "tag": "p",
+        "text": "IOT is Internet Of things,The next generation of devices & technologies where your devices will be interconnected. Worlds devices & technologies expert expect that there will be more than 14 billion networked devices by 2021, making it vital to adopt new set of technologies and devices. Here's how we can help you embrace them. The idea of IOT is latest in modern world for smart internet based management and supervision of electornics, where legacy device were not well managed and not efficient due to lack of controlling, monitoring and management mechanism."
+      },
+      {
+        "tag": "h1",
+        "text": "SCADA Features"
+      },
+      {
+        "tag": "h1",
+        "text": "PLC Programing Features"
+      },
+      {
+        "tag": "li",
+        "text": "We are capable of working with various brands of PLC like s7-300,400,1500"
+      },
+      {
+        "tag": "li",
+        "text": "Necessary and precise interlock"
+      },
+      {
+        "tag": "li",
+        "text": "Provision for remotely working in PLC in case of Emergency"
+      },
+      {
+        "tag": "li",
+        "text": "Best electrical design for control panel for new set up"
+      },
+      {
+        "tag": "h1",
+        "text": "Our Focusing area & Products"
+      },
+      {
+        "tag": "li",
+        "text": "Condition Monitoring System"
+      },
+      {
+        "tag": "li",
+        "text": "Smart Parking Solution"
+      },
+      {
+        "tag": "li",
+        "text": "Security Scanning System"
+      },
+      {
+        "tag": "li",
+        "text": "Turnstile Barrier Gate"
+      },
+      {
+        "tag": "li",
+        "text": "Access Control System"
+      },
+      {
+        "tag": "li",
+        "text": "Alarm System Solution"
+      },
+      {
+        "tag": "li",
+        "text": "Time Attendance"
+      }
+    ],
+    "gallery": [],
+    "videos": [
+      {
+        "url": "https://www.youtube.com/watch?v=wufBLKnsFLE",
+        "title": "Original IoT demonstration video"
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=5Z-Ky4h4tag",
+        "title": "Original IoT demonstration video"
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=r35gYMaj0tM",
+        "title": "Original IoT demonstration video"
+      }
+    ]
+  },
+  "/service/Industrial-Monitoring": {
+    "source": "https://www.suffixit.com/service/Industrial-Monitoring",
+    "captured": "2026-10-10",
+    "introTitle": "IEMS Features",
+    "blocks": [
+      {
+        "tag": "p",
+        "text": "INDUSTRIAL ENERGY"
+      },
+      {
+        "tag": "p",
+        "text": "MONITORING SYSTEM"
+      },
+      {
+        "tag": "p",
+        "text": "Monitor. Detect Faults. Analyze Energy Meters"
+      },
+      {
+        "tag": "p",
+        "text": "IEMS"
+      },
+      {
+        "tag": "p",
+        "text": "Air Compressor"
+      },
+      {
+        "tag": "p",
+        "text": "Boiler"
+      },
+      {
+        "tag": "p",
+        "text": "11KV / 33KV Substation"
+      },
+      {
+        "tag": "p",
+        "text": "ETP(Effluent Treatment Plant)"
+      },
+      {
+        "tag": "p",
+        "text": "Generator"
+      },
+      {
+        "tag": "h2",
+        "text": "IEMS Features"
+      },
+      {
+        "tag": "h2",
+        "text": "Air Compressor"
+      },
+      {
+        "tag": "li",
+        "text": "Load Hours"
+      },
+      {
+        "tag": "li",
+        "text": "Unload Hours"
+      },
+      {
+        "tag": "li",
+        "text": "Dis Pressure"
+      },
+      {
+        "tag": "li",
+        "text": "Dis Temperature"
+      },
+      {
+        "tag": "li",
+        "text": "Fault Hours"
+      },
+      {
+        "tag": "li",
+        "text": "Utilization %"
+      },
+      {
+        "tag": "li",
+        "text": "Ambient Temparature"
+      },
+      {
+        "tag": "h2",
+        "text": "Generator"
+      },
+      {
+        "tag": "li",
+        "text": "Oil Pressure"
+      },
+      {
+        "tag": "li",
+        "text": "Battery Voltage"
+      },
+      {
+        "tag": "li",
+        "text": "Engine Temperature"
+      },
+      {
+        "tag": "li",
+        "text": "Fuel Level"
+      },
+      {
+        "tag": "li",
+        "text": "Gas Consumption Rate"
+      },
+      {
+        "tag": "li",
+        "text": "Diesel Consumption Rate"
+      },
+      {
+        "tag": "h2",
+        "text": "ETP"
+      },
+      {
+        "tag": "li",
+        "text": "(Effluent Treatment Plant)"
+      },
+      {
+        "tag": "li",
+        "text": "Water Flow Consumption"
+      },
+      {
+        "tag": "li",
+        "text": "Water Flow Rate"
+      },
+      {
+        "tag": "h2",
+        "text": "Boiler"
+      },
+      {
+        "tag": "li",
+        "text": "Steam Consumption"
+      },
+      {
+        "tag": "li",
+        "text": "Steam Flow Rate"
+      },
+      {
+        "tag": "h2",
+        "text": "11KV / 33KV Substation"
+      },
+      {
+        "tag": "li",
+        "text": "Phase voltage"
+      },
+      {
+        "tag": "li",
+        "text": "Line Voltage"
+      },
+      {
+        "tag": "li",
+        "text": "Line Current"
+      },
+      {
+        "tag": "li",
+        "text": "Line Current"
+      },
+      {
+        "tag": "li",
+        "text": "Line PF"
+      },
+      {
+        "tag": "li",
+        "text": "Total Apparent Power"
+      },
+      {
+        "tag": "li",
+        "text": "Total Real Power and Reactive Power"
+      },
+      {
+        "tag": "li",
+        "text": "Frequency"
+      },
+      {
+        "tag": "li",
+        "text": "Total net Kwh,KVAh,KVARh"
+      },
+      {
+        "tag": "li",
+        "text": "Average Line Current"
+      },
+      {
+        "tag": "h2",
+        "text": "IEMS Diagram"
+      },
+      {
+        "tag": "h2",
+        "text": "IEMS Dashboard"
+      },
+      {
+        "tag": "li",
+        "text": "Fully Customizable Remote Monitoring Software."
+      },
+      {
+        "tag": "li",
+        "text": "Schedules Using Real-Time Mobile Camera Input."
+      },
+      {
+        "tag": "li",
+        "text": "Even History, Data Logs and comparative Data analytics."
+      },
+      {
+        "tag": "h1",
+        "text": "Monitor & Analyze Real-Time Energy Consumption"
+      },
+      {
+        "tag": "h1",
+        "text": "Alert on Dashboard when Failure to Received Data from any Meter / any Parameter exceds Range"
+      },
+      {
+        "tag": "li",
+        "text": "Secured Data Storage on Cloud"
+      },
+      {
+        "tag": "li",
+        "text": "Data Available for Download in CSV,Excel & PDF"
+      },
+      {
+        "tag": "h2",
+        "text": "Benefits of IEMS"
+      },
+      {
+        "tag": "li",
+        "text": "Reduce utility bills by identifying and eliminating energy waste."
+      },
+      {
+        "tag": "li",
+        "text": "Reduce carbon footprint and ensure regulatory compliance."
+      },
+      {
+        "tag": "li",
+        "text": "Support strategic planning for future plant expansion."
+      }
+    ],
+    "gallery": [
+      {
+        "src": "/assets/IEMS Diagram.d39e87e4.png",
+        "alt": "Product — original Suffix IT visual"
+      },
+      {
+        "src": "/assets/Dashboard_1.0929c23a.jpg",
+        "alt": "Loading — original Suffix IT visual"
+      },
+      {
+        "src": "/assets/Dashboard_2.543c09b5.jpg",
+        "alt": "interconnect billing — original Suffix IT visual"
+      }
+    ],
+    "videos": []
+  },
+  "/product/payroll-system": {
+    "source": "https://www.suffixit.com/product/payroll-system",
+    "captured": "2026-10-10",
+    "introTitle": "HR & Payroll Modules",
+    "blocks": [
+      {
+        "tag": "h1",
+        "text": "HR & Payroll Modules"
+      },
+      {
+        "tag": "p",
+        "text": "The ‘HR & Payroll’ module is an extremely flexible and effective payroll module fully integrated into the Rupantor ERP system. The payroll caters for all the standard earnings, benefits and deductions. Payroll includes user-defined earnings, deductions, and benefits descriptors which allow you to setup your own earnings, deductions and benefits based on your companies’ particular needs. Each of the descriptors can be setup to attract, if necessary and taxes."
+      },
+      {
+        "tag": "h1",
+        "text": "The ‘HR & Payroll’ module integrates to"
+      },
+      {
+        "tag": "li",
+        "text": "Bank Book/reconciliation for all payments made to employees"
+      },
+      {
+        "tag": "li",
+        "text": "Work in Progress module for time cards"
+      },
+      {
+        "tag": "li",
+        "text": "General Ledger for expense distribution"
+      },
+      {
+        "tag": "h1",
+        "text": "Benefits of HR & Payroll"
+      },
+      {
+        "tag": "li",
+        "text": "Tight integration with all other modules"
+      },
+      {
+        "tag": "li",
+        "text": "User defined pay slips"
+      },
+      {
+        "tag": "li",
+        "text": "Pay by cheque"
+      },
+      {
+        "tag": "li",
+        "text": "EFT payments"
+      },
+      {
+        "tag": "li",
+        "text": "Detailed audit trails for all master data and financial changes"
+      },
+      {
+        "tag": "li",
+        "text": "Time savings with simple payroll calculation"
+      },
+      {
+        "tag": "li",
+        "text": "Ability to cancel and recalculate easily, until you are happy with the pay run"
+      },
+      {
+        "tag": "li",
+        "text": "Detailed GL integration"
+      },
+      {
+        "tag": "h1",
+        "text": "Features of HR & Payroll"
+      },
+      {
+        "tag": "li",
+        "text": "Multiple branch control"
+      },
+      {
+        "tag": "li",
+        "text": "User defined earnings"
+      },
+      {
+        "tag": "li",
+        "text": "User defined benefits"
+      },
+      {
+        "tag": "li",
+        "text": "User defined deductions"
+      },
+      {
+        "tag": "li",
+        "text": "Multiple work departments"
+      },
+      {
+        "tag": "li",
+        "text": "Flexible rates and premium codes"
+      },
+      {
+        "tag": "li",
+        "text": "Multiple pay periods"
+      },
+      {
+        "tag": "h1",
+        "text": "More Information"
+      },
+      {
+        "tag": "h1",
+        "text": "Time & Attendance"
+      },
+      {
+        "tag": "p",
+        "text": "Employee Tracker Plus, designed to help control labor costs and improve payroll accuracy, is offered as an add-on module to Rupantor ERP’s core application. Customers can expect to save 2-5% of overall payroll costs by investing in this module."
+      },
+      {
+        "tag": "h1",
+        "text": "How it works ?"
+      },
+      {
+        "tag": "p",
+        "text": "Employee Tracker Plus improves payroll accuracy by automating the collection of employees’ times, correctly applying company pay policies, delivering time and attendance data to supervisors to allow faster decision-making regarding staff, and by providing access to real-time data to allow decision-making based on accurate labor cost data."
+      },
+      {
+        "tag": "h1",
+        "text": "Features"
+      },
+      {
+        "tag": "li",
+        "text": "Advanced scheduling"
+      },
+      {
+        "tag": "li",
+        "text": "Time approval system that highlights exceptions"
+      },
+      {
+        "tag": "li",
+        "text": "User-defined rates and calculation rules"
+      },
+      {
+        "tag": "li",
+        "text": "Tracking of absenteeism and tardiness"
+      },
+      {
+        "tag": "li",
+        "text": "Statutory and public holiday generator"
+      }
+    ],
+    "gallery": [],
+    "videos": []
+  },
+  "/product/interconnect-billing": {
+    "source": "https://www.suffixit.com/product/interconnect-billing",
+    "captured": "2026-10-10",
+    "introTitle": "Interconnect Billing Solutions",
+    "blocks": [
+      {
+        "tag": "h1",
+        "text": "Interconnect Billing Solutions"
+      },
+      {
+        "tag": "p",
+        "text": "As operators move deeper into next-generation services and content-driven service environments, revenue assurance becomes both more complex and more critical. Product portfolios are expanding, networks, services, operations and revenue chains are becoming increasingly complicated. Due to their growth, operators have to deal with large volumes of data, control points, KPIs involving time consuming and repetitive investigations. In today’s dynamic communications environment, a successful revenue assurance practice requires a highly mature revenue assurance solution – one that not only enables proactive and ongoing revenue recovery but simplifies RA by visually aiding telecom operators and guiding them to improve performance."
+      },
+      {
+        "tag": "h1",
+        "text": "A1PS Interconnect Billing"
+      },
+      {
+        "tag": "p",
+        "text": "The wholesale market today is increasingly aggressive and deregulated. Competition is fierce, margins are threatened, billions of different types of events require rating and analysis, agreements are complex and quality of service requires constant vigilance. In such an environment, operators need a partner settlement solution which efficiently accommodates new service launches with their tariff plans and complex revenue-share agreements. The solution, apart from simply billing and rating accurately, also needs to provide advanced and detailed information about the entire wholesale business for voice as well as content; thereby helping service providers make informed decisions."
+      },
+      {
+        "tag": "h1",
+        "text": "a1Partner Settlement"
+      },
+      {
+        "tag": "p",
+        "text": "a1Partner Settlement allows operators to quickly and accurately settle charges with their network and content partners. It helps operators improve efficiency through light touch and automation, accurate billing and settlement and prudent accrual provisioning. Catering to the need for visibility of each deal's impact on an operator's bottom line owing to shrinking margins, the solution provides strong coverage in all areas from order to cash. It enables operators to manage costs and revenues on interconnect and partner agreements with domestic and international operators as well as content partners on a day-to-day, and hour-to-hour basis. New types of complex agreements in areas such as IP and content-based services require new system capabilities to ensure that operators have accurate data available to assure revenues."
+      },
+      {
+        "tag": "p",
+        "text": "a1Partner Settlement's flexibility, scalability and ease of use empower all types of service providers, fixed or mobile, national incumbent or new entrant, giving them the edge needed to prosper in today's market."
+      },
+      {
+        "tag": "h1",
+        "text": "A1PS Interconnect Billing"
+      },
+      {
+        "tag": "li",
+        "text": "Implement complex revenue sharing arrangements"
+      },
+      {
+        "tag": "li",
+        "text": "Provide out-of-the-box next-gen support for IP and content models"
+      },
+      {
+        "tag": "li",
+        "text": "Bill and settle all services from a single system"
+      },
+      {
+        "tag": "li",
+        "text": "Launch profitable IP-based services"
+      },
+      {
+        "tag": "li",
+        "text": "Support all inter-operator business models"
+      }
+    ],
+    "gallery": [],
+    "videos": []
+  },
+  "/product/e-commerce": {
+    "source": "https://www.suffixit.com/product/e-commerce",
+    "captured": "2026-10-10",
+    "introTitle": "E-Commerce Solutions",
+    "blocks": [
+      {
+        "tag": "h1",
+        "text": "E-Commerce Solutions"
+      },
+      {
+        "tag": "p",
+        "text": "Suffix IT approach focuses on building an integrated, customized e-business solution for customers. We follow multi-phase, process-driven methodology for our e-commerce/e-business solutions including requirement analysis and definition, data modeling, site security, application testing and quality assurance.Our practice involves expertise in portal development frameworks, content management solutions, application servers, middleware integration built by using latest technology platforms."
+      },
+      {
+        "tag": "h1",
+        "text": "E-Commerce Solutions We Provide"
+      },
+      {
+        "tag": "h1",
+        "text": "The integrated reservation"
+      },
+      {
+        "tag": "li",
+        "text": "Content Management System"
+      },
+      {
+        "tag": "li",
+        "text": "Inventory Management"
+      },
+      {
+        "tag": "li",
+        "text": "Multi Pricing"
+      },
+      {
+        "tag": "li",
+        "text": "All Major International Credit Cards Process"
+      },
+      {
+        "tag": "li",
+        "text": "Order Management (History & Tracking)"
+      },
+      {
+        "tag": "li",
+        "text": "Gift Certificate and Coupon"
+      },
+      {
+        "tag": "li",
+        "text": "Discount Coupon Management Banner Management"
+      },
+      {
+        "tag": "li",
+        "text": "Banner Management"
+      },
+      {
+        "tag": "h1",
+        "text": "Multiple Payment options"
+      },
+      {
+        "tag": "li",
+        "text": "PayPal"
+      },
+      {
+        "tag": "li",
+        "text": "Checkout"
+      },
+      {
+        "tag": "li",
+        "text": "Authorize.net"
+      },
+      {
+        "tag": "li",
+        "text": "Multi-Shipping Options"
+      },
+      {
+        "tag": "li",
+        "text": "Affiliate Tracking"
+      },
+      {
+        "tag": "li",
+        "text": "Ad Tracking"
+      },
+      {
+        "tag": "li",
+        "text": "E-mail/Auto responders"
+      },
+      {
+        "tag": "li",
+        "text": "Shipping Options"
+      },
+      {
+        "tag": "h1",
+        "text": "More Information"
+      },
+      {
+        "tag": "li",
+        "text": "Rapidly growing competition and ever-changing marketplace trends have elevated the requirement of efficient shopping cart software program application.There is no finish to attractive and accessible features that a successful e commerce solution must have. But you must be considerate about your budget as well as business needs. Suffix IT offers you an exciting yet affordable range of e commerce solution that can help you achieve your desired profitability, motivating customer service, reducing overheads, and revenues that you dream of."
+      },
+      {
+        "tag": "li",
+        "text": "Suffix IT supplies a complete end-to-end e commerce solution with regard to businesses and businesses looking for in order to launch and keep the expert and effective store existence on the Web. All of us have a variety of e-commerce options available and due to the vast choice of abilities, this works extremely well to create each shop conceivable, from a little shop to an whole on the internet mall."
+      }
+    ],
+    "gallery": [],
+    "videos": []
+  },
+  "/product/rupantor-erp": {
+    "source": "https://www.suffixit.com/product/rupantor-erp",
+    "captured": "2026-10-10",
+    "introTitle": "Rupantor ERP Module",
+    "blocks": [
+      {
+        "tag": "h1",
+        "text": "Rupantor ERP Module"
+      },
+      {
+        "tag": "p",
+        "text": "Rupantor’s General Ledger module is multi-company, multi-division and multi-branch capable. The General Ledger is the core of the financial management system and integrates with all other financial modules in the system. Included with this module are powerful financial report writing capabilities that include aggregation capability as well as optional integration to third party financial report writers if required. Alternatively, all data can be sent to external programs such as Microsoft Excel, Access or similar tools for further reporting and data analysis. For companies working around the globe, all sub-modules are multi-currency capable."
+      },
+      {
+        "tag": "h1",
+        "text": "Accounting And Financial Management"
+      },
+      {
+        "tag": "h1",
+        "text": "General Ledger"
+      },
+      {
+        "tag": "p",
+        "text": "For larger enterprises, Rupantor’s General Ledger offers a built-in inter-company transaction feature that includes self-balancing, inter-company loan accounts which substantially reduce administration of these transaction types. With options such as unlimited history and drill down capabilities to source detail transactions, Rupantor’s General Ledger and financial sub-modules are a powerful financial system."
+      },
+      {
+        "tag": "h1",
+        "text": "The ‘General Ledger’ module integrates to"
+      },
+      {
+        "tag": "li",
+        "text": "Multiple branch control"
+      },
+      {
+        "tag": "li",
+        "text": "Visibility into outgoing cash flow"
+      },
+      {
+        "tag": "li",
+        "text": "User defined terms tables"
+      },
+      {
+        "tag": "li",
+        "text": "Inventory received accrual system"
+      },
+      {
+        "tag": "li",
+        "text": "Manual and automated checks"
+      },
+      {
+        "tag": "h1",
+        "text": "Features of General Ledger"
+      },
+      {
+        "tag": "li",
+        "text": "Multi-company"
+      },
+      {
+        "tag": "li",
+        "text": "Multi-division"
+      },
+      {
+        "tag": "li",
+        "text": "Multi-branch"
+      },
+      {
+        "tag": "li",
+        "text": "Financial and statistical accounts"
+      },
+      {
+        "tag": "li",
+        "text": "Recurring and standard journals And so on."
+      },
+      {
+        "tag": "h1",
+        "text": "Accounts Payable"
+      },
+      {
+        "tag": "p",
+        "text": "Automating Accounts Payable is one of the most important tasks you should undertake to control your outstanding accounts. This full-featured, multi-currency ‘Accounts Payable’ module gives you cash flow control and visibility over all accruals and expenses and includes many features that save time and money. The ‘Accounts Payable’ module has both an invoice registration system and a goods-received-not-yet-invoiced (GRN) accrual system. The system also caters for “inter-company” transactions that allow you to cut down substantially on the number of paper transactions between multiple companies in the same group."
+      },
+      {
+        "tag": "h1",
+        "text": "The ‘Accounts Payable’ module integrates as follows"
+      },
+      {
+        "tag": "li",
+        "text": "Bank Book/reconciliation for all payments made"
+      },
+      {
+        "tag": "li",
+        "text": "Purchase orders for accruals of all inventory received"
+      },
+      {
+        "tag": "li",
+        "text": "General Ledger for expense distribution"
+      },
+      {
+        "tag": "h1",
+        "text": "Features of Accounts Payable"
+      },
+      {
+        "tag": "li",
+        "text": "Multiple branch control"
+      },
+      {
+        "tag": "li",
+        "text": "Visibility into outgoing cash flow"
+      },
+      {
+        "tag": "li",
+        "text": "User defined terms tables"
+      },
+      {
+        "tag": "li",
+        "text": "Inventory received accrual system"
+      },
+      {
+        "tag": "li",
+        "text": "Manual and automated checks"
+      },
+      {
+        "tag": "li",
+        "text": "Inter-company invoice and payment transactions"
+      },
+      {
+        "tag": "li",
+        "text": "Payment reviews process and selection"
+      },
+      {
+        "tag": "li",
+        "text": "Stock code cross-reference system"
+      },
+      {
+        "tag": "h1",
+        "text": "HR & Payroll Modules"
+      },
+      {
+        "tag": "p",
+        "text": "The ‘HR & Payroll’ module is an extremely flexible and effective payroll module fully integrated into the Rupantor ERP system. The payroll caters for all the standard earnings, benefits and deductions. Payroll includes user-defined earnings, deductions, and benefits descriptors which allow you to setup your own earnings, deductions and benefits based on your companies’ particular needs. Each of the descriptors can be setup to attract, if necessary and taxes."
+      },
+      {
+        "tag": "h1",
+        "text": "The 'HR & Payroll' module integrates to"
+      },
+      {
+        "tag": "li",
+        "text": "Bank Book/reconciliation for all payments made"
+      },
+      {
+        "tag": "li",
+        "text": "Purchase orders for accruals of all inventory received"
+      },
+      {
+        "tag": "li",
+        "text": "General Ledger for expense distribution"
+      },
+      {
+        "tag": "h1",
+        "text": "Features of HR & Payroll"
+      },
+      {
+        "tag": "li",
+        "text": "Multiple branch control"
+      },
+      {
+        "tag": "li",
+        "text": "User defined earnings"
+      },
+      {
+        "tag": "li",
+        "text": "User defined benefits"
+      },
+      {
+        "tag": "li",
+        "text": "User defined deductions"
+      },
+      {
+        "tag": "li",
+        "text": "Multiple work departments"
+      },
+      {
+        "tag": "li",
+        "text": "Flexible rates and premium codes"
+      },
+      {
+        "tag": "li",
+        "text": "Multiple pay periods"
+      },
+      {
+        "tag": "h1",
+        "text": "Inventory Management"
+      },
+      {
+        "tag": "p",
+        "text": "The Rupantor Inventory Control module is core to the manufacturing and distribution systems and processes built into Rupantor ERP. Inventory is used to control the value and quantities of finished products, sub-assemblies, components, raw material, consumables and non-merchandise items. The inventory master ﬁle allows you to maintain and control over two hundred fields and attributes giving enormous flexibility when dealing with different types of business."
+      },
+      {
+        "tag": "h1",
+        "text": "The ‘Inventory Control’ module integrates to"
+      },
+      {
+        "tag": "li",
+        "text": "Sales Orders for quotes, orders and invoicing"
+      },
+      {
+        "tag": "li",
+        "text": "Purchase Orders for replenishment planning and purchasing"
+      },
+      {
+        "tag": "li",
+        "text": "Bill of material for all material links"
+      },
+      {
+        "tag": "li",
+        "text": "Work-in Progress for all material requirements"
+      },
+      {
+        "tag": "li",
+        "text": "Estimating for all material requirements"
+      },
+      {
+        "tag": "li",
+        "text": "Remanufacturing for all material requirements"
+      },
+      {
+        "tag": "li",
+        "text": "Remanufacturing for all material requirements"
+      },
+      {
+        "tag": "h1",
+        "text": "Features of Inventory Control"
+      },
+      {
+        "tag": "li",
+        "text": "Multiple warehouses"
+      },
+      {
+        "tag": "li",
+        "text": "Product classes"
+      },
+      {
+        "tag": "li",
+        "text": "Product categories"
+      },
+      {
+        "tag": "li",
+        "text": "Product groups / families"
+      },
+      {
+        "tag": "li",
+        "text": "Tariff codes"
+      },
+      {
+        "tag": "li",
+        "text": "Consolidated picking"
+      },
+      {
+        "tag": "li",
+        "text": "Product certifications"
+      },
+      {
+        "tag": "li",
+        "text": "Buyer and Planner controls"
+      },
+      {
+        "tag": "li",
+        "text": "Consignment inventory control"
+      },
+      {
+        "tag": "li",
+        "text": "Flexible inventory count system"
+      },
+      {
+        "tag": "li",
+        "text": "Detailed history and tracking"
+      },
+      {
+        "tag": "li",
+        "text": "User defined fields"
+      },
+      {
+        "tag": "li",
+        "text": "Multiple units of measure"
+      },
+      {
+        "tag": "h1",
+        "text": "Saled orders & invoicing"
+      },
+      {
+        "tag": "p",
+        "text": "The Sales Orders module is a very powerful and flexible system designed to cater for multiple types of sales types. Examples include quotations, normal sales, billings, back-orders, direct/drop shipments, inter-branch transfers, inter-company sales and scheduled orders. Of significance in the Sales Orders system is a built-in configurator. The configurator is setup using the Product Definition module and allows you to develop a step by step configuration process. The configuration system is designed for businesses that need to build configurable products on the fly and produce quotes for customers. The system caters for multiple methods of sales pricing including; simple pricing, coded pricing, quantity discount pricing, extended pricing, buying groups and contract pricing. The system also caters for merchandise and non-merchandise sales, service charges, miscellaneous charges and freight charges."
+      },
+      {
+        "tag": "h1",
+        "text": "The ‘Sales Orders’ module integrates to"
+      },
+      {
+        "tag": "li",
+        "text": "Inventory for all standard product sales"
+      },
+      {
+        "tag": "li",
+        "text": "Estimating for custom product sales"
+      },
+      {
+        "tag": "li",
+        "text": "Purchase order for special orders"
+      },
+      {
+        "tag": "li",
+        "text": "Product Definition for kit sales"
+      },
+      {
+        "tag": "li",
+        "text": "Product Definition for configuration items"
+      },
+      {
+        "tag": "li",
+        "text": "Accounts Receivable when invoices, credit and debit notes are created"
+      },
+      {
+        "tag": "h1",
+        "text": "Features of Sales Orders"
+      },
+      {
+        "tag": "li",
+        "text": "Multiple branch control"
+      },
+      {
+        "tag": "li",
+        "text": "User defined terms tables"
+      },
+      {
+        "tag": "li",
+        "text": "Inter-company invoice"
+      },
+      {
+        "tag": "li",
+        "text": "Inter-branch transfers"
+      },
+      {
+        "tag": "li",
+        "text": "Consolidated picking schedules"
+      },
+      {
+        "tag": "li",
+        "text": "Batch or on-line printing of documents"
+      },
+      {
+        "tag": "li",
+        "text": "Documents can be sent to email or fax"
+      },
+      {
+        "tag": "li",
+        "text": "Commissions calculations and reporting"
+      },
+      {
+        "tag": "li",
+        "text": "Quotations direct to sales orders"
+      },
+      {
+        "tag": "li",
+        "text": "Standard and custom comment lines"
+      },
+      {
+        "tag": "li",
+        "text": "All documents are stored for reprints"
+      },
+      {
+        "tag": "h1",
+        "text": "Procurement"
+      },
+      {
+        "tag": "p",
+        "text": "The Purchase Order module is not just a vehicle to create and track purchase orders. Included is a powerful Replenishment Planning system, which using demand driven principles, calculates the net requirements of all the ‘bought out’ items in your inventory system. Using powerful buying rule algorithms, the Replenishment Planning system collects all of the necessary data and does all of the math necessary to help planners to decide on the quantities to order. Furthermore, the system uses the landed cost routing (from the Landed Cost Tracking module) to calculate the expected landed costs of the new shipments, to give you the new costs at hand before they are delivered thereby enabling you to be proactive with your selling prices and margin control."
+      },
+      {
+        "tag": "h1",
+        "text": "The ‘Purchase Order’ module integrates to"
+      },
+      {
+        "tag": "li",
+        "text": "Inventory for all inventory on hand details"
+      },
+      {
+        "tag": "li",
+        "text": "Sales orders for all current sales demand"
+      },
+      {
+        "tag": "li",
+        "text": "Sales Orders for all special orders copied from sales order to purchase order"
+      },
+      {
+        "tag": "li",
+        "text": "Work in Progress for all direct to work order purchases"
+      },
+      {
+        "tag": "li",
+        "text": "Product definition to calculate net requirements from finished goods demand"
+      },
+      {
+        "tag": "li",
+        "text": "Estimating module for demand created by custom manufactured products"
+      },
+      {
+        "tag": "h1",
+        "text": "Features of Procurement"
+      },
+      {
+        "tag": "li",
+        "text": "Sales by customer"
+      },
+      {
+        "tag": "li",
+        "text": "Sales by inventory product class"
+      },
+      {
+        "tag": "li",
+        "text": "Real time sales analysis"
+      },
+      {
+        "tag": "li",
+        "text": "Flexible analysis using export to Excel"
+      },
+      {
+        "tag": "li",
+        "text": "Sales profitability"
+      },
+      {
+        "tag": "li",
+        "text": "Sales, costs, margins, margin percentage Sales by sales person"
+      },
+      {
+        "tag": "li",
+        "text": "Sales by sales person"
+      },
+      {
+        "tag": "h1",
+        "text": "More Information"
+      },
+      {
+        "tag": "h1",
+        "text": "Accounts Receivable"
+      },
+      {
+        "tag": "li",
+        "text": "Accounts Receivable controls all outstanding invoices, cash received and outstanding customer accounts. It is the center of your customer universe with all information and inquiries relating to outstanding accounts, sales history, sales pricing and more."
+      },
+      {
+        "tag": "h1",
+        "text": "Accounts Payable"
+      },
+      {
+        "tag": "li",
+        "text": "Automating Accounts Payable is one of the most important tasks you should undertake to control your outstanding accounts. This full-featured, multi-currency ‘Accounts Payable’ module gives you cash flow control and visibility over all accruals and expenses and includes many features that save time and money."
+      },
+      {
+        "tag": "h1",
+        "text": "Bank Book"
+      },
+      {
+        "tag": "li",
+        "text": "The Bank Book is the hub to all cash flow within the Rupantor ERP system. Bank Book contains the details of all bank accounts used for bank and statement reconciliations. Rupantor’s Bank Book is an independent module rather than being incorporated into the General Ledger as some other packages are. Use this module for all bank accounts, credit lines and credit cards with the specific ‘bank account” functionality built into the system."
+      }
+    ],
+    "gallery": [],
+    "videos": []
+  },
+  "/product/provident-fund": {
+    "source": "https://www.suffixit.com/product/provident-fund",
+    "captured": "2026-10-10",
+    "introTitle": "Personal Information Management",
+    "blocks": [
+      {
+        "tag": "h1",
+        "text": "Personal Information Management"
+      },
+      {
+        "tag": "p",
+        "text": "Save deeply, detailed information about your employees. Get the exact, clear idea associated with distinctive employee profiles in order to configure a sensible account holder."
+      },
+      {
+        "tag": "h1",
+        "text": "Configurable Chart of Account"
+      },
+      {
+        "tag": "p",
+        "text": "Improve your accounting system by using SuffixPF smart application features. Configure CoA based on your accounting system."
+      },
+      {
+        "tag": "h1",
+        "text": "Flexibility to integrate with third party Payroll System"
+      },
+      {
+        "tag": "p",
+        "text": "A complete Provident Fund Management System with the ability to integrate with any payroll management system."
+      },
+      {
+        "tag": "h1",
+        "text": "Key Features"
+      },
+      {
+        "tag": "h2",
+        "text": "Configurable Refund Policy"
+      },
+      {
+        "tag": "p",
+        "text": "Increase your refund skills using SuffixPF’s smart application features. Set up role-based refunds according to service and month."
+      },
+      {
+        "tag": "h2",
+        "text": "PF Loan Management"
+      },
+      {
+        "tag": "p",
+        "text": "Effortlessly manage PF Loan. Configure your application to loan recovery schedule automatically and calculate interest on loan amount."
+      },
+      {
+        "tag": "h2",
+        "text": "PF Profit Calculation & Distribution"
+      },
+      {
+        "tag": "p",
+        "text": "Configure your application to automatically calculate profit on investment within a specified period, including contributions as a provident fund. And distribute profit to employee account by a single click."
+      },
+      {
+        "tag": "h2",
+        "text": "PF Investment Management"
+      },
+      {
+        "tag": "p",
+        "text": "Effortlessly manage PF Investment. Configure your application to automatically calculate interest percentages of each investment within a specified period."
+      }
+    ],
+    "gallery": [],
+    "videos": []
+  },
+  "/product/hotel-booking-system": {
+    "source": "https://www.suffixit.com/product/hotel-booking-system",
+    "captured": "2026-10-10",
+    "introTitle": "Multiple room bookings",
+    "blocks": [
+      {
+        "tag": "h1",
+        "text": "Multiple room bookings"
+      },
+      {
+        "tag": "p",
+        "text": "Guests can book more than one room within a single reservation. During the booking process, they will see the available rooms for the selected period and can pick one or more rooms and the number of guests."
+      },
+      {
+        "tag": "h1",
+        "text": "Reservations management"
+      },
+      {
+        "tag": "p",
+        "text": "The integrated reservation management system enables administrators to manage booking and customer details and add bookings manually. They can keep track of bookings by date and status on the room availability calendar."
+      }
+    ],
+    "gallery": [],
+    "videos": []
+  },
+  "/product/rupantor-inventory": {
+    "source": "https://www.suffixit.com/product/rupantor-inventory",
+    "captured": "2026-10-10",
+    "introTitle": "Inventory Management",
+    "blocks": [
+      {
+        "tag": "h1",
+        "text": "Inventory Management"
+      },
+      {
+        "tag": "p",
+        "text": "The Rupantor Inventory Control module is core to the manufacturing and distribution systems and processes built into Rupantor ERP. Inventory is used to control the value and quantities of finished products, sub-assemblies, components, raw material, consumables and non-merchandise items. The inventory master ﬁle allows you to maintain and control over two hundred fields and attributes giving enormous flexibility when dealing with different types of business."
+      },
+      {
+        "tag": "h1",
+        "text": "The ‘Inventory Control’ module integrates to"
+      },
+      {
+        "tag": "li",
+        "text": "Sales Orders for quotes, orders and invoicing"
+      },
+      {
+        "tag": "li",
+        "text": "Purchase Orders for replenishment planning and purchasing"
+      },
+      {
+        "tag": "li",
+        "text": "Bill of material for all material links"
+      },
+      {
+        "tag": "li",
+        "text": "Work-in Progress for all material requirements"
+      },
+      {
+        "tag": "li",
+        "text": "Estimating for all material requirements"
+      },
+      {
+        "tag": "li",
+        "text": "Remanufacturing for all material requirements"
+      },
+      {
+        "tag": "li",
+        "text": "Remanufacturing for all material requirements"
+      },
+      {
+        "tag": "h1",
+        "text": "Features of Inventory Control"
+      },
+      {
+        "tag": "li",
+        "text": "Multiple warehouses"
+      },
+      {
+        "tag": "li",
+        "text": "Product classes"
+      },
+      {
+        "tag": "li",
+        "text": "Product categories"
+      },
+      {
+        "tag": "li",
+        "text": "Product groups / families"
+      },
+      {
+        "tag": "li",
+        "text": "Tariff codes"
+      },
+      {
+        "tag": "li",
+        "text": "Consolidated picking"
+      },
+      {
+        "tag": "li",
+        "text": "Product certifications"
+      },
+      {
+        "tag": "li",
+        "text": "Buyer and Planner controls"
+      },
+      {
+        "tag": "li",
+        "text": "Consignment inventory control"
+      },
+      {
+        "tag": "li",
+        "text": "Flexible inventory count system"
+      },
+      {
+        "tag": "li",
+        "text": "Detailed history and tracking"
+      },
+      {
+        "tag": "li",
+        "text": "User defined fields"
+      },
+      {
+        "tag": "li",
+        "text": "Multiple units of measure"
+      },
+      {
+        "tag": "h1",
+        "text": "Benefits of Inventory Control"
+      },
+      {
+        "tag": "li",
+        "text": "Powerful built in features to control and analyze inventory"
+      },
+      {
+        "tag": "li",
+        "text": "Balance and optimize inventory investments using proven built in tools"
+      },
+      {
+        "tag": "li",
+        "text": "Reduce working capital while increasing customer service"
+      },
+      {
+        "tag": "li",
+        "text": "Detailed audit trails for all master data, quantity, and financial changes"
+      },
+      {
+        "tag": "li",
+        "text": "Detailed cost control resulting in accurate margin reporting"
+      },
+      {
+        "tag": "li",
+        "text": "Flexible rates and premium codes"
+      },
+      {
+        "tag": "li",
+        "text": "Tight integration with all other relevant modules"
+      }
+    ],
+    "gallery": [],
+    "videos": []
+  },
+  "/product/transformer-monitoring": {
+    "source": "https://www.suffixit.com/product/transformer-monitoring",
+    "captured": "2026-10-10",
+    "introTitle": "SYSTEM FEATURES",
+    "blocks": [
+      {
+        "tag": "h1",
+        "text": "SYSTEM FEATURES"
+      },
+      {
+        "tag": "h1",
+        "text": "Multiple Transformer Status"
+      },
+      {
+        "tag": "h1",
+        "text": "What Can Monitor?"
+      },
+      {
+        "tag": "h1",
+        "text": "Transformers History"
+      },
+      {
+        "tag": "h1",
+        "text": "Remote Alarm & Notifications"
+      },
+      {
+        "tag": "h1",
+        "text": "Benefits of the Monitoring System"
+      },
+      {
+        "tag": "li",
+        "text": "Early Identifiaction of a Fault."
+      },
+      {
+        "tag": "li",
+        "text": "Avoid Costly Unplanned Outages."
+      },
+      {
+        "tag": "li",
+        "text": "Avoid Catastropic Failures."
+      },
+      {
+        "tag": "li",
+        "text": "Extended Life Time of the Transformer."
+      },
+      {
+        "tag": "li",
+        "text": "Reduces Mintenance Costs of the Transformer."
+      },
+      {
+        "tag": "li",
+        "text": "Reduces Risk of the Transformer Failure & Grid Blackout."
+      },
+      {
+        "tag": "li",
+        "text": "Increase the Operational Availability of the Transformer."
+      },
+      {
+        "tag": "li",
+        "text": "Continually Assess the Oprational Status of the Transformer."
+      },
+      {
+        "tag": "li",
+        "text": "Enhanced Overload Capability."
+      },
+      {
+        "tag": "li",
+        "text": "Assist in Maintenance Planning."
+      },
+      {
+        "tag": "h1",
+        "text": "Easily Accissible from Anywhere through Mobile & PC"
+      }
+    ],
+    "gallery": [
+      {
+        "src": "/assets/STMS.42b12aa1.png",
+        "alt": "Product — original Suffix IT visual"
+      },
+      {
+        "src": "/assets/image (1).360ae464.png",
+        "alt": "interconnect billing — original Suffix IT visual"
+      },
+      {
+        "src": "/assets/image (4).66a9882f.png",
+        "alt": "interconnect billing — original Suffix IT visual"
+      },
+      {
+        "src": "/assets/image (3).1af9d7d5.png",
+        "alt": "interconnect billing — original Suffix IT visual"
+      },
+      {
+        "src": "/assets/image (6).abc5bf48.png",
+        "alt": "interconnect billing — original Suffix IT visual"
+      },
+      {
+        "src": "/assets/image (2).3ed88de2.png",
+        "alt": "interconnect billing — original Suffix IT visual"
+      },
+      {
+        "src": "/assets/image (5).a134f234.png",
+        "alt": "interconnect billing — original Suffix IT visual"
+      }
+    ],
+    "videos": []
+  },
+  "/product/field-force-management": {
+    "source": "https://www.suffixit.com/product/field-force-management",
+    "captured": "2026-10-10",
+    "introTitle": "Real-Time Field Force Tracking and Monitoring Solution.",
+    "blocks": [
+      {
+        "tag": "h2",
+        "text": "Real-Time Field Force Tracking and Monitoring Solution."
+      },
+      {
+        "tag": "h2",
+        "text": "Field Force Management Platform"
+      },
+      {
+        "tag": "p",
+        "text": "This application incorporates cutting-edge technologies to provide advanced scheduling and workforce management solutions that are accessible to the organization. SFFMS provides you with an end-to-end visibility of the field operations and business processes, with native mobile app support across all major mobile platforms for you to know in real-time about your business."
+      },
+      {
+        "tag": "h1",
+        "text": "Job Scheduling"
+      },
+      {
+        "tag": "p",
+        "text": "Schedule jobs to the local agent automatically. Share records, as well as other appointment detailing together with field force without possessing to be in business office."
+      },
+      {
+        "tag": "h1",
+        "text": "Live Tracking"
+      },
+      {
+        "tag": "p",
+        "text": "Auto assigned task to local and free field push agent after creation of recent task. Field force broker gets instant notification to take new task."
+      },
+      {
+        "tag": "h1",
+        "text": "Automate Assignment"
+      },
+      {
+        "tag": "p",
+        "text": "Auto assigned task to nearest and free field force agent upon creation of new task. Field force agent gets instant notification to accept new task"
+      },
+      {
+        "tag": "h1",
+        "text": "Offline Data Synchronization"
+      },
+      {
+        "tag": "p",
+        "text": "The employees, using our field support mobile app, can employ this software in offline function in case there is internet connectivity concerns. Automatic syncing with net starts as soon for the reason that network connection will end up being restored. The intelligent harmonisation feature activates data safe-keeping in offline mode to be able to make sure the information can be very easily downloaded inside online setting."
+      },
+      {
+        "tag": "h1",
+        "text": "Key Features"
+      },
+      {
+        "tag": "h1",
+        "text": "Attendance Management"
+      },
+      {
+        "tag": "p",
+        "text": "Monitor attendance and leave of each and every field force. Allow discipline force to mark presence on agent app together with selfie and location checking."
+      },
+      {
+        "tag": "h1",
+        "text": "Task Management"
+      },
+      {
+        "tag": "p",
+        "text": "Let your field force and consumers to review the other person inside a quick, and effortless way. Manage rating regarding each task to help to make intelligent decisions for your current business."
+      },
+      {
+        "tag": "h1",
+        "text": "Order, Invoice and Payment"
+      },
+      {
+        "tag": "p",
+        "text": "Deliver quotes, invoice to the particular customer through mobile application. All access and up-date to field force regarding payments made by client in real-time."
+      },
+      {
+        "tag": "h1",
+        "text": "Chat and Collaboration"
+      },
+      {
+        "tag": "p",
+        "text": "Exchange information on chat method from admin to field force agent or conversely. Share documents, image together with group of men and women or a new particular person."
+      },
+      {
+        "tag": "h1",
+        "text": "Performance Analysis"
+      },
+      {
+        "tag": "p",
+        "text": "Catch all type of data inside a structured way and instantly calculate the number associated with tasks completed by every field force to evaluate performance in a month"
+      },
+      {
+        "tag": "h1",
+        "text": "Expense Management"
+      },
+      {
+        "tag": "p",
+        "text": "Successful reporting highlights all PF history for each and every employee, guaranteeing your oversight of just about all funds and transactions."
+      },
+      {
+        "tag": "h1",
+        "text": "Roster Plan"
+      },
+      {
+        "tag": "p",
+        "text": "Let your field force and clients to review the other person within a quick, and simple way. Manage rating associated with each task to create intelligent selections for your own business."
+      },
+      {
+        "tag": "h1",
+        "text": "Integration"
+      },
+      {
+        "tag": "p",
+        "text": "Integrate suffix field force management system into your existing erp. Opens up your capabilities on the operational and customer-facing part of your business."
+      },
+      {
+        "tag": "h1",
+        "text": "How it Work"
+      },
+      {
+        "tag": "h2",
+        "text": "Auto assign tasks to field force agent"
+      },
+      {
+        "tag": "h2",
+        "text": "Monitor & track all activities of field force in real-time"
+      },
+      {
+        "tag": "h2",
+        "text": "Field Force agent gets instant notification on mobile app"
+      },
+      {
+        "tag": "h2",
+        "text": "Field Force agents completes the task at service location"
+      },
+      {
+        "tag": "h2",
+        "text": "Field Force Agents heads to next assign task"
+      }
+    ],
+    "gallery": [
+      {
+        "src": "/assets/field-force.497227c8.png",
+        "alt": "field1 — original Suffix IT visual"
+      }
+    ],
+    "videos": []
+  },
+  "/product/pos-system": {
+    "source": "https://www.suffixit.com/product/pos-system",
+    "captured": "2026-10-10",
+    "introTitle": "Leading Retail Pos Software That Retailers Love To Use",
+    "blocks": [
+      {
+        "tag": "h2",
+        "text": "Leading Retail Pos Software That Retailers Love To Use"
+      },
+      {
+        "tag": "h1",
+        "text": "What is Smart POS & Billing System?"
+      },
+      {
+        "tag": "p",
+        "text": "Smart POS & billing system is a easy to use point of sales system for retail store, super shop and restaurants. You can use it in any device such as your phone , laptop or desktop computer. By connecting POS printer, bar-code scanner and cash drawer you can make it a full functional Point Of Sales system. It has almost all the facility including inventory management system, sales and purchase management system, customer and employee management system which can automate your organization the way you never did before. With real time reporting you can get a clear view of your business anytime you want."
+      },
+      {
+        "tag": "h1",
+        "text": "Key Features"
+      },
+      {
+        "tag": "h1",
+        "text": "Mobile Supported Point of Sale"
+      },
+      {
+        "tag": "li",
+        "text": "Elegant Point Of Sale"
+      },
+      {
+        "tag": "li",
+        "text": "Support for Multiple Payments"
+      },
+      {
+        "tag": "li",
+        "text": "POS Registers Log"
+      },
+      {
+        "tag": "li",
+        "text": "Dedicated POS Style and Settings for each employee"
+      },
+      {
+        "tag": "li",
+        "text": "QR Code Due Invoices"
+      },
+      {
+        "tag": "h1",
+        "text": "Subscriptions Invoice Module"
+      },
+      {
+        "tag": "li",
+        "text": "Subscription Management Module for recurring invoices"
+      },
+      {
+        "tag": "li",
+        "text": "Support for Online Card Payment"
+      },
+      {
+        "tag": "li",
+        "text": "Performance Invoice"
+      },
+      {
+        "tag": "li",
+        "text": "Integrated Stock Manager"
+      },
+      {
+        "tag": "li",
+        "text": "Get online payment with unique invoice link"
+      },
+      {
+        "tag": "li",
+        "text": "Decent Invoice A4 & Compact POS Printing"
+      },
+      {
+        "tag": "h1",
+        "text": "Quotations"
+      },
+      {
+        "tag": "li",
+        "text": "Send Quotes with proposal as Email"
+      },
+      {
+        "tag": "li",
+        "text": "Convert quotes to invoices"
+      },
+      {
+        "tag": "li",
+        "text": "Customer can approve quote"
+      },
+      {
+        "tag": "h1",
+        "text": "Stock Purchase Orders"
+      },
+      {
+        "tag": "li",
+        "text": "Send Purchase receipt with your stock requirement to suppliers"
+      },
+      {
+        "tag": "li",
+        "text": "Integrated to Inventory Manager"
+      },
+      {
+        "tag": "h1",
+        "text": "Stock Management"
+      },
+      {
+        "tag": "li",
+        "text": "Improved & Intelligent Product Variations System"
+      },
+      {
+        "tag": "li",
+        "text": "Track Stock Worth with category ,warehouse"
+      },
+      {
+        "tag": "li",
+        "text": "Add Product Serials"
+      },
+      {
+        "tag": "li",
+        "text": "Manage products with live stock status"
+      },
+      {
+        "tag": "li",
+        "text": "Get Email Alerts of low stock items"
+      },
+      {
+        "tag": "h1",
+        "text": "Accounts & Transactions"
+      },
+      {
+        "tag": "li",
+        "text": "Custom Type Company Accounts"
+      },
+      {
+        "tag": "li",
+        "text": "Organized Balance Sheet"
+      },
+      {
+        "tag": "li",
+        "text": "Optional Dual Entry System"
+      },
+      {
+        "tag": "li",
+        "text": "Custom Transactions and Transaction Categories"
+      },
+      {
+        "tag": "h1",
+        "text": "Client Management"
+      },
+      {
+        "tag": "li",
+        "text": "Manage Customer and Contacts"
+      },
+      {
+        "tag": "li",
+        "text": "Customer Wallet"
+      },
+      {
+        "tag": "li",
+        "text": "Customer Reports"
+      },
+      {
+        "tag": "h1",
+        "text": "Stock Suppliers"
+      },
+      {
+        "tag": "li",
+        "text": "Manage Stock Purchase orders"
+      },
+      {
+        "tag": "li",
+        "text": "Payment records"
+      },
+      {
+        "tag": "li",
+        "text": "Suppliers Reports"
+      },
+      {
+        "tag": "h1",
+        "text": "Billing"
+      },
+      {
+        "tag": "li",
+        "text": "Custom tax,discount and grouped units per products"
+      },
+      {
+        "tag": "li",
+        "text": "Delivery Note"
+      },
+      {
+        "tag": "h1",
+        "text": "HRM"
+      },
+      {
+        "tag": "li",
+        "text": "Custom Roles & 70+ Permissions"
+      },
+      {
+        "tag": "li",
+        "text": "Salary management with Payroll"
+      },
+      {
+        "tag": "li",
+        "text": "Attendance with Self Attendance or Manual"
+      }
+    ],
+    "gallery": [],
+    "videos": []
+  },
+  "/top-10-software-company-in-bangladesh": {
+    "source": "https://www.suffixit.com/top-10-software-company-in-bangladesh",
+    "captured": "2026-10-10",
+    "introTitle": "1. Suffix IT",
+    "blocks": [
+      {
+        "tag": "p",
+        "text": "The software company has been playing an easy lifestyle. It creates a huge impact on the economy and social life. New Technology and innovation make life easier and save money and time. Now I am creating a list of the top 10 software companies in Bangladesh. My focus area is a new technology, innovation, quality software, and after-sales service. Given below, is the list of the top 10 Software companies in Bangladesh. Read through the article to know in detail-"
+      },
+      {
+        "tag": "h1",
+        "text": "1. Suffix IT"
+      },
+      {
+        "tag": "p",
+        "text": "At Suffix IT, we develop innovative and creative products and services that provide total communication and information solutions. Among a plethora of services, web design and development, tailor made applications, ERPs, CRMs, e-commerce solutions, business-to-business applications, business-to-client applications, managed hosting and internet portal management are few that we offer. Satisfied clients around the globe bear testimony to the quality of our work. As a leader in technology exploring, Suffix IT is committed to exporting quality software worldwide.Employee: 100+Experience: 10Ready Software: 40+Create Custom Software: YesSector: Ecommerce, Blockchain, Hospitality, Health, Aviation, Banking"
+      },
+      {
+        "tag": "li",
+        "text": "Employee: 100+"
+      },
+      {
+        "tag": "li",
+        "text": "Experience: 10"
+      },
+      {
+        "tag": "li",
+        "text": "Ready Software: 40+"
+      },
+      {
+        "tag": "li",
+        "text": "Create Custom Software: Yes"
+      },
+      {
+        "tag": "li",
+        "text": "Sector: Ecommerce, Blockchain, Hospitality, Health, Aviation, Banking"
+      },
+      {
+        "tag": "h1",
+        "text": "2. Lead Soft"
+      },
+      {
+        "tag": "p",
+        "text": "Lead Soft is known in Bangladesh as a highly attractive workplace that puts emphasis on technology, the work environment, and sharing of knowledge for collective growth and success. We continue to grow as a company as well, currently employing more than 150 people. Our clients are mostly Norwegian companies, from young businesses experiencing rapid growth to traditional and larger ones like media groups. We are a very client-oriented partner, with a flexible form of cooperation and high quality delivered.Employee: 600+Experience: 16+Create Custom Software: YesCreate Custom Software: YesSector: Fintech, Healthcare, Telco, Automotive, Software"
+      },
+      {
+        "tag": "li",
+        "text": "Employee: 600+"
+      },
+      {
+        "tag": "li",
+        "text": "Experience: 16+"
+      },
+      {
+        "tag": "li",
+        "text": "Create Custom Software: Yes"
+      },
+      {
+        "tag": "li",
+        "text": "Create Custom Software: Yes"
+      },
+      {
+        "tag": "li",
+        "text": "Sector: Fintech, Healthcare, Telco, Automotive, Software"
+      },
+      {
+        "tag": "h1",
+        "text": "3. Data Soft"
+      },
+      {
+        "tag": "p",
+        "text": "They are multidisciplinary tech teams consisting of business and engineering talents - critical to success in digital transformation projects. Instead of organizing work by functions or responsibilities, fusion teams are typically organized by the cross-cutting business capabilities, business outcomes or customer outcomes they support.Successful software development projects at the edge of technological innovation require an optimal fit of people, process and technology. Data Soft has implemented hundreds of IT Projects across industries for over 10 years.Stable and secure IT operations are a business critical function for your digitally transformed business in the age of “Never Normal”.Data Soft runs a operation for various customers across countries and industries.Employee: 400+Experience: 24+Create Custom Software: YesCreate Custom Software: YesSector:  Banking & Finance, Port & Logistics, Government a Defense, SME & Development"
+      },
+      {
+        "tag": "li",
+        "text": "Employee: 400+"
+      },
+      {
+        "tag": "li",
+        "text": "Experience: 24+"
+      },
+      {
+        "tag": "li",
+        "text": "Create Custom Software: Yes"
+      },
+      {
+        "tag": "li",
+        "text": "Create Custom Software: Yes"
+      },
+      {
+        "tag": "li",
+        "text": "Sector:  Banking & Finance, Port & Logistics, Government a Defense, SME & Development"
+      },
+      {
+        "tag": "h1",
+        "text": "4. Brain Station 23"
+      },
+      {
+        "tag": "p",
+        "text": "It was in 2006, with little capital but a pocketful of belief our CEO, Raisul Kabir started Brain Station 23, a software company, right after graduating from BUET. The new company initially focused on the international market with the local market added in 2010. Since then the company has shown a continuous growth and currently employs over 600+ software engineers. Brain Station 23 is now not only an established name in Bangladesh but also in countries like the USA, UK, Netherlands, Denmark, Japan, Norway, Sweden, Germany, Canada, Switzerland, Turkey and the Middle East etc.Employee: 300+Experience: 18+Ready Software: N/ACreate Custom Software: YesSector:BIometrics, Civil Registry Solution, Vehicle Solution"
+      },
+      {
+        "tag": "li",
+        "text": "Employee: 300+"
+      },
+      {
+        "tag": "li",
+        "text": "Experience: 18+"
+      },
+      {
+        "tag": "li",
+        "text": "Ready Software: N/A"
+      },
+      {
+        "tag": "li",
+        "text": "Create Custom Software: Yes"
+      },
+      {
+        "tag": "li",
+        "text": "Sector:BIometrics, Civil Registry Solution, Vehicle Solution"
+      },
+      {
+        "tag": "h1",
+        "text": "5. TigerIT"
+      },
+      {
+        "tag": "p",
+        "text": "We work in mission critical environments with large volumes of sensitive data, so our highly experienced team strives to reduce risk, improve performance and promote sustainable business. Government and state agencies rely on us in designing and implementing end-to-end ID management solutions. We bring innovation not only in our technologies but also in the way we manage our projects and deliver our solutions. Our expertise in consultancy, project management, training and support combined with our relentless quest for customer satisfaction through on-time, on-budget and on-spec delivery of complex turnkey solutions, has earned TigerIT an enviable reputation in the industry.TigerIT builds on its experience and specialized skills to provide national scale IT solutions. It has deep insight in biometrics information involving large population. With dynamic partnerships, TigerIT provides turnkey solutions that are sustainable and meet international standards.Employee: 300+Experience: 22+Ready Software: N/ACreate Custom Software: YesCore Banking Solutions, Fintech, Blockchain, Artificial Intelligence, IoT, Erp"
+      },
+      {
+        "tag": "li",
+        "text": "Employee: 300+"
+      },
+      {
+        "tag": "li",
+        "text": "Experience: 22+"
+      },
+      {
+        "tag": "li",
+        "text": "Ready Software: N/A"
+      },
+      {
+        "tag": "li",
+        "text": "Create Custom Software: Yes"
+      },
+      {
+        "tag": "li",
+        "text": "Core Banking Solutions, Fintech, Blockchain, Artificial Intelligence, IoT, Erp"
+      },
+      {
+        "tag": "h1",
+        "text": "6. Kaz software"
+      },
+      {
+        "tag": "p",
+        "text": "We empower you with award winning development teams to innovate and build great software. Make your own team from our pool of skilled software professionals or get us to build your software from scratch. Harness the power that 100+ companies, around the world, from startups to Fortune500 have used to build and enhance their software.We are a group of designers, engineers and content specialists passionate about what we do.  Together we form one of the leading custom software companies in Bangladesh for software development outsourcing.We offer software development and content management services to international customers across multiple industries. We understand the challenges that our customers face within and across these industries. We provide practical, pragmatic and powerful solutions to address those challenges.Employee: 350+Experience: 15+Ready Software: N/ACreate Custom Software: YesMobile OTT Solution, SMS Platform, and Cloud Telephony"
+      },
+      {
+        "tag": "li",
+        "text": "Employee: 350+"
+      },
+      {
+        "tag": "li",
+        "text": "Experience: 15+"
+      },
+      {
+        "tag": "li",
+        "text": "Ready Software: N/A"
+      },
+      {
+        "tag": "li",
+        "text": "Create Custom Software: Yes"
+      },
+      {
+        "tag": "li",
+        "text": "Mobile OTT Solution, SMS Platform, and Cloud Telephony"
+      },
+      {
+        "tag": "h1",
+        "text": "7. South Tech"
+      },
+      {
+        "tag": "p",
+        "text": "SouthTech (BD) Ltd. is a US-based Software Company registered in Bangladesh, operating since 2004. We have our office in Dhaka, Bangladesh, and affiliate offices in the USA and Canada. SouthTech provides Software as a Service (SaaS) to government and private organizations globally that serve people with intellectual and developmental disabilities.We are a global team of professionals who actively collaborate to develop solutions for individuals and service providers in order to make a difference in their lives.Employee: 350+Experience: 15+Ready Software: N/ACreate Custom Software: YesFinance, E-commerce, HR"
+      },
+      {
+        "tag": "li",
+        "text": "Employee: 350+"
+      },
+      {
+        "tag": "li",
+        "text": "Experience: 15+"
+      },
+      {
+        "tag": "li",
+        "text": "Ready Software: N/A"
+      },
+      {
+        "tag": "li",
+        "text": "Create Custom Software: Yes"
+      },
+      {
+        "tag": "li",
+        "text": "Finance, E-commerce, HR"
+      },
+      {
+        "tag": "h1",
+        "text": "8. Spectrum"
+      },
+      {
+        "tag": "p",
+        "text": "Spectrum is one of the leading software development companies in Bangladesh. Bdtask started its journey in 2012 and registered in 2013 as a limited company. Currently, they have 100+ employees with 10+ years of experience. They export software globally especially in Africa, India, Europe, the US, the UK, and Australia Market. They are ISO 90001 & 27001 certified, members of BASIS, and EC-Council, and have an elite author profile in the Envato marketplace. Their restaurant management software (Bhojon) is now in the top 15 in the south Asia region. Sales ERP for small business to medium business software is now the top software in the ERP category in the Envato marketplace. They have 40+ scripts in the Envato marketplace.Employee: 350+Experience: 15+Ready Software: N/ACreate Custom Software: YesPublic Sector, Service and Manufacturing, Education, Telecom, Financial & Banking"
+      },
+      {
+        "tag": "li",
+        "text": "Employee: 350+"
+      },
+      {
+        "tag": "li",
+        "text": "Experience: 15+"
+      },
+      {
+        "tag": "li",
+        "text": "Ready Software: N/A"
+      },
+      {
+        "tag": "li",
+        "text": "Create Custom Software: Yes"
+      },
+      {
+        "tag": "li",
+        "text": "Public Sector, Service and Manufacturing, Education, Telecom, Financial & Banking"
+      },
+      {
+        "tag": "h1",
+        "text": "9. REVE System"
+      },
+      {
+        "tag": "p",
+        "text": "REVE Systems started in 2003 with a focused approach to serve the IP-based communication industry. A Telecommunication & Software Solution provider, REVE Systems has a wide assortment of products, ranging from backbone infrastructure to peripheral products, including middleware. The company today holds a leadership position in Carrier Grade Class 4 and Class 5 Softswitch, Mobile OTT Solution, SMS Platform and Cloud Telephony along with Enterprise Communication Platform.REVE Systems ensures the best returns on technology investments and strengthens the service providers' market presence by providing them with best-in-class solutions. A large team of experienced and well-trained engineers helps to provide 24x7 Platinum Level Support to its clients and to ensure that their services are always available to their end customers.Employee: 350+Experience: 17+Ready Software: N/ACreate Custom Software: YesTax and accounting, Publishing, International Trade, eCommerce & Auctions"
+      },
+      {
+        "tag": "li",
+        "text": "Employee: 350+"
+      },
+      {
+        "tag": "li",
+        "text": "Experience: 17+"
+      },
+      {
+        "tag": "li",
+        "text": "Ready Software: N/A"
+      },
+      {
+        "tag": "li",
+        "text": "Create Custom Software: Yes"
+      },
+      {
+        "tag": "li",
+        "text": "Tax and accounting, Publishing, International Trade, eCommerce & Auctions"
+      },
+      {
+        "tag": "h1",
+        "text": "10. Nascenia"
+      },
+      {
+        "tag": "p",
+        "text": "Nascenia one of the leading Premium Joomla and WordPress template provider serving more than 80 thousand happy clients worldwide. We understand our customers need and what type of theme they require to show for their business or brand. Our Premium Joomla Templates and Free Joomla Extensions along with Responsive WordPress Themes are developed in a way so that the clients find their life easier and get solved instantly by our Dedicated Customer Support.Employee: 40+Experience: 10+Ready Software: N/ACreate Custom Software: YesWeb Development, App Development, Cyber Security"
+      },
+      {
+        "tag": "li",
+        "text": "Employee: 40+"
+      },
+      {
+        "tag": "li",
+        "text": "Experience: 10+"
+      },
+      {
+        "tag": "li",
+        "text": "Ready Software: N/A"
+      },
+      {
+        "tag": "li",
+        "text": "Create Custom Software: Yes"
+      },
+      {
+        "tag": "li",
+        "text": "Web Development, App Development, Cyber Security"
+      }
+    ],
+    "gallery": [],
+    "videos": []
+  },
+  "/": {
+    "source": "https://www.suffixit.com/",
+    "captured": "2026-10-10",
+    "introTitle": "Why Choose Us",
+    "blocks": [
+      {
+        "tag": "p",
+        "text": "Suffix IT provides best and prominent Software & Hardware solutions to ensure your business"
+      },
+      {
+        "tag": "h5",
+        "text": "Why Choose Us"
+      },
+      {
+        "tag": "h2",
+        "text": "We are working with  9+ years experience"
+      },
+      {
+        "tag": "p",
+        "text": "We consist of a great team of professional and highly skilled engineers with excellent technical knowledge and experience for developing quality software."
+      },
+      {
+        "tag": "li",
+        "text": "24/7 support service"
+      },
+      {
+        "tag": "li",
+        "text": "On-time Delivery"
+      },
+      {
+        "tag": "li",
+        "text": "Within Budget"
+      },
+      {
+        "tag": "li",
+        "text": "Creating ideas with passion"
+      },
+      {
+        "tag": "li",
+        "text": "Assure best quality"
+      },
+      {
+        "tag": "li",
+        "text": "Solution for revolution"
+      },
+      {
+        "tag": "h1",
+        "text": "Our Company"
+      },
+      {
+        "tag": "p",
+        "text": "At Suffix IT, we develop innovative and creative products and services that provide total  communication and information solutions. Satisfied clients around the globe bear testimony to the quality of our work."
+      },
+      {
+        "tag": "p",
+        "text": "Team Of Highly Experienced Professionals"
+      },
+      {
+        "tag": "p",
+        "text": "Working In Software Industry Since 2017"
+      },
+      {
+        "tag": "p",
+        "text": "We Dream Big and  Win Together"
+      },
+      {
+        "tag": "h1",
+        "text": "We are working with  Field Force Management"
+      },
+      {
+        "tag": "li",
+        "text": "Invoice and Payment"
+      },
+      {
+        "tag": "li",
+        "text": "Live Tracking"
+      },
+      {
+        "tag": "li",
+        "text": "Task Management"
+      },
+      {
+        "tag": "li",
+        "text": "Attendance Management"
+      },
+      {
+        "tag": "li",
+        "text": "Expense Management"
+      },
+      {
+        "tag": "li",
+        "text": "Chat and Collaboration"
+      },
+      {
+        "tag": "li",
+        "text": "Offline data synchronization"
+      },
+      {
+        "tag": "h1",
+        "text": "Our Call Center Service"
+      },
+      {
+        "tag": "p",
+        "text": "We never say no to anything! We are here for all your needs. All you have to do is tell."
+      },
+      {
+        "tag": "h2",
+        "text": "Inbound Call"
+      },
+      {
+        "tag": "p",
+        "text": "Dedicated and hardworking agents who are working tirelessly to answer all queries about your company."
+      },
+      {
+        "tag": "h2",
+        "text": "Outbound Call"
+      },
+      {
+        "tag": "p",
+        "text": "Let customers know about your products/services via our charming agents."
+      },
+      {
+        "tag": "h2",
+        "text": "Live Chat Support"
+      },
+      {
+        "tag": "p",
+        "text": "Group of smart and charismatic agents are always online to provide live chat services."
+      },
+      {
+        "tag": "h1",
+        "text": "Our Services"
+      },
+      {
+        "tag": "p",
+        "text": "As a leader in technology exploring, Suffix IT is committed to exporting quality software worldwide.."
+      },
+      {
+        "tag": "p",
+        "text": "Domain & Hosting"
+      },
+      {
+        "tag": "p",
+        "text": "Database backup and storage provides centrally controlled protection, security of enterprise and reduces the possibility..."
+      },
+      {
+        "tag": "p",
+        "text": "ERP Consulting"
+      },
+      {
+        "tag": "p",
+        "text": "We provide IT consulting services which includes project management. Rupantor’s General..."
+      },
+      {
+        "tag": "p",
+        "text": "Web & E-Commerce"
+      },
+      {
+        "tag": "p",
+        "text": "We have helped corporations within and across the boundaries by launching successfully e-business solutions..."
+      },
+      {
+        "tag": "p",
+        "text": "Custom Applications"
+      },
+      {
+        "tag": "p",
+        "text": "We work with clients to assess their unique needs in a discovery phase, define a realistic project scope..."
+      },
+      {
+        "tag": "p",
+        "text": "Video Conferencing"
+      },
+      {
+        "tag": "p",
+        "text": "The Suffix Video Conferencing Platform allows students to share their audio, images, chat..."
+      },
+      {
+        "tag": "p",
+        "text": "Mobile Apps"
+      },
+      {
+        "tag": "p",
+        "text": "Get an enterprise digital assistant equipped with a long array of screen sizes, user- friendly interface..."
+      },
+      {
+        "tag": "p",
+        "text": "Hospital Management"
+      },
+      {
+        "tag": "p",
+        "text": "Suffix Hospital Management System has a user interface that is very easy and quick to use, and that suits..."
+      },
+      {
+        "tag": "p",
+        "text": "Learning Management"
+      },
+      {
+        "tag": "p",
+        "text": "It's time to make a decision and find out what sort of LMS would be the best choice for you..."
+      },
+      {
+        "tag": "p",
+        "text": "Storage & Backup"
+      },
+      {
+        "tag": "p",
+        "text": "Database backup and storage provides centrally controlled protection, security of enterprise and..."
+      },
+      {
+        "tag": "h1",
+        "text": "Our Products"
+      },
+      {
+        "tag": "p",
+        "text": "We offer a diverse spectrum of products for your specific company requirements. We implement rigorous quality testing as a technologically process-driven firm to assure seamless, round-the-clock, and global performance. We are very much enthusiastic about developing innovative software solutions merging with the current technological advancement."
+      },
+      {
+        "tag": "h2",
+        "text": "Payroll System"
+      },
+      {
+        "tag": "p",
+        "text": "Suffix Payroll will help you to automate and streamline all of your HR services"
+      },
+      {
+        "tag": "h2",
+        "text": "Interconnect Billing"
+      },
+      {
+        "tag": "p",
+        "text": "It will allow business optimization and help in achieving increased operational efficiency and network profitability"
+      },
+      {
+        "tag": "h2",
+        "text": "E-Commerce"
+      },
+      {
+        "tag": "p",
+        "text": "We offer full-cycle retail and e-commerce app solutions to both B2B and B2C customers, based on their specific requirements."
+      },
+      {
+        "tag": "h2",
+        "text": "Rupantor ERP"
+      },
+      {
+        "tag": "p",
+        "text": "Rupantor ERP will integrate all of the processes needed to run your business."
+      },
+      {
+        "tag": "h2",
+        "text": "Provident Fund"
+      },
+      {
+        "tag": "p",
+        "text": "An advanced way to handle your employee’s funding management with our PF Software."
+      },
+      {
+        "tag": "h2",
+        "text": "Hotel Booking System"
+      },
+      {
+        "tag": "p",
+        "text": "We provide the cloud based most user friendly and cost effective hotel booking management system."
+      },
+      {
+        "tag": "h2",
+        "text": "Rupantor Inventory"
+      },
+      {
+        "tag": "p",
+        "text": "Our Inventory Management system will manage your cash flow, reduce cost and maximize profits"
+      },
+      {
+        "tag": "h2",
+        "text": "Field Force Management"
+      },
+      {
+        "tag": "p",
+        "text": "With Suffix Field force you can move a lot faster and keep adapting to your customers needs."
+      },
+      {
+        "tag": "h2",
+        "text": "Payroll System"
+      },
+      {
+        "tag": "p",
+        "text": "Suffix Payroll will help you to automate and streamline all of your HR services"
+      },
+      {
+        "tag": "h2",
+        "text": "Interconnect Billing"
+      },
+      {
+        "tag": "p",
+        "text": "It will allow business optimization and help in achieving increased operational efficiency and network profitability"
+      },
+      {
+        "tag": "h2",
+        "text": "E-Commerce"
+      },
+      {
+        "tag": "p",
+        "text": "We offer full-cycle retail and e-commerce app solutions to both B2B and B2C customers, based on their specific requirements."
+      },
+      {
+        "tag": "h2",
+        "text": "Rupantor ERP"
+      },
+      {
+        "tag": "p",
+        "text": "Rupantor ERP will integrate all of the processes needed to run your business."
+      },
+      {
+        "tag": "h2",
+        "text": "Provident Fund"
+      },
+      {
+        "tag": "p",
+        "text": "An advanced way to handle your employee’s funding management with our PF Software."
+      },
+      {
+        "tag": "h2",
+        "text": "Hotel Booking System"
+      },
+      {
+        "tag": "p",
+        "text": "We provide the cloud based most user friendly and cost effective hotel booking management system."
+      },
+      {
+        "tag": "h2",
+        "text": "Rupantor Inventory"
+      },
+      {
+        "tag": "p",
+        "text": "Our Inventory Management system will manage your cash flow, reduce cost and maximize profits"
+      },
+      {
+        "tag": "h2",
+        "text": "Field Force Management"
+      },
+      {
+        "tag": "p",
+        "text": "With Suffix Field force you can move a lot faster and keep adapting to your customers needs."
+      },
+      {
+        "tag": "h2",
+        "text": "Payroll System"
+      },
+      {
+        "tag": "p",
+        "text": "Suffix Payroll will help you to automate and streamline all of your HR services"
+      },
+      {
+        "tag": "h2",
+        "text": "Interconnect Billing"
+      },
+      {
+        "tag": "p",
+        "text": "It will allow business optimization and help in achieving increased operational efficiency and network profitability"
+      },
+      {
+        "tag": "h2",
+        "text": "E-Commerce"
+      },
+      {
+        "tag": "p",
+        "text": "We offer full-cycle retail and e-commerce app solutions to both B2B and B2C customers, based on their specific requirements."
+      },
+      {
+        "tag": "h2",
+        "text": "Rupantor ERP"
+      },
+      {
+        "tag": "p",
+        "text": "Rupantor ERP will integrate all of the processes needed to run your business."
+      },
+      {
+        "tag": "h2",
+        "text": "Provident Fund"
+      },
+      {
+        "tag": "p",
+        "text": "An advanced way to handle your employee’s funding management with our PF Software."
+      },
+      {
+        "tag": "h2",
+        "text": "Hotel Booking System"
+      },
+      {
+        "tag": "p",
+        "text": "We provide the cloud based most user friendly and cost effective hotel booking management system."
+      },
+      {
+        "tag": "h2",
+        "text": "Rupantor Inventory"
+      },
+      {
+        "tag": "p",
+        "text": "Our Inventory Management system will manage your cash flow, reduce cost and maximize profits"
+      },
+      {
+        "tag": "h2",
+        "text": "Field Force Management"
+      },
+      {
+        "tag": "p",
+        "text": "With Suffix Field force you can move a lot faster and keep adapting to your customers needs."
+      },
+      {
+        "tag": "h1",
+        "text": "What They Said!"
+      },
+      {
+        "tag": "p",
+        "text": "Customer satisfaction is our top priority. Client’s positive feedback inspire and motivate our team and business"
+      },
+      {
+        "tag": "h1",
+        "text": "\"Awesome Design\""
+      },
+      {
+        "tag": "h3",
+        "text": "\"SuffixIT brings all together software platform.It measures, analyzes and improves customer satisfaction.leading company for Customer Support & Service Software."
+      },
+      {
+        "tag": "h4",
+        "text": "Kazi Anowarul Rafique"
+      },
+      {
+        "tag": "h5",
+        "text": "Head of Operations New Generation Telecom Ltd."
+      },
+      {
+        "tag": "h1",
+        "text": "\"Great Flexibility\""
+      },
+      {
+        "tag": "h3",
+        "text": "\"SuffixIT Essentials makes it easy for small businesses and startups build stronger customer relationships with an all-in-one sales and support solution that is easy to use"
+      },
+      {
+        "tag": "h4",
+        "text": "Md. Ashif Imran Rana"
+      },
+      {
+        "tag": "h5",
+        "text": "Chief Technical Officer Mother Telecommunication"
+      },
+      {
+        "tag": "h1",
+        "text": "\"Super Support!\""
+      },
+      {
+        "tag": "h3",
+        "text": "\"SuffixIT- A reliable Part has with great satisfaction been working with Suffixit since 2015. Suffix is always delivering honest,rock-solid work of good quality.\" Regards"
+      },
+      {
+        "tag": "h4",
+        "text": "Md. Ahsanul Moyeen"
+      },
+      {
+        "tag": "h5",
+        "text": "Senior Manager CrossWorld Telecom Ltd."
+      },
+      {
+        "tag": "h1",
+        "text": "\"Awesome Design\""
+      },
+      {
+        "tag": "h3",
+        "text": "\"SuffixIT brings all together software platform.It measures, analyzes and improves customer satisfaction.leading company for Customer Support & Service Software."
+      },
+      {
+        "tag": "h4",
+        "text": "Kazi Anowarul Rafique"
+      },
+      {
+        "tag": "h5",
+        "text": "Head of Operations New Generation Telecom Ltd."
+      },
+      {
+        "tag": "h1",
+        "text": "\"Great Flexibility\""
+      },
+      {
+        "tag": "h3",
+        "text": "\"SuffixIT Essentials makes it easy for small businesses and startups build stronger customer relationships with an all-in-one sales and support solution that is easy to use"
+      },
+      {
+        "tag": "h4",
+        "text": "Md. Ashif Imran Rana"
+      },
+      {
+        "tag": "h5",
+        "text": "Chief Technical Officer Mother Telecommunication"
+      },
+      {
+        "tag": "h1",
+        "text": "\"Super Support!\""
+      },
+      {
+        "tag": "h3",
+        "text": "\"SuffixIT- A reliable Part has with great satisfaction been working with Suffixit since 2015. Suffix is always delivering honest,rock-solid work of good quality.\" Regards"
+      },
+      {
+        "tag": "h4",
+        "text": "Md. Ahsanul Moyeen"
+      },
+      {
+        "tag": "h5",
+        "text": "Senior Manager CrossWorld Telecom Ltd."
+      },
+      {
+        "tag": "h1",
+        "text": "\"Awesome Design\""
+      },
+      {
+        "tag": "h3",
+        "text": "\"SuffixIT brings all together software platform.It measures, analyzes and improves customer satisfaction.leading company for Customer Support & Service Software."
+      },
+      {
+        "tag": "h4",
+        "text": "Kazi Anowarul Rafique"
+      },
+      {
+        "tag": "h5",
+        "text": "Head of Operations New Generation Telecom Ltd."
+      },
+      {
+        "tag": "h1",
+        "text": "Our Happy Clients"
+      },
+      {
+        "tag": "p",
+        "text": "We Work Only For The Best."
+      }
+    ],
+    "gallery": [
+      {
+        "src": "/assets/banner_image.a079af09.png",
+        "alt": "hero hero-it-solution  — original Suffix IT visual"
+      },
+      {
+        "src": "/assets/field-force.497227c8.png",
+        "alt": "filedManagement — original Suffix IT visual"
+      }
+    ],
+    "videos": []
+  },
+  "/career-detail/5": {
+    "source": "https://www.suffixit.com/career-detail/5",
+    "captured": "2026-10-10",
+    "introTitle": "Application Deadline: December 18, 2025",
+    "blocks": [
+      {
+        "tag": "h3",
+        "text": "Application Deadline: December 18, 2025"
+      },
+      {
+        "tag": "h3",
+        "text": "Head of Business Development (Full Time)"
+      },
+      {
+        "tag": "h3",
+        "text": "Application Deadline: December 18, 2025"
+      },
+      {
+        "tag": "h4",
+        "text": "Responsibilities"
+      },
+      {
+        "tag": "li",
+        "text": "Lead, plan, and execute business development strategies across software, IoT, AI, communication platforms, and hardware solutions."
+      },
+      {
+        "tag": "li",
+        "text": "Identify new business opportunities, markets, and potential corporate/government clients."
+      },
+      {
+        "tag": "li",
+        "text": "Build and manage a high-performing Business Development & Sales team."
+      },
+      {
+        "tag": "li",
+        "text": "Establish and maintain strong relationships with clients, partners, and vendors (software + hardware)."
+      },
+      {
+        "tag": "li",
+        "text": "Drive sales for product lines including servers, network devices, firewalls, call center solutions, and enterprise software."
+      },
+      {
+        "tag": "li",
+        "text": "Oversee RFP/RFQ processes, tender documentation, and proposal development."
+      },
+      {
+        "tag": "li",
+        "text": "Collaborate with technical and product teams to create market-fit solutions."
+      },
+      {
+        "tag": "li",
+        "text": "Conduct market research, competitor analysis, and strategic forecasting."
+      },
+      {
+        "tag": "li",
+        "text": "Represent Suffix IT Limited at events, exhibitions, seminars, and conferences."
+      },
+      {
+        "tag": "h4",
+        "text": "Requirements"
+      },
+      {
+        "tag": "li",
+        "text": "Educational background in Business Administration, Computer Science, Engineering, or related fields (MBA preferred)."
+      },
+      {
+        "tag": "li",
+        "text": "Minimum 10+ years of experience in the IT industry with proven leadership in Business Development, Sales, or Strategic Growth roles."
+      },
+      {
+        "tag": "li",
+        "text": "Strong understanding of:"
+      },
+      {
+        "tag": "li",
+        "text": "Software products & SaaS solutions"
+      },
+      {
+        "tag": "li",
+        "text": "IoT platforms & industrial automation"
+      },
+      {
+        "tag": "li",
+        "text": "AI/ML applications"
+      },
+      {
+        "tag": "li",
+        "text": "Call center & communication solutions"
+      },
+      {
+        "tag": "li",
+        "text": "Servers, networking devices, firewalls & enterprise hardware"
+      },
+      {
+        "tag": "li",
+        "text": "Proven track record of achieving sales targets and building client relationships."
+      },
+      {
+        "tag": "li",
+        "text": "Excellent communication, negotiation, and presentation skills."
+      },
+      {
+        "tag": "li",
+        "text": "Ability to lead and motivate multi-functional teams."
+      },
+      {
+        "tag": "li",
+        "text": "Strong network within corporate, government, and enterprise sectors."
+      },
+      {
+        "tag": "h4",
+        "text": "What We Offer"
+      },
+      {
+        "tag": "li",
+        "text": "Attractive salary and performance-based incentives"
+      },
+      {
+        "tag": "li",
+        "text": "Leadership role with strategic decision-making authority"
+      },
+      {
+        "tag": "li",
+        "text": "Opportunity to work across software + hardware business lines"
+      },
+      {
+        "tag": "li",
+        "text": "Fast-paced, innovation-driven work environment"
+      },
+      {
+        "tag": "li",
+        "text": "Long-term career growth with national and international exposure"
+      },
+      {
+        "tag": "h4",
+        "text": "Job Information"
+      },
+      {
+        "tag": "li",
+        "text": "Job TypeFull Time"
+      },
+      {
+        "tag": "li",
+        "text": "CategoryBusiness Development"
+      },
+      {
+        "tag": "li",
+        "text": "LocationUttar Badda,Dhaka"
+      },
+      {
+        "tag": "li",
+        "text": "Offered SalaryNegotiable"
+      },
+      {
+        "tag": "li",
+        "text": "Festival Bonus 2"
+      },
+      {
+        "tag": "li",
+        "text": "Experience10+ Years in IT Industry"
+      },
+      {
+        "tag": "li",
+        "text": "GenderMale/Female (both)"
+      },
+      {
+        "tag": "li",
+        "text": "Emailcareer@suffixit.com"
+      },
+      {
+        "tag": "li",
+        "text": "Application EndsDecember 18, 2025"
+      }
+    ],
+    "gallery": [],
+    "videos": []
+  },
+  "/web-e-commerce-detail/Basic": {
+    "source": "https://www.suffixit.com/web-e-commerce-detail/Basic",
+    "captured": "2026-10-10",
+    "introTitle": "Front End Site",
+    "blocks": [
+      {
+        "tag": "h1",
+        "text": "Front End Site"
+      },
+      {
+        "tag": "li",
+        "text": "10 Dynamic Pages"
+      },
+      {
+        "tag": "li",
+        "text": "A Custom CMS(Python,java,php)"
+      },
+      {
+        "tag": "li",
+        "text": "Admin, Editor & Moderator Role"
+      },
+      {
+        "tag": "li",
+        "text": "Design Revision(1)"
+      },
+      {
+        "tag": "li",
+        "text": "URL Forwarding"
+      },
+      {
+        "tag": "li",
+        "text": "Menu Builder"
+      },
+      {
+        "tag": "li",
+        "text": "Image Explorer"
+      },
+      {
+        "tag": "li",
+        "text": "Documents Storage & Linking"
+      },
+      {
+        "tag": "h1",
+        "text": "Back End Site"
+      },
+      {
+        "tag": "li",
+        "text": "Category & Sub-Category"
+      },
+      {
+        "tag": "li",
+        "text": "Product Management"
+      },
+      {
+        "tag": "li",
+        "text": "Product Variants"
+      },
+      {
+        "tag": "li",
+        "text": "Product Attributes"
+      },
+      {
+        "tag": "li",
+        "text": "Product Features"
+      },
+      {
+        "tag": "li",
+        "text": "Product Pricing"
+      },
+      {
+        "tag": "li",
+        "text": "Product Images"
+      },
+      {
+        "tag": "li",
+        "text": "Promotion Settings"
+      },
+      {
+        "tag": "li",
+        "text": "Banner & Image Management"
+      },
+      {
+        "tag": "li",
+        "text": "Fulfillments"
+      },
+      {
+        "tag": "li",
+        "text": "Cart Management"
+      },
+      {
+        "tag": "li",
+        "text": "Stock Availability Notifications"
+      },
+      {
+        "tag": "li",
+        "text": "Wishlist"
+      },
+      {
+        "tag": "li",
+        "text": "Email Templates"
+      },
+      {
+        "tag": "li",
+        "text": "Cash on Delivery"
+      },
+      {
+        "tag": "h1",
+        "text": "Admin Reports"
+      },
+      {
+        "tag": "li",
+        "text": "Order Placed"
+      },
+      {
+        "tag": "li",
+        "text": "Dashboard"
+      },
+      {
+        "tag": "li",
+        "text": "Product Analytics"
+      },
+      {
+        "tag": "li",
+        "text": "User Analytics"
+      },
+      {
+        "tag": "li",
+        "text": "Open Carts"
+      },
+      {
+        "tag": "li",
+        "text": "Submitted Carts"
+      },
+      {
+        "tag": "h1",
+        "text": "Add-Ons"
+      },
+      {
+        "tag": "li",
+        "text": "Email Gateway"
+      },
+      {
+        "tag": "li",
+        "text": "SEO Management"
+      }
+    ],
+    "gallery": [],
+    "videos": []
+  },
+  "/web-e-commerce-detail/Classic": {
+    "source": "https://www.suffixit.com/web-e-commerce-detail/Classic",
+    "captured": "2026-10-10",
+    "introTitle": "Front End Site",
+    "blocks": [
+      {
+        "tag": "h1",
+        "text": "Front End Site"
+      },
+      {
+        "tag": "li",
+        "text": "Front page Design Revision(3)"
+      },
+      {
+        "tag": "li",
+        "text": "Custom Page: 10 (Python,Java,Php)"
+      },
+      {
+        "tag": "li",
+        "text": "About us"
+      },
+      {
+        "tag": "li",
+        "text": "Contact Us"
+      },
+      {
+        "tag": "li",
+        "text": "Terms of Service"
+      },
+      {
+        "tag": "li",
+        "text": "Privacy Policy"
+      },
+      {
+        "tag": "li",
+        "text": "Social Media Links"
+      },
+      {
+        "tag": "li",
+        "text": "Product Display"
+      },
+      {
+        "tag": "li",
+        "text": "Banner & Promotions"
+      },
+      {
+        "tag": "li",
+        "text": "Add to wishlist"
+      },
+      {
+        "tag": "li",
+        "text": "Notify Me"
+      },
+      {
+        "tag": "li",
+        "text": "Add to Cart"
+      },
+      {
+        "tag": "li",
+        "text": "View Cart"
+      },
+      {
+        "tag": "li",
+        "text": "Checkout"
+      },
+      {
+        "tag": "li",
+        "text": "Signup by User/Password"
+      },
+      {
+        "tag": "li",
+        "text": "Signup by Pin(SMS)"
+      },
+      {
+        "tag": "li",
+        "text": "Search By - Product & category"
+      },
+      {
+        "tag": "li",
+        "text": "Filter By - Price"
+      },
+      {
+        "tag": "li",
+        "text": "Filter By - Price Range"
+      },
+      {
+        "tag": "li",
+        "text": "Filter By - Low to High Price"
+      },
+      {
+        "tag": "li",
+        "text": "Filter By - High to low Price"
+      },
+      {
+        "tag": "h1",
+        "text": "Back End Site"
+      },
+      {
+        "tag": "li",
+        "text": "Category & Sub-Category"
+      },
+      {
+        "tag": "li",
+        "text": "Product Management"
+      },
+      {
+        "tag": "li",
+        "text": "Product Variants"
+      },
+      {
+        "tag": "li",
+        "text": "Product Attributes"
+      },
+      {
+        "tag": "li",
+        "text": "Product Features"
+      },
+      {
+        "tag": "li",
+        "text": "Product Pricing"
+      },
+      {
+        "tag": "li",
+        "text": "Product Images"
+      },
+      {
+        "tag": "li",
+        "text": "Promotion Settings"
+      },
+      {
+        "tag": "li",
+        "text": "Banner & Image Management"
+      },
+      {
+        "tag": "li",
+        "text": "Fulfillments"
+      },
+      {
+        "tag": "li",
+        "text": "Cart Management"
+      },
+      {
+        "tag": "li",
+        "text": "Stock Availability Notifications"
+      },
+      {
+        "tag": "li",
+        "text": "Wishlist"
+      },
+      {
+        "tag": "li",
+        "text": "Email Templates"
+      },
+      {
+        "tag": "li",
+        "text": "Cash on Delivery"
+      },
+      {
+        "tag": "li",
+        "text": "Payment Gateway (1)"
+      },
+      {
+        "tag": "h1",
+        "text": "Admin Reports"
+      },
+      {
+        "tag": "li",
+        "text": "Order Placed"
+      },
+      {
+        "tag": "li",
+        "text": "Dashboard"
+      },
+      {
+        "tag": "li",
+        "text": "Product Analytics"
+      },
+      {
+        "tag": "li",
+        "text": "User Analytics"
+      },
+      {
+        "tag": "li",
+        "text": "Open Carts"
+      },
+      {
+        "tag": "li",
+        "text": "Submitted Carts"
+      },
+      {
+        "tag": "h1",
+        "text": "Add-Ons"
+      },
+      {
+        "tag": "li",
+        "text": "Email Gateway"
+      },
+      {
+        "tag": "li",
+        "text": "SMS Gateway"
+      }
+    ],
+    "gallery": [],
+    "videos": []
+  },
+  "/web-e-commerce-detail/Premium": {
+    "source": "https://www.suffixit.com/web-e-commerce-detail/Premium",
+    "captured": "2026-10-10",
+    "introTitle": "Front End Site",
+    "blocks": [
+      {
+        "tag": "h1",
+        "text": "Front End Site"
+      },
+      {
+        "tag": "li",
+        "text": "Front page Design Revision(5)"
+      },
+      {
+        "tag": "li",
+        "text": "Custom Page: 15 (Python,Java,Php)"
+      },
+      {
+        "tag": "li",
+        "text": "About us"
+      },
+      {
+        "tag": "li",
+        "text": "Contact Us"
+      },
+      {
+        "tag": "li",
+        "text": "Terms of Service"
+      },
+      {
+        "tag": "li",
+        "text": "Privacy Policy"
+      },
+      {
+        "tag": "li",
+        "text": "Social Media Links"
+      },
+      {
+        "tag": "li",
+        "text": "Product Display"
+      },
+      {
+        "tag": "li",
+        "text": "Banner & Promotions"
+      },
+      {
+        "tag": "li",
+        "text": "Add to wishlist"
+      },
+      {
+        "tag": "li",
+        "text": "Notify Me"
+      },
+      {
+        "tag": "li",
+        "text": "Add to Cart"
+      },
+      {
+        "tag": "li",
+        "text": "View Cart"
+      },
+      {
+        "tag": "li",
+        "text": "Checkout"
+      },
+      {
+        "tag": "li",
+        "text": "Signup by User/Password"
+      },
+      {
+        "tag": "li",
+        "text": "Signup by Pin(SMS)"
+      },
+      {
+        "tag": "li",
+        "text": "Signup by Email"
+      },
+      {
+        "tag": "li",
+        "text": "Signup by Facebook/Gmail"
+      },
+      {
+        "tag": "li",
+        "text": "Search By - Product & category"
+      },
+      {
+        "tag": "li",
+        "text": "Filter By - Price"
+      },
+      {
+        "tag": "li",
+        "text": "Filter By - Price Range"
+      },
+      {
+        "tag": "li",
+        "text": "Filter By - Low to High Price"
+      },
+      {
+        "tag": "li",
+        "text": "Filter By - High to low Price"
+      },
+      {
+        "tag": "li",
+        "text": "Filter By - Product Features/Variants"
+      },
+      {
+        "tag": "li",
+        "text": "Filter By - Popularity"
+      },
+      {
+        "tag": "h1",
+        "text": "Back End Site"
+      },
+      {
+        "tag": "li",
+        "text": "Category & Sub-Category"
+      },
+      {
+        "tag": "li",
+        "text": "Product Management"
+      },
+      {
+        "tag": "li",
+        "text": "Product Variants"
+      },
+      {
+        "tag": "li",
+        "text": "Product Attributes"
+      },
+      {
+        "tag": "li",
+        "text": "Product Features"
+      },
+      {
+        "tag": "li",
+        "text": "Product Pricing"
+      },
+      {
+        "tag": "li",
+        "text": "Product Images"
+      },
+      {
+        "tag": "li",
+        "text": "Promotion Settings"
+      },
+      {
+        "tag": "li",
+        "text": "Banner & Image Management"
+      },
+      {
+        "tag": "li",
+        "text": "Fulfillments"
+      },
+      {
+        "tag": "li",
+        "text": "Cart Management"
+      },
+      {
+        "tag": "li",
+        "text": "Stock Availability Notifications"
+      },
+      {
+        "tag": "li",
+        "text": "Wishlist"
+      },
+      {
+        "tag": "li",
+        "text": "Email Templates"
+      },
+      {
+        "tag": "li",
+        "text": "Cash on Delivery"
+      },
+      {
+        "tag": "li",
+        "text": "Payment Gateway (1)"
+      },
+      {
+        "tag": "li",
+        "text": "Offers"
+      },
+      {
+        "tag": "li",
+        "text": "Coupons"
+      },
+      {
+        "tag": "li",
+        "text": "Coupon Performance"
+      },
+      {
+        "tag": "li",
+        "text": "Offer Performance"
+      },
+      {
+        "tag": "h1",
+        "text": "Admin Reports"
+      },
+      {
+        "tag": "li",
+        "text": "Order Placed"
+      },
+      {
+        "tag": "li",
+        "text": "Dashboard"
+      },
+      {
+        "tag": "li",
+        "text": "Product Analytics"
+      },
+      {
+        "tag": "li",
+        "text": "User Analytics"
+      },
+      {
+        "tag": "li",
+        "text": "Open Carts"
+      },
+      {
+        "tag": "li",
+        "text": "Submitted Carts"
+      },
+      {
+        "tag": "li",
+        "text": "Coupon Performance"
+      },
+      {
+        "tag": "li",
+        "text": "Offer Performance"
+      },
+      {
+        "tag": "h1",
+        "text": "Add-Ons"
+      },
+      {
+        "tag": "li",
+        "text": "Email Gateway"
+      },
+      {
+        "tag": "li",
+        "text": "SMS Gateway"
+      },
+      {
+        "tag": "li",
+        "text": "Image CDN Integration"
+      },
+      {
+        "tag": "li",
+        "text": "SEO Management"
+      },
+      {
+        "tag": "li",
+        "text": "Messenger"
+      }
+    ],
+    "gallery": [],
+    "videos": []
+  }
+}

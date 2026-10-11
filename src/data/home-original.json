@@ -1,0 +1,110 @@
+{
+  "hero": "We care about the IT Solution you need",
+  "heroDescription": "Suffix IT provides best and prominent Software & Hardware solutions to ensure your business",
+  "whyTitle": "We are working with  9+ years experience",
+  "whyDescription": "We consist of a great team of professional and highly skilled engineers with excellent technical knowledge and experience for developing quality software.",
+  "companyTitle": "Our Company",
+  "companyDescription": "At Suffix IT, we develop innovative and creative products and services that provide total  communication and information solutions. Satisfied clients around the globe bear testimony to the quality of our work.",
+  "companyCards": [
+    "Team Of Highly Experienced Professionals",
+    "Working In Software Industry Since 2017",
+    "We Dream Big and  Win Together"
+  ],
+  "fieldTitle": "We are working with  Field Force Management",
+  "callTitle": "Our Call Center Service",
+  "callDescription": "We never say no to anything! We are here for all your needs. All you have to do is tell.",
+  "calls": [
+    {
+      "title": "Inbound Call",
+      "description": "Dedicated and hardworking agents who are working tirelessly to answer all queries about your company."
+    },
+    {
+      "title": "Outbound Call",
+      "description": "Let customers know about your products/services via our charming agents."
+    },
+    {
+      "title": "Live Chat Support",
+      "description": "Group of smart and charismatic agents are always online to provide live chat services."
+    }
+  ],
+  "servicesTitle": "Our Services",
+  "servicesDescription": "As a leader in technology exploring, Suffix IT is committed to exporting quality software worldwide..",
+  "services": [
+    {
+      "title": "Domain & Hosting",
+      "description": "Database backup and storage provides centrally controlled protection, security of enterprise and reduces the possibility..."
+    },
+    {
+      "title": "ERP Consulting",
+      "description": "We provide IT consulting services which includes project management. Rupantor’s General..."
+    },
+    {
+      "title": "Web & E-Commerce",
+      "description": "We have helped corporations within and across the boundaries by launching successfully e-business solutions..."
+    },
+    {
+      "title": "Custom Applications",
+      "description": "We work with clients to assess their unique needs in a discovery phase, define a realistic project scope..."
+    },
+    {
+      "title": "Video Conferencing",
+      "description": "The Suffix Video Conferencing Platform allows students to share their audio, images, chat..."
+    },
+    {
+      "title": "Mobile Apps",
+      "description": "Get an enterprise digital assistant equipped with a long array of screen sizes, user- friendly interface..."
+    },
+    {
+      "title": "Hospital Management",
+      "description": "Suffix Hospital Management System has a user interface that is very easy and quick to use, and that suits..."
+    },
+    {
+      "title": "Learning Management",
+      "description": "It's time to make a decision and find out what sort of LMS would be the best choice for you..."
+    },
+    {
+      "title": "Storage & Backup",
+      "description": "Database backup and storage provides centrally controlled protection, security of enterprise and..."
+    }
+  ],
+  "productsTitle": "Our Products",
+  "productsDescription": "We offer a diverse spectrum of products for your specific company requirements. We implement rigorous quality testing as a technologically process-driven firm to assure seamless, round-the-clock, and global performance. We are very much enthusiastic about developing innovative software solutions merging with the current technological advancement.",
+  "products": [
+    {
+      "title": "Payroll System",
+      "description": "Suffix Payroll will help you to automate and streamline all of your HR services"
+    },
+    {
+      "title": "Interconnect Billing",
+      "description": "It will allow business optimization and help in achieving increased operational efficiency and network profitability"
+    },
+    {
+      "title": "E-Commerce",
+      "description": "We offer full-cycle retail and e-commerce app solutions to both B2B and B2C customers, based on their specific requirements."
+    },
+    {
+      "title": "Rupantor ERP",
+      "description": "Rupantor ERP will integrate all of the processes needed to run your business."
+    },
+    {
+      "title": "Provident Fund",
+      "description": "An advanced way to handle your employee’s funding management with our PF Software."
+    },
+    {
+      "title": "Hotel Booking System",
+      "description": "We provide the cloud based most user friendly and cost effective hotel booking management system."
+    },
+    {
+      "title": "Rupantor Inventory",
+      "description": "Our Inventory Management system will manage your cash flow, reduce cost and maximize profits"
+    },
+    {
+      "title": "Field Force Management",
+      "description": "With Suffix Field force you can move a lot faster and keep adapting to your customers needs."
+    }
+  ],
+  "testimonialTitle": "What They Said!",
+  "testimonialDescription": "Customer satisfaction is our top priority. Client’s positive feedback inspire and motivate our team and business",
+  "clientsTitle": "Our Happy Clients",
+  "clientsDescription": "We Work Only For The Best."
+}

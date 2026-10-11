@@ -1,0 +1,536 @@
+/* Suffix IT: an interconnected technology portfolio, in its own blue identity. */
+.sonar-grid {
+  position: relative;
+  isolation: isolate;
+}
+.sonar-canvas {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  pointer-events: none;
+  mask-image: linear-gradient(110deg, #0003, #000 65%);
+}
+.home-hero.sonar-grid::before {
+  z-index: -1;
+}
+.home-hero.sonar-grid .hero-grid,
+.home-hero.sonar-grid .hero-bottom {
+  z-index: 1;
+}
+.services-bento {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-areas: 'erp erp custom custom' 'erp erp web web' 'hosting mobile video hospital' 'learning learning backup backup';
+  gap: 20px;
+}
+.bento-service {
+  position: relative;
+  min-width: 0;
+  padding: 28px;
+  border: 1px solid #dbe9f3;
+  border-radius: 22px;
+  background: #fff;
+  overflow: hidden;
+  isolation: isolate;
+  transition:
+    border-color 350ms ease,
+    box-shadow 350ms ease;
+}
+.bento-service::before {
+  content: '';
+  position: absolute;
+  inset: -35% -45%;
+  z-index: -1;
+  pointer-events: none;
+  background: linear-gradient(135deg, #0072bc, #075a91);
+  border-radius: 45% 55% 0 0;
+  transform: translateY(105%) rotate(-9deg);
+  transition:
+    transform 850ms cubic-bezier(0.22, 0.61, 0.36, 1),
+    border-radius 850ms ease;
+}
+.bento-service:is(:hover, :focus-within)::before {
+  transform: translateY(0) rotate(0);
+  border-radius: 20% 20% 0 0;
+}
+.bento-service :is(h3, h3 a, h3 svg, p, li, .bento-explore, .bento-icon) {
+  transition:
+    color 400ms ease,
+    background-color 400ms ease,
+    border-color 400ms ease;
+}
+.bento-service:is(:hover, :focus-within) :is(h3, h3 a, h3 svg, p, li, .bento-explore, .bento-icon) {
+  color: #fff;
+}
+.bento-service:is(:hover, :focus-within) .bento-icon {
+  background: #ffffff18;
+  border-color: #ffffff65;
+}
+.bento-service:is(:hover, :focus-within) li {
+  background: #ffffff12;
+  border-color: #ffffff65;
+}
+.bento-service:is(:hover, :focus-within) .bento-art {
+  filter: drop-shadow(0 8px 18px #00335325);
+}
+@media (prefers-reduced-motion: reduce) {
+  .bento-service::before {
+    transition: none;
+  }
+}
+.bento-erp {
+  grid-area: erp;
+  background: #eaf6fe;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.bento-custom {
+  grid-area: custom;
+}
+.bento-web {
+  grid-area: web;
+  background: #f2f8fc;
+}
+.bento-hosting {
+  grid-area: hosting;
+}
+.bento-mobile {
+  grid-area: mobile;
+}
+.bento-video {
+  grid-area: video;
+}
+.bento-hospital {
+  grid-area: hospital;
+}
+.bento-learning {
+  grid-area: learning;
+  background: #f2f8fc;
+}
+.bento-backup {
+  grid-area: backup;
+  background: #eaf6fe;
+}
+.bento-icon {
+  display: grid;
+  place-items: center;
+  width: 48px;
+  height: 48px;
+  background: #fff;
+  color: #0072bc;
+  border: 1px solid #cee4f3;
+  border-radius: 14px;
+  margin-bottom: 22px;
+}
+.bento-service h3 {
+  font-size: 20px;
+  letter-spacing: -0.03em;
+  line-height: 1.35;
+}
+.bento-service h3 a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+.bento-service h3 a::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+}
+.bento-service h3 svg {
+  flex-shrink: 0;
+  color: #0072bc;
+}
+.bento-service p {
+  margin-top: 14px;
+  color: var(--color-muted);
+  font-size: 14px;
+  line-height: 1.75;
+}
+.bento-service ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 20px;
+  padding: 0;
+  list-style: none;
+}
+.bento-service li {
+  padding: 6px 10px;
+  border: 1px solid #bfdced;
+  border-radius: 7px;
+  color: #075a91;
+  font-size: 12px;
+}
+.bento-explore {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  margin-top: 24px;
+  color: #075a91;
+  font-size: 12px;
+  font-weight: 600;
+}
+.bento-art img {
+  width: 100%;
+  height: 220px;
+  object-fit: contain;
+  margin-top: 18px;
+}
+.bento-custom,
+.bento-web {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  align-items: center;
+  gap: 20px;
+}
+.bento-custom .bento-art img,
+.bento-web .bento-art img {
+  height: 155px;
+  margin: 0;
+}
+.bento-service:hover,
+.bento-service:focus-within {
+  border-color: #84bee1;
+  box-shadow: 0 12px 32px #075a9110;
+}
+.bento-service:focus-within {
+  outline: 2px solid #0072bc;
+  outline-offset: 3px;
+}
+.home-products-bento {
+  grid-template-columns: 1.4fr 1fr 1fr;
+}
+.home-products-bento > div {
+  min-width: 0;
+}
+@media (max-width: 900px) {
+  .services-bento {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-areas: 'erp erp' 'custom web' 'hosting mobile' 'video hospital' 'learning backup';
+  }
+  .bento-erp {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 20px;
+  }
+  .bento-custom,
+  .bento-web {
+    display: block;
+  }
+  .home-products-bento {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 600px) {
+  .services-bento {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  .bento-service {
+    padding: 24px;
+  }
+  .bento-erp {
+    display: block;
+  }
+  .bento-service h3 {
+    font-size: 21px;
+  }
+}
+.animated-text-accessible {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+}
+.animated-text {
+  display: inline;
+}
+.word-mask {
+  display: inline-block;
+  overflow: hidden;
+  vertical-align: bottom;
+  padding-bottom: 0.08em;
+  margin-bottom: -0.08em;
+}
+.word-mask > span {
+  display: inline-block;
+}
+.home-hero {
+  background: #f4faff;
+  overflow: hidden;
+  position: relative;
+}
+.home-hero::before {
+  content: '';
+  position: absolute;
+  inset: 0 0 0 58%;
+  background: #e5f3fd;
+  border-radius: 0 0 0 180px;
+  pointer-events: none;
+}
+.hero-grid {
+  position: relative;
+  gap: 48px;
+  padding-block: 88px 62px;
+}
+.hero-copy h1 {
+  font-size: clamp(3rem, 4.8vw, 4.7rem);
+  line-height: 1.07;
+  letter-spacing: -0.055em;
+  max-width: 620px;
+}
+.hero-copy h1 > span {
+  color: #102f46;
+}
+.hero-eyebrow {
+  font-size: 12px;
+  letter-spacing: 0.035em;
+}
+.hero-description {
+  font-size: 17px;
+  line-height: 1.75;
+}
+.hero-visual-refined {
+  display: flex;
+  align-items: center;
+  min-height: 510px;
+  padding: 60px 12px;
+}
+.technology-connections {
+  position: absolute;
+  width: 112%;
+  max-width: none;
+  left: -6%;
+  top: 0;
+  height: 100%;
+  pointer-events: none;
+}
+.hero-product-frame {
+  transform: none;
+  border-radius: 16px;
+  box-shadow: 0 24px 60px #13578618;
+  z-index: 1;
+}
+.hero-frame-bar {
+  padding: 15px 18px;
+  font-size: 9px;
+}
+.hero-visual-refined .visual-product {
+  padding: 22px 16px;
+}
+.hero-capability-label {
+  display: none;
+}
+.connection-label {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #075a91;
+  font-size: 12px;
+  font-weight: 600;
+  z-index: 2;
+}
+.connection-label .technology-icon {
+  width: 48px;
+  height: 48px;
+  filter: drop-shadow(0 3px 8px #075a9110);
+}
+.connection-software {
+  top: 0;
+  left: 20px;
+}
+.connection-iot {
+  bottom: 0;
+  right: 14px;
+}
+.hero-bottom {
+  position: relative;
+}
+.capability-section {
+  padding: 12px 0 56px;
+  background: white;
+}
+.capability-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 28px;
+}
+.capability-link {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  padding: 22px 0;
+  border-bottom: 1px solid #d4e7f4;
+  transition: border-color 180ms ease;
+}
+.technology-icon {
+  width: 64px;
+  height: 64px;
+  flex-shrink: 0;
+}
+.capability-link h2 {
+  font-size: 17px;
+  line-height: 1.4;
+  letter-spacing: -0.025em;
+}
+.capability-link p {
+  margin-top: 7px;
+  font-size: 13px;
+  line-height: 1.6;
+  color: var(--color-muted);
+}
+.capability-link > svg:last-child {
+  flex-shrink: 0;
+  margin-left: auto;
+  color: #0072bc;
+}
+.capability-link:hover {
+  border-color: #0072bc;
+}
+.why-section {
+  padding-top: 56px;
+}
+.why-section .feature-card {
+  border: 0;
+  border-top: 2px solid #cce5f5;
+  border-radius: 0;
+  padding: 30px 10px 12px 0;
+  background: transparent;
+}
+.why-section .feature-card .icon-box {
+  background: #edf7ff;
+  border-radius: 18px;
+  width: 58px;
+  height: 58px;
+}
+.home-company-photo {
+  border-radius: 24px 24px 80px 24px;
+}
+.products-section .product-grid {
+  margin-top: 40px;
+}
+.approach-section {
+  background: #edf7fd;
+}
+.process-list {
+  border-left: 1px solid #bad9ed;
+  padding-left: 28px;
+}
+.process-list li {
+  position: relative;
+}
+.process-list li::before {
+  content: '';
+  position: absolute;
+  width: 9px;
+  height: 9px;
+  border: 2px solid #0072bc;
+  background: #edf7fd;
+  border-radius: 50%;
+  left: -33px;
+  top: 22px;
+}
+@media (max-width: 1100px) {
+  .capability-grid {
+    gap: 20px;
+  }
+  .capability-link {
+    gap: 10px;
+  }
+  .capability-link .technology-icon {
+    width: 48px;
+    height: 48px;
+  }
+  .capability-link h2 {
+    font-size: 15px;
+  }
+}
+@media (max-width: 900px) {
+  .home-hero::before {
+    inset: 48% 0 0 10%;
+    border-radius: 100px 0 0 0;
+  }
+  .hero-grid {
+    grid-template-columns: 1fr;
+    padding-block: 52px 36px;
+    gap: 34px;
+  }
+  .hero-copy h1 {
+    font-size: clamp(3rem, 7vw, 4.4rem);
+    max-width: 680px;
+  }
+  .hero-visual-refined {
+    max-width: 620px;
+    margin: 0 auto;
+    min-height: 440px;
+  }
+  .capability-grid {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+  .capability-link h2 {
+    font-size: 18px;
+  }
+  .capability-link .technology-icon {
+    width: 64px;
+    height: 64px;
+  }
+  .capability-section {
+    padding-bottom: 24px;
+  }
+}
+@media (max-width: 600px) {
+  .hero-copy h1 {
+    font-size: clamp(2.65rem, 10.5vw, 3.5rem);
+  }
+  .hero-description {
+    font-size: 16px;
+  }
+  .hero-visual-refined {
+    min-height: 330px;
+    padding: 56px 0;
+  }
+  .connection-label {
+    font-size: 11px;
+  }
+  .connection-software {
+    left: 0;
+  }
+  .connection-iot {
+    right: 0;
+  }
+  .hero-frame-footer {
+    flex-wrap: wrap;
+    padding-block: 8px;
+  }
+  .hero-frame-footer .text-link {
+    margin-left: 0;
+  }
+  .hero-frame-bar {
+    font-size: 7px;
+    padding: 12px;
+  }
+  .capability-link h2 {
+    font-size: 16px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .word-mask > span {
+    transform: none !important;
+    opacity: 1 !important;
+  }
+}

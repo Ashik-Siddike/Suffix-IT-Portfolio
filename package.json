@@ -1,0 +1,44 @@
+{
+  "name": "suffix-it-website",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "build": "vite build",
+    "preview": "vite preview --host 127.0.0.1",
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "test": "vitest run",
+    "pretest:e2e": "npm run build",
+    "test:e2e": "playwright test"
+  },
+  "dependencies": {
+    "@fontsource/inter": "^5.2.8",
+    "@fontsource/manrope": "^5.2.8",
+    "@tailwindcss/vite": "^4.3.3",
+    "lucide-react": "^0.577.0",
+    "motion": "^12.38.0",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4",
+    "react-router-dom": "^7.18.4",
+    "tailwindcss": "^4.3.3"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "^4.11.1",
+    "@eslint/js": "^10.0.1",
+    "@playwright/test": "^1.58.2",
+    "@testing-library/jest-dom": "^6.9.1",
+    "@testing-library/react": "^16.3.2",
+    "@vitejs/plugin-react": "^6.0.1",
+    "eslint": "^10.12.0",
+    "eslint-plugin-react-hooks": "^7.0.1",
+    "eslint-plugin-react-refresh": "^0.5.2",
+    "globals": "^17.4.0",
+    "jsdom": "^28.1.0",
+    "prettier": "^3.8.1",
+    "vite": "^8.3.4",
+    "vitest": "^4.1.0"
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "mode": "built-in image_gen",
+  "entries": [
+    {
+      "id": "payroll",
+      "source": "C:\\Users\\ashik\\.codex\\generated_images\\01a1269f-1dc5-7053-b8ec-7f23f8572082\\exec-6f4e3c21-bb5e-4101-a417-ed33d048ae3e.png",
+      "output": "public/assets/generated/products/payroll.webp"
+    },
+    {
+      "id": "billing",
+      "source": "C:\\Users\\ashik\\.codex\\generated_images\\01a1269f-1dc5-7053-b8ec-7f23f8572082\\exec-e160ec58-51b8-4e47-b66f-1573b7ed8f04.png",
+      "output": "public/assets/generated/products/billing.webp"
+    },
+    {
+      "id": "commerce",
+      "source": "C:\\Users\\ashik\\.codex\\generated_images\\01a1269f-1dc5-7053-b8ec-7f23f8572082\\exec-bc2ceeac-74ab-4d92-b38d-4f15109d96a5.png",
+      "output": "public/assets/generated/products/commerce.webp"
+    },
+    {
+      "id": "erp",
+      "source": "C:\\Users\\ashik\\.codex\\generated_images\\01a1269f-1dc5-7053-b8ec-7f23f8572082\\exec-5db040a8-1990-460c-acea-b308ad013e13.png",
+      "output": "public/assets/generated/products/erp.webp"
+    },
+    {
+      "id": "fund",
+      "source": "C:\\Users\\ashik\\.codex\\generated_images\\01a1269f-1dc5-7053-b8ec-7f23f8572082\\exec-15ed967a-50fd-470c-bd37-cccaca4948aa.png",
+      "output": "public/assets/generated/products/fund.webp"
+    },
+    {
+      "id": "hotel",
+      "source": "C:\\Users\\ashik\\.codex\\generated_images\\01a1269f-1dc5-7053-b8ec-7f23f8572082\\exec-5445c0e3-d282-4364-91e7-696f79d3647a.png",
+      "output": "public/assets/generated/products/hotel.webp"
+    },
+    {
+      "id": "inventory",
+      "source": "C:\\Users\\ashik\\.codex\\generated_images\\01a1269f-1dc5-7053-b8ec-7f23f8572082\\exec-b83a0695-af55-4a1c-9d12-5508972ec7b3.png",
+      "output": "public/assets/generated/products/inventory.webp"
+    },
+    {
+      "id": "field",
+      "source": "C:\\Users\\ashik\\.codex\\generated_images\\01a1269f-1dc5-7053-b8ec-7f23f8572082\\exec-b1fe06ed-7d6f-42f8-9496-7419f6327653.png",
+      "output": "public/assets/generated/products/field.webp"
+    }
+  ]
+}

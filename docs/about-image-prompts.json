@@ -1,0 +1,17 @@
+{
+  "generator": "Built-in image_gen",
+  "assets": [
+    {
+      "file": "public/assets/generated/about/vision.webp",
+      "prompt": "Premium editorial 3D illustration for Suffix IT enterprise technology website, wide horizontal composition 3:2. Subject: interconnected translucent azure glass architecture and network pathways forming an open globe, representing global ICT solutions and societal contribution. Beautiful precise materials, blue #0072bc and cyan, white porcelain, soft pale ice background, sophisticated studio lighting, spacious composition, no letters, no numbers, no logos, no people, no claims or UI screenshots. It will accompany the original Vision paragraph on an About page."
+    },
+    {
+      "file": "public/assets/generated/about/mission.webp",
+      "prompt": "Premium editorial 3D illustration for Suffix IT About Mission, wide 3:2 landscape. Three interlocking blue glass and white porcelain geometric bridges connect a small technology core to an expanding constellation of luminous nodes, representing technology enabling clients and staff. Azure #0072bc, cyan, pale ice white background, studio lighting, refined realistic materials, no text, no letters, no logos, no people, no UI, no charts. Distinct elegant business technology metaphor, clean spacious composition."
+    },
+    {
+      "file": "public/assets/generated/about/call-center.webp",
+      "prompt": "Wide landscape 16:9 premium 3D editorial illustration for enterprise call center services section, Suffix IT blue #0072bc and cyan on pale ice white. Three friendly abstract faceless porcelain figures with slim blue headsets, arranged around an elegant curved customer support desk, floating translucent speech bubbles and a telephone symbol, conveys inbound calls outbound calls and live chat. Polished glass materials, soft sophisticated lighting, airy clean composition, no text, no letters, no logo, no detailed faces, not an actual company office photo. Match premium azure glass enterprise technology illustrations."
+    }
+  ]
+}
