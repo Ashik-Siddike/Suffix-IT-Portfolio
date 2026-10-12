@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Laptop Base Test</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      background: #f8fafc;
+      font-family: system-ui, -apple-system, sans-serif;
+    }
+  </style>
+</head>
+<body class="p-8 flex flex-col items-center gap-16">
+
+  <!-- ================= OPTION A: 3D PERSPECTIVE BASE (MATCHING IMAGE 2) ================= -->
+  <div class="flex flex-col items-center">
+    <h2 class="text-xl font-bold mb-4 text-slate-800">Option A: Realistic 3D Perspective Base (Image 2)</h2>
+    <div class="flex items-center gap-10">
+      
+      <!-- Laptop -->
+      <div class="flex flex-col items-center">
+        <!-- Display Lid (Facing user directly) -->
+        <div class="relative w-[520px] h-[330px] rounded-[18px] bg-[#0c0d12] p-2.5 shadow-[0_20px_50px_-10px_rgba(0,0,0,0.5)] border border-[#23242c]">
+          <!-- Notch -->
+          <div class="absolute top-2.5 left-1/2 -translate-x-1/2 h-3 w-20 bg-[#0c0d12] rounded-b-md flex items-center justify-center z-10">
+            <div class="h-1.5 w-1.5 rounded-full bg-[#181920] ring-1 ring-sky-900/60"></div>
+          </div>
+          <!-- Screen Image Placeholder -->
+          <div class="w-full h-full rounded-[12px] bg-[#14151e] overflow-hidden flex items-center justify-center border border-white/5">
+            <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=1000&q=80" class="w-full h-full object-cover" />
+          </div>
+        </div>
+
+        <!-- Hinge Bar -->
+        <div class="relative z-10 -mt-1 w-[460px] h-[7px] bg-[#121318] border-t border-black border-b border-[#2a2b36] shadow-inner"></div>
+
+        <!-- 3D Perspective Keyboard Base (Trapezoid, wider at front, matching Image 2) -->
+        <div class="relative -mt-[1px] w-[590px]">
+          <svg viewBox="0 0 590 145" class="w-full h-auto drop-shadow-[0_25px_30px_rgba(0,0,0,0.45)]">
+            <defs>
+              <!-- Metallic Dark Aluminum Gradient -->
+              <linearGradient id="chassisGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+                <stop offset="0%" stop-color="#14151b" />
+                <stop offset="35%" stop-color="#1b1c24" />
+                <stop offset="92%" stop-color="#242531" />
+                <stop offset="100%" stop-color="#181920" />
+              </linearGradient>
+
+              <!-- Front Lip Bevel Highlight -->
+              <linearGradient id="frontLipGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+                <stop offset="0%" stop-color="#3d3f4f" />
+                <stop offset="50%" stop-color="#252632" />
+                <stop offset="100%" stop-color="#0e0f14" />
+              </linearGradient>
+
+              <!-- Keyboard Well Gradient -->
+              <linearGradient id="wellGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+                <stop offset="0%" stop-color="#0a0a0e" />
+                <stop offset="100%" stop-color="#111217" />
+              </linearGradient>
+
+              <!-- Key Cap Top Gradient -->
+              <linearGradient id="keyGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+                <stop offset="0%" stop-color="#20212b" />
+                <stop offset="100%" stop-color="#15161c" />
+              </linearGradient>
+
+              <!-- Trackpad Gradient -->
+              <linearGradient id="trackpadGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+                <stop offset="0%" stop-color="#1c1d25" />
+                <stop offset="100%" stop-color="#232430" />
+              </linearGradient>
+            </defs>
+
+            <!-- Main Chassis Top Surface (Trapezoid: 490px top width -> 580px bottom width) -->
+            <polygon points="50,0 540,0 585,134 5,134" fill="url(#chassisGrad)" stroke="#323442" stroke-width="0.8" />
+
+            <!-- Front Aluminum Lip (Height 8px, full width with rounded bottom corners) -->
+            <path d="M 5,134 L 585,134 Q 588,144 578,144 L 12,144 Q 2,144 5,134 Z" fill="url(#frontLipGrad)" />
+
+            <!-- Front Centered Thumb Opening Notch -->
+            <path d="M 260,134 L 330,134 C 328,140 322,142 318,142 L 272,142 C 268,142 262,140 260,134 Z" fill="#0c0d12" stroke="#4a4c5e" stroke-width="0.5" />
+
+            <!-- Recessed Keyboard Well (Trapezoid) -->
+            <polygon points="85,6 505,6 525,84 65,84" fill="url(#wellGrad)" stroke="#050508" stroke-width="1" />
+
+            <!-- Speaker Grille Left & Right (Subtle dotted strip) -->
+            <!-- Left Speaker -->
+            <polygon points="68,10 82,10 64,80 50,80" fill="#14151b" opacity="0.8" />
+            <!-- Right Speaker -->
+            <polygon points="508,10 522,10 540,80 526,80" fill="#14151b" opacity="0.8" />
+
+            <!-- Keyboard Rows (Function row, Numbers, QWERTY, ASDF, ZXCV, Space) -->
+            <!-- Row 1: Function Keys (narrow) -->
+            <g fill="url(#keyGrad)" stroke="#090a0d" stroke-width="0.5" rx="1">
+              <!-- 12 mini keys across row 1 -->
+              <polygon points="88,8 116,8 115,16 87,16" />
+              <polygon points="120,8 148,8 147,16 119,16" />
+              <polygon points="152,8 180,8 179,16 151,16" />
+              <polygon points="184,8 212,8 211,16 183,16" />
+              <polygon points="216,8 244,8 243,16 215,16" />
+              <polygon points="248,8 276,8 275,16 247,16" />
+              <polygon points="280,8 308,8 307,16 279,16" />
+              <polygon points="312,8 340,8 339,16 311,16" />
+              <polygon points="344,8 372,8 371,16 343,16" />
+              <polygon points="376,8 404,8 403,16 375,16" />
+              <polygon points="408,8 436,8 435,16 407,16" />
+              <polygon points="440,8 468,8 467,16 439,16" />
+              <polygon points="472,8 502,8 501,16 471,16" />
+            </g>
+
+            <!-- Row 2: Number Row -->
+            <g fill="url(#keyGrad)" stroke="#090a0d" stroke-width="0.5">
+              <polygon points="86,18 114,18 113,28 85,28" />
+              <polygon points="117,18 143,18 142,28 116,28" />
+              <polygon points="146,18 172,18 171,28 145,28" />
+              <polygon points="175,18 201,18 200,28 174,28" />
+              <polygon points="204,18 230,18 229,28 203,28" />
+              <polygon points="233,18 259,18 258,28 232,28" />
+              <polygon points="262,18 288,18 287,28 261,28" />
+              <polygon points="291,18 317,18 316,28 290,28" />
+              <polygon points="320,18 346,18 345,28 319,28" />
+              <polygon points="349,18 375,18 374,28 348,28" />
+              <polygon points="378,18 404,18 403,28 377,28" />
+              <polygon points="407,18 433,18 432,28 406,28" />
+              <polygon points="436,18 462,18 461,28 435,28" />
+              <polygon points="465,18 503,18 503,28 464,28" />
+            </g>
+
+            <!-- Row 3: QWERTY Row -->
+            <g fill="url(#keyGrad)" stroke="#090a0d" stroke-width="0.5">
+              <polygon points="84,30 116,30 115,41 83,41" />
+              <polygon points="119,30 146,30 145,41 118,41" />
+              <polygon points="149,30 176,30 175,41 148,41" />
+              <polygon points="179,30 206,30 205,41 178,41" />
+              <polygon points="209,30 236,30 235,41 208,41" />
+              <polygon points="239,30 266,30 265,41 238,41" />
+              <polygon points="269,30 296,30 295,41 268,41" />
+              <polygon points="299,30 326,30 325,41 298,41" />
+              <polygon points="329,30 356,30 355,41 328,41" />
+              <polygon points="359,30 386,30 385,41 358,41" />
+              <polygon points="389,30 416,30 415,41 388,41" />
+              <polygon points="419,30 446,30 445,41 418,41" />
+              <polygon points="449,30 476,30 475,41 448,41" />
+              <polygon points="479,30 506,30 506,41 478,41" />
+            </g>
+
+            <!-- Row 4: ASDF Row -->
+            <g fill="url(#keyGrad)" stroke="#090a0d" stroke-width="0.5">
+              <polygon points="81,43 118,43 117,55 79,55" />
+              <polygon points="121,43 149,43 148,55 120,55" />
+              <polygon points="152,43 180,43 179,55 151,55" />
+              <polygon points="183,43 211,43 210,55 182,55" />
+              <polygon points="214,43 242,43 241,55 213,55" />
+              <polygon points="245,43 273,43 272,55 244,55" />
+              <polygon points="276,43 304,43 303,55 275,55" />
+              <polygon points="307,43 335,43 334,55 306,55" />
+              <polygon points="338,43 366,43 365,55 337,55" />
+              <polygon points="369,43 397,43 396,55 368,55" />
+              <polygon points="400,43 428,43 427,55 399,55" />
+              <polygon points="431,43 459,43 458,55 430,55" />
+              <polygon points="462,43 509,43 509,55 461,55" />
+            </g>
+
+            <!-- Row 5: ZXCV Row -->
+            <g fill="url(#keyGrad)" stroke="#090a0d" stroke-width="0.5">
+              <polygon points="77,57 122,57 121,69 75,69" />
+              <polygon points="125,57 154,57 153,69 124,69" />
+              <polygon points="157,57 186,57 185,69 156,69" />
+              <polygon points="189,57 218,57 217,69 188,69" />
+              <polygon points="221,57 250,57 249,69 220,69" />
+              <polygon points="253,57 282,57 281,69 252,69" />
+              <polygon points="285,57 314,57 313,69 284,69" />
+              <polygon points="317,57 346,57 345,69 316,69" />
+              <polygon points="349,57 378,57 377,69 348,69" />
+              <polygon points="381,57 410,57 409,69 380,69" />
+              <polygon points="413,57 442,57 441,69 412,69" />
+              <polygon points="445,57 474,57 473,69 444,69" />
+              <polygon points="477,57 513,57 514,69 476,69" />
+            </g>
+
+            <!-- Row 6: Bottom / Spacebar Row -->
+            <g fill="url(#keyGrad)" stroke="#090a0d" stroke-width="0.5">
+              <polygon points="73,71 103,71 102,83 71,83" />
+              <polygon points="106,71 133,71 132,83 105,83" />
+              <polygon points="136,71 166,71 165,83 135,83" />
+              <polygon points="169,71 202,71 201,83 168,83" />
+              <!-- Spacebar -->
+              <polygon points="205,71 379,71 380,83 204,83" fill="#1b1c24" />
+              <polygon points="382,71 415,71 416,83 383,83" />
+              <polygon points="418,71 448,71 449,83 419,83" />
+              <polygon points="451,71 475,71 476,83 452,83" />
+              <!-- Arrow Keys -->
+              <polygon points="478,71 517,71 519,83 479,83" />
+            </g>
+
+            <!-- Trackpad (Centered, subtle glass gradient & rounded border) -->
+            <polygon points="228,88 362,88 368,131 222,131" fill="url(#trackpadGrad)" stroke="#383949" stroke-width="0.8" rx="3" />
+          </svg>
+
+          <!-- Soft Table Surface Shadow -->
+          <div class="absolute -bottom-3 left-1/2 -translate-x-1/2 w-[560px] h-8 bg-slate-950/30 blur-xl rounded-full -z-10"></div>
+        </div>
+      </div>
+
+      <!-- Phone Beside It (Grounded on desk level) -->
+      <div class="relative flex flex-col items-center self-end mb-1">
+        <div class="relative h-[360px] w-[180px] rounded-[38px] bg-[#0c0d10] p-[7px] shadow-[0_20px_50px_-10px_rgba(0,0,0,0.4)] border border-[#27282f]">
+          <!-- Buttons -->
+          <div class="absolute -left-[3px] top-16 h-8 w-[2px] rounded-l bg-[#3f4048]"></div>
+          <div class="absolute -left-[3px] top-26 h-8 w-[2px] rounded-l bg-[#3f4048]"></div>
+          <div class="absolute -right-[3px] top-20 h-11 w-[2px] rounded-r bg-[#3f4048]"></div>
+          <!-- Dynamic Island -->
+          <div class="absolute top-2.5 left-1/2 -translate-x-1/2 z-30 h-3.5 w-16 rounded-full bg-black flex items-center justify-end pr-2 border border-white/5">
+            <div class="h-1.5 w-1.5 rounded-full bg-[#1c1c1e]"></div>
+          </div>
+          <!-- Screen -->
+          <div class="w-full h-full rounded-[30px] bg-[#111215] overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=600&q=80" class="w-full h-full object-cover" />
+          </div>
+          <!-- Home bar -->
+          <div class="absolute bottom-2 left-1/2 -translate-x-1/2 z-30 h-1 w-12 rounded-full bg-white/40"></div>
+        </div>
+        <div class="absolute -bottom-2 left-1/2 -translate-x-1/2 w-[150px] h-6 bg-slate-950/25 blur-lg rounded-full -z-10"></div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ================= OPTION B: FRONT EYE-LEVEL 90° CHASSIS (MATCHING IMAGE 1) ================= -->
+  <div class="flex flex-col items-center">
+    <h2 class="text-xl font-bold mb-4 text-slate-800">Option B: Front Eye-Level 90° Profile (Image 1)</h2>
+    <div class="flex items-center gap-10">
+      
+      <!-- Laptop -->
+      <div class="flex flex-col items-center">
+        <!-- Display Lid (Facing user directly) -->
+        <div class="relative w-[520px] h-[330px] rounded-[18px] bg-[#0c0d12] p-2.5 shadow-[0_20px_50px_-10px_rgba(0,0,0,0.5)] border border-[#23242c]">
+          <!-- Notch -->
+          <div class="absolute top-2.5 left-1/2 -translate-x-1/2 h-3 w-20 bg-[#0c0d12] rounded-b-md flex items-center justify-center z-10">
+            <div class="h-1.5 w-1.5 rounded-full bg-[#181920] ring-1 ring-sky-900/60"></div>
+          </div>
+          <!-- Screen Image Placeholder -->
+          <div class="w-full h-full rounded-[12px] bg-[#14151e] overflow-hidden flex items-center justify-center border border-white/5">
+            <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=1000&q=80" class="w-full h-full object-cover" />
+          </div>
+        </div>
+
+        <!-- Hinge Bar -->
+        <div class="relative z-10 -mt-1 w-[460px] h-[7px] bg-[#121318] border-t border-black border-b border-[#2a2b36]"></div>
+
+        <!-- 90° Folded Slim Front Base Lip (As seen in Image 1) -->
+        <div class="relative z-10 w-[550px] h-[26px] bg-gradient-to-b from-[#22232c] via-[#1a1b22] to-[#121317] rounded-b-[14px] border border-[#2f303d] shadow-[0_15px_30px_rgba(0,0,0,0.4)] flex flex-col justify-between">
+          <!-- Top highlight line -->
+          <div class="w-full h-[1px] bg-white/10"></div>
+          <!-- Centered Thumb Opening Notch -->
+          <div class="self-center w-24 h-2 rounded-t-sm bg-[#0a0b0e] border-t border-black flex items-center justify-center">
+            <div class="w-20 h-[1px] bg-white/10"></div>
+          </div>
+          <!-- Bottom Lip & subtle feet -->
+          <div class="relative w-full h-[2px]">
+            <div class="absolute left-6 -bottom-1 w-6 h-1 rounded-full bg-black/80"></div>
+            <div class="absolute right-6 -bottom-1 w-6 h-1 rounded-full bg-black/80"></div>
+          </div>
+        </div>
+
+        <!-- Soft Shadow -->
+        <div class="w-[520px] h-6 bg-slate-950/25 blur-lg rounded-full -mt-2"></div>
+      </div>
+
+      <!-- Phone Beside It -->
+      <div class="relative flex flex-col items-center">
+        <div class="relative h-[340px] w-[170px] rounded-[38px] bg-[#0c0d10] p-[7px] shadow-[0_20px_50px_-10px_rgba(0,0,0,0.4)] border border-[#27282f]">
+          <!-- Buttons -->
+          <div class="absolute -left-[3px] top-16 h-8 w-[2px] rounded-l bg-[#3f4048]"></div>
+          <div class="absolute -left-[3px] top-26 h-8 w-[2px] rounded-l bg-[#3f4048]"></div>
+          <div class="absolute -right-[3px] top-20 h-11 w-[2px] rounded-r bg-[#3f4048]"></div>
+          <!-- Dynamic Island -->
+          <div class="absolute top-2.5 left-1/2 -translate-x-1/2 z-30 h-3.5 w-16 rounded-full bg-black flex items-center justify-end pr-2 border border-white/5">
+            <div class="h-1.5 w-1.5 rounded-full bg-[#1c1c1e]"></div>
+          </div>
+          <!-- Screen -->
+          <div class="w-full h-full rounded-[30px] bg-[#111215] overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=600&q=80" class="w-full h-full object-cover" />
+          </div>
+          <!-- Home bar -->
+          <div class="absolute bottom-2 left-1/2 -translate-x-1/2 z-30 h-1 w-12 rounded-full bg-white/40"></div>
+        </div>
+        <div class="absolute -bottom-2 left-1/2 -translate-x-1/2 w-[140px] h-6 bg-slate-950/25 blur-lg rounded-full -z-10"></div>
+      </div>
+
+    </div>
+  </div>
+
+</body>
+</html>

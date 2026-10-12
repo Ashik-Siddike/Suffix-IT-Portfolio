@@ -21,6 +21,8 @@ import NotFoundPage from './NotFoundPage';
 import { solutionSections } from '../lib/solution-sections';
 import screens from '../data/software-screens.json';
 import SoftwarePreview from '../components/SoftwarePreview';
+import ProductDualDeviceShowcase from '../components/ProductDualDeviceShowcase';
+import { Sparkles, Zap, ShieldCheck, Layers, CheckCircle2, ArrowRight } from 'lucide-react';
 
 export default function SolutionPage() {
   const { pathname } = useLocation();
@@ -39,44 +41,85 @@ export default function SolutionPage() {
   const softwareScreens = screens[item.slug] || [];
   return (
     <>
-      <PageHero
-        title={item.title}
-        visual={
-          <div className="solution-hero-art">
-            <SiteImage
-              src={item.image}
-              alt={`${item.title} — conceptual product illustration`}
-              width="600"
-              height="440"
-              sizes="(max-width: 900px) 90vw, 550px"
-              fetchPriority="high"
-            />
+      {isProduct ? (
+        <ProductDualDeviceShowcase item={item} />
+      ) : (
+        <PageHero
+          title={item.title}
+          visual={
+            <div className="solution-hero-art">
+              <SiteImage
+                src={item.image}
+                alt={`${item.title} — conceptual product illustration`}
+                width="600"
+                height="440"
+                sizes="(max-width: 900px) 90vw, 550px"
+                fetchPriority="high"
+              />
+            </div>
+          }
+          breadcrumbs={[
+            {
+              label: 'Services',
+              path: '/services',
+            },
+            { label: item.title },
+          ]}
+        >
+          <div className="button-row">
+            <PrimaryButton
+              to={`/contact?solution=${encodeURIComponent(item.title)}`}
+            >
+              Discuss your requirements
+            </PrimaryButton>
+            <SecondaryButton href="#capabilities">Explore capabilities</SecondaryButton>
           </div>
-        }
-        breadcrumbs={[
-          {
-            label: isProduct ? 'Products' : 'Services',
-            path: isProduct ? '/products' : '/services',
-          },
-          { label: item.title },
-        ]}
-      >
-        <div className="button-row">
-          <PrimaryButton
-            to={`/contact?${isProduct ? 'intent=demo&' : ''}solution=${encodeURIComponent(item.title)}`}
-          >
-            {isProduct ? 'Request a demo' : 'Discuss your requirements'}
-          </PrimaryButton>
-          <SecondaryButton href="#capabilities">Explore capabilities</SecondaryButton>
-        </div>
-      </PageHero>
+        </PageHero>
+      )}
       {sourceIntro && (
-        <section className="section">
-          <Container className="solution-original-intro">
-            <ScrollReveal variant="left">
-              <h2>{original.introTitle || item.title}</h2>
-              <p>{sourceIntro.text}</p>
-            </ScrollReveal>
+        <section className="relative py-12 md:py-16 bg-gradient-to-b from-[#edf6fc]/50 via-white to-white overflow-hidden">
+          <div className="pointer-events-none absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-7xl h-48 bg-gradient-to-b from-sky-400/10 to-transparent blur-3xl" />
+          
+          <Container>
+            <div className="relative rounded-3xl bg-gradient-to-br from-white via-sky-50/40 to-blue-50/30 border border-sky-200/80 p-8 sm:p-10 md:p-12 shadow-xl shadow-sky-950/[0.03] backdrop-blur-md overflow-hidden">
+              {/* Top accent highlight */}
+              <div className="absolute top-0 left-0 right-0 h-[3px] bg-gradient-to-r from-sky-400 via-blue-500 to-sky-400" />
+              
+              <div className="flex flex-col gap-4">
+                <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-sky-100/90 border border-sky-300/60 text-sky-800 text-xs font-bold uppercase tracking-wider w-fit shadow-sm">
+                  <Sparkles className="h-3.5 w-3.5 text-sky-600" />
+                  <span>Executive Architecture Overview</span>
+                </div>
+
+                <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-slate-900 tracking-tight leading-tight">
+                  {original.introTitle || item.title}
+                </h2>
+
+                <p className="text-slate-600 text-base sm:text-lg leading-relaxed max-w-4xl font-normal">
+                  {sourceIntro.text}
+                </p>
+
+                {/* Key architectural pillar badges */}
+                <div className="mt-4 pt-6 border-t border-sky-100/80 grid grid-cols-2 sm:grid-cols-4 gap-3">
+                  <div className="flex items-center gap-2 text-xs font-semibold text-slate-700 bg-white/80 border border-slate-200/80 rounded-xl px-3 py-2.5 shadow-sm">
+                    <Zap className="h-4 w-4 text-sky-600 shrink-0" />
+                    <span>High Throughput</span>
+                  </div>
+                  <div className="flex items-center gap-2 text-xs font-semibold text-slate-700 bg-white/80 border border-slate-200/80 rounded-xl px-3 py-2.5 shadow-sm">
+                    <ShieldCheck className="h-4 w-4 text-emerald-600 shrink-0" />
+                    <span>Enterprise Security</span>
+                  </div>
+                  <div className="flex items-center gap-2 text-xs font-semibold text-slate-700 bg-white/80 border border-slate-200/80 rounded-xl px-3 py-2.5 shadow-sm">
+                    <Layers className="h-4 w-4 text-indigo-600 shrink-0" />
+                    <span>Modular Suite</span>
+                  </div>
+                  <div className="flex items-center gap-2 text-xs font-semibold text-slate-700 bg-white/80 border border-slate-200/80 rounded-xl px-3 py-2.5 shadow-sm">
+                    <CheckCircle2 className="h-4 w-4 text-sky-600 shrink-0" />
+                    <span>Cloud &amp; Mobile Ready</span>
+                  </div>
+                </div>
+              </div>
+            </div>
           </Container>
         </section>
       )}
@@ -92,17 +135,40 @@ export default function SolutionPage() {
           </Container>
         </section>
       )}
-      <section id="capabilities" className="content-section solution-details-section">
+      <section id="capabilities" className="content-section solution-details-section py-12 md:py-16">
         <Container className="solution-details-layout">
           {sections.length > 0 && (
-            <nav className="solution-section-nav" aria-label="On this page">
-              <h2>On this page</h2>
-              <div>
-                {sections.map((section, index) => (
-                  <a key={index} href={`#${item.slug}-section-${index}`}>
-                    {section.title}
+            <nav className="solution-section-nav sticky top-28 self-start" aria-label="On this page">
+              <div className="rounded-2xl bg-white/95 backdrop-blur-md border border-sky-200/80 p-4 sm:p-5 shadow-lg shadow-sky-950/[0.04]">
+                <div className="flex items-center gap-2 px-1 mb-3.5 pb-2.5 border-b border-slate-100">
+                  <span className="h-2 w-2 rounded-full bg-sky-500 animate-pulse" />
+                  <h2 className="text-xs font-bold uppercase tracking-wider text-slate-500 m-0">
+                    On this page
+                  </h2>
+                </div>
+                <div className="flex flex-col gap-1.5 max-h-[calc(100vh-230px)] overflow-y-auto pr-1">
+                  {sections.map((section, index) => (
+                    <a
+                      key={index}
+                      href={`#${item.slug}-section-${index}`}
+                      className="flex items-center gap-2.5 px-3 py-2 rounded-xl text-xs font-medium text-slate-600 hover:text-sky-700 hover:bg-sky-50/90 transition-all border border-transparent hover:border-sky-200 group"
+                    >
+                      <span className="font-mono text-[10px] font-bold text-sky-600 bg-sky-100/80 px-1.5 py-0.5 rounded group-hover:bg-sky-600 group-hover:text-white transition-colors">
+                        0{index + 1}
+                      </span>
+                      <span className="line-clamp-1">{section.title}</span>
+                    </a>
+                  ))}
+                </div>
+                <div className="mt-4 pt-3.5 border-t border-slate-100">
+                  <a
+                    href={`/contact?intent=demo&solution=${encodeURIComponent(item.title)}`}
+                    className="w-full flex items-center justify-center gap-1.5 py-2.5 px-3 rounded-xl bg-gradient-to-r from-sky-500 to-blue-600 text-white text-xs font-bold shadow-md shadow-sky-500/20 hover:from-sky-600 hover:to-blue-700 transition-all"
+                  >
+                    <Zap className="h-3.5 w-3.5" />
+                    Request Live Demo
                   </a>
-                ))}
+                </div>
               </div>
             </nav>
           )}

@@ -12,13 +12,16 @@ export default function ModernCard({
   const reduced = useMotionPreference();
   return (
     <motion.div
-      className={`modern-card-shell ${className}`}
+      className={`modern-card-shell relative rounded-3xl transition-all duration-300 ${className}`}
       initial={false}
-      whileHover={reduced ? undefined : { y: -4, scale: 1.012 }}
-      transition={{ type: 'spring', stiffness: 240, damping: 24 }}
+      whileHover={reduced ? undefined : { y: -4, scale: 1.008 }}
+      transition={{ type: 'spring', stiffness: 260, damping: 25 }}
     >
-      <span className="modern-card-layer modern-card-layer-fill" aria-hidden="true" />
-      <span className="modern-card-layer modern-card-layer-stroke" aria-hidden="true" />
+      {/* Subtle modern ambient highlight glow */}
+      <span
+        className="pointer-events-none absolute -inset-[1px] rounded-3xl bg-gradient-to-b from-sky-400/20 via-transparent to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100 -z-10"
+        aria-hidden="true"
+      />
       {children}
     </motion.div>
   );
