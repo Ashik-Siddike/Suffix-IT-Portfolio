@@ -3,34 +3,29 @@ import { company } from '../data/company';
 import { Container, PageHero, ScrollReveal } from '../components/ui';
 import ContactForm from '../components/ContactForm';
 import { TubesBackground } from '../components/ui/neon-flow';
+import published from '../data/published-pages.json';
+import copy from '../data/original-page-copy.json';
 
 export default function ContactPage() {
   return (
     <>
       <TubesBackground>
         <PageHero
-          eyebrow="LET’S START A CONVERSATION"
-          title="Good things start with hello."
-          description="A new project, a product demo, or a technology challenge. Tell us what’s on your mind."
+          title={copy['/contact'].title}
+          description={published['/contact'].blocks[0].text}
           breadcrumbs={[{ label: 'Contact' }]}
         />
       </TubesBackground>
       <section className="section">
         <Container className="contact-grid">
           <ScrollReveal variant="left" className="contact-info">
-            <span className="eyebrow">GET IN TOUCH</span>
-            <h2>
-              Let’s move your
-              <br />
-              business forward.
-            </h2>
-            <p>Connect directly with the Suffix IT team to discuss your requirements.</p>
+            <h2>Our Location</h2>
             <div className="contact-method">
               <span className="icon-box">
                 <Mail size={22} aria-hidden="true" />
               </span>
               <div>
-                <h3>Email us</h3>
+                <h3>For more information:</h3>
                 <a href={`mailto:${company.email}`}>{company.email}</a>
               </div>
             </div>
@@ -39,7 +34,6 @@ export default function ContactPage() {
                 <Phone size={22} aria-hidden="true" />
               </span>
               <div>
-                <h3>Call us</h3>
                 <a href={`tel:${company.phoneHref}`}>{company.phone}</a>
               </div>
             </div>
@@ -48,7 +42,6 @@ export default function ContactPage() {
                 <MapPin size={22} aria-hidden="true" />
               </span>
               <div>
-                <h3>Find us in Dhaka</h3>
                 <p>{company.address}</p>
                 <a
                   className="text-link"

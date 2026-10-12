@@ -2,6 +2,7 @@
 
 import { motion, useScroll, useTransform, type MotionValue } from 'framer-motion';
 import { useEffect, useRef, useState } from 'react';
+import SiteImage from '../SiteImage';
 
 interface GalleryImage {
   src: string;
@@ -26,7 +27,15 @@ function ZoomImage({
   return (
     <motion.figure className={`zoom-tile zoom-tile-${index}`} style={{ scale, opacity }}>
       <span className="image-surface">
-        <img src={image.src} alt={image.alt || ''} width="1200" height="800" loading="lazy" />
+        <SiteImage
+          src={image.src}
+          alt={image.alt || ''}
+          width="1200"
+          height="800"
+          loading="lazy"
+          reveal={false}
+          surface={false}
+        />
       </span>
     </motion.figure>
   );
@@ -62,12 +71,14 @@ export function ZoomParallax({
           ) : (
             <figure key={image.src}>
               <span className="image-surface">
-                <img
+                <SiteImage
                   src={image.src}
                   alt={image.alt || ''}
                   width="1200"
                   height="800"
                   loading="lazy"
+                  reveal={false}
+                  surface={false}
                 />
               </span>
             </figure>

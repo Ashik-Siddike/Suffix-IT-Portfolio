@@ -1,4 +1,6 @@
 import visuals from './unique-visuals.json' with { type: 'json' };
+import originalCopy from './original-page-copy.json' with { type: 'json' };
+import homeOriginal from './home-original.json' with { type: 'json' };
 const serviceEntries = [
   [
     'erp-consulting',
@@ -274,22 +276,53 @@ const productEntries = [
   ],
 ];
 
-export const services = serviceEntries.map(([slug, title, description, icon, image, features]) => ({
-  slug,
-  title,
-  description,
-  icon,
-  image: visuals.heroes[`/service/${slug}`] || `/assets/${image}`,
-  features,
-  path: `/service/${slug}`,
-  source: `https://www.suffixit.com/service/${slug}`,
-}));
-export const products = productEntries.map(
-  ([slug, title, category, description, icon, image, features]) => ({
+const homeProductSlugs = [
+  'payroll-system',
+  'interconnect-billing',
+  'e-commerce',
+  'rupantor-erp',
+  'provident-fund',
+  'hotel-booking-system',
+  'rupantor-inventory',
+  'field-force-management',
+];
+const homeServiceSlugs = [
+  'domain-hosting',
+  'erp-consulting',
+  'web-ecommerce',
+  'custom-applications',
+  'video-conferencing',
+  'mobile-apps',
+  'hospital-management',
+  'learning-management',
+  'storage-backup',
+];
+const sourceDescription = (path, homeEntry) =>
+  homeEntry?.description || originalCopy[path]?.description || '';
+export const services = serviceEntries.map(
+  ([slug, title, _description, icon, image, features]) => ({
     slug,
-    title,
+    title: originalCopy[`/service/${slug}`]?.title || title,
+    description: sourceDescription(
+      `/service/${slug}`,
+      homeOriginal.services?.[homeServiceSlugs.indexOf(slug)],
+    ),
+    icon,
+    image: visuals.heroes[`/service/${slug}`] || `/assets/${image}`,
+    features,
+    path: `/service/${slug}`,
+    source: `https://www.suffixit.com/service/${slug}`,
+  }),
+);
+export const products = productEntries.map(
+  ([slug, title, category, _description, icon, image, features]) => ({
+    slug,
+    title: originalCopy[`/product/${slug}`]?.title || title,
     category,
-    description,
+    description: sourceDescription(
+      `/product/${slug}`,
+      homeOriginal.products?.[homeProductSlugs.indexOf(slug)],
+    ),
     icon,
     image: visuals.heroes[`/product/${slug}`] || `/assets/${image}`,
     features,

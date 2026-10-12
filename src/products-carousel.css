@@ -91,7 +91,7 @@
   margin-bottom: 8px;
 }
 .squeeze-overlay strong {
-  font-family: Manrope, sans-serif;
+  font-family: var(--font-heading);
   font-size: clamp(24px, 2.5vw, 34px);
   line-height: 1.25;
   text-align: left;

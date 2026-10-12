@@ -1,0 +1,256 @@
+.home-sticky-showcases {
+  /* Fallbacks match the header before the resize observer measures its actual height. */
+  --sticky-header-height: 97px;
+  --showcase-height: calc(100svh - var(--sticky-header-height));
+  position: relative;
+  isolation: isolate;
+  padding: 0;
+  background: #fff;
+}
+.sticky-showcase-panel {
+  position: sticky;
+  top: var(--sticky-header-height);
+  z-index: var(--panel-layer);
+  display: grid;
+  align-items: center;
+  width: 100%;
+  height: var(--showcase-height);
+  min-height: var(--showcase-height);
+  margin: 0;
+  padding: clamp(24px, 4svh, 48px) 48px;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+  scroll-margin-top: var(--sticky-header-height);
+}
+/* The shared container ends at the final panel's bottom: no tail spacer or exit animation. */
+.sticky-showcase-panel.restored-why {
+  background: #fff;
+}
+.sticky-showcase-panel.restored-field {
+  color: #fff;
+  background: #075a91;
+}
+.sticky-showcase-panel.call-center-section {
+  background: #e7f3fc;
+}
+.sticky-showcase-panel .sticky-showcase-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: center;
+  width: min(1280px, 100%);
+  height: auto;
+  margin-inline: auto;
+  gap: 52px;
+}
+.is-image-left .sticky-showcase-art {
+  grid-area: 1 / 1;
+}
+.is-image-left .sticky-showcase-copy {
+  grid-area: 1 / 2;
+}
+.is-image-right .sticky-showcase-art {
+  grid-area: 1 / 2;
+}
+.is-image-right .sticky-showcase-copy {
+  grid-area: 1 / 1;
+}
+.sticky-showcase-art,
+.sticky-showcase-copy {
+  min-width: 0;
+}
+.sticky-showcase-panel .section-heading {
+  margin-bottom: 22px;
+}
+.sticky-showcase-panel .section-heading h2 {
+  font-size: clamp(30px, 3vw, 43px);
+  line-height: 1.17;
+}
+.sticky-showcase-panel .section-heading p {
+  margin-top: 20px;
+  font-size: 15px;
+  line-height: 1.75;
+}
+.sticky-showcase-panel .eyebrow {
+  margin-bottom: 16px;
+}
+.sticky-showcase-panel .restored-why-art {
+  padding: 0;
+}
+.sticky-showcase-panel .image-surface {
+  aspect-ratio: 6 / 5;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+}
+.sticky-showcase-panel .image-surface::before {
+  content: none;
+}
+.sticky-showcase-panel .image-surface.image-surface img,
+.sticky-showcase-panel .field-feature-chips li,
+.sticky-showcase-panel .button {
+  transform: none;
+  filter: none;
+}
+.sticky-showcase-panel .image-surface.image-surface img {
+  transition: none;
+}
+.sticky-showcase-panel.restored-why .restored-values {
+  margin: 22px 0 14px;
+}
+.sticky-showcase-panel.restored-why .restored-values > span {
+  padding: 12px;
+  font-size: 13px;
+  background: #f5fbff;
+}
+.sticky-showcase-panel.restored-why .why-benefits {
+  margin-bottom: 22px;
+  gap: 0 20px;
+}
+.sticky-showcase-panel.restored-why .why-benefits li {
+  padding: 9px 0;
+  font-size: 13px;
+}
+.sticky-showcase-panel.restored-field h2 {
+  color: #fff;
+}
+.sticky-showcase-panel.restored-field .field-feature-chips {
+  gap: 10px;
+  margin: 24px 0 28px;
+}
+.sticky-showcase-panel .field-feature-chips li {
+  padding: 10px 14px;
+  font-size: 13px;
+  color: #f0f8ff;
+  border-color: #a5d6f466;
+  background: #ffffff12;
+}
+.sticky-showcase-panel .field-feature-chips li > .generated-icon {
+  filter: brightness(0) invert(1);
+}
+.sticky-showcase-panel .field-feature-chips li:hover {
+  color: #075a91;
+  border-color: #fff;
+  background: #fff;
+}
+.sticky-showcase-panel .field-feature-chips li:hover > .generated-icon {
+  filter: none;
+}
+.sticky-showcase-panel.restored-field .button {
+  background: #fff;
+  color: #075a91;
+}
+.sticky-showcase-panel.restored-field .button:hover {
+  background: #e1f3ff;
+}
+.sticky-showcase-panel.restored-field .button:focus-visible {
+  outline-color: #fff;
+}
+.sticky-showcase-panel.restored-field .button .generated-icon {
+  filter: none;
+}
+.sticky-call-art {
+  overflow: hidden;
+  border-radius: 24px;
+}
+.sticky-call-art img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  object-fit: contain;
+}
+.sticky-call-services {
+  display: grid;
+  margin: 24px 0;
+}
+.sticky-call-services article {
+  display: grid;
+  grid-template-columns: 32px 1fr;
+  gap: 0 12px;
+  padding: 12px 0;
+  border-top: 1px solid #bed9ed;
+}
+.sticky-call-services .icon-box {
+  grid-row: 1 / 3;
+  width: 32px;
+  height: 32px;
+  padding: 6px;
+  margin: 0;
+  background: #f5fbff;
+  border-radius: 9px;
+}
+.sticky-call-services h3 {
+  font-size: 16px;
+  margin-bottom: 4px;
+}
+.sticky-call-services p {
+  font-size: 12px;
+  line-height: 1.6;
+}
+/* A panel taller than the usable viewport must remain scrollable and readable. */
+.home-sticky-showcases[data-scroll-mode='flow'] .sticky-showcase-panel {
+  position: relative;
+  top: auto;
+  height: auto;
+  min-height: var(--showcase-height);
+}
+@media (max-width: 1100px) {
+  .sticky-showcase-panel {
+    padding-inline: 32px;
+  }
+  .sticky-showcase-panel .sticky-showcase-grid {
+    gap: 32px;
+  }
+  .sticky-showcase-panel .section-heading h2 {
+    font-size: 32px;
+  }
+}
+@media (max-width: 800px) {
+  .sticky-showcase-panel {
+    padding: 24px 20px;
+  }
+  .sticky-showcase-panel .sticky-showcase-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+  .is-image-left .sticky-showcase-art,
+  .is-image-right .sticky-showcase-art {
+    grid-area: 1 / 1;
+    width: min(360px, 100%);
+    margin-inline: auto;
+  }
+  .is-image-left .sticky-showcase-copy,
+  .is-image-right .sticky-showcase-copy {
+    grid-area: 2 / 1;
+  }
+  .sticky-showcase-panel .image-surface {
+    aspect-ratio: 2 / 1;
+  }
+  .sticky-showcase-panel .section-heading h2 {
+    font-size: 28px;
+  }
+}
+@media (max-width: 600px) {
+  .home-sticky-showcases {
+    --sticky-header-height: 81px;
+  }
+  .sticky-showcase-panel .section-heading h2 {
+    font-size: 26px;
+  }
+  .sticky-showcase-panel .section-heading p {
+    margin-top: 16px;
+    font-size: 14px;
+  }
+  .sticky-showcase-panel.restored-why .restored-values {
+    gap: 8px;
+  }
+  .sticky-showcase-panel.restored-why .restored-values > span {
+    padding: 10px;
+    font-size: 12px;
+  }
+  .sticky-showcase-panel.restored-why .why-benefits {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0 12px;
+  }
+}

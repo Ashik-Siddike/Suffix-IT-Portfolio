@@ -1,86 +1,107 @@
 [
   {
     "src": "/assets/1.a2a785dc.png",
-    "alt": "Client logo 1, published by Suffix IT"
+    "alt": "AKT logo",
+    "name": "AKT"
   },
   {
     "src": "/assets/original-client-2.jpg",
-    "alt": "Client logo 2, published by Suffix IT"
+    "alt": "Petrobangla logo",
+    "name": "Petrobangla"
   },
   {
     "src": "/assets/biwta-logo.71989be7.png",
-    "alt": "Client logo 3, published by Suffix IT"
+    "alt": "BIWTA logo",
+    "name": "BIWTA"
   },
   {
     "src": "/assets/WasaLogo.f0000e68.png",
-    "alt": "Client logo 4, published by Suffix IT"
+    "alt": "WASA logo",
+    "name": "WASA"
   },
   {
     "src": "/assets/sq.c8f27df4.png",
-    "alt": "Client logo 5, published by Suffix IT"
+    "alt": "SQ logo",
+    "name": "SQ"
   },
   {
     "src": "/assets/pass.3bd39071.png",
-    "alt": "Client logo 6, published by Suffix IT"
+    "alt": "Immigration & Passports logo",
+    "name": "Immigration & Passports"
   },
   {
     "src": "/assets/bepza.6b95450d.jpg",
-    "alt": "Client logo 7, published by Suffix IT"
+    "alt": "BEPZA logo",
+    "name": "BEPZA"
   },
   {
     "src": "/assets/19.7051bd96.png",
-    "alt": "Client logo 8, published by Suffix IT"
+    "alt": "GPH Ispat logo",
+    "name": "GPH Ispat"
   },
   {
     "src": "/assets/original-client-9.jpg",
-    "alt": "Client logo 9, published by Suffix IT"
+    "alt": "Epic Group logo",
+    "name": "Epic Group"
   },
   {
     "src": "/assets/21.a57e013c.png",
-    "alt": "Client logo 10, published by Suffix IT"
+    "alt": "Fair Technology logo",
+    "name": "Fair Technology"
   },
   {
     "src": "/assets/5.8075929a.png",
-    "alt": "Client logo 11, published by Suffix IT"
+    "alt": "Pureit logo",
+    "name": "Pureit"
   },
   {
     "src": "/assets/7.f650ebcd.png",
-    "alt": "Client logo 12, published by Suffix IT"
+    "alt": "Institution of Engineers logo",
+    "name": "Institution of Engineers"
   },
   {
     "src": "/assets/8.1d17ea2c.png",
-    "alt": "Client logo 13, published by Suffix IT"
+    "alt": "Avery Dennison logo",
+    "name": "Avery Dennison"
   },
   {
     "src": "/assets/2.94dbe157.png",
-    "alt": "Client logo 14, published by Suffix IT"
+    "alt": "GAZI Networks logo",
+    "name": "GAZI Networks"
   },
   {
     "src": "/assets/30.e507ee11.png",
-    "alt": "Client logo 15, published by Suffix IT"
+    "alt": "BTRC logo",
+    "name": "BTRC"
   },
   {
     "src": "/assets/4.4a081b12.png",
-    "alt": "Client logo 16, published by Suffix IT"
+    "alt": "NGT logo",
+    "name": "NGT"
   },
   {
     "src": "/assets/original-client-17.png",
-    "alt": "Client logo 17, published by Suffix IT"
+    "alt": "Mother Telecommunication logo",
+    "name": "Mother Telecommunication"
   },
   {
     "src": "/assets/34.67e3afcd.png",
-    "alt": "Client logo 18, published by Suffix IT"
+    "alt": "Crossworld Telecom logo",
+    "name": "Crossworld Telecom"
   },
   {
     "src": "/assets/japan.5213734c.png",
-    "alt": "Client logo 19, published by Suffix IT"
+    "alt": "Bangladesh SEZ Ltd logo",
+    "name": "Bangladesh SEZ Ltd"
   },
   {
     "src": "/assets/apex.674a7c51.png",
-    "alt": "Client logo 20, published by Suffix IT"
+    "alt": "Apex logo",
+    "name": "Apex"
   },
   {
     "src": "/assets/vision.466e9b76.png",
-    "alt": "Client logo 21, published by Suffix IT"
+    "alt": "Vision Group logo",
+    "name": "Vision Group"
   }
 ]

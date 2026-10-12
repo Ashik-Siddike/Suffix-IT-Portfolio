@@ -16,6 +16,7 @@ export default function HeroNeonFlow() {
     let app: TubesApp | undefined;
     let generation = 0;
     let visible = false;
+    let pointerIntent = false;
     const stop = () => {
       generation++;
       app?.dispose();
@@ -24,7 +25,15 @@ export default function HeroNeonFlow() {
       element.dataset.state = 'static';
     };
     const start = async () => {
-      if (app || !visible || document.hidden || preference.matches || !pointer.matches) return;
+      if (
+        app ||
+        !pointerIntent ||
+        !visible ||
+        document.hidden ||
+        preference.matches ||
+        !pointer.matches
+      )
+        return;
       const current = ++generation;
       try {
         const path = new URL('/vendor/neon-tubes.js', window.location.origin).href;
@@ -34,17 +43,18 @@ export default function HeroNeonFlow() {
         canvas.className = 'hero-neon-canvas';
         canvas.setAttribute('aria-hidden', 'true');
         element.append(canvas);
+        const lightweight = navigator.hardwareConcurrency <= 4;
         app = TubesCursor(canvas, {
           bloom: { threshold: 0.1, strength: 0.7, radius: 0.4 },
           sleepRadiusX: 150,
           sleepRadiusY: 75,
           tubes: {
-            count: 8,
+            count: lightweight ? 4 : 8,
             colors: ['#0072bc', '#079acf', '#35c9e6'],
             minRadius: 0.008,
             maxRadius: 0.025,
             minTubularSegments: 32,
-            maxTubularSegments: 64,
+            maxTubularSegments: lightweight ? 40 : 64,
             lights: { intensity: 40, colors: ['#0072bc', '#57d6f5', '#0b8cc7', '#9ceaff'] },
           },
         }) as TubesApp;
@@ -66,11 +76,17 @@ export default function HeroNeonFlow() {
       sync();
     });
     observer.observe(element);
+    const activate = () => {
+      pointerIntent = true;
+      void start();
+    };
+    element.parentElement?.addEventListener('pointermove', activate, { passive: true });
     preference.addEventListener('change', sync);
     pointer.addEventListener('change', sync);
     document.addEventListener('visibilitychange', sync);
     return () => {
       observer.disconnect();
+      element.parentElement?.removeEventListener('pointermove', activate);
       preference.removeEventListener('change', sync);
       pointer.removeEventListener('change', sync);
       document.removeEventListener('visibilitychange', sync);

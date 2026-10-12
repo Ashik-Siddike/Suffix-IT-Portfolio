@@ -1,5 +1,6 @@
+import useMotionPreference from './ui/useMotionPreference';
 import optimized from '../data/optimized-images.json';
-import { motion as Motion, useReducedMotion } from 'motion/react';
+import { motion as Motion } from 'motion/react';
 
 export default function SiteImage({
   src,
@@ -9,7 +10,7 @@ export default function SiteImage({
   surface = true,
   ...props
 }) {
-  const reduced = useReducedMotion();
+  const reduced = useMotionPreference();
   const entrance = {
     initial: reduced || !reveal ? false : { opacity: 0, clipPath: 'inset(8% 0 8% 0 round 12px)' },
     whileInView: { opacity: 1, clipPath: 'inset(0% 0 0% 0 round 0px)' },
@@ -21,8 +22,10 @@ export default function SiteImage({
     },
   };
   const variants = optimized[src];
+  const ImageElement = reveal ? Motion.img : 'img';
+  const revealProps = reveal ? entrance : {};
   const image = !variants ? (
-    <Motion.img src={src} {...entrance} {...props} />
+    <ImageElement src={src} decoding="async" {...revealProps} {...props} />
   ) : (
     <picture>
       <source
@@ -30,7 +33,7 @@ export default function SiteImage({
         srcSet={variants.map((image) => `${image.src} ${image.width}w`).join(', ')}
         sizes={sizes}
       />
-      <Motion.img src={src} {...entrance} {...props} />
+      <ImageElement src={src} decoding="async" {...revealProps} {...props} />
     </picture>
   );
   const transparentArt =

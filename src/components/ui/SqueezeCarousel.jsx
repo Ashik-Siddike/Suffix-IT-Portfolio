@@ -1,7 +1,10 @@
+import useMotionPreference from './useMotionPreference';
 import { useEffect, useId, useLayoutEffect, useRef, useState } from 'react';
 import { motion as Motion, useInView } from 'motion/react';
-import { ArrowLeft, ArrowRight, Pause, Play } from '../GeneratedIcons';
+import { ArrowLeft, ArrowRight } from '../GeneratedIcons';
 import { PrimaryButton } from '../ui';
+import SiteImage from '../SiteImage';
+import { Link } from 'react-router-dom';
 
 // Adapted to the existing JSX project from the supplied carousel-squeeze reference.
 export default function SqueezeCarousel({ slides, label = 'Our products', duration = 1000 }) {
@@ -15,18 +18,9 @@ export default function SqueezeCarousel({ slides, label = 'Our products', durati
   const focusIntent = useRef(null);
   const tabs = useRef([]);
   const gesture = useRef(null);
-  const [reduced, setReduced] = useState(
-    () =>
-      typeof window !== 'undefined' &&
-      window.matchMedia('(prefers-reduced-motion: reduce)').matches,
-  );
+  const hoverPoint = useRef(null);
+  const reduced = useMotionPreference();
   const id = useId();
-  useEffect(() => {
-    const preference = window.matchMedia('(prefers-reduced-motion: reduce)');
-    const update = () => setReduced(preference.matches);
-    preference.addEventListener('change', update);
-    return () => preference.removeEventListener('change', update);
-  }, []);
   useEffect(() => {
     const update = () => setTabVisible(!document.hidden);
     update();
@@ -60,6 +54,11 @@ export default function SqueezeCarousel({ slides, label = 'Our products', durati
     }
   }, [active]);
   const keyboard = (event) => {
+    if (event.key === ' ') {
+      event.preventDefault();
+      setPaused((value) => !value);
+      return;
+    }
     const next =
       event.key === 'ArrowRight'
         ? active + 1
@@ -91,6 +90,7 @@ export default function SqueezeCarousel({ slides, label = 'Our products', durati
       onMouseEnter={() => setPointerWithin(true)}
       onMouseLeave={() => {
         setPointerWithin(false);
+        hoverPoint.current = null;
       }}
     >
       <div className="squeeze-toolbar">
@@ -99,16 +99,6 @@ export default function SqueezeCarousel({ slides, label = 'Our products', durati
           {String(slides.length).padStart(2, '0')} products
         </p>
         <div>
-          {!reduced && (
-            <button
-              type="button"
-              aria-label={paused ? 'Resume product autoplay' : 'Pause product autoplay'}
-              aria-pressed={paused}
-              onClick={() => setPaused((value) => !value)}
-            >
-              {paused ? <Play size={19} /> : <Pause size={19} />}
-            </button>
-          )}
           <button type="button" aria-label="Previous product" onClick={() => select(active - 1)}>
             <ArrowLeft size={19} aria-hidden="true" />
           </button>
@@ -147,8 +137,8 @@ export default function SqueezeCarousel({ slides, label = 'Our products', durati
                     ? 0.7
                     : 0.15;
           return (
-            <button
-              type="button"
+            <Link
+              to={item.href}
               role="tab"
               key={item.id}
               id={`${id}-tab-${index}`}
@@ -159,28 +149,40 @@ export default function SqueezeCarousel({ slides, label = 'Our products', durati
               ref={(node) => {
                 tabs.current[index] = node;
               }}
-              onClick={() => select(index)}
               onPointerEnter={(event) => {
                 if (event.pointerType === 'mouse') {
                   setPointerWithin(true);
-                  select(index);
                 }
+              }}
+              onPointerMove={(event) => {
+                if (event.pointerType !== 'mouse') return;
+                const point = { x: event.clientX, y: event.clientY };
+                if (hoverPoint.current?.x === point.x && hoverPoint.current?.y === point.y) return;
+                hoverPoint.current = point;
+                select(index);
               }}
               className={`squeeze-panel ${index === active ? 'is-active' : ''} ${index === wrap(active + 1) ? 'is-adjacent' : ''}`}
               style={{ '--panel-weight': weight }}
             >
-              <img
+              <SiteImage
                 src={item.image}
                 alt=""
                 width="1280"
                 height="720"
                 loading="lazy"
+                reveal={false}
+                surface={false}
+                sizes={
+                  index === active
+                    ? '(max-width: 600px) 80vw, 60vw'
+                    : '(max-width: 600px) 15vw, 20vw'
+                }
                 draggable={false}
               />
               <span className="squeeze-overlay" aria-hidden="true">
                 <strong>{item.title}</strong>
               </span>
-            </button>
+            </Link>
           );
         })}
       </div>

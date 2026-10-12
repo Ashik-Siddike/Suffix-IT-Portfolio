@@ -1,13 +1,10 @@
-import { StrictMode, lazy, Suspense } from 'react';
-import { createRoot } from 'react-dom/client';
-import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom';
+import '@fontsource-variable/inter/wght.css';
+import '@fontsource-variable/manrope/wght.css';
+import { StrictMode } from 'react';
+import { createRoot, hydrateRoot } from 'react-dom/client';
+import { BrowserRouter } from 'react-router-dom';
 import { MotionConfig } from 'motion/react';
-import '@fontsource/inter/latin-400.css';
-import '@fontsource/inter/latin-500.css';
-import '@fontsource/inter/latin-600.css';
-import '@fontsource/manrope/latin-600.css';
-import '@fontsource/manrope/latin-700.css';
-import '@fontsource/manrope/latin-800.css';
+import App from './App';
 import './styles.css';
 import './refinements.css';
 import './interactions.css';
@@ -20,46 +17,27 @@ import './generated-visuals.css';
 import './premium-effects.css';
 import './hero-premium.css';
 import './image-surfaces.css';
-import PageLayout from './components/PageLayout';
-import { LoadingState } from './components/ui';
+import './site-polish.css';
+import './home-showcases.css';
+import './marquee-effects.css';
+import './home-final-treatments.css';
+import './modern-motion.css';
+import './hero-curves.css';
+import './company-circuit.css';
+import './sticky-showcases.css';
+import './text-hover-effect.css';
+import './presentation-polish.css';
+import './software-story.css';
 
-const HomePage = lazy(() => import('./pages/HomePage'));
-const CataloguePage = lazy(() => import('./pages/CataloguePage'));
-const SolutionPage = lazy(() => import('./pages/SolutionPage'));
-const CompanyPage = lazy(() => import('./pages/CompanyPage'));
-const ContactPage = lazy(() => import('./pages/ContactPage'));
-const ContentPage = lazy(() => import('./pages/ContentPage'));
-const NotFoundPage = lazy(() => import('./pages/NotFoundPage'));
-
-createRoot(document.getElementById('root')).render(
+const root = document.getElementById('root');
+const application = (
   <StrictMode>
     <BrowserRouter>
       <MotionConfig reducedMotion="user">
-        <Suspense fallback={<LoadingState />}>
-          <Routes>
-            <Route element={<PageLayout />}>
-              <Route index element={<HomePage />} />
-              <Route path="home" element={<Navigate to="/" replace />} />
-              <Route path="about" element={<CompanyPage />} />
-              <Route path="contact" element={<ContactPage />} />
-              <Route path="services" element={<CataloguePage type="services" />} />
-              <Route path="products" element={<CataloguePage type="products" />} />
-              <Route path="service/:slug" element={<SolutionPage />} />
-              <Route path="product/:slug" element={<SolutionPage />} />
-              <Route path="career" element={<ContentPage kind="career" />} />
-              <Route path="career-detail/:id" element={<ContentPage kind="career-detail" />} />
-              <Route path="astha-policy" element={<ContentPage kind="policy" />} />
-              <Route path="webmail" element={<ContentPage kind="webmail" />} />
-              <Route
-                path="top-10-software-company-in-bangladesh"
-                element={<ContentPage kind="article" />}
-              />
-              <Route path="web-e-commerce-detail/:type" element={<ContentPage kind="package" />} />
-              <Route path="*" element={<NotFoundPage />} />
-            </Route>
-          </Routes>
-        </Suspense>
+        <App />
       </MotionConfig>
     </BrowserRouter>
-  </StrictMode>,
+  </StrictMode>
 );
+if (root.dataset.prerender === 'home') hydrateRoot(root, application);
+else createRoot(root).render(application);

@@ -2,6 +2,7 @@ import visuals from '../data/unique-visuals.json';
 import { useParams } from 'react-router-dom';
 import { ArrowUpRight } from '../components/GeneratedIcons';
 import published from '../data/published-pages.json';
+import pageCopy from '../data/original-page-copy.json';
 import {
   Accordion,
   Container,
@@ -10,7 +11,6 @@ import {
   SecondaryButton,
   ScrollReveal,
 } from '../components/ui';
-import { CTASection } from '../components/sections';
 import SourceContent from '../components/SourceContent';
 import NotFoundPage from './NotFoundPage';
 import SiteImage from '../components/SiteImage';
@@ -21,9 +21,7 @@ export default function ContentPage({ kind }) {
     return (
       <>
         <PageHero
-          eyebrow="GROW WITH SUFFIX IT"
-          title="Build what’s next. Together."
-          description="Explore published opportunities and connect with our team about your next chapter."
+          title="Career"
           breadcrumbs={[{ label: 'Careers' }]}
           visual={
             <div className="career-hero-art">
@@ -39,6 +37,8 @@ export default function ContentPage({ kind }) {
         />
         <section className="section">
           <Container>
+            <h2>Find a job</h2>
+            <p>Choose from the list of most popular categories.</p>
             <div className="notice">
               The role below was published with a deadline of 18 December 2025. That deadline has
               passed. Contact career@suffixit.com for current opportunities.
@@ -115,7 +115,7 @@ export default function ContentPage({ kind }) {
                 ? 'WEB & E-COMMERCE'
                 : 'ARCHIVED CAREER OPPORTUNITY'
         }
-        title={title}
+        title={pageCopy[path]?.title || title}
         description={
           kind === 'policy'
             ? 'Original published policy. Last updated 1 August 2022.'
@@ -195,7 +195,6 @@ export default function ContentPage({ kind }) {
           )}
         </Container>
       </section>
-      {kind === 'package' && <CTASection />}
     </>
   );
 }

@@ -62,22 +62,22 @@ Service/product detail-এর জন্য আলাদা আলাদা JSX p
 
 Section-এর অবস্থান ও order-এর মূল file `src/pages/HomePage.jsx`।
 
-| Section                                                    | Current file/location                                                  |
-| ---------------------------------------------------------- | ---------------------------------------------------------------------- |
-| Original Home hero, images, vector and sonar               | HomePage.jsx, AnimatedText.jsx, TechnologyVector.jsx, ui/SonarGrid.jsx |
-| Why Choose Us and Field Force                              | HomeRestoredSections.jsx                                               |
-| Call Center and generated illustration                     | HomePage.jsx; about-original.css                                       |
-| Nine-service bento and liquid hover                        | ServicesBento.jsx; homepage.css                                        |
-| Eight-product squeeze carousel                             | ProductsSection.jsx, ui/SqueezeCarousel.jsx; products-carousel.css     |
-| Full original testimonials                                 | HomeRestoredSections.jsx; data/home-testimonials.json                  |
-| Two-row client marquee                                     | ClientMarquee.jsx                                                      |
-| About gradient hero, original history/team, Vision/Mission | CompanyPage.jsx; about-original.css                                    |
-| Company introduction and three cards moved to About        | HomeRestoredSections.jsx: CompanyValuesSection                         |
-| Shared navigation and footer                               | SiteHeader.jsx, data/navigation.js, SiteFooter.jsx                     |
-| Original homepage wording                                  | data/home-original.json                                                |
-| New decorative illustrations                               | public/assets/generated/about/                                         |
+| Section                                                             | Current file/location                                                                      |
+| ------------------------------------------------------------------- | ------------------------------------------------------------------------------------------ |
+| Home hero: typing title, curved backdrop and 3D art                 | HomePage.jsx; ui/TypedHeroTitle.tsx; ui/HeroCurves.tsx; ui/HeroTechnologyStage.tsx         |
+| Three sticky cards: Experience, Field Force and Call Center         | HomeRestoredSections.jsx; ui/StickyShowcase.tsx; sticky-showcases.css                      |
+| Three-row marquee directly below hero and SUFFIX IT hover watermark | CapabilityMarquee.jsx; ui/text-hover-effect.tsx; text-hover-effect.css                     |
+| Nine-service bento and liquid hover                                 | ServicesBento.jsx; homepage.css                                                            |
+| Eight-product squeeze carousel                                      | ProductsSection.jsx, ui/SqueezeCarousel.jsx; products-carousel.css                         |
+| Full original testimonials                                          | HomeRestoredSections.jsx; data/home-testimonials.json                                      |
+| Two tilted client ribbons with original logos and names             | ClientMarquee.jsx; data/client-logos.json; clients-footer.css                              |
+| About gradient hero, original history/team, Vision/Mission          | CompanyPage.jsx; about-original.css                                                        |
+| Company introduction and connected illustrations on About           | HomeRestoredSections.jsx: CompanyValuesSection; ui/CompanyCircuit.tsx; company-circuit.css |
+| Shared navigation and footer                                        | SiteHeader.jsx, data/navigation.js, SiteFooter.jsx                                         |
+| Original homepage wording                                           | data/home-original.json                                                                    |
+| New decorative illustrations                                        | public/assets/generated/about/                                                             |
 
-Home no longer contains the extra capability links, industry cards, invented process block, added marketing CTA or substituted hero demo. Legacy ProductShowcase.jsx and HeroDemo.jsx remain unused. Current change details: about-original-redesign.md; exact image prompts: about-image-prompts.json.
+Current homepage order: hero, three-row capability marquee, three sticky showcase cards, services, products, testimonials and client ribbons. Company values remain on About. See sticky-showcases.md and client-ribbons.md for current layout and interaction settings.
 
 ## ৫. Shared components ও functionality
 
@@ -90,10 +90,10 @@ Home no longer contains the extra capability links, industry cards, invented pro
 | `AnimatedText.jsx`                         | Word-by-word heading animation; accessible full text ও reduced-motion handling            |
 | `SiteImage.jsx`                            | Responsive image source, optimized fallback ও image reveal                                |
 | `TechnologyVector.jsx`                     | Generated technology icons ও নতুন CSS aura                                                |
-| `ui/SonarGrid.jsx`                         | Hero canvas waves, pointer interaction, resize ও offscreen/reduced-motion handling        |
+| `ui/SonarGrid.jsx`                         | Legacy canvas component; currently unused by the homepage                                 |
 | `ClientMarquee.jsx`                        | দুই সারির opposite-direction logo animation, pause/resume ও reduced-motion layout         |
 | `ui/SqueezeCarousel.jsx`                   | Product selection, keyboard arrows/Home/End, swipe, pagination ও wrapping controls        |
-| `HomeRestoredSections.jsx`                 | Original Why Choose Us, company cards, Field Force ও staggered testimonial cards          |
+| `HomeRestoredSections.jsx`                 | Original showcase content, About company values and client testimonials                   |
 | `cards.jsx`                                | Reusable service, product ও feature cards                                                 |
 | `sections.jsx`                             | Reusable marquee wrapper, CTA ও stats; Home/About-এ বাড়তি CTA/stats এখন ব্যবহার হয় না     |
 | `ScrollTools.jsx`                          | Scroll progress ও back-to-top control                                                     |
@@ -141,3 +141,15 @@ Audit evidence ও design notes `docs/`-এ, preview captures `artifacts/`-এ�
 ## নতুন premium effects
 
 About hero-এর fractal `src/components/ui/fractal-bloom-tree.tsx`-এ; Contact hero-এর pointer flow `neon-flow.tsx`-এ; Transformer gallery-এর zoom `zoom-parallax.tsx`-এ। Shared lifecycle `useAmbientCanvas.ts`, styling `src/premium-effects.css`। TypeScript ও shadcn configuration `tsconfig.json` এবং `components.json`-এ; alias Vite-এ। বিস্তারিত setup/placement/validation `docs/premium-component-integration.md`-এ।
+
+## Content ও performance polish
+
+`original-page-copy.json` original banner title/demo copy রাখে; catalogue original Home copy ব্যবহার করে। `CataloguePage.jsx`-এ category + search + reset আছে। `scripts/optimize-generated.py` transparent alpha রেখে responsive image variants তৈরি করে; `SiteImage.jsx`, carousel ও gallery সেগুলো ব্যবহার করে। Mobile/layout/neon changes `site-polish.css`-এ। Contact এখনো email draft তৈরি করে—backend পরে। সম্পূর্ণ notes `docs/site-polish.md`-এ।
+
+## নতুন homepage section ও presentation update
+
+**Software in action** নতুন section-টি Our Products-এর পরে, testimonials-এর আগে আছে। `SoftwareCircuitSection.jsx` section content এবং `ui/BentCircuit.tsx` বাঁকানো blue line দেখায়। আসল Field Force/IEMS screen-এর mapping `data/software-screens.json`-এ; `SoftwarePreview.jsx` full preview ও zoom দেখায়। Payroll/ERP-এর verified screenshot এখনও পাওয়া যায়নি।
+
+About history-তে আসল team photo, compact Vision/Mission, detail pages-এ original-heading navigation এবং Contact-এ grouped fields/email-draft summary যোগ হয়েছে। Footer-এর পেছনে drawing effect-এ SUFFIX IT আছে; component `ui/path-drawing-portfolio-hero.tsx`। এই পরিবর্তনের CSS `presentation-polish.css`-এ।
+
+Production homepage আগে থেকে render হয় এবং React একই markup hydrate করে। Build helper `scripts/prerender-home.mjs`; shared routes `App.jsx`-এ, font/style/bootstrap `main.jsx`-এ। বিস্তারিত file map, assets ও validation [presentation-updates.md](presentation-updates.md)-এ।

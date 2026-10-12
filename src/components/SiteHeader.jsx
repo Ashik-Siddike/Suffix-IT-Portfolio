@@ -6,10 +6,12 @@ import SiteImage from './SiteImage';
 import { navigation } from '../data/navigation';
 import { Container, PrimaryButton } from './ui';
 
-export function NavigationDropdown({ item, open, onToggle, onClose, id }) {
+export function NavigationDropdown({ item, open, onToggle, onClose, onOpen, id }) {
   const { pathname } = useLocation();
   const active = pathname === item.path || item.items.some((child) => child.path === pathname);
   const ref = useRef(null);
+  const hoverTimer = useRef(0);
+  useEffect(() => () => clearTimeout(hoverTimer.current), []);
   useEffect(() => {
     if (!open) return;
     const handler = (event) => {
@@ -22,6 +24,18 @@ export function NavigationDropdown({ item, open, onToggle, onClose, id }) {
     <div
       ref={ref}
       className="nav-disclosure"
+      onPointerEnter={(event) => {
+        if (event.pointerType !== 'mouse') return;
+        clearTimeout(hoverTimer.current);
+        onOpen();
+      }}
+      onPointerLeave={(event) => {
+        if (event.pointerType !== 'mouse') return;
+        clearTimeout(hoverTimer.current);
+        hoverTimer.current = setTimeout(() => {
+          if (!ref.current?.contains(document.activeElement)) onClose();
+        }, 180);
+      }}
       onBlur={(event) => {
         if (!event.currentTarget.contains(event.relatedTarget)) onClose();
       }}
@@ -86,8 +100,9 @@ export function DesktopNavigation() {
             item={item}
             id={`desktop-${item.label.toLowerCase()}`}
             open={opened === item.label}
-            onToggle={() => setOpened(opened === item.label ? null : item.label)}
-            onClose={() => setOpened(null)}
+            onToggle={() => setOpened(item.label)}
+            onOpen={() => setOpened(item.label)}
+            onClose={() => setOpened((current) => (current === item.label ? null : current))}
           />
         ) : (
           <NavLink key={item.label} to={item.path} end={item.path === '/'}>

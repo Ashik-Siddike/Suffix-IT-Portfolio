@@ -1,6 +1,7 @@
 .client-marquee {
-  padding: 64px 0;
-  background: #fff;
+  padding: 48px 0 56px;
+  overflow: hidden;
+  background: #f8fcff;
   border-bottom: 1px solid #e0edf6;
 }
 .marquee-heading {
@@ -8,7 +9,7 @@
   align-items: center;
   justify-content: space-between;
   gap: 24px;
-  margin-bottom: 30px;
+  margin-bottom: 36px;
 }
 .marquee-heading h2 {
   font-size: clamp(26px, 3vw, 38px);
@@ -20,57 +21,85 @@
   margin-top: 12px;
   font-size: 15px;
 }
-.marquee-control {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  border: 1px solid #cde1ef;
-  border-radius: 24px;
-  padding: 10px 16px;
-  min-height: 44px;
-  color: #075a91;
-  font-size: 13px;
-  background: #f4faff;
-  cursor: pointer;
-  flex-shrink: 0;
+.client-marquee-frame {
+  margin-inline: -32px;
+  transform: rotate(-1deg);
 }
 .marquee-window {
   overflow: hidden;
-  mask-image: linear-gradient(to right, transparent, black 5%, black 95%, transparent);
+  mask-image: linear-gradient(to right, transparent, black 4%, black 96%, transparent);
+}
+.marquee-row {
+  border-top: 1.5px solid #193f59;
+  background: white;
+  transition:
+    border-color 0.3s,
+    box-shadow 0.3s;
+}
+.marquee-row:last-child {
+  border-bottom: 1.5px solid #193f59;
+}
+.marquee-window:is(:hover, :focus-within) .marquee-row {
+  border-color: #0072bc;
+  box-shadow: inset 0 1px 0 #0072bc14;
 }
 .marquee-track {
   display: flex;
   width: max-content;
-  animation: client-drift 50s linear infinite;
+  animation: client-drift 100s linear infinite;
 }
 .marquee-group {
   display: flex;
   flex-shrink: 0;
+  gap: 42px;
+  padding: 0 21px;
 }
 .marquee-logo {
-  width: 186px;
-  height: 126px;
+  position: relative;
+  width: auto;
+  height: 82px;
   flex-shrink: 0;
-  display: grid;
-  place-items: center;
-  padding: 22px 30px;
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+  white-space: nowrap;
 }
 .marquee-logo img {
-  width: 126px;
-  height: 82px;
+  display: block;
+  width: 48px;
+  height: 48px;
   object-fit: contain;
+  flex-shrink: 0;
+}
+.client-name {
+  font-family: var(--font-heading);
+  font-size: 28px;
+  font-weight: 800;
+  letter-spacing: -0.025em;
+  line-height: 1.2;
+  text-transform: uppercase;
+  color: #122d40;
+  transition: color 0.3s;
+}
+.marquee-logo:hover .client-name {
+  color: #0072bc;
 }
 .marquee-reverse .marquee-track {
   animation-direction: reverse;
-  animation-duration: 56s;
+  animation-duration: 110s;
 }
 .marquee-window:hover .marquee-track,
+.client-marquee:focus-within .marquee-track,
 .is-paused .marquee-track {
   animation-play-state: paused;
 }
 .is-compact {
   border: 0;
   padding: 0;
+}
+.client-marquee:focus-visible {
+  outline: 2px solid #0072bc;
+  outline-offset: -4px;
 }
 .is-compact > .container {
   width: 100%;
@@ -97,10 +126,19 @@
 }
 .reference-footer .footer-brand {
   display: inline-flex;
-  width: 184px;
-  padding: 10px 12px;
-  background: white;
-  border-radius: 10px;
+  width: 172px;
+  padding: 0;
+  background: transparent;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+.reference-footer .footer-brand:hover {
+  opacity: 0.9;
+  transform: translateY(-1px);
+}
+.reference-footer .footer-brand img {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 .reference-footer .footer-company p {
   color: #b9c8d8;
@@ -209,11 +247,12 @@
 }
 @media (max-width: 600px) {
   .client-marquee {
-    padding-block: 40px;
+    padding-block: 32px 40px;
   }
   .marquee-heading {
     align-items: flex-start;
     gap: 14px;
+    margin-bottom: 28px;
   }
   .marquee-heading h2 {
     font-size: 25px;
@@ -221,17 +260,20 @@
   .marquee-heading p {
     font-size: 14px;
   }
-  .marquee-control {
-    padding: 9px 12px;
-  }
   .marquee-logo {
-    width: 142px;
-    height: 104px;
-    padding: 18px;
+    height: 64px;
+    gap: 10px;
   }
   .marquee-logo img {
-    width: 106px;
-    height: 68px;
+    width: 36px;
+    height: 36px;
+  }
+  .client-name {
+    font-size: 20px;
+  }
+  .marquee-group {
+    gap: 28px;
+    padding-inline: 14px;
   }
   .reference-footer {
     padding-top: 48px;
@@ -252,8 +294,9 @@
   }
 }
 @media (prefers-reduced-motion: reduce) {
-  .marquee-control {
-    display: none;
+  .client-marquee-frame {
+    transform: none;
+    margin-inline: 0;
   }
   .marquee-window {
     mask-image: none;
@@ -267,11 +310,23 @@
     flex-wrap: wrap;
     justify-content: center;
     width: 100%;
+    padding: 16px;
+    gap: 12px 28px;
   }
   .marquee-group[aria-hidden='true'] {
     display: none;
   }
   .marquee-logo {
-    width: 140px;
+    height: auto;
+    min-height: 56px;
+    max-width: 100%;
+    white-space: normal;
+  }
+  .client-name {
+    font-size: 20px;
+  }
+  .client-name,
+  .marquee-row {
+    transition: none;
   }
 }

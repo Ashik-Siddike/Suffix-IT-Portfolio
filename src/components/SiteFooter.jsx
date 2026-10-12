@@ -3,6 +3,7 @@ import { Facebook, Linkedin, Mail, MapPin, Phone } from './GeneratedIcons';
 import { company } from '../data/company';
 import { Container } from './ui';
 import SiteImage from './SiteImage';
+import PathDrawingPortfolioHero from './ui/path-drawing-portfolio-hero';
 const credentials = [
   ['certificate (1).b2ea00ce.png', 'ISO 9001:2015 mark published by Suffix IT'],
   ['certificate (2).336c9402.png', 'ISO 27001 mark published by Suffix IT'],
@@ -13,13 +14,18 @@ const credentials = [
 ];
 export default function SiteFooter() {
   return (
-    <footer className="site-footer reference-footer">
+    <footer className="site-footer reference-footer modern-footer">
+      <PathDrawingPortfolioHero
+        brand="SUFFIX IT"
+        decorative
+        className="footer-drawing-background"
+      />
       <Container>
         <div className="footer-grid">
           <div className="footer-company">
-            <Link to="/" className="brand footer-brand">
+            <Link to="/" className="brand footer-brand" aria-label="Suffix IT — home">
               <img
-                src="/assets/Suffix-Logo.73142c9b.png"
+                src="/assets/Suffix-Logo-Dark.png"
                 alt="Suffix IT ultimate solutions"
                 width="2083"
                 height="789"
@@ -92,6 +98,7 @@ export default function SiteFooter() {
                 height="90"
                 sizes="160px"
                 loading="lazy"
+                reveal={false}
               />
             ))}
           </div>

@@ -1,0 +1,102 @@
+.brand-loading-screen {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+  background: radial-gradient(ellipse at 50% 60%, #e7f5ff, transparent 55%), #fff;
+  font-family: Inter, system-ui, sans-serif;
+}
+.brand-loading-logo {
+  display: block;
+  width: clamp(180px, 26vw, 260px);
+  height: auto;
+}
+.brand-loading-balls {
+  display: flex;
+  gap: 14px;
+  height: 76px;
+  align-items: flex-end;
+}
+.brand-loading-lane {
+  position: relative;
+  display: block;
+  width: 38px;
+  height: 76px;
+}
+.brand-loading-lane i {
+  position: absolute;
+  left: 7px;
+  bottom: 13px;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: radial-gradient(
+    circle at 32% 25%,
+    #bff4ff 0 12%,
+    #39d3f7 18%,
+    #078ddd 58%,
+    #0072bc 100%
+  );
+  box-shadow: 0 0 16px #08b8ed40;
+  transform-origin: center bottom;
+  animation: brand-ball-bounce 1.35s cubic-bezier(0.45, 0, 0.55, 1) infinite;
+  animation-delay: var(--bounce-delay, 0s);
+}
+.brand-loading-lane b {
+  position: absolute;
+  bottom: 4px;
+  left: 0;
+  width: 38px;
+  height: 8px;
+  border: 1px solid #3fa8d860;
+  border-radius: 50%;
+  background: #0072bc12;
+  animation: brand-ball-shadow 1.35s ease-in-out infinite;
+  animation-delay: var(--bounce-delay, 0s);
+}
+.brand-loading-label {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+@keyframes brand-ball-bounce {
+  0%,
+  100% {
+    transform: translateY(0) scale(1.18, 0.72);
+  }
+  15% {
+    transform: translateY(-8px) scale(0.92, 1.1);
+  }
+  50% {
+    transform: translateY(-42px) scale(1);
+  }
+  85% {
+    transform: translateY(-8px) scale(0.92, 1.1);
+  }
+}
+@keyframes brand-ball-shadow {
+  0%,
+  100% {
+    transform: scale(1);
+    opacity: 0.65;
+  }
+  50% {
+    transform: scale(0.55);
+    opacity: 0.18;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .brand-loading-lane i,
+  .brand-loading-lane b {
+    animation: none;
+  }
+}

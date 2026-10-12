@@ -1,4 +1,4 @@
-﻿@import 'tailwindcss';
+@import 'tailwindcss';
 
 @theme {
   --color-brand: #0072bc;
@@ -25,8 +25,8 @@
   --color-input: #e2eaf1;
   --color-ring: #0072bc;
   --radius: 0.75rem;
-  --font-sans: 'Inter', sans-serif;
-  --font-heading: 'Manrope', sans-serif;
+  --font-sans: 'Inter Variable', sans-serif;
+  --font-heading: 'Manrope Variable', sans-serif;
 }
 
 :root {
@@ -1004,24 +1004,24 @@ summary::-webkit-details-marker {
   margin: 0;
   border: 1px solid var(--color-line);
   border-radius: 16px;
-  padding: 30px;
+  padding: 22px 24px;
   display: flex;
   flex-direction: column;
 }
 .testimonial-card > svg {
   color: var(--color-brand);
-  margin-bottom: 20px;
+  margin-bottom: 14px;
 }
 .testimonial-card blockquote {
   margin: 0;
   font-family: var(--font-heading);
   font-weight: 600;
-  font-size: 18px;
-  line-height: 1.65;
+  font-size: 15px;
+  line-height: 1.6;
 }
 .testimonial-card figcaption {
   margin-top: auto;
-  padding-top: 32px;
+  padding-top: 20px;
   display: grid;
   gap: 5px;
 }

@@ -379,10 +379,11 @@
   border-top: 2px solid #c8e0f1;
   border-radius: 0;
   background: #f7fafc;
-  padding: 32px;
+  padding: 22px 24px;
 }
 .testimonial-card blockquote {
-  font-size: 21px;
+  font-size: 16px;
+  line-height: 1.6;
 }
 .testimonial-card figcaption strong {
   font-size: 14px;

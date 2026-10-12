@@ -5,7 +5,8 @@ test('hover expands the product and updates its details without a click', async 
   await page.goto('/');
   const carousel = page.locator('.squeeze-carousel');
   await carousel.scrollIntoViewIfNeeded();
-  await page.getByRole('button', { name: 'Pause product autoplay' }).click();
+  await carousel.getByRole('tab').first().focus();
+  await page.keyboard.press('Space');
   const products = carousel.getByRole('tab');
   const target = products.nth(2);
   const title = await target.getAttribute('aria-label');

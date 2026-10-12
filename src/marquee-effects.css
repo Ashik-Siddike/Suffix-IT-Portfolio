@@ -1,0 +1,212 @@
+.ui-marquee {
+  --duration: 48s;
+  --gap: 18px;
+  display: flex;
+  gap: var(--gap);
+  overflow: hidden;
+}
+.ui-marquee[data-speed='slow'] {
+  --duration: 72s;
+}
+.ui-marquee[data-speed='fast'] {
+  --duration: 20s;
+}
+.ui-marquee-group {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  gap: var(--gap);
+  animation: ui-marquee-drift var(--duration) linear infinite;
+}
+.ui-marquee[data-reverse='true'] .ui-marquee-group {
+  animation-direction: reverse;
+}
+.ui-marquee[data-vertical='true'],
+.ui-marquee[data-vertical='true'] .ui-marquee-group {
+  flex-direction: column;
+}
+.ui-marquee[data-vertical='true'] .ui-marquee-group {
+  animation-name: ui-marquee-vertical;
+}
+.ui-marquee[data-hover-pause='true']:hover .ui-marquee-group,
+.ui-marquee:focus-within .ui-marquee-group,
+.is-paused .ui-marquee-group {
+  animation-play-state: paused;
+}
+@keyframes ui-marquee-drift {
+  to {
+    transform: translateX(calc(-100% - var(--gap)));
+  }
+}
+@keyframes ui-marquee-vertical {
+  to {
+    transform: translateY(calc(-100% - var(--gap)));
+  }
+}
+.capability-marquee-three {
+  position: relative;
+  display: block;
+  padding: 64px 0 36px;
+  background: linear-gradient(135deg, #f1f9ff, #e7f4fe 50%, #f7fbff);
+  color: #075a91;
+  border-block: 1px solid #d5eafa;
+}
+.capability-marquee-three > button {
+  position: absolute;
+  right: max(24px, calc((100vw - 1280px) / 2));
+  top: 16px;
+  z-index: 1;
+  color: #075a91;
+  border-color: #bedcf1;
+  background: #fff;
+  font-size: 13px;
+}
+.capability-rows {
+  display: grid;
+  gap: 18px;
+  mask-image: linear-gradient(to right, transparent, black 6%, black 94%, transparent);
+}
+.capability-row {
+  padding: 8px 0;
+}
+.capability-badge {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  flex-shrink: 0;
+  gap: 14px;
+  padding: 16px 24px;
+  border: 1px solid #c6e1f4;
+  border-radius: 16px;
+  background: #fff;
+  color: #075a91;
+  font-size: clamp(14px, 1.3vw, 18px);
+  font-weight: 500;
+  white-space: nowrap;
+  box-shadow: 0 5px 14px #075a9108;
+  transition:
+    color 0.5s,
+    border-color 0.5s,
+    transform 0.5s;
+}
+.capability-badge::before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  inset: -100%;
+  border-radius: 43%;
+  background: #0072bc;
+  transform: translateY(80%) rotate(-12deg);
+  transition: transform 0.7s cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+.capability-badge:hover {
+  color: white;
+  border-color: #0072bc;
+  transform: translateY(-3px);
+}
+.capability-badge:hover::before {
+  transform: translateY(0) rotate(15deg);
+}
+.capability-badge i {
+  width: 8px;
+  height: 8px;
+  border-radius: 3px;
+  background: #0072bc;
+  transition:
+    background 0.4s,
+    transform 0.4s;
+}
+.capability-badge:hover i {
+  background: white;
+  transform: rotate(45deg);
+}
+.capability-row-2 .capability-badge {
+  border-radius: 999px;
+  background: #e0f1fd;
+}
+.restored-why .restored-values > span,
+.restored-why .why-benefits li {
+  transition:
+    background 0.4s,
+    transform 0.4s;
+}
+.restored-why .restored-values > span:hover {
+  background: #d7edfc;
+  transform: translateY(-3px);
+}
+.restored-why .why-benefits li:hover {
+  background: #eef8ff;
+  transform: translateX(4px);
+}
+.call-service-stack .feature-card {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+}
+.call-service-stack .feature-card::before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  inset: -120%;
+  border-radius: 45%;
+  background: #0072bc;
+  transform: translateY(80%) rotate(-15deg);
+  transition: transform 0.85s cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+.call-service-stack .feature-card:hover::before {
+  transform: translateY(0) rotate(12deg);
+}
+.call-service-stack .feature-card h3,
+.call-service-stack .feature-card p {
+  transition: color 0.4s;
+}
+.call-service-stack .feature-card:hover h3,
+.call-service-stack .feature-card:hover p {
+  color: #fff;
+}
+.call-service-stack .feature-card .icon-box {
+  transition: transform 0.5s;
+}
+.call-service-stack .feature-card:hover .icon-box {
+  transform: rotate(-6deg) scale(1.05);
+}
+@media (max-width: 540px) {
+  .capability-rows {
+    gap: 10px;
+  }
+  .capability-badge {
+    padding: 13px 18px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .ui-marquee-group {
+    animation: none;
+    flex-wrap: wrap;
+    flex-shrink: 1;
+  }
+  .ui-marquee-group[aria-hidden] {
+    display: none;
+  }
+  .capability-rows {
+    mask-image: none;
+    padding: 0 20px;
+  }
+  .capability-badge {
+    white-space: normal;
+  }
+  .capability-badge,
+  .capability-badge::before,
+  .capability-badge i,
+  .restored-why .restored-values > span,
+  .restored-why .why-benefits li,
+  .call-service-stack .feature-card::before,
+  .call-service-stack .feature-card .icon-box {
+    transition: none;
+  }
+  .capability-badge:hover,
+  .restored-why .restored-values > span:hover,
+  .restored-why .why-benefits li:hover,
+  .call-service-stack .feature-card:hover .icon-box {
+    transform: none;
+  }
+}

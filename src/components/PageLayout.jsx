@@ -1,4 +1,4 @@
-import { Component, useEffect } from 'react';
+import { Component, useEffect, useRef } from 'react';
 import { Outlet, useLocation } from 'react-router-dom';
 import SiteHeader from './SiteHeader';
 import SiteFooter from './SiteFooter';
@@ -61,6 +61,7 @@ function updateMeta(key, value, property = false) {
 
 export default function PageLayout() {
   const { pathname, hash } = useLocation();
+  const previousPath = useRef(pathname);
   useEffect(() => {
     const solution = findSolution(pathname);
     const metadata = solution
@@ -96,7 +97,10 @@ export default function PageLayout() {
     canonical.href = `https://www.suffixit.com${pathname}`;
     if (hash) requestAnimationFrame(() => document.getElementById(hash.slice(1))?.scrollIntoView());
     else window.scrollTo({ top: 0, behavior: 'instant' });
-    document.getElementById('main-content')?.focus({ preventScroll: true });
+    // Preserve a user's early keyboard focus while the prerendered page hydrates.
+    if (previousPath.current !== pathname || document.activeElement === document.body)
+      document.getElementById('main-content')?.focus({ preventScroll: true });
+    previousPath.current = pathname;
   }, [pathname, hash]);
   return (
     <>

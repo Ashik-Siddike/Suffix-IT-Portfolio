@@ -31,17 +31,20 @@ export default function CompanyPage() {
           </ScrollReveal>
           <ScrollReveal variant="right" className="company-photo">
             <SiteImage
-              src={visuals.static.aboutHistory}
-              alt="Technology team collaboration illustration"
+              src="/assets/company-original.png"
+              alt="Suffix IT team at their Corporate Day on 15 October 2022"
               width="2032"
               height="1335"
               sizes="(max-width: 800px) 90vw, 620px"
+              surface={false}
+              reveal={false}
+              loading="lazy"
             />
           </ScrollReveal>
         </Container>
       </section>
       <section className="section about-purpose">
-        <Container>
+        <Container className="about-purpose-grid">
           {['Vision', 'Mission'].map((title, index) => (
             <div className={`about-purpose-row ${index ? 'is-reversed' : ''}`} key={title}>
               <ScrollReveal variant={index ? 'right' : 'left'} className="about-purpose-copy">

@@ -83,7 +83,7 @@ export function IndustryCard({ item }) {
 export function TestimonialCard({ item }) {
   return (
     <ScrollReveal as="figure" variant="fade" className="testimonial-card">
-      <Quote size={26} aria-hidden="true" />
+      <Quote size={22} aria-hidden="true" />
       <blockquote>“{item.quote}”</blockquote>
       <figcaption>
         <strong>{item.name}</strong>

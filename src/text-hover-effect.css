@@ -1,0 +1,18 @@
+.text-hover-effect {
+  display: block;
+  user-select: none;
+}
+.text-hover-effect text {
+  fill: transparent;
+  font-family: var(--font-heading);
+  font-size: 88px;
+  font-weight: 800;
+  letter-spacing: -4px;
+}
+.text-hover-outline {
+  stroke: #9dcdeb;
+  stroke-width: 0.9;
+}
+.text-hover-reveal {
+  stroke-width: 1.6;
+}

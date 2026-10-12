@@ -1,0 +1,33 @@
+{
+  "field-force-management": [
+    {
+      "src": "/assets/field-force.497227c8.png",
+      "alt": "Original Suffix Field Force mobile application screens: attendance, sales and reports",
+      "label": "Field Force Management Platform",
+      "width": 1273,
+      "height": 922,
+      "device": "mobile",
+      "source": "https://www.suffixit.com/product/field-force-management"
+    }
+  ],
+  "Industrial-Monitoring": [
+    {
+      "src": "/assets/Dashboard_2.543c09b5.jpg",
+      "alt": "Original Suffix IT IEMS dashboard with energy consumption and generator monitoring",
+      "label": "IEMS Dashboard",
+      "width": 2167,
+      "height": 1337,
+      "device": "browser",
+      "source": "https://www.suffixit.com/service/Industrial-Monitoring"
+    },
+    {
+      "src": "/assets/Dashboard_1.0929c23a.jpg",
+      "alt": "Original Suffix IT water consumption and flow monitoring dashboard",
+      "label": "Monitor & Analyze Real-Time Energy Consumption",
+      "width": 3055,
+      "height": 1337,
+      "device": "browser",
+      "source": "https://www.suffixit.com/service/Industrial-Monitoring"
+    }
+  ]
+}

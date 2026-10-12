@@ -1,7 +1,9 @@
+import useMotionPreference from './ui/useMotionPreference';
 import { Link } from 'react-router-dom';
 import AnimatedText from './AnimatedText';
-import { motion as Motion, useReducedMotion } from 'motion/react';
-import { ArrowRight, ChevronRight, CircleAlert, LoaderCircle } from './GeneratedIcons';
+import { motion as Motion } from 'motion/react';
+import { ArrowRight, ChevronRight, CircleAlert } from './GeneratedIcons';
+import ModernCard from './ui/ModernCard';
 
 export function Container({ as: Tag = 'div', children, className = '', ...props }) {
   return (
@@ -60,7 +62,7 @@ export function ScrollReveal({
   variant = 'rise',
   as = 'div',
 }) {
-  const reduced = useReducedMotion();
+  const reduced = useMotionPreference();
   const Element = Motion[as];
   const entrances = {
     rise: { opacity: 0, y: 24 },
@@ -70,7 +72,7 @@ export function ScrollReveal({
     unfold: { opacity: 0, clipPath: 'inset(0 0 18% 0 round 12px)' },
     fade: { opacity: 0 },
   };
-  return (
+  const card = (
     <Element
       className={className}
       data-reveal={variant}
@@ -93,6 +95,13 @@ export function ScrollReveal({
     >
       {children}
     </Element>
+  );
+  return /\b(service-card|product-card|company-value-card|feature-card|industry-card|job-card)\b/.test(
+    className,
+  ) ? (
+    <ModernCard>{card}</ModernCard>
+  ) : (
+    card
   );
 }
 
@@ -138,7 +147,7 @@ export function PageHero({ eyebrow, title, description, breadcrumbs, children, v
         <Breadcrumbs items={breadcrumbs} />
         <div className="page-hero-inner">
           <ScrollReveal variant="left">
-            <span className="eyebrow">{eyebrow}</span>
+            {eyebrow && <span className="eyebrow">{eyebrow}</span>}
             <h1>{title}</h1>
             {description && <p className="lead">{description}</p>}
             {children}
@@ -172,9 +181,28 @@ export function Accordion({ items }) {
 
 export function LoadingState() {
   return (
-    <div className="state" role="status">
-      <LoaderCircle aria-hidden="true" />
-      <p>Loading page…</p>
+    <div className="brand-loading-screen" role="status" aria-label="Loading Suffix IT">
+      <img
+        className="brand-loading-logo"
+        src="/assets/Suffix-Logo.73142c9b.png"
+        alt="Suffix IT"
+        width="2083"
+        height="789"
+        fetchPriority="high"
+      />
+      <div className="brand-loading-balls" aria-hidden="true">
+        {[0, 1, 2, 3].map((index) => (
+          <span
+            className="brand-loading-lane"
+            key={index}
+            style={{ '--bounce-delay': `${index * -0.18}s` }}
+          >
+            <i />
+            <b />
+          </span>
+        ))}
+      </div>
+      <span className="brand-loading-label">Loading page…</span>
     </div>
   );
 }

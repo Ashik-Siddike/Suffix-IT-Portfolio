@@ -14,10 +14,9 @@ for (const preference of ['no-preference', 'reduce']) {
       exact: true,
     });
     await expect(headline).toBeVisible();
-    await expect(headline.locator('.animated-text')).toHaveText(
+    await expect(headline.locator('.hero-typewriter-visible')).toHaveText(
       'We care about the IT Solution you need',
     );
-    await expect(headline.locator('.word-mask > span').last()).toHaveCSS('opacity', '1');
     const tabs = page.getByRole('tab');
     await tabs.first().scrollIntoViewIfNeeded();
     await tabs.first().focus();
@@ -136,13 +135,15 @@ test('products autoplay every two seconds and pause for hover, controls and redu
   const hovered = await selected();
   await page.waitForTimeout(2300);
   expect(await selected()).toBe(hovered);
-  await carousel.getByRole('button', { name: 'Pause product autoplay' }).click();
+  await carousel.getByRole('tab').first().focus();
+  await page.keyboard.press('Space');
   await page.evaluate(() => document.activeElement?.blur());
   await page.mouse.move(0, 0);
   const paused = await selected();
   await page.waitForTimeout(2300);
   expect(await selected()).toBe(paused);
-  await carousel.getByRole('button', { name: 'Resume product autoplay' }).click();
+  await carousel.getByRole('tab').first().focus();
+  await page.keyboard.press('Space');
   await page.evaluate(() => document.activeElement?.blur());
   await page.mouse.move(0, 0);
   await expect.poll(selected, { timeout: 4500 }).not.toBe(paused);
@@ -178,21 +179,12 @@ test('testimonial border light follows the pointer and keeps client portraits', 
   await expect(group).toHaveAttribute('data-glow-active', 'false');
 });
 
-test('hero sonar draws blue waves and becomes static with reduced motion', async ({ page }) => {
+test('hero has no cursor renderer and keeps its explore navigation', async ({ page }) => {
   await page.emulateMedia({ reducedMotion: 'no-preference' });
   await page.goto('/');
-  const canvas = page.locator('.home-hero .sonar-canvas');
-  await expect(canvas).toHaveAttribute('aria-hidden', 'true');
-  await expect.poll(() => canvas.evaluate((element) => element.width)).toBeGreaterThan(0);
-  const first = await canvas.evaluate((element) => element.toDataURL());
-  await expect
-    .poll(async () => (await canvas.evaluate((element) => element.toDataURL())) !== first)
-    .toBe(true);
-  await page.emulateMedia({ reducedMotion: 'reduce' });
-  await page.waitForTimeout(150);
-  const still = await canvas.evaluate((element) => element.toDataURL());
-  await page.waitForTimeout(300);
-  expect((await canvas.evaluate((element) => element.toDataURL())) === still).toBe(true);
+  await page.mouse.move(450, 350);
+  await expect(page.locator('.home-hero canvas')).toHaveCount(0);
+  await expect(page.locator('.hero-neon-flow')).toHaveCount(0);
   await page.getByRole('link', { name: "LET'S EXPLORE", exact: true }).click();
   await expect(page).toHaveURL(/#why-choose-us$/);
 });
@@ -200,7 +192,7 @@ test('hero sonar draws blue waves and becomes static with reduced motion', async
 test('scroll reveal waits until the section moves beyond the bottom edge', async ({ page }) => {
   await page.emulateMedia({ reducedMotion: 'no-preference' });
   await page.goto('/');
-  const photo = page.locator('.restored-why-art');
+  const photo = page.locator('#services > .container > [data-reveal]').first();
   await photo.waitFor({ state: 'attached' });
   await page.evaluate(() => document.fonts.ready);
   const top = await photo.evaluate(
@@ -242,9 +234,11 @@ test('client marquee moves in opposite directions and can pause or respect reduc
       return after[0] < before[0] && after[1] > before[1];
     })
     .toBe(true);
-  await section.getByRole('button', { name: 'Pause client logo animation' }).click();
+  await section.focus();
+  await page.keyboard.press('Space');
   await expect(tracks.first()).toHaveCSS('animation-play-state', 'paused');
-  await section.getByRole('button', { name: 'Resume client logo animation' }).click();
+  await page.keyboard.press('Space');
+  await section.evaluate((el) => el.blur());
   await expect(tracks.first()).toHaveCSS('animation-play-state', 'running');
   await page.emulateMedia({ reducedMotion: 'reduce' });
   await expect(tracks.first()).toHaveCSS('animation-name', 'none');
@@ -286,7 +280,19 @@ test('all public routes render, images load, metadata and internal links resolve
   for (const path of keyRoutes) {
     await page.goto(path);
     await expect(page.locator('main h1')).toHaveCount(1);
-    await expect(page.locator('svg')).toHaveCount(0);
+    // Authored circuit paths and requested brand text effects are allowed;
+    // legacy SVG icons and icon libraries remain absent.
+    const legacySvg = await page
+      .locator('svg')
+      .evaluateAll(
+        (nodes) =>
+          nodes.filter(
+            (node) =>
+              !node.matches('.bent-circuit, .text-hover-effect, .software-story-circuit') &&
+              !node.closest('.company-circuit-path, .path-drawing-brand'),
+          ).length,
+      );
+    expect(legacySvg).toBe(0);
     await expect(page.locator('main h1')).not.toContainText('back on track');
     await expect(page).toHaveTitle(/Suffix IT Limited/);
     expect(await page.locator('link[rel="canonical"]').getAttribute('href')).toBe(
@@ -309,7 +315,13 @@ test('all public routes render, images load, metadata and internal links resolve
     expect(brokenImages, path).toEqual([]);
     const artwork = await page
       .locator('main img[src*="/assets/generated/"]')
-      .evaluateAll((images) => images.map((image) => image.getAttribute('src')));
+      .evaluateAll((images) =>
+        images
+          // The software story deliberately previews the existing catalog illustrations.
+          // Other sections and routes retain their individually authored artwork.
+          .filter((image) => !image.closest('.software-story-illustration'))
+          .map((image) => image.getAttribute('src')),
+      );
     for (const src of artwork) {
       expect(
         artworkLocations.has(src),

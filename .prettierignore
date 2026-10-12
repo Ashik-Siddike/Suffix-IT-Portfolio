@@ -7,3 +7,5 @@ public/vendor
 package-lock.json
 test-results
 playwright-report
+# Machine-generated Lighthouse reports
+artifacts/*.json

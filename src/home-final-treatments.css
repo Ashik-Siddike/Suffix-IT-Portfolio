@@ -1,0 +1,141 @@
+.home-hero-premium {
+  background-image: radial-gradient(circle at 78% 30%, #dcefff, transparent 55%);
+}
+.capability-marquee-three {
+  isolation: isolate;
+  padding: 18px 0 22px;
+  background: radial-gradient(ellipse at 30% 80%, #d9eeff, transparent 70%), #f2f9ff;
+}
+.capability-brand-wash {
+  position: absolute;
+  inset: auto 5% -20px auto;
+  z-index: -1;
+  width: clamp(360px, 48vw, 740px);
+  height: clamp(96px, 12.8vw, 198px);
+  opacity: 0.65;
+  pointer-events: none;
+}
+.capability-rows {
+  gap: 8px;
+}
+.capability-row {
+  --gap: 10px;
+  padding: 4px 0;
+}
+.capability-row-1 {
+  transform: rotate(-0.6deg);
+  margin: 4px -8px;
+  border-block: 1px solid #cee5f6;
+  background: #ffffff85;
+}
+.capability-badge {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  min-height: 44px;
+  padding: 10px 18px;
+  gap: 10px;
+  font-size: 15px;
+  line-height: 1.4;
+  border-radius: 13px;
+  box-shadow: none;
+  background: #f9fcff;
+  border-color: #c9e5f8;
+}
+.capability-badge i {
+  width: 6px;
+  height: 6px;
+}
+@media (max-width: 540px) {
+  .capability-marquee-three {
+    padding-block: 14px 18px;
+  }
+  .capability-rows {
+    gap: 6px;
+  }
+  .capability-badge {
+    padding: 10px 14px;
+    font-size: 13px;
+    gap: 8px;
+  }
+}
+.capability-badge::before {
+  inset: 0;
+  border-radius: inherit;
+  transform: none;
+  opacity: 0;
+  transition: opacity 0.4s;
+}
+.capability-badge:is(:hover, :focus-visible)::before {
+  transform: none;
+  opacity: 1;
+}
+.capability-badge:focus-visible {
+  outline: 2px solid #0072bc;
+  outline-offset: 3px;
+}
+.capability-row-2 .capability-badge {
+  background: #0072bc;
+  border-color: #0072bc;
+  color: #fff;
+}
+.capability-row-2 .capability-badge i {
+  background: #b6e9ff;
+}
+.capability-row-2 .capability-badge::before {
+  background: #e0f2ff;
+}
+.capability-row-2 .capability-badge:is(:hover, :focus-visible) {
+  color: #075a91;
+  border-color: #b5daf4;
+}
+.capability-row-2 .capability-badge:is(:hover, :focus-visible) i {
+  background: #0072bc;
+}
+.capability-row-1 .capability-badge:focus-visible,
+.capability-row-3 .capability-badge:focus-visible {
+  color: white;
+}
+.navigation-dropdown.mega-menu {
+  animation-duration: 320ms;
+}
+.squeeze-panel {
+  display: block;
+  text-decoration: none;
+}
+.capability-row-3 .capability-badge {
+  background: #e9f5fe;
+}
+.capability-marquee-three:is(:hover, :focus-within) .ui-marquee-group {
+  animation-play-state: paused;
+}
+.field-feature-chips li {
+  transform-origin: center;
+  transition:
+    transform 0.35s ease,
+    background 0.35s,
+    color 0.35s,
+    border-color 0.35s;
+}
+.field-feature-chips li:hover {
+  transform: scale(1.045);
+}
+.restored-field .button {
+  transition: transform 0.35s ease;
+}
+.restored-field .button:hover {
+  transform: scale(1.035);
+}
+.capability-marquee-three:focus-visible {
+  outline: 2px solid #0072bc;
+  outline-offset: -4px;
+}
+@media (prefers-reduced-motion: reduce) {
+  .field-feature-chips li:hover,
+  .restored-field .button:hover {
+    transform: none;
+  }
+  .field-feature-chips li {
+    transition: none;
+  }
+}

@@ -1,0 +1,182 @@
+.hero-typewriter {
+  display: grid;
+  position: relative;
+}
+.hero-typewriter-sizer,
+.hero-typewriter-visible {
+  grid-area: 1 / 1;
+}
+.hero-typewriter-sizer {
+  visibility: hidden;
+  pointer-events: none;
+}
+.hero-typewriter-visible {
+  align-self: start;
+}
+.hero-typewriter-caret {
+  display: inline-block;
+  width: 3px;
+  height: 0.8em;
+  margin-left: 0.08em;
+  vertical-align: -0.02em;
+  border-radius: 2px;
+  background: #0072bc;
+}
+.modern-card-shell {
+  position: relative;
+  min-width: 0;
+  height: 100%;
+  isolation: isolate;
+  border-radius: 24px;
+}
+.modern-card-shell::before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  inset: 5px 0 -5px;
+  background: linear-gradient(135deg, #e3f2fd, #cce9fc);
+  border: 1px solid #acd3ef;
+  border-radius: inherit;
+  transform: rotate(1.6deg);
+  transition:
+    transform 0.55s cubic-bezier(0.2, 0.7, 0.2, 1),
+    background 0.5s;
+  pointer-events: none;
+}
+.modern-card-layer {
+  position: absolute;
+  inset: 4px 0 -4px;
+  border-radius: inherit;
+  pointer-events: none;
+  transition:
+    transform 0.55s cubic-bezier(0.2, 0.7, 0.2, 1),
+    border-color 0.45s;
+}
+.modern-card-layer-fill {
+  z-index: -3;
+  background: linear-gradient(145deg, #f0f9ff 15%, #b6dff9);
+  border: 1px solid #a9d3f0;
+  transform: translateY(9px) rotate(-0.8deg) scale(0.992);
+}
+.modern-card-layer-stroke {
+  z-index: -2;
+  border: 1px solid #80bde5;
+  background: #e0f1fd55;
+  transform: translateY(5px) rotate(-1.25deg);
+}
+.modern-card-shell:is(:hover, :focus-within) .modern-card-layer-fill {
+  transform: translateY(8px) rotate(0deg) scale(0.992);
+}
+.modern-card-shell:is(:hover, :focus-within) .modern-card-layer-stroke {
+  transform: translateY(4px) rotate(0deg);
+  border-color: #38a9e6;
+}
+.modern-card-shell
+  > :is(
+    .service-card,
+    .product-card,
+    .company-value-card,
+    .feature-card,
+    .industry-card,
+    .job-card
+  ) {
+  position: relative;
+  height: 100%;
+  border: 1px solid #cde3f3;
+  border-radius: 24px;
+  background-color: #fff;
+  box-shadow: 0 4px 16px #075a9108;
+  transition:
+    border-color 0.45s,
+    box-shadow 0.45s;
+}
+.modern-card-shell:is(:hover, :focus-within)::before {
+  transform: rotate(0deg);
+}
+.modern-card-shell:is(:hover, :focus-within)
+  > :is(
+    .service-card,
+    .product-card,
+    .company-value-card,
+    .feature-card,
+    .industry-card,
+    .job-card
+  ) {
+  border-color: #38a9e6;
+  box-shadow:
+    0 0 0 1px #0072bc18,
+    0 12px 30px #0072bc16;
+}
+.modern-card-shell .product-image {
+  border-radius: 23px 23px 0 0;
+  overflow: hidden;
+}
+.modern-capability-shell {
+  grid-column: 1 / -1;
+}
+.modern-capability-shell > .capability-panel {
+  margin: 0;
+  height: 100%;
+  border: 1px solid #cde3f3;
+  box-shadow: 0 4px 16px #075a9108;
+  transition:
+    border-color 0.45s,
+    box-shadow 0.45s;
+}
+.modern-capability-shell:hover > .capability-panel {
+  border-color: #38a9e6;
+  box-shadow:
+    0 0 0 1px #0072bc18,
+    0 12px 30px #0072bc16;
+}
+.hero-typewriter-visible {
+  background: linear-gradient(135deg, #093f64 30%, #0072bc);
+  background-clip: text;
+  color: transparent;
+}
+.call-service-stack .modern-card-shell {
+  border-radius: 20px;
+}
+.call-service-stack .modern-card-shell::before {
+  transform: rotate(0.7deg);
+}
+.call-service-stack .modern-card-shell:hover::before {
+  transform: rotate(0deg);
+}
+@media (max-width: 600px) {
+  .modern-card-shell::before {
+    transform: rotate(0.7deg);
+  }
+  .modern-card-layer-fill {
+    transform: translateY(8px) rotate(-0.3deg) scale(0.992);
+  }
+  .modern-card-layer-stroke {
+    transform: translateY(4px) rotate(-0.5deg);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .modern-card-layer {
+    transition: none;
+  }
+  .modern-card-layer-fill {
+    transform: translateY(8px) scale(0.992);
+  }
+  .modern-card-layer-stroke {
+    transform: translateY(4px);
+  }
+  .modern-card-shell::before {
+    transform: none;
+    transition: none;
+  }
+  .modern-card-shell
+    > :is(
+      .service-card,
+      .product-card,
+      .company-value-card,
+      .feature-card,
+      .industry-card,
+      .job-card
+    ) {
+    transition: none;
+  }
+}

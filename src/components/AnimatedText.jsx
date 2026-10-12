@@ -1,8 +1,9 @@
-import { motion as Motion, useReducedMotion } from 'motion/react';
+import useMotionPreference from './ui/useMotionPreference';
+import { motion as Motion } from 'motion/react';
 import { Fragment } from 'react';
 
 export default function AnimatedText({ text, className = '', onLoad = false }) {
-  const reduced = useReducedMotion();
+  const reduced = useMotionPreference();
   const words = text.split(' ');
   return (
     <>

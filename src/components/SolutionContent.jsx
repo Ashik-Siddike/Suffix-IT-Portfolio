@@ -1,54 +1,60 @@
 import visuals from '../data/unique-visuals.json';
 import SourceContent from './SourceContent';
-import { SectionHeading, ScrollReveal } from './ui';
+import { ScrollReveal } from './ui';
 import SiteImage from './SiteImage';
+import ModernCard from './ui/ModernCard';
+import { solutionSections } from '../lib/solution-sections';
 
 export default function SolutionContent({ blocks = [], slug, introText }) {
-  const groups = [];
-  for (const block of blocks) {
-    if (block.tag.startsWith('h')) groups.push({ title: block.text, blocks: [] });
-    else {
-      if (!groups.length) groups.push({ title: 'Solution details', blocks: [] });
-      groups[groups.length - 1].blocks.push(block);
-    }
-  }
-  if (groups[0]?.blocks.length === 1 && groups[0].blocks[0].text === introText) groups.shift();
+  const groups = solutionSections(blocks, introText);
   return (
     <div className="solution-capabilities">
-      <SectionHeading eyebrow="INSIDE THE SOLUTION" title="A closer look at the capabilities." />
       <div className="capability-grid">
         {groups.map((group, index) => {
-          const image = visuals.capabilities[`${slug}:${index}`];
+          const compact =
+            /features|integrates|benefits|key features/i.test(group.title) ||
+            group.blocks.filter((block) => block.tag === 'li').length > 5;
+          const image = compact ? null : visuals.capabilities[`${slug}:${index}`];
           const visual = image ? { image } : null;
           if (!group.blocks.length)
             return (
-              <h3 className="capability-divider" key={`${group.title}-${index}`}>
+              <h3
+                id={`${slug}-section-${index}`}
+                className="capability-divider"
+                key={`${group.title}-${index}`}
+              >
                 {group.title}
               </h3>
             );
           return (
-            <section
+            <ModernCard
               key={`${group.title}-${index}`}
-              className={`capability-panel ${visual ? 'capability-illustrated' : ''} ${group.blocks.length > 12 ? 'capability-panel-wide' : ''}`}
+              className={`modern-capability-shell ${compact ? 'is-compact-capability' : 'is-main-capability'}`}
             >
-              <ScrollReveal variant={index % 2 ? 'right' : 'left'} className="capability-copy">
-                <span className="card-number">{String(index + 1).padStart(2, '0')}</span>
-                <h3>{group.title}</h3>
-                <SourceContent blocks={group.blocks} />
-              </ScrollReveal>
-              {visual && (
-                <ScrollReveal variant={index % 2 ? 'left' : 'right'} delay={0.1}>
-                  <SiteImage
-                    src={visual.image}
-                    alt={`${group.title} — conceptual technology illustration`}
-                    width="480"
-                    height="320"
-                    loading="lazy"
-                    reveal={false}
-                  />
+              <section
+                key={`${group.title}-${index}`}
+                id={`${slug}-section-${index}`}
+                className={`capability-panel ${visual ? 'capability-illustrated' : ''} ${compact ? 'capability-text-only' : ''}`}
+              >
+                <ScrollReveal variant={index % 2 ? 'right' : 'left'} className="capability-copy">
+                  <span className="card-number">{String(index + 1).padStart(2, '0')}</span>
+                  <h3>{group.title}</h3>
+                  <SourceContent blocks={group.blocks} />
                 </ScrollReveal>
-              )}
-            </section>
+                {visual && (
+                  <ScrollReveal variant={index % 2 ? 'left' : 'right'} delay={0.1}>
+                    <SiteImage
+                      src={visual.image}
+                      alt={`${group.title} — conceptual technology illustration`}
+                      width="480"
+                      height="320"
+                      loading="lazy"
+                      reveal={false}
+                    />
+                  </ScrollReveal>
+                )}
+              </section>
+            </ModernCard>
           );
         })}
       </div>

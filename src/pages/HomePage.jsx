@@ -1,30 +1,59 @@
 import visuals from '../data/unique-visuals.json';
-import SonarGrid from '../components/ui/SonarGrid';
-import AnimatedText from '../components/AnimatedText';
+import TypedHeroTitle from '../components/ui/TypedHeroTitle';
 import HeroTechnologyStage from '../components/ui/HeroTechnologyStage';
-import HeroNeonFlow from '../components/ui/HeroNeonFlow';
+import HeroCurves from '../components/ui/HeroCurves';
+import ShapeGrid from '../components/ui/ShapeGrid';
 import SiteImage from '../components/SiteImage';
 import { Container, PrimaryButton, ScrollReveal, SectionHeading } from '../components/ui';
-import { FeatureCard } from '../components/cards';
 import { ClientLogoStrip } from '../components/sections';
 import {
   WhyChooseSection,
   FieldForceSection,
+  CallCenterSection,
   TestimonialsSection,
 } from '../components/HomeRestoredSections';
 import ProductsSection from '../components/ProductsSection';
 import ServicesBento from '../components/ServicesBento';
 import original from '../data/home-original.json';
+import CapabilityMarquee from '../components/CapabilityMarquee';
+import { StickyShowcaseStack } from '../components/ui/StickyShowcase';
+import SoftwareCircuitSection from '../components/SoftwareCircuitSection';
+import BentCircuit from '../components/ui/BentCircuit';
+
+const heroPhrases = [original.hero, original.companyCards[2], original.companyCards[0]];
+const heroLines = [
+  ['We care about the ', 'IT Solution ', 'you need'],
+  ['We Dream Big ', 'and  Win Together'],
+  ['Team Of Highly ', 'Experienced ', 'Professionals'],
+];
 
 export default function HomePage() {
   return (
     <>
-      <SonarGrid as="section" className="home-hero home-hero-premium">
-        <HeroNeonFlow />
+      <section className="home-hero home-hero-premium">
+        <ShapeGrid
+          className="hero-shape-grid-background"
+          shape="square"
+          direction="diagonal"
+          lineColor="#cfe6f8"
+          hoverColor="#0072bc"
+          hoverFillColor="#38bdf8"
+          fillOpacity={0.14}
+          cellSize={44}
+          speed={0.35}
+          glow={0.45}
+          trail={0.65}
+          radius={1.8}
+          clickCascade={true}
+          intro={true}
+          fade={0.85}
+        />
+        <HeroCurves />
+        <BentCircuit className="hero-brand-circuit" />
         <Container className="hero-grid">
           <div className="hero-copy">
-            <h1>
-              <AnimatedText text={original.hero} onLoad />
+            <h1 aria-label={original.hero}>
+              <TypedHeroTitle phrases={heroPhrases} lines={heroLines} />
             </h1>
             <p className="hero-description">{original.heroDescription}</p>
             <div className="button-row">
@@ -35,50 +64,23 @@ export default function HomePage() {
             <SiteImage
               src={visuals.static.homeHero}
               alt="Software and mobile application concept illustration"
-              width="2000"
-              height="1300"
+              width="1200"
+              height="800"
               fetchPriority="high"
+              loading="eager"
               reveal={false}
               surface={false}
               sizes="(max-width: 900px) 90vw, 640px"
             />
           </HeroTechnologyStage>
         </Container>
-      </SonarGrid>
-      <WhyChooseSection />
-      <FieldForceSection />
-      <section className="section call-center-section">
-        <Container>
-          <div className="call-center-intro">
-            <SectionHeading title={original.callTitle} description={original.callDescription} />
-            <ScrollReveal variant="right">
-              <SiteImage
-                src={visuals.static.homeCall}
-                alt=""
-                width="1200"
-                height="675"
-                loading="lazy"
-                sizes="(max-width: 800px) 90vw, 520px"
-              />
-            </ScrollReveal>
-          </div>
-          <div className="three-grid">
-            {original.calls.map((item, index) => (
-              <FeatureCard
-                key={item.title}
-                icon={['Phone', 'Radio', 'MessageSquare'][index]}
-                title={item.title}
-                description={item.description}
-              />
-            ))}
-          </div>
-          <div className="original-more">
-            <PrimaryButton href="http://suffixcallcenter.com/" target="_blank" rel="noreferrer">
-              More Info
-            </PrimaryButton>
-          </div>
-        </Container>
       </section>
+      <CapabilityMarquee />
+      <StickyShowcaseStack>
+        <WhyChooseSection />
+        <FieldForceSection />
+        <CallCenterSection />
+      </StickyShowcaseStack>
       <section className="section" id="services">
         <Container>
           <ScrollReveal>
@@ -91,6 +93,7 @@ export default function HomePage() {
         </Container>
       </section>
       <ProductsSection />
+      <SoftwareCircuitSection />
       <TestimonialsSection />
       <ClientLogoStrip />
     </>

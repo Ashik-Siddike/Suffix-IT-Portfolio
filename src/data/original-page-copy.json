@@ -1,0 +1,377 @@
+{
+  "/home": {
+    "title": "We care about the IT Solution you need",
+    "demo": [],
+    "description": "Suffix IT provides best and prominent Software & Hardware solutions to ensure your business"
+  },
+  "/contact": {
+    "title": "Get in touch with Us",
+    "demo": [],
+    "description": "We don't want to push our ideas on to customers, we simply want to make what they want."
+  },
+  "/about": {
+    "title": "About Us",
+    "demo": [],
+    "description": "At Suffix IT, we develop innovative and creative products and services that provide total communication and information solutions. Among a plethora of services, web design and development, tailor made applications, ERPs, CRMs, e-commerce solutions, business-to-business applications, business-to-client applications, managed hosting and internet portal management are few that we offer. Satisfied clients around the globe bear testimony to the quality of our work. As a leader in technology exploring, Suffix IT is committed to exporting quality software worldwide."
+  },
+  "/astha-policy": {
+    "title": "Privacy Policy for Astha",
+    "demo": [],
+    "description": "Last updated: August 01, 2022"
+  },
+  "/career": {
+    "title": "Career",
+    "demo": [],
+    "description": "1 open position"
+  },
+  "/service/domain-hosting": {
+    "title": "Domain & Hosting",
+    "demo": [],
+    "description": ""
+  },
+  "/service/erp-consulting": {
+    "title": "ERP System & Consulting",
+    "demo": [
+      {
+        "tag": "h1",
+        "text": "Schedule a Live Demo"
+      },
+      {
+        "tag": "h3",
+        "text": "Go for a free practical demonstration in order to experience the user friendly platform of Suffix Field Force Management."
+      }
+    ],
+    "description": "We provide IT consulting services which includes project management, application development, web design and development, telecom services, Infrastructure and maintenance services."
+  },
+  "/service/web-ecommerce": {
+    "title": "Web & E-Commerce",
+    "demo": [],
+    "description": ""
+  },
+  "/service/custom-applications": {
+    "title": "Custom Applications",
+    "demo": [
+      {
+        "tag": "h1",
+        "text": "Schedule a Live Demo"
+      },
+      {
+        "tag": "h3",
+        "text": "Go for a free practical demonstration in order to experience the user friendly platform of Suffix Field Force Management."
+      }
+    ],
+    "description": "Work smarter with custom-made applications for more efficient services. We collaborate with clients to determine their unique requirements during a discovery process, build a realistic employment opportunity, and promptly deliver well-crafted online systems that boost businesses and delight customers through their simple, clean interfaces.We provide custom software application development and maintenance services for all types of businesses."
+  },
+  "/service/video-conferencing": {
+    "title": "Video Conferencing",
+    "demo": [
+      {
+        "tag": "h1",
+        "text": "Schedule a Live Demo"
+      },
+      {
+        "tag": "h3",
+        "text": "Go for a free practical demonstration in order to experience the user friendly platform of Suffix Field Force Management."
+      }
+    ],
+    "description": "Send public and private messages."
+  },
+  "/service/it-infrastructure": {
+    "title": "IT Infrastructure",
+    "demo": [],
+    "description": "In today's digital era, a robust IT infrastructure forms the backbone of successful enterprises. At Suffix IT Limited,we specialize in designing, implementing, and managing comprehensive IT infrastructure solutions that drive efficiency, scalability, and security"
+  },
+  "/service/mobile-apps": {
+    "title": "Mobile Application",
+    "demo": [
+      {
+        "tag": "h1",
+        "text": "Schedule a Live Demo"
+      },
+      {
+        "tag": "h3",
+        "text": "Go for a free practical demonstration in order to experience the user friendly platform of Suffix Field Force Management."
+      }
+    ],
+    "description": "We know how to transfer our solutions into the result of your business success, thanks to our extensive portfolio of industry-leading mobile application development services. We develop mobile apps that are cross-platform and responsive. Where others fail, we succeed in creating the most appealing user interface and secure backend. Suffix IT offers cutting-edge mobile app development to a wide range of industries and client.Our developers create enterprise-grade mobile apps that are tailored to your company's needs. We build a consistent digital presence and improve consumer engagement for you by integrating stylish and smart notification features and safe payment gateways. Our team has already created specialized mobile apps for the consumer product industries. ."
+  },
+  "/service/hospital-management": {
+    "title": "Hospital Management",
+    "demo": [
+      {
+        "tag": "h1",
+        "text": "Schedule a Live Demo"
+      },
+      {
+        "tag": "h3",
+        "text": "Go for a free practical demonstration in order to experience the user friendly platform of Suffix Field Force Management."
+      }
+    ],
+    "description": "Patients should register with their demographics, name, touch, relationships and other information. Patients searching. Print Identification cards for patients."
+  },
+  "/service/learning-management": {
+    "title": "Learning Management",
+    "demo": [],
+    "description": "It's time to make a decision and find out what sort of LMS would be the best choice for you. That is a tough one. We were all there and it's fully understandable. Was your budget adequate to gain your own LMS? Is there a cloud-based LMS solution you can look for? What if your limit is small, money-wise, and you need to consider trying out an open-source LMS solution? No worries, here are the top items to consider when selecting an LMS for you."
+  },
+  "/service/storage-backup": {
+    "title": "Storage & Backup Service",
+    "demo": [
+      {
+        "tag": "h1",
+        "text": "Schedule a Live Demo"
+      },
+      {
+        "tag": "h3",
+        "text": "Go for a free practical demonstration in order to experience the user friendly platform of Suffix Field Force Management."
+      }
+    ],
+    "description": "With its Managed Storage & Backup services, Suffix IT makes it easier to protect business-critical data. We use a centralized storage approach that follows the ITIL service delivery principles. ISO and IEC operating criteria are also meticulously observed in order to maintain a highly efficient and well-oiled system. A daily backup service is also available, as well as a self-service portal that makes billing information and other specific reports more accessible."
+  },
+  "/service/bulk-sms": {
+    "title": "Bulk SMS",
+    "demo": [],
+    "description": "SMS PACKAGE & PRICE"
+  },
+  "/service/consultancy-system-integrator": {
+    "title": "Consultancy System Integrator",
+    "demo": [],
+    "description": "At Suffix IT Limited, we specialize in providing expert consultancy and seamless system integration services to ensure your business thrives in the digital landscape. Whether you're looking to optimize your IT operations, implement new technologies, or safeguard your infrastructure, we offer tailored solutions that meet your unique needs"
+  },
+  "/service/it-ot-security-solution": {
+    "title": "Comprehensive IT & OT Security Solutions",
+    "demo": [],
+    "description": "In an era where cyber threats are ever-evolving, ensuring robust security across your IT and OT systems is no longer optional. it’s essential. At Suffix IT Limited, we provide comprehensive security solutions to safeguard your digital infrastructure and operational technologies, enabling you to operate confidently and securely."
+  },
+  "/service/power-cooling": {
+    "title": "Data Center Power & Cooling Built for Reliability and Efficiency",
+    "demo": [],
+    "description": "Our Power & Cooling Solutions"
+  },
+  "/service/pos-system": {
+    "title": "Smart POS & Billing System",
+    "demo": [
+      {
+        "tag": "h1",
+        "text": "Schedule a Live Demo"
+      },
+      {
+        "tag": "h3",
+        "text": "Go for a free practical demonstration in order to experience the user friendly platform of Suffix Field Force Management."
+      }
+    ],
+    "description": "Smart POS & billing system is a easy to use point of sales system for retail store, super shop and restaurants. You can use it in any device such as your phone , laptop or desktop computer. By connecting POS printer, bar-code scanner and cash drawer you can make it a full functional Point Of Sales system. It has almost all the facility including inventory management system, sales and purchase management system, customer and employee management system which can automate your organization the way you never did before. With real time reporting you can get a clear view of your business anytime you want."
+  },
+  "/service/field-force-management": {
+    "title": "Suffix Field Force Management",
+    "demo": [
+      {
+        "tag": "h1",
+        "text": "Schedule a Live Demo"
+      },
+      {
+        "tag": "h3",
+        "text": "Go for a free practical demonstration in order to experience the user friendly platform of Suffix Field Force Management."
+      }
+    ],
+    "description": "This application incorporates cutting-edge technologies to provide advanced scheduling and workforce management solutions that are accessible to the organization. SFFMS provides you with an end-to-end visibility of the field operations and business processes, with native mobile app support across all major mobile platforms for you to know in real-time about your business."
+  },
+  "/service/iot": {
+    "title": "Industrial Automation & IoT",
+    "demo": [
+      {
+        "tag": "h1",
+        "text": "Schedule a Live Demo"
+      },
+      {
+        "tag": "h3",
+        "text": "Go for a free practical demonstration in order to experience the user friendly platform of Suffix Field Force Management."
+      }
+    ],
+    "description": "IOT is Internet Of things,The next generation of devices & technologies where your devices will be interconnected. Worlds devices & technologies expert expect that there will be more than 14 billion networked devices by 2021, making it vital to adopt new set of technologies and devices. Here's how we can help you embrace them. The idea of IOT is latest in modern world for smart internet based management and supervision of electornics, where legacy device were not well managed and not efficient due to lack of controlling, monitoring and management mechanism."
+  },
+  "/service/Industrial-Monitoring": {
+    "title": "Industrial Energy Monitoring System",
+    "demo": [],
+    "description": "INDUSTRIAL ENERGY"
+  },
+  "/product/payroll-system": {
+    "title": "HR & Payroll Modules",
+    "demo": [
+      {
+        "tag": "h1",
+        "text": "Schedule a Live Demo"
+      },
+      {
+        "tag": "h3",
+        "text": "Go for a free practical demonstration in order to experience the user friendly platform of Suffix Field Force Management."
+      }
+    ],
+    "description": "The ‘HR & Payroll’ module is an extremely flexible and effective payroll module fully integrated into the Rupantor ERP system. The payroll caters for all the standard earnings, benefits and deductions. Payroll includes user-defined earnings, deductions, and benefits descriptors which allow you to setup your own earnings, deductions and benefits based on your companies’ particular needs. Each of the descriptors can be setup to attract, if necessary and taxes."
+  },
+  "/product/interconnect-billing": {
+    "title": "Suffix Interconnect Billing Solutions",
+    "demo": [
+      {
+        "tag": "h1",
+        "text": "Schedule a Live Demo"
+      },
+      {
+        "tag": "h3",
+        "text": "Go for a free practical demonstration in order to experience the user friendly platform of Suffix Field Force Management."
+      }
+    ],
+    "description": "As operators move deeper into next-generation services and content-driven service environments, revenue assurance becomes both more complex and more critical. Product portfolios are expanding, networks, services, operations and revenue chains are becoming increasingly complicated. Due to their growth, operators have to deal with large volumes of data, control points, KPIs involving time consuming and repetitive investigations. In today’s dynamic communications environment, a successful revenue assurance practice requires a highly mature revenue assurance solution – one that not only enables proactive and ongoing revenue recovery but simplifies RA by visually aiding telecom operators and guiding them to improve performance."
+  },
+  "/product/e-commerce": {
+    "title": "E-Commerce Solutions",
+    "demo": [
+      {
+        "tag": "h1",
+        "text": "Schedule a Live Demo"
+      },
+      {
+        "tag": "h3",
+        "text": "Go for a free practical demonstration in order to experience the user friendly platform of Suffix Field Force Management."
+      }
+    ],
+    "description": "Suffix IT approach focuses on building an integrated, customized e-business solution for customers. We follow multi-phase, process-driven methodology for our e-commerce/e-business solutions including requirement analysis and definition, data modeling, site security, application testing and quality assurance.Our practice involves expertise in portal development frameworks, content management solutions, application servers, middleware integration built by using latest technology platforms."
+  },
+  "/product/rupantor-erp": {
+    "title": "Rupantor ERP Module",
+    "demo": [
+      {
+        "tag": "h1",
+        "text": "Schedule a Live Demo"
+      },
+      {
+        "tag": "h3",
+        "text": "Go for a free practical demonstration in order to experience the user friendly platform of Suffix Field Force Management."
+      }
+    ],
+    "description": "Rupantor’s General Ledger module is multi-company, multi-division and multi-branch capable. The General Ledger is the core of the financial management system and integrates with all other financial modules in the system. Included with this module are powerful financial report writing capabilities that include aggregation capability as well as optional integration to third party financial report writers if required. Alternatively, all data can be sent to external programs such as Microsoft Excel, Access or similar tools for further reporting and data analysis. For companies working around the globe, all sub-modules are multi-currency capable."
+  },
+  "/product/provident-fund": {
+    "title": "Provident Fund Management System",
+    "demo": [
+      {
+        "tag": "h1",
+        "text": "Schedule a Live Demo"
+      },
+      {
+        "tag": "h3",
+        "text": "Go for a free practical demonstration in order to experience the user friendly platform of Suffix Field Force Management."
+      }
+    ],
+    "description": "Save deeply, detailed information about your employees. Get the exact, clear idea associated with distinctive employee profiles in order to configure a sensible account holder."
+  },
+  "/product/hotel-booking-system": {
+    "title": "Suffix Hotel Booking System",
+    "demo": [
+      {
+        "tag": "h1",
+        "text": "Schedule a Live Demo"
+      },
+      {
+        "tag": "h3",
+        "text": "Go for a free practical demonstration in order to experience the user friendly platform of Suffix Field Force Management."
+      }
+    ],
+    "description": "Guests can book more than one room within a single reservation. During the booking process, they will see the available rooms for the selected period and can pick one or more rooms and the number of guests."
+  },
+  "/product/rupantor-inventory": {
+    "title": "Rupantor Inventory",
+    "demo": [
+      {
+        "tag": "h1",
+        "text": "Schedule a Live Demo"
+      },
+      {
+        "tag": "h3",
+        "text": "Go for a free practical demonstration in order to experience the user friendly platform of Suffix Field Force Management."
+      }
+    ],
+    "description": "The Rupantor Inventory Control module is core to the manufacturing and distribution systems and processes built into Rupantor ERP. Inventory is used to control the value and quantities of finished products, sub-assemblies, components, raw material, consumables and non-merchandise items. The inventory master ﬁle allows you to maintain and control over two hundred fields and attributes giving enormous flexibility when dealing with different types of business."
+  },
+  "/product/transformer-monitoring": {
+    "title": "Smart Transformer Monitoring System",
+    "demo": [
+      {
+        "tag": "h1",
+        "text": "Schedule a Live Demo"
+      },
+      {
+        "tag": "h3",
+        "text": "Go for a free practical demonstration in order to experience the user friendly platform of Suffix Field Force Management."
+      }
+    ],
+    "description": ""
+  },
+  "/product/field-force-management": {
+    "title": "Suffix Field Force Management",
+    "demo": [
+      {
+        "tag": "h1",
+        "text": "Schedule a Live Demo"
+      },
+      {
+        "tag": "h3",
+        "text": "Go for a free practical demonstration in order to experience the user friendly platform of Suffix Field Force Management."
+      }
+    ],
+    "description": "This application incorporates cutting-edge technologies to provide advanced scheduling and workforce management solutions that are accessible to the organization. SFFMS provides you with an end-to-end visibility of the field operations and business processes, with native mobile app support across all major mobile platforms for you to know in real-time about your business."
+  },
+  "/product/pos-system": {
+    "title": "Smart POS & Billing System",
+    "demo": [
+      {
+        "tag": "h1",
+        "text": "Schedule a Live Demo"
+      },
+      {
+        "tag": "h3",
+        "text": "Go for a free practical demonstration in order to experience the user friendly platform of Suffix Field Force Management."
+      }
+    ],
+    "description": "Smart POS & billing system is a easy to use point of sales system for retail store, super shop and restaurants. You can use it in any device such as your phone , laptop or desktop computer. By connecting POS printer, bar-code scanner and cash drawer you can make it a full functional Point Of Sales system. It has almost all the facility including inventory management system, sales and purchase management system, customer and employee management system which can automate your organization the way you never did before. With real time reporting you can get a clear view of your business anytime you want."
+  },
+  "/top-10-software-company-in-bangladesh": {
+    "title": "Top 10 Leading Software Companies in Bangladesh",
+    "demo": [
+      {
+        "tag": "h1",
+        "text": "Schedule a Live Demo"
+      },
+      {
+        "tag": "h3",
+        "text": "Go for a free practical demonstration in order to experience the user friendly platform of Suffix Field Force Management."
+      }
+    ],
+    "description": "The software company has been playing an easy lifestyle. It creates a huge impact on the economy and social life. New Technology and innovation make life easier and save money and time. Now I am creating a list of the top 10 software companies in Bangladesh. My focus area is a new technology, innovation, quality software, and after-sales service. Given below, is the list of the top 10 Software companies in Bangladesh. Read through the article to know in detail-"
+  },
+  "/": {
+    "title": "We care about the IT Solution you need",
+    "demo": [],
+    "description": "Suffix IT provides best and prominent Software & Hardware solutions to ensure your business"
+  },
+  "/career-detail/5": {
+    "title": "Head of Business Development",
+    "demo": [],
+    "description": ""
+  },
+  "/web-e-commerce-detail/Basic": {
+    "title": "Web & E-Commerce",
+    "demo": [],
+    "description": ""
+  },
+  "/web-e-commerce-detail/Classic": {
+    "title": "Web & E-Commerce",
+    "demo": [],
+    "description": ""
+  },
+  "/web-e-commerce-detail/Premium": {
+    "title": "Web & E-Commerce",
+    "demo": [],
+    "description": ""
+  }
+}

@@ -12,7 +12,6 @@
   border: 1px solid #d1eafa;
 }
 .image-surface::before,
-.marquee-logo::before,
 .hero-stage-backdrop::after {
   content: '';
   position: absolute;
@@ -30,7 +29,6 @@
 .bento-service:is(:hover, :focus-within) .image-surface::before,
 .product-card:is(:hover, :focus-within) .image-surface::before,
 a:focus-visible .image-surface::before,
-.marquee-logo:hover::before,
 .hero-technology-stage:hover .hero-stage-backdrop::after {
   transform: translateY(0) rotate(0deg);
   border-radius: 24% 38% 0 0;
@@ -57,34 +55,6 @@ a:focus-visible .image-surface::before,
 a:focus-visible .image-surface img {
   transform: perspective(900px) rotateY(-4deg) rotateZ(-1deg) scale(1.035);
   filter: drop-shadow(0 16px 18px #003f6b30);
-}
-.marquee-group {
-  gap: 16px;
-  padding-right: 16px;
-}
-.marquee-row + .marquee-row {
-  margin-top: 16px;
-}
-.marquee-logo {
-  position: relative;
-  isolation: isolate;
-  overflow: hidden;
-  width: 186px;
-  height: 126px;
-  padding: 18px;
-  background: #eef8ff;
-  border: 1px solid #d8eafa;
-  border-radius: 20px;
-}
-.marquee-logo img {
-  position: relative;
-  width: 140px;
-  height: 88px;
-  object-fit: contain;
-  transition: transform 550ms ease;
-}
-.marquee-logo:hover img {
-  transform: rotate(-2deg) scale(1.055);
 }
 .hero-stage-backdrop {
   isolation: isolate;
@@ -223,15 +193,6 @@ a:focus-visible .image-surface img {
   .image-surface {
     border-radius: 18px;
   }
-  .marquee-logo {
-    width: 150px;
-    height: 110px;
-    padding: 16px;
-  }
-  .marquee-logo img {
-    width: 118px;
-    height: 76px;
-  }
 }
 @media (prefers-reduced-motion: reduce) {
   .hero-stage-object img,
@@ -239,19 +200,16 @@ a:focus-visible .image-surface img {
     transform: none;
     transition: none;
   }
-  .image-surface img,
-  .marquee-logo img {
+  .image-surface img {
     transition: none;
   }
   .image-surface:hover img,
   .bento-service:is(:hover, :focus-within) .image-surface img,
   .product-card:is(:hover, :focus-within) .image-surface img,
-  a:focus-visible .image-surface img,
-  .marquee-logo:hover img {
+  a:focus-visible .image-surface img {
     transform: none;
   }
   .image-surface::before,
-  .marquee-logo::before,
   .hero-stage-backdrop::after {
     transition: none;
   }

@@ -1,38 +1,16 @@
-import { useEffect, useRef, type ReactNode, type PointerEvent } from 'react';
-import { motion, useReducedMotion } from 'motion/react';
+import { type ReactNode } from 'react';
+import { motion } from 'motion/react';
+import useMotionPreference from './useMotionPreference';
 import { RasterIcon } from '../GeneratedIcons';
 
 export default function HeroTechnologyStage({ children }: { children: ReactNode }) {
-  const reduced = useReducedMotion();
-  const frame = useRef(0);
-  useEffect(() => () => cancelAnimationFrame(frame.current), []);
-  const move = (event: PointerEvent<HTMLDivElement>) => {
-    if (reduced || event.pointerType === 'touch') return;
-    const element = event.currentTarget;
-    const rect = element.getBoundingClientRect();
-    const x = (event.clientX - rect.left) / rect.width - 0.5;
-    const y = (event.clientY - rect.top) / rect.height - 0.5;
-    cancelAnimationFrame(frame.current);
-    frame.current = requestAnimationFrame(() => {
-      element.style.setProperty('--stage-x', `${x * 14}px`);
-      element.style.setProperty('--stage-y', `${y * 12}px`);
-      element.style.setProperty('--stage-angle', `${x * 3}deg`);
-    });
-  };
-  const reset = (event: PointerEvent<HTMLDivElement>) => {
-    cancelAnimationFrame(frame.current);
-    event.currentTarget.style.setProperty('--stage-x', '0px');
-    event.currentTarget.style.setProperty('--stage-y', '0px');
-    event.currentTarget.style.setProperty('--stage-angle', '0deg');
-  };
+  const reduced = useMotionPreference();
   return (
     <motion.div
       className="hero-technology-stage"
-      onPointerMove={move}
-      onPointerLeave={reset}
-      initial={reduced ? false : { opacity: 0, y: 28, scale: 0.97 }}
+      initial={false}
       animate={{ opacity: 1, y: 0, scale: 1 }}
-      transition={{ duration: reduced ? 0 : 1.2, delay: 0.2 }}
+      transition={{ duration: reduced ? 0 : 0.65 }}
     >
       <div className="hero-stage-backdrop" aria-hidden="true">
         <i />

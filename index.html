@@ -10,10 +10,157 @@
       content="Suffix IT Limited provides enterprise software, technology consulting, and ICT solutions in Bangladesh."
     />
     <link rel="icon" type="image/png" href="/assets/Suffix-Logo.73142c9b.png" />
+    <style>
+      .brand-loading-screen {
+        position: fixed;
+        inset: 0;
+        z-index: 1000;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 32px;
+        background: radial-gradient(ellipse at 50% 60%, #e7f5ff, transparent 55%), #fff;
+        font-family: Inter, system-ui, sans-serif;
+      }
+      .brand-loading-logo {
+        display: block;
+        width: clamp(180px, 26vw, 260px);
+        height: auto;
+      }
+      .brand-loading-balls {
+        display: flex;
+        gap: 14px;
+        height: 76px;
+        align-items: flex-end;
+      }
+      .brand-loading-lane {
+        position: relative;
+        display: block;
+        width: 38px;
+        height: 76px;
+      }
+      .brand-loading-lane i {
+        position: absolute;
+        left: 7px;
+        bottom: 13px;
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+        background: radial-gradient(
+          circle at 32% 25%,
+          #bff4ff 0 12%,
+          #39d3f7 18%,
+          #078ddd 58%,
+          #0072bc 100%
+        );
+        box-shadow: 0 0 16px #08b8ed40;
+        transform-origin: center bottom;
+        animation: brand-ball-bounce 1.35s cubic-bezier(0.45, 0, 0.55, 1) infinite;
+        animation-delay: var(--bounce-delay, 0s);
+      }
+      .brand-loading-lane b {
+        position: absolute;
+        bottom: 4px;
+        left: 0;
+        width: 38px;
+        height: 8px;
+        border: 1px solid #3fa8d860;
+        border-radius: 50%;
+        background: #0072bc12;
+        animation: brand-ball-shadow 1.35s ease-in-out infinite;
+        animation-delay: var(--bounce-delay, 0s);
+      }
+      .brand-loading-label {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip-path: inset(50%);
+        white-space: nowrap;
+      }
+      @keyframes brand-ball-bounce {
+        0%,
+        100% {
+          transform: translateY(0) scale(1.18, 0.72);
+        }
+        15% {
+          transform: translateY(-8px) scale(0.92, 1.1);
+        }
+        50% {
+          transform: translateY(-42px) scale(1);
+        }
+        85% {
+          transform: translateY(-8px) scale(0.92, 1.1);
+        }
+      }
+      @keyframes brand-ball-shadow {
+        0%,
+        100% {
+          transform: scale(1);
+          opacity: 0.65;
+        }
+        50% {
+          transform: scale(0.55);
+          opacity: 0.18;
+        }
+      }
+      @media (prefers-reduced-motion: reduce) {
+        .brand-loading-lane i,
+        .brand-loading-lane b {
+          animation: none;
+        }
+      }
+    </style>
+    <link
+      rel="preload"
+      as="image"
+      type="image/webp"
+      href="/optimized/presentation-software-768.webp"
+      imagesrcset="/optimized/presentation-software-320.webp 320w, /optimized/presentation-software-480.webp 480w, /optimized/presentation-software-640.webp 640w, /optimized/presentation-software-768.webp 768w, /optimized/presentation-software-960.webp 960w, /optimized/presentation-software-1200.webp 1200w"
+      imagesizes="(max-width: 900px) 90vw, 640px"
+      fetchpriority="high"
+    />
+    <link
+      rel="preload"
+      as="font"
+      type="font/woff2"
+      href="/node_modules/@fontsource-variable/manrope/files/manrope-latin-wght-normal.woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      as="font"
+      type="font/woff2"
+      href="/node_modules/@fontsource-variable/inter/files/inter-latin-wght-normal.woff2"
+      crossorigin
+    />
     <title>Suffix IT Limited | Technology that moves business forward</title>
   </head>
   <body>
-    <div id="root"></div>
+    <div id="root">
+      <!-- root-content-start -->
+      <div class="brand-loading-screen" role="status" aria-label="Loading Suffix IT">
+        <img
+          class="brand-loading-logo"
+          src="/assets/Suffix-Logo.73142c9b.png"
+          alt="Suffix IT"
+          width="2083"
+          height="789"
+          fetchpriority="high"
+        />
+        <div class="brand-loading-balls" aria-hidden="true">
+          <span class="brand-loading-lane" style="--bounce-delay: 0s"><i></i><b></b></span>
+          <span class="brand-loading-lane" style="--bounce-delay: -0.18s"><i></i><b></b></span>
+          <span class="brand-loading-lane" style="--bounce-delay: -0.36s"><i></i><b></b></span>
+          <span class="brand-loading-lane" style="--bounce-delay: -0.54s"><i></i><b></b></span>
+        </div>
+        <span class="brand-loading-label">Loading page…</span>
+      </div>
+      <!-- root-content-end -->
+    </div>
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>

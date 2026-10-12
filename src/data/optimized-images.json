@@ -222,5 +222,2237 @@
       "src": "/optimized/vision.466e9b76-500.webp",
       "width": 500
     }
+  ],
+  "/assets/generated/about/call-center.webp": [
+    {
+      "src": "/optimized/generated/call-center-e8bfb963-320.webp",
+      "width": 320
+    },
+    {
+      "src": "/optimized/generated/call-center-e8bfb963-640.webp",
+      "width": 640
+    },
+    {
+      "src": "/optimized/generated/call-center-e8bfb963-960.webp",
+      "width": 960
+    },
+    {
+      "src": "/assets/generated/about/call-center.webp",
+      "width": 1200
+    }
+  ],
+  "/assets/generated/about/mission.webp": [
+    {
+      "src": "/optimized/generated/mission-17a305f3-320.webp",
+      "width": 320
+    },
+    {
+      "src": "/optimized/generated/mission-17a305f3-640.webp",
+      "width": 640
+    },
+    {
+      "src": "/optimized/generated/mission-17a305f3-960.webp",
+      "width": 960
+    },
+    {
+      "src": "/assets/generated/about/mission.webp",
+      "width": 1200
+    }
+  ],
+  "/assets/generated/about/vision.webp": [
+    {
+      "src": "/optimized/generated/vision-1b0fc13c-320.webp",
+      "width": 320
+    },
+    {
+      "src": "/optimized/generated/vision-1b0fc13c-640.webp",
+      "width": 640
+    },
+    {
+      "src": "/optimized/generated/vision-1b0fc13c-960.webp",
+      "width": 960
+    },
+    {
+      "src": "/assets/generated/about/vision.webp",
+      "width": 1200
+    }
+  ],
+  "/assets/generated/illustrations/growth.webp": [
+    {
+      "src": "/optimized/generated/growth-20c0eaee-320.webp",
+      "width": 320
+    },
+    {
+      "src": "/optimized/generated/growth-20c0eaee-640.webp",
+      "width": 640
+    },
+    {
+      "src": "/optimized/generated/growth-20c0eaee-960.webp",
+      "width": 960
+    },
+    {
+      "src": "/assets/generated/illustrations/growth.webp",
+      "width": 1200
+    }
+  ],
+  "/assets/generated/illustrations/hospital.webp": [
+    {
+      "src": "/optimized/generated/hospital-d33d5466-320.webp",
+      "width": 320
+    },
+    {
+      "src": "/optimized/generated/hospital-d33d5466-640.webp",
+      "width": 640
+    },
+    {
+      "src": "/optimized/generated/hospital-d33d5466-960.webp",
+      "width": 960
+    },
+    {
+      "src": "/assets/generated/illustrations/hospital.webp",
+      "width": 1200
+    }
+  ],
+  "/assets/generated/illustrations/industrial.webp": [
+    {
+      "src": "/optimized/generated/industrial-48433284-320.webp",
+      "width": 320
+    },
+    {
+      "src": "/optimized/generated/industrial-48433284-640.webp",
+      "width": 640
+    },
+    {
+      "src": "/optimized/generated/industrial-48433284-960.webp",
+      "width": 960
+    },
+    {
+      "src": "/assets/generated/illustrations/industrial.webp",
+      "width": 1200
+    }
+  ],
+  "/assets/generated/illustrations/infrastructure.webp": [
+    {
+      "src": "/optimized/generated/infrastructure-08a33a9c-320.webp",
+      "width": 320
+    },
+    {
+      "src": "/optimized/generated/infrastructure-08a33a9c-640.webp",
+      "width": 640
+    },
+    {
+      "src": "/optimized/generated/infrastructure-08a33a9c-960.webp",
+      "width": 960
+    },
+    {
+      "src": "/assets/generated/illustrations/infrastructure.webp",
+      "width": 1200
+    }
+  ],
+  "/assets/generated/illustrations/learning.webp": [
+    {
+      "src": "/optimized/generated/learning-62566010-320.webp",
+      "width": 320
+    },
+    {
+      "src": "/optimized/generated/learning-62566010-640.webp",
+      "width": 640
+    },
+    {
+      "src": "/optimized/generated/learning-62566010-960.webp",
+      "width": 960
+    },
+    {
+      "src": "/assets/generated/illustrations/learning.webp",
+      "width": 1200
+    }
+  ],
+  "/assets/generated/illustrations/payments.webp": [
+    {
+      "src": "/optimized/generated/payments-c5eec09f-320.webp",
+      "width": 320
+    },
+    {
+      "src": "/optimized/generated/payments-c5eec09f-640.webp",
+      "width": 640
+    },
+    {
+      "src": "/optimized/generated/payments-c5eec09f-960.webp",
+      "width": 960
+    },
+    {
+      "src": "/assets/generated/illustrations/payments.webp",
+      "width": 1200
+    }
+  ],
+  "/assets/generated/illustrations/security.webp": [
+    {
+      "src": "/optimized/generated/security-ed0a4f9a-320.webp",
+      "width": 320
+    },
+    {
+      "src": "/optimized/generated/security-ed0a4f9a-640.webp",
+      "width": 640
+    },
+    {
+      "src": "/optimized/generated/security-ed0a4f9a-960.webp",
+      "width": 960
+    },
+    {
+      "src": "/assets/generated/illustrations/security.webp",
+      "width": 1200
+    }
+  ],
+  "/assets/generated/illustrations/software.webp": [
+    {
+      "src": "/optimized/presentation-software-320.webp",
+      "width": 320
+    },
+    {
+      "src": "/optimized/presentation-software-480.webp",
+      "width": 480
+    },
+    {
+      "src": "/optimized/presentation-software-640.webp",
+      "width": 640
+    },
+    {
+      "src": "/optimized/presentation-software-768.webp",
+      "width": 768
+    },
+    {
+      "src": "/optimized/presentation-software-960.webp",
+      "width": 960
+    },
+    {
+      "src": "/optimized/presentation-software-1200.webp",
+      "width": 1200
+    }
+  ],
+  "/assets/generated/illustrations/team.webp": [
+    {
+      "src": "/optimized/generated/team-dc97abcc-320.webp",
+      "width": 320
+    },
+    {
+      "src": "/optimized/generated/team-dc97abcc-640.webp",
+      "width": 640
+    },
+    {
+      "src": "/optimized/generated/team-dc97abcc-960.webp",
+      "width": 960
+    },
+    {
+      "src": "/assets/generated/illustrations/team.webp",
+      "width": 1200
+    }
+  ],
+  "/assets/generated/illustrations/time.webp": [
+    {
+      "src": "/optimized/generated/time-2a4c236d-320.webp",
+      "width": 320
+    },
+    {
+      "src": "/optimized/generated/time-2a4c236d-640.webp",
+      "width": 640
+    },
+    {
+      "src": "/optimized/generated/time-2a4c236d-960.webp",
+      "width": 960
+    },
+    {
+      "src": "/assets/generated/illustrations/time.webp",
+      "width": 1200
+    }
+  ],
+  "/assets/generated/products/billing.webp": [
+    {
+      "src": "/optimized/generated/billing-7ca782e8-320.webp",
+      "width": 320
+    },
+    {
+      "src": "/optimized/generated/billing-7ca782e8-640.webp",
+      "width": 640
+    },
+    {
+      "src": "/optimized/generated/billing-7ca782e8-960.webp",
+      "width": 960
+    },
+    {
+      "src": "/assets/generated/products/billing.webp",
+      "width": 1279
+    }
+  ],
+  "/assets/generated/products/commerce.webp": [
+    {
+      "src": "/optimized/generated/commerce-27ada5f8-320.webp",
+      "width": 320
+    },
+    {
+      "src": "/optimized/generated/commerce-27ada5f8-640.webp",
+      "width": 640
+    },
+    {
+      "src": "/optimized/generated/commerce-27ada5f8-960.webp",
+      "width": 960
+    },
+    {
+      "src": "/assets/generated/products/commerce.webp",
+      "width": 1279
+    }
+  ],
+  "/assets/generated/products/erp.webp": [
+    {
+      "src": "/optimized/generated/erp-98dc6422-320.webp",
+      "width": 320
+    },
+    {
+      "src": "/optimized/generated/erp-98dc6422-640.webp",
+      "width": 640
+    },
+    {
+      "src": "/optimized/generated/erp-98dc6422-960.webp",
+      "width": 960
+    },
+    {
+      "src": "/assets/generated/products/erp.webp",
+      "width": 1280
+    }
+  ],
+  "/assets/generated/products/field.webp": [
+    {
+      "src": "/optimized/generated/field-13ad380e-320.webp",
+      "width": 320
+    },
+    {
+      "src": "/optimized/generated/field-13ad380e-640.webp",
+      "width": 640
+    },
+    {
+      "src": "/optimized/generated/field-13ad380e-960.webp",
+      "width": 960
+    },
+    {
+      "src": "/assets/generated/products/field.webp",
+      "width": 1279
+    }
+  ],
+  "/assets/generated/products/fund.webp": [
+    {
+      "src": "/optimized/generated/fund-273f214e-320.webp",
+      "width": 320
+    },
+    {
+      "src": "/optimized/generated/fund-273f214e-640.webp",
+      "width": 640
+    },
+    {
+      "src": "/optimized/generated/fund-273f214e-960.webp",
+      "width": 960
+    },
+    {
+      "src": "/assets/generated/products/fund.webp",
+      "width": 1279
+    }
+  ],
+  "/assets/generated/products/hotel.webp": [
+    {
+      "src": "/optimized/generated/hotel-e30bae0e-320.webp",
+      "width": 320
+    },
+    {
+      "src": "/optimized/generated/hotel-e30bae0e-640.webp",
+      "width": 640
+    },
+    {
+      "src": "/optimized/generated/hotel-e30bae0e-960.webp",
+      "width": 960
+    },
+    {
+      "src": "/assets/generated/products/hotel.webp",
+      "width": 1279
+    }
+  ],
+  "/assets/generated/products/inventory.webp": [
+    {
+      "src": "/optimized/generated/inventory-84cbd586-320.webp",
+      "width": 320
+    },
+    {
+      "src": "/optimized/generated/inventory-84cbd586-640.webp",
+      "width": 640
+    },
+    {
+      "src": "/optimized/generated/inventory-84cbd586-960.webp",
+      "width": 960
+    },
+    {
+      "src": "/assets/generated/products/inventory.webp",
+      "width": 1279
+    }
+  ],
+  "/assets/generated/products/payroll.webp": [
+    {
+      "src": "/optimized/generated/payroll-f81e2f89-320.webp",
+      "width": 320
+    },
+    {
+      "src": "/optimized/generated/payroll-f81e2f89-640.webp",
+      "width": 640
+    },
+    {
+      "src": "/optimized/generated/payroll-f81e2f89-960.webp",
+      "width": 960
+    },
+    {
+      "src": "/assets/generated/products/payroll.webp",
+      "width": 1279
+    }
+  ],
+  "/assets/generated/unique/about-history.webp": [
+    {
+      "src": "/optimized/generated/about-history-bbad0198-320.webp",
+      "width": 320
+    },
+    {
+      "src": "/optimized/generated/about-history-bbad0198-640.webp",
+      "width": 640
+    },
+    {
+      "src": "/optimized/generated/about-history-bbad0198-960.webp",
+      "width": 960
+    },
+    {
+      "src": "/assets/generated/unique/about-history.webp",
+      "width": 1200
+    }
+  ],
+  "/assets/generated/unique/about-software.webp": [
+    {
+      "src": "/optimized/generated/about-software-ebe328f2-320.webp",
+      "width": 320
+    },
+    {
+      "src": "/optimized/generated/about-software-ebe328f2-640.webp",
+      "width": 640
+    },
+    {
+      "src": "/optimized/generated/about-software-ebe328f2-960.webp",
+      "width": 960
+    },
+    {
+      "src": "/assets/generated/unique/about-software.webp",
+      "width": 1200
+    }
+  ],
+  "/assets/generated/unique/about-team.webp": [
+    {
+      "src": "/optimized/generated/about-team-b4938f88-320.webp",
+      "width": 320
+    },
+    {
+      "src": "/optimized/generated/about-team-b4938f88-640.webp",
+      "width": 640
+    },
+    {
+      "src": "/optimized/generated/about-team-b4938f88-960.webp",
+      "width": 960
+    },
+    {
+      "src": "/assets/generated/unique/about-team.webp",
+      "width": 1200
+    }
+  ],
+  "/assets/generated/unique/career-team.webp": [
+    {
+      "src": "/optimized/generated/career-team-abc55009-320.webp",
+      "width": 320
+    },
+    {
+      "src": "/optimized/generated/career-team-abc55009-640.webp",
+      "width": 640
+    },
+    {
+      "src": "/optimized/generated/career-team-abc55009-960.webp",
+      "width": 960
+    },
+    {
+      "src": "/assets/generated/unique/career-team.webp",
+      "width": 1200
+    }
+  ],
+  "/assets/generated/unique/catalogue-e-commerce.webp": [
+    {
+      "src": "/optimized/generated/catalogue-e-commerce-a1079f4b-320.webp",
+      "width": 320
+    },
+    {
+      "src": "/optimized/generated/catalogue-e-commerce-a1079f4b-640.webp",
+      "width": 640
+    },
+    {
+      "src": "/optimized/generated/catalogue-e-commerce-a1079f4b-960.webp",
+      "width": 960
+    },
+    {
+      "src": "/assets/generated/unique/catalogue-e-commerce.webp",
+      "width": 1200
+    }
+  ],
+  "/assets/generated/unique/catalogue-field-force-management.webp": [
+    {
+      "src": "/optimized/generated/catalogue-field-force-management-1196ff25-320.webp",
+      "width": 320
+    },
+    {
+      "src": "/optimized/generated/catalogue-field-force-management-1196ff25-640.webp",
+      "width": 640
+    },
+    {
+      "src": "/optimized/generated/catalogue-field-force-management-1196ff25-960.webp",
+      "width": 960
+    },
+    {
+      "src": "/assets/generated/unique/catalogue-field-force-management.webp",
+      "width": 1200
+    }
+  ],
+  "/assets/generated/unique/catalogue-hotel-booking-system.webp": [
+    {
+      "src": "/optimized/generated/catalogue-hotel-booking-system-10a759ac-320.webp",
+      "width": 320
+    },
+    {
+      "src": "/optimized/generated/catalogue-hotel-booking-system-10a759ac-640.webp",
+      "width": 640
+    },
+    {
+      "src": "/optimized/generated/catalogue-hotel-booking-system-10a759ac-960.webp",
+      "width": 960
+    },
+    {
+      "src": "/assets/generated/unique/catalogue-hotel-booking-system.webp",
+      "width": 1200
+    }
+  ],
+  "/assets/generated/unique/catalogue-interconnect-billing.webp": [
+    {
+      "src": "/optimized/generated/catalogue-interconnect-billing-911d02b8-320.webp",
+      "width": 320
+    },
+    {
+      "src": "/optimized/generated/catalogue-interconnect-billing-911d02b8-640.webp",
+      "width": 640
+    },
+    {
+      "src": "/optimized/generated/catalogue-interconnect-billing-911d02b8-960.webp",
+      "width": 960
+    },
+    {
+      "src": "/assets/generated/unique/catalogue-interconnect-billing.webp",
+      "width": 1200
+    }
+  ],
+  "/assets/generated/unique/catalogue-payroll-system.webp": [
+    {
+      "src": "/optimized/generated/catalogue-payroll-system-eb7e6cee-320.webp",
+      "width": 320
+    },
+    {
+      "src": "/optimized/generated/catalogue-payroll-system-eb7e6cee-640.webp",
+      "width": 640
+    },
+    {
+      "src": "/optimized/generated/catalogue-payroll-system-eb7e6cee-960.webp",
+      "width": 960
+    },
+    {
+      "src": "/assets/generated/unique/catalogue-payroll-system.webp",
+      "width": 1200
+    }
+  ],
+  "/assets/generated/unique/catalogue-pos-system.webp": [
+    {
+      "src": "/optimized/generated/catalogue-pos-system-6e8b66b5-320.webp",
+      "width": 320
+    },
+    {
+      "src": "/optimized/generated/catalogue-pos-system-6e8b66b5-640.webp",
+      "width": 640
+    },
+    {
+      "src": "/optimized/generated/catalogue-pos-system-6e8b66b5-960.webp",
+      "width": 960
+    },
+    {
+      "src": "/assets/generated/unique/catalogue-pos-system.webp",
+      "width": 1200
+    }
+  ],
+  "/assets/generated/unique/catalogue-provident-fund.webp": [
+    {
+      "src": "/optimized/generated/catalogue-provident-fund-2614211a-320.webp",
+      "width": 320
+    },
+    {
+      "src": "/optimized/generated/catalogue-provident-fund-2614211a-640.webp",
+      "width": 640
+    },
+    {
+      "src": "/optimized/generated/catalogue-provident-fund-2614211a-960.webp",
+      "width": 960
+    },
+    {
+      "src": "/assets/generated/unique/catalogue-provident-fund.webp",
+      "width": 1200
+    }
+  ],
+  "/assets/generated/unique/catalogue-rupantor-erp.webp": [
+    {
+      "src": "/optimized/generated/catalogue-rupantor-erp-17f6c550-320.webp",
+      "width": 320
+    },
+    {
+      "src": "/optimized/generated/catalogue-rupantor-erp-17f6c550-640.webp",
+      "width": 640
+    },
+    {
+      "src": "/optimized/generated/catalogue-rupantor-erp-17f6c550-960.webp",
+      "width": 960
+    },
+    {
+      "src": "/assets/generated/unique/catalogue-rupantor-erp.webp",
+      "width": 1200
+    }
+  ],
+  "/assets/generated/unique/catalogue-rupantor-inventory.webp": [
+    {
+      "src": "/optimized/generated/catalogue-rupantor-inventory-a6935809-320.webp",
+      "width": 320
+    },
+    {
+      "src": "/optimized/generated/catalogue-rupantor-inventory-a6935809-640.webp",
+      "width": 640
+    },
+    {
+      "src": "/optimized/generated/catalogue-rupantor-inventory-a6935809-960.webp",
+      "width": 960
+    },
+    {
+      "src": "/assets/generated/unique/catalogue-rupantor-inventory.webp",
+      "width": 1200
+    }
+  ],
+  "/assets/generated/unique/catalogue-transformer-monitoring.webp": [
+    {
+      "src": "/optimized/generated/catalogue-transformer-monitoring-4a05e7d4-320.webp",
+      "width": 320
+    },
+    {
+      "src": "/optimized/generated/catalogue-transformer-monitoring-4a05e7d4-640.webp",
+      "width": 640
+    },
+    {
+      "src": "/optimized/generated/catalogue-transformer-monitoring-4a05e7d4-960.webp",
+      "width": 960
+    },
+    {
+      "src": "/assets/generated/unique/catalogue-transformer-monitoring.webp",
+      "width": 1200
+    }
+  ],
+  "/assets/generated/unique/detail-e-commerce-1.webp": [
+    {
+      "src": "/optimized/generated/detail-e-commerce-1-413811c6-320.webp",
+      "width": 320
+    },
+    {
+      "src": "/optimized/generated/detail-e-commerce-1-413811c6-640.webp",
+      "width": 640
+    },
+    {
+      "src": "/optimized/generated/detail-e-commerce-1-413811c6-960.webp",
+      "width": 960
+    },
+    {
+      "src": "/assets/generated/unique/detail-e-commerce-1.webp",
+      "width": 1200
+    }
+  ],
+  "/assets/generated/unique/detail-e-commerce-2.webp": [
+    {
+      "src": "/optimized/generated/detail-e-commerce-2-e0fe6b25-320.webp",
+      "width": 320
+    },
+    {
+      "src": "/optimized/generated/detail-e-commerce-2-e0fe6b25-640.webp",
+      "width": 640
+    },
+    {
+      "src": "/optimized/generated/detail-e-commerce-2-e0fe6b25-960.webp",
+      "width": 960
+    },
+    {
+      "src": "/assets/generated/unique/detail-e-commerce-2.webp",
+      "width": 1200
+    }
+  ],
+  "/assets/generated/unique/detail-e-commerce-3.webp": [
+    {
+      "src": "/optimized/generated/detail-e-commerce-3-db57ad8c-320.webp",
+      "width": 320
+    },
+    {
+      "src": "/optimized/generated/detail-e-commerce-3-db57ad8c-640.webp",
+      "width": 640
+    },
+    {
+      "src": "/optimized/generated/detail-e-commerce-3-db57ad8c-960.webp",
+      "width": 960
+    },
+    {
+      "src": "/assets/generated/unique/detail-e-commerce-3.webp",
+      "width": 1200
+    }
+  ],
+  "/assets/generated/unique/detail-payroll-system-1.webp": [
+    {
+      "src": "/optimized/generated/detail-payroll-system-1-3604bef4-320.webp",
+      "width": 320
+    },
+    {
+      "src": "/optimized/generated/detail-payroll-system-1-3604bef4-640.webp",
+      "width": 640
+    },
+    {
+      "src": "/optimized/generated/detail-payroll-system-1-3604bef4-960.webp",
+      "width": 960
+    },
+    {
+      "src": "/assets/generated/unique/detail-payroll-system-1.webp",
+      "width": 1200
+    }
+  ],
+  "/assets/generated/unique/detail-payroll-system-2.webp": [
+    {
+      "src": "/optimized/generated/detail-payroll-system-2-bc597e6e-320.webp",
+      "width": 320
+    },
+    {
+      "src": "/optimized/generated/detail-payroll-system-2-bc597e6e-640.webp",
+      "width": 640
+    },
+    {
+      "src": "/optimized/generated/detail-payroll-system-2-bc597e6e-960.webp",
+      "width": 960
+    },
+    {
+      "src": "/assets/generated/unique/detail-payroll-system-2.webp",
+      "width": 1200
+    }
+  ],
+  "/assets/generated/unique/detail-payroll-system-5.webp": [
+    {
+      "src": "/optimized/generated/detail-payroll-system-5-b10714bc-320.webp",
+      "width": 320
+    },
+    {
+      "src": "/optimized/generated/detail-payroll-system-5-b10714bc-640.webp",
+      "width": 640
+    },
+    {
+      "src": "/optimized/generated/detail-payroll-system-5-b10714bc-960.webp",
+      "width": 960
+    },
+    {
+      "src": "/assets/generated/unique/detail-payroll-system-5.webp",
+      "width": 1200
+    }
+  ],
+  "/assets/generated/unique/detail-payroll-system-6.webp": [
+    {
+      "src": "/optimized/generated/detail-payroll-system-6-ee02dc09-320.webp",
+      "width": 320
+    },
+    {
+      "src": "/optimized/generated/detail-payroll-system-6-ee02dc09-640.webp",
+      "width": 640
+    },
+    {
+      "src": "/optimized/generated/detail-payroll-system-6-ee02dc09-960.webp",
+      "width": 960
+    },
+    {
+      "src": "/assets/generated/unique/detail-payroll-system-6.webp",
+      "width": 1200
+    }
+  ],
+  "/assets/generated/unique/detail-rupantor-erp-1.webp": [
+    {
+      "src": "/optimized/generated/detail-rupantor-erp-1-be7515ed-320.webp",
+      "width": 320
+    },
+    {
+      "src": "/optimized/generated/detail-rupantor-erp-1-be7515ed-640.webp",
+      "width": 640
+    },
+    {
+      "src": "/optimized/generated/detail-rupantor-erp-1-be7515ed-960.webp",
+      "width": 960
+    },
+    {
+      "src": "/assets/generated/unique/detail-rupantor-erp-1.webp",
+      "width": 1200
+    }
+  ],
+  "/assets/generated/unique/detail-rupantor-erp-10.webp": [
+    {
+      "src": "/optimized/generated/detail-rupantor-erp-10-05b1224e-320.webp",
+      "width": 320
+    },
+    {
+      "src": "/optimized/generated/detail-rupantor-erp-10-05b1224e-640.webp",
+      "width": 640
+    },
+    {
+      "src": "/optimized/generated/detail-rupantor-erp-10-05b1224e-960.webp",
+      "width": 960
+    },
+    {
+      "src": "/assets/generated/unique/detail-rupantor-erp-10.webp",
+      "width": 1200
+    }
+  ],
+  "/assets/generated/unique/detail-rupantor-erp-16.webp": [
+    {
+      "src": "/optimized/generated/detail-rupantor-erp-16-2a668856-320.webp",
+      "width": 320
+    },
+    {
+      "src": "/optimized/generated/detail-rupantor-erp-16-2a668856-640.webp",
+      "width": 640
+    },
+    {
+      "src": "/optimized/generated/detail-rupantor-erp-16-2a668856-960.webp",
+      "width": 960
+    },
+    {
+      "src": "/assets/generated/unique/detail-rupantor-erp-16.webp",
+      "width": 1200
+    }
+  ],
+  "/assets/generated/unique/detail-rupantor-erp-7.webp": [
+    {
+      "src": "/optimized/generated/detail-rupantor-erp-7-70a1b45f-320.webp",
+      "width": 320
+    },
+    {
+      "src": "/optimized/generated/detail-rupantor-erp-7-70a1b45f-640.webp",
+      "width": 640
+    },
+    {
+      "src": "/optimized/generated/detail-rupantor-erp-7-70a1b45f-960.webp",
+      "width": 960
+    },
+    {
+      "src": "/assets/generated/unique/detail-rupantor-erp-7.webp",
+      "width": 1200
+    }
+  ],
+  "/assets/generated/unique/gallery-product-field-force-management-0.webp": [
+    {
+      "src": "/optimized/generated/gallery-product-field-force-management-0-4b90b216-320.webp",
+      "width": 320
+    },
+    {
+      "src": "/optimized/generated/gallery-product-field-force-management-0-4b90b216-640.webp",
+      "width": 640
+    },
+    {
+      "src": "/optimized/generated/gallery-product-field-force-management-0-4b90b216-960.webp",
+      "width": 960
+    },
+    {
+      "src": "/assets/generated/unique/gallery-product-field-force-management-0.webp",
+      "width": 1200
+    }
+  ],
+  "/assets/generated/unique/gallery-product-transformer-monitoring-0.webp": [
+    {
+      "src": "/optimized/generated/gallery-product-transformer-monitoring-0-83fa7faf-320.webp",
+      "width": 320
+    },
+    {
+      "src": "/optimized/generated/gallery-product-transformer-monitoring-0-83fa7faf-640.webp",
+      "width": 640
+    },
+    {
+      "src": "/optimized/generated/gallery-product-transformer-monitoring-0-83fa7faf-960.webp",
+      "width": 960
+    },
+    {
+      "src": "/assets/generated/unique/gallery-product-transformer-monitoring-0.webp",
+      "width": 1200
+    }
+  ],
+  "/assets/generated/unique/gallery-product-transformer-monitoring-1.webp": [
+    {
+      "src": "/optimized/generated/gallery-product-transformer-monitoring-1-9cc2c9bd-320.webp",
+      "width": 320
+    },
+    {
+      "src": "/optimized/generated/gallery-product-transformer-monitoring-1-9cc2c9bd-640.webp",
+      "width": 640
+    },
+    {
+      "src": "/optimized/generated/gallery-product-transformer-monitoring-1-9cc2c9bd-960.webp",
+      "width": 960
+    },
+    {
+      "src": "/assets/generated/unique/gallery-product-transformer-monitoring-1.webp",
+      "width": 1200
+    }
+  ],
+  "/assets/generated/unique/gallery-product-transformer-monitoring-2.webp": [
+    {
+      "src": "/optimized/generated/gallery-product-transformer-monitoring-2-40664a2a-320.webp",
+      "width": 320
+    },
+    {
+      "src": "/optimized/generated/gallery-product-transformer-monitoring-2-40664a2a-640.webp",
+      "width": 640
+    },
+    {
+      "src": "/optimized/generated/gallery-product-transformer-monitoring-2-40664a2a-960.webp",
+      "width": 960
+    },
+    {
+      "src": "/assets/generated/unique/gallery-product-transformer-monitoring-2.webp",
+      "width": 1200
+    }
+  ],
+  "/assets/generated/unique/gallery-product-transformer-monitoring-3.webp": [
+    {
+      "src": "/optimized/generated/gallery-product-transformer-monitoring-3-a542fbd1-320.webp",
+      "width": 320
+    },
+    {
+      "src": "/optimized/generated/gallery-product-transformer-monitoring-3-a542fbd1-640.webp",
+      "width": 640
+    },
+    {
+      "src": "/optimized/generated/gallery-product-transformer-monitoring-3-a542fbd1-960.webp",
+      "width": 960
+    },
+    {
+      "src": "/assets/generated/unique/gallery-product-transformer-monitoring-3.webp",
+      "width": 1200
+    }
+  ],
+  "/assets/generated/unique/gallery-product-transformer-monitoring-4.webp": [
+    {
+      "src": "/optimized/generated/gallery-product-transformer-monitoring-4-c9c07336-320.webp",
+      "width": 320
+    },
+    {
+      "src": "/optimized/generated/gallery-product-transformer-monitoring-4-c9c07336-640.webp",
+      "width": 640
+    },
+    {
+      "src": "/optimized/generated/gallery-product-transformer-monitoring-4-c9c07336-960.webp",
+      "width": 960
+    },
+    {
+      "src": "/assets/generated/unique/gallery-product-transformer-monitoring-4.webp",
+      "width": 1200
+    }
+  ],
+  "/assets/generated/unique/gallery-product-transformer-monitoring-5.webp": [
+    {
+      "src": "/optimized/generated/gallery-product-transformer-monitoring-5-68aef6f1-320.webp",
+      "width": 320
+    },
+    {
+      "src": "/optimized/generated/gallery-product-transformer-monitoring-5-68aef6f1-640.webp",
+      "width": 640
+    },
+    {
+      "src": "/optimized/generated/gallery-product-transformer-monitoring-5-68aef6f1-960.webp",
+      "width": 960
+    },
+    {
+      "src": "/assets/generated/unique/gallery-product-transformer-monitoring-5.webp",
+      "width": 1200
+    }
+  ],
+  "/assets/generated/unique/gallery-product-transformer-monitoring-6.webp": [
+    {
+      "src": "/optimized/generated/gallery-product-transformer-monitoring-6-d1ffb88b-320.webp",
+      "width": 320
+    },
+    {
+      "src": "/optimized/generated/gallery-product-transformer-monitoring-6-d1ffb88b-640.webp",
+      "width": 640
+    },
+    {
+      "src": "/optimized/generated/gallery-product-transformer-monitoring-6-d1ffb88b-960.webp",
+      "width": 960
+    },
+    {
+      "src": "/assets/generated/unique/gallery-product-transformer-monitoring-6.webp",
+      "width": 1200
+    }
+  ],
+  "/assets/generated/unique/gallery-service-field-force-management-0.webp": [
+    {
+      "src": "/optimized/generated/gallery-service-field-force-management-0-3da90cd1-320.webp",
+      "width": 320
+    },
+    {
+      "src": "/optimized/generated/gallery-service-field-force-management-0-3da90cd1-640.webp",
+      "width": 640
+    },
+    {
+      "src": "/optimized/generated/gallery-service-field-force-management-0-3da90cd1-960.webp",
+      "width": 960
+    },
+    {
+      "src": "/assets/generated/unique/gallery-service-field-force-management-0.webp",
+      "width": 1200
+    }
+  ],
+  "/assets/generated/unique/gallery-service-industrial-monitoring-0.webp": [
+    {
+      "src": "/optimized/generated/gallery-service-industrial-monitoring-0-46092629-320.webp",
+      "width": 320
+    },
+    {
+      "src": "/optimized/generated/gallery-service-industrial-monitoring-0-46092629-640.webp",
+      "width": 640
+    },
+    {
+      "src": "/optimized/generated/gallery-service-industrial-monitoring-0-46092629-960.webp",
+      "width": 960
+    },
+    {
+      "src": "/assets/generated/unique/gallery-service-industrial-monitoring-0.webp",
+      "width": 1200
+    }
+  ],
+  "/assets/generated/unique/gallery-service-industrial-monitoring-1.webp": [
+    {
+      "src": "/optimized/generated/gallery-service-industrial-monitoring-1-b982f681-320.webp",
+      "width": 320
+    },
+    {
+      "src": "/optimized/generated/gallery-service-industrial-monitoring-1-b982f681-640.webp",
+      "width": 640
+    },
+    {
+      "src": "/optimized/generated/gallery-service-industrial-monitoring-1-b982f681-960.webp",
+      "width": 960
+    },
+    {
+      "src": "/assets/generated/unique/gallery-service-industrial-monitoring-1.webp",
+      "width": 1200
+    }
+  ],
+  "/assets/generated/unique/gallery-service-industrial-monitoring-2.webp": [
+    {
+      "src": "/optimized/generated/gallery-service-industrial-monitoring-2-e1790dc5-320.webp",
+      "width": 320
+    },
+    {
+      "src": "/optimized/generated/gallery-service-industrial-monitoring-2-e1790dc5-640.webp",
+      "width": 640
+    },
+    {
+      "src": "/optimized/generated/gallery-service-industrial-monitoring-2-e1790dc5-960.webp",
+      "width": 960
+    },
+    {
+      "src": "/assets/generated/unique/gallery-service-industrial-monitoring-2.webp",
+      "width": 1200
+    }
+  ],
+  "/assets/generated/unique/gallery-service-learning-management-0.webp": [
+    {
+      "src": "/optimized/generated/gallery-service-learning-management-0-dfeef56c-320.webp",
+      "width": 320
+    },
+    {
+      "src": "/optimized/generated/gallery-service-learning-management-0-dfeef56c-640.webp",
+      "width": 640
+    },
+    {
+      "src": "/optimized/generated/gallery-service-learning-management-0-dfeef56c-960.webp",
+      "width": 960
+    },
+    {
+      "src": "/assets/generated/unique/gallery-service-learning-management-0.webp",
+      "width": 1200
+    }
+  ],
+  "/assets/generated/unique/hero-product-e-commerce.webp": [
+    {
+      "src": "/optimized/generated/hero-product-e-commerce-1bd810ba-320.webp",
+      "width": 320
+    },
+    {
+      "src": "/optimized/generated/hero-product-e-commerce-1bd810ba-640.webp",
+      "width": 640
+    },
+    {
+      "src": "/optimized/generated/hero-product-e-commerce-1bd810ba-960.webp",
+      "width": 960
+    },
+    {
+      "src": "/assets/generated/unique/hero-product-e-commerce.webp",
+      "width": 1200
+    }
+  ],
+  "/assets/generated/unique/hero-product-field-force-management.webp": [
+    {
+      "src": "/optimized/generated/hero-product-field-force-management-3cd67caa-320.webp",
+      "width": 320
+    },
+    {
+      "src": "/optimized/generated/hero-product-field-force-management-3cd67caa-640.webp",
+      "width": 640
+    },
+    {
+      "src": "/optimized/generated/hero-product-field-force-management-3cd67caa-960.webp",
+      "width": 960
+    },
+    {
+      "src": "/assets/generated/unique/hero-product-field-force-management.webp",
+      "width": 1200
+    }
+  ],
+  "/assets/generated/unique/hero-product-hotel-booking-system.webp": [
+    {
+      "src": "/optimized/generated/hero-product-hotel-booking-system-e32a9d8b-320.webp",
+      "width": 320
+    },
+    {
+      "src": "/optimized/generated/hero-product-hotel-booking-system-e32a9d8b-640.webp",
+      "width": 640
+    },
+    {
+      "src": "/optimized/generated/hero-product-hotel-booking-system-e32a9d8b-960.webp",
+      "width": 960
+    },
+    {
+      "src": "/assets/generated/unique/hero-product-hotel-booking-system.webp",
+      "width": 1200
+    }
+  ],
+  "/assets/generated/unique/hero-product-interconnect-billing.webp": [
+    {
+      "src": "/optimized/generated/hero-product-interconnect-billing-7c49b24e-320.webp",
+      "width": 320
+    },
+    {
+      "src": "/optimized/generated/hero-product-interconnect-billing-7c49b24e-640.webp",
+      "width": 640
+    },
+    {
+      "src": "/optimized/generated/hero-product-interconnect-billing-7c49b24e-960.webp",
+      "width": 960
+    },
+    {
+      "src": "/assets/generated/unique/hero-product-interconnect-billing.webp",
+      "width": 1200
+    }
+  ],
+  "/assets/generated/unique/hero-product-payroll-system.webp": [
+    {
+      "src": "/optimized/generated/hero-product-payroll-system-4a5415ec-320.webp",
+      "width": 320
+    },
+    {
+      "src": "/optimized/generated/hero-product-payroll-system-4a5415ec-640.webp",
+      "width": 640
+    },
+    {
+      "src": "/optimized/generated/hero-product-payroll-system-4a5415ec-960.webp",
+      "width": 960
+    },
+    {
+      "src": "/assets/generated/unique/hero-product-payroll-system.webp",
+      "width": 1200
+    }
+  ],
+  "/assets/generated/unique/hero-product-pos-system.webp": [
+    {
+      "src": "/optimized/generated/hero-product-pos-system-89aa74ce-320.webp",
+      "width": 320
+    },
+    {
+      "src": "/optimized/generated/hero-product-pos-system-89aa74ce-640.webp",
+      "width": 640
+    },
+    {
+      "src": "/optimized/generated/hero-product-pos-system-89aa74ce-960.webp",
+      "width": 960
+    },
+    {
+      "src": "/assets/generated/unique/hero-product-pos-system.webp",
+      "width": 1200
+    }
+  ],
+  "/assets/generated/unique/hero-product-provident-fund.webp": [
+    {
+      "src": "/optimized/generated/hero-product-provident-fund-549aa21e-320.webp",
+      "width": 320
+    },
+    {
+      "src": "/optimized/generated/hero-product-provident-fund-549aa21e-640.webp",
+      "width": 640
+    },
+    {
+      "src": "/optimized/generated/hero-product-provident-fund-549aa21e-960.webp",
+      "width": 960
+    },
+    {
+      "src": "/assets/generated/unique/hero-product-provident-fund.webp",
+      "width": 1200
+    }
+  ],
+  "/assets/generated/unique/hero-product-rupantor-erp.webp": [
+    {
+      "src": "/optimized/generated/hero-product-rupantor-erp-7c1596c6-320.webp",
+      "width": 320
+    },
+    {
+      "src": "/optimized/generated/hero-product-rupantor-erp-7c1596c6-640.webp",
+      "width": 640
+    },
+    {
+      "src": "/optimized/generated/hero-product-rupantor-erp-7c1596c6-960.webp",
+      "width": 960
+    },
+    {
+      "src": "/assets/generated/unique/hero-product-rupantor-erp.webp",
+      "width": 1200
+    }
+  ],
+  "/assets/generated/unique/hero-product-rupantor-inventory.webp": [
+    {
+      "src": "/optimized/generated/hero-product-rupantor-inventory-535adbed-320.webp",
+      "width": 320
+    },
+    {
+      "src": "/optimized/generated/hero-product-rupantor-inventory-535adbed-640.webp",
+      "width": 640
+    },
+    {
+      "src": "/optimized/generated/hero-product-rupantor-inventory-535adbed-960.webp",
+      "width": 960
+    },
+    {
+      "src": "/assets/generated/unique/hero-product-rupantor-inventory.webp",
+      "width": 1200
+    }
+  ],
+  "/assets/generated/unique/hero-product-transformer-monitoring.webp": [
+    {
+      "src": "/optimized/generated/hero-product-transformer-monitoring-cd2d8ffd-320.webp",
+      "width": 320
+    },
+    {
+      "src": "/optimized/generated/hero-product-transformer-monitoring-cd2d8ffd-640.webp",
+      "width": 640
+    },
+    {
+      "src": "/optimized/generated/hero-product-transformer-monitoring-cd2d8ffd-960.webp",
+      "width": 960
+    },
+    {
+      "src": "/assets/generated/unique/hero-product-transformer-monitoring.webp",
+      "width": 1200
+    }
+  ],
+  "/assets/generated/unique/hero-service-bulk-sms.webp": [
+    {
+      "src": "/optimized/generated/hero-service-bulk-sms-2d6e811d-320.webp",
+      "width": 320
+    },
+    {
+      "src": "/optimized/generated/hero-service-bulk-sms-2d6e811d-640.webp",
+      "width": 640
+    },
+    {
+      "src": "/optimized/generated/hero-service-bulk-sms-2d6e811d-960.webp",
+      "width": 960
+    },
+    {
+      "src": "/assets/generated/unique/hero-service-bulk-sms.webp",
+      "width": 1200
+    }
+  ],
+  "/assets/generated/unique/hero-service-consultancy-system-integrator.webp": [
+    {
+      "src": "/optimized/generated/hero-service-consultancy-system-integrator-180c56ea-320.webp",
+      "width": 320
+    },
+    {
+      "src": "/optimized/generated/hero-service-consultancy-system-integrator-180c56ea-640.webp",
+      "width": 640
+    },
+    {
+      "src": "/optimized/generated/hero-service-consultancy-system-integrator-180c56ea-960.webp",
+      "width": 960
+    },
+    {
+      "src": "/assets/generated/unique/hero-service-consultancy-system-integrator.webp",
+      "width": 1200
+    }
+  ],
+  "/assets/generated/unique/hero-service-custom-applications.webp": [
+    {
+      "src": "/optimized/generated/hero-service-custom-applications-ae8179b8-320.webp",
+      "width": 320
+    },
+    {
+      "src": "/optimized/generated/hero-service-custom-applications-ae8179b8-640.webp",
+      "width": 640
+    },
+    {
+      "src": "/optimized/generated/hero-service-custom-applications-ae8179b8-960.webp",
+      "width": 960
+    },
+    {
+      "src": "/assets/generated/unique/hero-service-custom-applications.webp",
+      "width": 1200
+    }
+  ],
+  "/assets/generated/unique/hero-service-erp-consulting.webp": [
+    {
+      "src": "/optimized/generated/hero-service-erp-consulting-8dc57f8c-320.webp",
+      "width": 320
+    },
+    {
+      "src": "/optimized/generated/hero-service-erp-consulting-8dc57f8c-640.webp",
+      "width": 640
+    },
+    {
+      "src": "/optimized/generated/hero-service-erp-consulting-8dc57f8c-960.webp",
+      "width": 960
+    },
+    {
+      "src": "/assets/generated/unique/hero-service-erp-consulting.webp",
+      "width": 1200
+    }
+  ],
+  "/assets/generated/unique/hero-service-field-force-management.webp": [
+    {
+      "src": "/optimized/generated/hero-service-field-force-management-dedaf183-320.webp",
+      "width": 320
+    },
+    {
+      "src": "/optimized/generated/hero-service-field-force-management-dedaf183-640.webp",
+      "width": 640
+    },
+    {
+      "src": "/optimized/generated/hero-service-field-force-management-dedaf183-960.webp",
+      "width": 960
+    },
+    {
+      "src": "/assets/generated/unique/hero-service-field-force-management.webp",
+      "width": 1200
+    }
+  ],
+  "/assets/generated/unique/hero-service-industrial-monitoring.webp": [
+    {
+      "src": "/optimized/generated/hero-service-industrial-monitoring-9f77ef48-320.webp",
+      "width": 320
+    },
+    {
+      "src": "/optimized/generated/hero-service-industrial-monitoring-9f77ef48-640.webp",
+      "width": 640
+    },
+    {
+      "src": "/optimized/generated/hero-service-industrial-monitoring-9f77ef48-960.webp",
+      "width": 960
+    },
+    {
+      "src": "/assets/generated/unique/hero-service-industrial-monitoring.webp",
+      "width": 1200
+    }
+  ],
+  "/assets/generated/unique/hero-service-it-infrastructure.webp": [
+    {
+      "src": "/optimized/generated/hero-service-it-infrastructure-68d8d59d-320.webp",
+      "width": 320
+    },
+    {
+      "src": "/optimized/generated/hero-service-it-infrastructure-68d8d59d-640.webp",
+      "width": 640
+    },
+    {
+      "src": "/optimized/generated/hero-service-it-infrastructure-68d8d59d-960.webp",
+      "width": 960
+    },
+    {
+      "src": "/assets/generated/unique/hero-service-it-infrastructure.webp",
+      "width": 1200
+    }
+  ],
+  "/assets/generated/unique/hero-service-mobile-apps.webp": [
+    {
+      "src": "/optimized/generated/hero-service-mobile-apps-9d0a3136-320.webp",
+      "width": 320
+    },
+    {
+      "src": "/optimized/generated/hero-service-mobile-apps-9d0a3136-640.webp",
+      "width": 640
+    },
+    {
+      "src": "/optimized/generated/hero-service-mobile-apps-9d0a3136-960.webp",
+      "width": 960
+    },
+    {
+      "src": "/assets/generated/unique/hero-service-mobile-apps.webp",
+      "width": 1200
+    }
+  ],
+  "/assets/generated/unique/hero-service-pos-system.webp": [
+    {
+      "src": "/optimized/generated/hero-service-pos-system-ead6b0b8-320.webp",
+      "width": 320
+    },
+    {
+      "src": "/optimized/generated/hero-service-pos-system-ead6b0b8-640.webp",
+      "width": 640
+    },
+    {
+      "src": "/optimized/generated/hero-service-pos-system-ead6b0b8-960.webp",
+      "width": 960
+    },
+    {
+      "src": "/assets/generated/unique/hero-service-pos-system.webp",
+      "width": 1200
+    }
+  ],
+  "/assets/generated/unique/hero-service-power-cooling.webp": [
+    {
+      "src": "/optimized/generated/hero-service-power-cooling-ad196aed-320.webp",
+      "width": 320
+    },
+    {
+      "src": "/optimized/generated/hero-service-power-cooling-ad196aed-640.webp",
+      "width": 640
+    },
+    {
+      "src": "/optimized/generated/hero-service-power-cooling-ad196aed-960.webp",
+      "width": 960
+    },
+    {
+      "src": "/assets/generated/unique/hero-service-power-cooling.webp",
+      "width": 1200
+    }
+  ],
+  "/assets/generated/unique/hero-service-storage-backup.webp": [
+    {
+      "src": "/optimized/generated/hero-service-storage-backup-0df71c90-320.webp",
+      "width": 320
+    },
+    {
+      "src": "/optimized/generated/hero-service-storage-backup-0df71c90-640.webp",
+      "width": 640
+    },
+    {
+      "src": "/optimized/generated/hero-service-storage-backup-0df71c90-960.webp",
+      "width": 960
+    },
+    {
+      "src": "/assets/generated/unique/hero-service-storage-backup.webp",
+      "width": 1200
+    }
+  ],
+  "/assets/generated/unique/hero-service-video-conferencing.webp": [
+    {
+      "src": "/optimized/generated/hero-service-video-conferencing-765ad4eb-320.webp",
+      "width": 320
+    },
+    {
+      "src": "/optimized/generated/hero-service-video-conferencing-765ad4eb-640.webp",
+      "width": 640
+    },
+    {
+      "src": "/optimized/generated/hero-service-video-conferencing-765ad4eb-960.webp",
+      "width": 960
+    },
+    {
+      "src": "/assets/generated/unique/hero-service-video-conferencing.webp",
+      "width": 1200
+    }
+  ],
+  "/assets/generated/unique/hero-service-web-ecommerce.webp": [
+    {
+      "src": "/optimized/generated/hero-service-web-ecommerce-7cfe4c91-320.webp",
+      "width": 320
+    },
+    {
+      "src": "/optimized/generated/hero-service-web-ecommerce-7cfe4c91-640.webp",
+      "width": 640
+    },
+    {
+      "src": "/optimized/generated/hero-service-web-ecommerce-7cfe4c91-960.webp",
+      "width": 960
+    },
+    {
+      "src": "/assets/generated/unique/hero-service-web-ecommerce.webp",
+      "width": 1200
+    }
+  ],
+  "/assets/generated/unique/home-field.webp": [
+    {
+      "src": "/optimized/generated/home-field-9fe3b6d4-320.webp",
+      "width": 320
+    },
+    {
+      "src": "/optimized/generated/home-field-9fe3b6d4-640.webp",
+      "width": 640
+    },
+    {
+      "src": "/optimized/generated/home-field-9fe3b6d4-960.webp",
+      "width": 960
+    },
+    {
+      "src": "/assets/generated/unique/home-field.webp",
+      "width": 1200
+    }
+  ],
+  "/assets/generated/unique/home-service-custom.webp": [
+    {
+      "src": "/optimized/generated/home-service-custom-c911f6fe-320.webp",
+      "width": 320
+    },
+    {
+      "src": "/optimized/generated/home-service-custom-c911f6fe-640.webp",
+      "width": 640
+    },
+    {
+      "src": "/optimized/generated/home-service-custom-c911f6fe-960.webp",
+      "width": 960
+    },
+    {
+      "src": "/assets/generated/unique/home-service-custom.webp",
+      "width": 1200
+    }
+  ],
+  "/assets/generated/unique/home-service-erp.webp": [
+    {
+      "src": "/optimized/generated/home-service-erp-e9f4aff1-320.webp",
+      "width": 320
+    },
+    {
+      "src": "/optimized/generated/home-service-erp-e9f4aff1-640.webp",
+      "width": 640
+    },
+    {
+      "src": "/optimized/generated/home-service-erp-e9f4aff1-960.webp",
+      "width": 960
+    },
+    {
+      "src": "/assets/generated/unique/home-service-erp.webp",
+      "width": 1200
+    }
+  ],
+  "/assets/generated/unique/home-service-web.webp": [
+    {
+      "src": "/optimized/generated/home-service-web-5cdd373f-320.webp",
+      "width": 320
+    },
+    {
+      "src": "/optimized/generated/home-service-web-5cdd373f-640.webp",
+      "width": 640
+    },
+    {
+      "src": "/optimized/generated/home-service-web-5cdd373f-960.webp",
+      "width": 960
+    },
+    {
+      "src": "/assets/generated/unique/home-service-web.webp",
+      "width": 1200
+    }
+  ],
+  "/assets/generated/unique/menu-iot.webp": [
+    {
+      "src": "/optimized/generated/menu-iot-a3acd7e0-320.webp",
+      "width": 320
+    },
+    {
+      "src": "/optimized/generated/menu-iot-a3acd7e0-640.webp",
+      "width": 640
+    },
+    {
+      "src": "/optimized/generated/menu-iot-a3acd7e0-960.webp",
+      "width": 960
+    },
+    {
+      "src": "/assets/generated/unique/menu-iot.webp",
+      "width": 1200
+    }
+  ],
+  "/assets/generated/unique/menu-products.webp": [
+    {
+      "src": "/optimized/generated/menu-products-0fa9ac72-320.webp",
+      "width": 320
+    },
+    {
+      "src": "/optimized/generated/menu-products-0fa9ac72-640.webp",
+      "width": 640
+    },
+    {
+      "src": "/optimized/generated/menu-products-0fa9ac72-960.webp",
+      "width": 960
+    },
+    {
+      "src": "/assets/generated/unique/menu-products.webp",
+      "width": 1200
+    }
+  ],
+  "/assets/generated/unique/menu-services.webp": [
+    {
+      "src": "/optimized/generated/menu-services-d1c26f5d-320.webp",
+      "width": 320
+    },
+    {
+      "src": "/optimized/generated/menu-services-d1c26f5d-640.webp",
+      "width": 640
+    },
+    {
+      "src": "/optimized/generated/menu-services-d1c26f5d-960.webp",
+      "width": 960
+    },
+    {
+      "src": "/assets/generated/unique/menu-services.webp",
+      "width": 1200
+    }
+  ],
+  "/assets/generated/unique/related-e-commerce-field-force-management.webp": [
+    {
+      "src": "/optimized/generated/related-e-commerce-field-force-management-0d9e3559-320.webp",
+      "width": 320
+    },
+    {
+      "src": "/optimized/generated/related-e-commerce-field-force-management-0d9e3559-640.webp",
+      "width": 640
+    },
+    {
+      "src": "/optimized/generated/related-e-commerce-field-force-management-0d9e3559-960.webp",
+      "width": 960
+    },
+    {
+      "src": "/assets/generated/unique/related-e-commerce-field-force-management.webp",
+      "width": 1200
+    }
+  ],
+  "/assets/generated/unique/related-e-commerce-payroll-system.webp": [
+    {
+      "src": "/optimized/generated/related-e-commerce-payroll-system-9fcdeb5e-320.webp",
+      "width": 320
+    },
+    {
+      "src": "/optimized/generated/related-e-commerce-payroll-system-9fcdeb5e-640.webp",
+      "width": 640
+    },
+    {
+      "src": "/optimized/generated/related-e-commerce-payroll-system-9fcdeb5e-960.webp",
+      "width": 960
+    },
+    {
+      "src": "/assets/generated/unique/related-e-commerce-payroll-system.webp",
+      "width": 1200
+    }
+  ],
+  "/assets/generated/unique/related-e-commerce-rupantor-erp.webp": [
+    {
+      "src": "/optimized/generated/related-e-commerce-rupantor-erp-cc70f755-320.webp",
+      "width": 320
+    },
+    {
+      "src": "/optimized/generated/related-e-commerce-rupantor-erp-cc70f755-640.webp",
+      "width": 640
+    },
+    {
+      "src": "/optimized/generated/related-e-commerce-rupantor-erp-cc70f755-960.webp",
+      "width": 960
+    },
+    {
+      "src": "/assets/generated/unique/related-e-commerce-rupantor-erp.webp",
+      "width": 1200
+    }
+  ],
+  "/assets/generated/unique/related-field-force-management-payroll-system.webp": [
+    {
+      "src": "/optimized/generated/related-field-force-management-payroll-system-72d3e57c-320.webp",
+      "width": 320
+    },
+    {
+      "src": "/optimized/generated/related-field-force-management-payroll-system-72d3e57c-640.webp",
+      "width": 640
+    },
+    {
+      "src": "/optimized/generated/related-field-force-management-payroll-system-72d3e57c-960.webp",
+      "width": 960
+    },
+    {
+      "src": "/assets/generated/unique/related-field-force-management-payroll-system.webp",
+      "width": 1200
+    }
+  ],
+  "/assets/generated/unique/related-field-force-management-pos-system.webp": [
+    {
+      "src": "/optimized/generated/related-field-force-management-pos-system-b54353d5-320.webp",
+      "width": 320
+    },
+    {
+      "src": "/optimized/generated/related-field-force-management-pos-system-b54353d5-640.webp",
+      "width": 640
+    },
+    {
+      "src": "/optimized/generated/related-field-force-management-pos-system-b54353d5-960.webp",
+      "width": 960
+    },
+    {
+      "src": "/assets/generated/unique/related-field-force-management-pos-system.webp",
+      "width": 1200
+    }
+  ],
+  "/assets/generated/unique/related-field-force-management-rupantor-erp.webp": [
+    {
+      "src": "/optimized/generated/related-field-force-management-rupantor-erp-8ce4ebda-320.webp",
+      "width": 320
+    },
+    {
+      "src": "/optimized/generated/related-field-force-management-rupantor-erp-8ce4ebda-640.webp",
+      "width": 640
+    },
+    {
+      "src": "/optimized/generated/related-field-force-management-rupantor-erp-8ce4ebda-960.webp",
+      "width": 960
+    },
+    {
+      "src": "/assets/generated/unique/related-field-force-management-rupantor-erp.webp",
+      "width": 1200
+    }
+  ],
+  "/assets/generated/unique/related-hotel-booking-system-field-force-management.webp": [
+    {
+      "src": "/optimized/generated/related-hotel-booking-system-field-force-management-330f5a59-320.webp",
+      "width": 320
+    },
+    {
+      "src": "/optimized/generated/related-hotel-booking-system-field-force-management-330f5a59-640.webp",
+      "width": 640
+    },
+    {
+      "src": "/optimized/generated/related-hotel-booking-system-field-force-management-330f5a59-960.webp",
+      "width": 960
+    },
+    {
+      "src": "/assets/generated/unique/related-hotel-booking-system-field-force-management.webp",
+      "width": 1200
+    }
+  ],
+  "/assets/generated/unique/related-hotel-booking-system-payroll-system.webp": [
+    {
+      "src": "/optimized/generated/related-hotel-booking-system-payroll-system-26645417-320.webp",
+      "width": 320
+    },
+    {
+      "src": "/optimized/generated/related-hotel-booking-system-payroll-system-26645417-640.webp",
+      "width": 640
+    },
+    {
+      "src": "/optimized/generated/related-hotel-booking-system-payroll-system-26645417-960.webp",
+      "width": 960
+    },
+    {
+      "src": "/assets/generated/unique/related-hotel-booking-system-payroll-system.webp",
+      "width": 1200
+    }
+  ],
+  "/assets/generated/unique/related-hotel-booking-system-rupantor-erp.webp": [
+    {
+      "src": "/optimized/generated/related-hotel-booking-system-rupantor-erp-55acbf73-320.webp",
+      "width": 320
+    },
+    {
+      "src": "/optimized/generated/related-hotel-booking-system-rupantor-erp-55acbf73-640.webp",
+      "width": 640
+    },
+    {
+      "src": "/optimized/generated/related-hotel-booking-system-rupantor-erp-55acbf73-960.webp",
+      "width": 960
+    },
+    {
+      "src": "/assets/generated/unique/related-hotel-booking-system-rupantor-erp.webp",
+      "width": 1200
+    }
+  ],
+  "/assets/generated/unique/related-interconnect-billing-field-force-management.webp": [
+    {
+      "src": "/optimized/generated/related-interconnect-billing-field-force-management-7129fde3-320.webp",
+      "width": 320
+    },
+    {
+      "src": "/optimized/generated/related-interconnect-billing-field-force-management-7129fde3-640.webp",
+      "width": 640
+    },
+    {
+      "src": "/optimized/generated/related-interconnect-billing-field-force-management-7129fde3-960.webp",
+      "width": 960
+    },
+    {
+      "src": "/assets/generated/unique/related-interconnect-billing-field-force-management.webp",
+      "width": 1200
+    }
+  ],
+  "/assets/generated/unique/related-interconnect-billing-payroll-system.webp": [
+    {
+      "src": "/optimized/generated/related-interconnect-billing-payroll-system-e49d20cc-320.webp",
+      "width": 320
+    },
+    {
+      "src": "/optimized/generated/related-interconnect-billing-payroll-system-e49d20cc-640.webp",
+      "width": 640
+    },
+    {
+      "src": "/optimized/generated/related-interconnect-billing-payroll-system-e49d20cc-960.webp",
+      "width": 960
+    },
+    {
+      "src": "/assets/generated/unique/related-interconnect-billing-payroll-system.webp",
+      "width": 1200
+    }
+  ],
+  "/assets/generated/unique/related-interconnect-billing-rupantor-erp.webp": [
+    {
+      "src": "/optimized/generated/related-interconnect-billing-rupantor-erp-5cc7d2c5-320.webp",
+      "width": 320
+    },
+    {
+      "src": "/optimized/generated/related-interconnect-billing-rupantor-erp-5cc7d2c5-640.webp",
+      "width": 640
+    },
+    {
+      "src": "/optimized/generated/related-interconnect-billing-rupantor-erp-5cc7d2c5-960.webp",
+      "width": 960
+    },
+    {
+      "src": "/assets/generated/unique/related-interconnect-billing-rupantor-erp.webp",
+      "width": 1200
+    }
+  ],
+  "/assets/generated/unique/related-payroll-system-field-force-management.webp": [
+    {
+      "src": "/optimized/generated/related-payroll-system-field-force-management-0e0a1e77-320.webp",
+      "width": 320
+    },
+    {
+      "src": "/optimized/generated/related-payroll-system-field-force-management-0e0a1e77-640.webp",
+      "width": 640
+    },
+    {
+      "src": "/optimized/generated/related-payroll-system-field-force-management-0e0a1e77-960.webp",
+      "width": 960
+    },
+    {
+      "src": "/assets/generated/unique/related-payroll-system-field-force-management.webp",
+      "width": 1200
+    }
+  ],
+  "/assets/generated/unique/related-payroll-system-pos-system.webp": [
+    {
+      "src": "/optimized/generated/related-payroll-system-pos-system-845aead4-320.webp",
+      "width": 320
+    },
+    {
+      "src": "/optimized/generated/related-payroll-system-pos-system-845aead4-640.webp",
+      "width": 640
+    },
+    {
+      "src": "/optimized/generated/related-payroll-system-pos-system-845aead4-960.webp",
+      "width": 960
+    },
+    {
+      "src": "/assets/generated/unique/related-payroll-system-pos-system.webp",
+      "width": 1200
+    }
+  ],
+  "/assets/generated/unique/related-payroll-system-rupantor-erp.webp": [
+    {
+      "src": "/optimized/generated/related-payroll-system-rupantor-erp-f35c408f-320.webp",
+      "width": 320
+    },
+    {
+      "src": "/optimized/generated/related-payroll-system-rupantor-erp-f35c408f-640.webp",
+      "width": 640
+    },
+    {
+      "src": "/optimized/generated/related-payroll-system-rupantor-erp-f35c408f-960.webp",
+      "width": 960
+    },
+    {
+      "src": "/assets/generated/unique/related-payroll-system-rupantor-erp.webp",
+      "width": 1200
+    }
+  ],
+  "/assets/generated/unique/related-pos-system-field-force-management.webp": [
+    {
+      "src": "/optimized/generated/related-pos-system-field-force-management-d9e81ae6-320.webp",
+      "width": 320
+    },
+    {
+      "src": "/optimized/generated/related-pos-system-field-force-management-d9e81ae6-640.webp",
+      "width": 640
+    },
+    {
+      "src": "/optimized/generated/related-pos-system-field-force-management-d9e81ae6-960.webp",
+      "width": 960
+    },
+    {
+      "src": "/assets/generated/unique/related-pos-system-field-force-management.webp",
+      "width": 1200
+    }
+  ],
+  "/assets/generated/unique/related-pos-system-payroll-system.webp": [
+    {
+      "src": "/optimized/generated/related-pos-system-payroll-system-c9a3762f-320.webp",
+      "width": 320
+    },
+    {
+      "src": "/optimized/generated/related-pos-system-payroll-system-c9a3762f-640.webp",
+      "width": 640
+    },
+    {
+      "src": "/optimized/generated/related-pos-system-payroll-system-c9a3762f-960.webp",
+      "width": 960
+    },
+    {
+      "src": "/assets/generated/unique/related-pos-system-payroll-system.webp",
+      "width": 1200
+    }
+  ],
+  "/assets/generated/unique/related-pos-system-rupantor-erp.webp": [
+    {
+      "src": "/optimized/generated/related-pos-system-rupantor-erp-9e715dbc-320.webp",
+      "width": 320
+    },
+    {
+      "src": "/optimized/generated/related-pos-system-rupantor-erp-9e715dbc-640.webp",
+      "width": 640
+    },
+    {
+      "src": "/optimized/generated/related-pos-system-rupantor-erp-9e715dbc-960.webp",
+      "width": 960
+    },
+    {
+      "src": "/assets/generated/unique/related-pos-system-rupantor-erp.webp",
+      "width": 1200
+    }
+  ],
+  "/assets/generated/unique/related-provident-fund-field-force-management.webp": [
+    {
+      "src": "/optimized/generated/related-provident-fund-field-force-management-fa6d9fd9-320.webp",
+      "width": 320
+    },
+    {
+      "src": "/optimized/generated/related-provident-fund-field-force-management-fa6d9fd9-640.webp",
+      "width": 640
+    },
+    {
+      "src": "/optimized/generated/related-provident-fund-field-force-management-fa6d9fd9-960.webp",
+      "width": 960
+    },
+    {
+      "src": "/assets/generated/unique/related-provident-fund-field-force-management.webp",
+      "width": 1200
+    }
+  ],
+  "/assets/generated/unique/related-provident-fund-payroll-system.webp": [
+    {
+      "src": "/optimized/generated/related-provident-fund-payroll-system-1690886e-320.webp",
+      "width": 320
+    },
+    {
+      "src": "/optimized/generated/related-provident-fund-payroll-system-1690886e-640.webp",
+      "width": 640
+    },
+    {
+      "src": "/optimized/generated/related-provident-fund-payroll-system-1690886e-960.webp",
+      "width": 960
+    },
+    {
+      "src": "/assets/generated/unique/related-provident-fund-payroll-system.webp",
+      "width": 1200
+    }
+  ],
+  "/assets/generated/unique/related-provident-fund-rupantor-erp.webp": [
+    {
+      "src": "/optimized/generated/related-provident-fund-rupantor-erp-4cefee8f-320.webp",
+      "width": 320
+    },
+    {
+      "src": "/optimized/generated/related-provident-fund-rupantor-erp-4cefee8f-640.webp",
+      "width": 640
+    },
+    {
+      "src": "/optimized/generated/related-provident-fund-rupantor-erp-4cefee8f-960.webp",
+      "width": 960
+    },
+    {
+      "src": "/assets/generated/unique/related-provident-fund-rupantor-erp.webp",
+      "width": 1200
+    }
+  ],
+  "/assets/generated/unique/related-rupantor-erp-field-force-management.webp": [
+    {
+      "src": "/optimized/generated/related-rupantor-erp-field-force-management-c3b27907-320.webp",
+      "width": 320
+    },
+    {
+      "src": "/optimized/generated/related-rupantor-erp-field-force-management-c3b27907-640.webp",
+      "width": 640
+    },
+    {
+      "src": "/optimized/generated/related-rupantor-erp-field-force-management-c3b27907-960.webp",
+      "width": 960
+    },
+    {
+      "src": "/assets/generated/unique/related-rupantor-erp-field-force-management.webp",
+      "width": 1200
+    }
+  ],
+  "/assets/generated/unique/related-rupantor-erp-payroll-system.webp": [
+    {
+      "src": "/optimized/generated/related-rupantor-erp-payroll-system-b5e39a63-320.webp",
+      "width": 320
+    },
+    {
+      "src": "/optimized/generated/related-rupantor-erp-payroll-system-b5e39a63-640.webp",
+      "width": 640
+    },
+    {
+      "src": "/optimized/generated/related-rupantor-erp-payroll-system-b5e39a63-960.webp",
+      "width": 960
+    },
+    {
+      "src": "/assets/generated/unique/related-rupantor-erp-payroll-system.webp",
+      "width": 1200
+    }
+  ],
+  "/assets/generated/unique/related-rupantor-erp-pos-system.webp": [
+    {
+      "src": "/optimized/generated/related-rupantor-erp-pos-system-f2e918c6-320.webp",
+      "width": 320
+    },
+    {
+      "src": "/optimized/generated/related-rupantor-erp-pos-system-f2e918c6-640.webp",
+      "width": 640
+    },
+    {
+      "src": "/optimized/generated/related-rupantor-erp-pos-system-f2e918c6-960.webp",
+      "width": 960
+    },
+    {
+      "src": "/assets/generated/unique/related-rupantor-erp-pos-system.webp",
+      "width": 1200
+    }
+  ],
+  "/assets/generated/unique/related-rupantor-inventory-field-force-management.webp": [
+    {
+      "src": "/optimized/generated/related-rupantor-inventory-field-force-management-36b76de8-320.webp",
+      "width": 320
+    },
+    {
+      "src": "/optimized/generated/related-rupantor-inventory-field-force-management-36b76de8-640.webp",
+      "width": 640
+    },
+    {
+      "src": "/optimized/generated/related-rupantor-inventory-field-force-management-36b76de8-960.webp",
+      "width": 960
+    },
+    {
+      "src": "/assets/generated/unique/related-rupantor-inventory-field-force-management.webp",
+      "width": 1200
+    }
+  ],
+  "/assets/generated/unique/related-rupantor-inventory-payroll-system.webp": [
+    {
+      "src": "/optimized/generated/related-rupantor-inventory-payroll-system-591e8ac4-320.webp",
+      "width": 320
+    },
+    {
+      "src": "/optimized/generated/related-rupantor-inventory-payroll-system-591e8ac4-640.webp",
+      "width": 640
+    },
+    {
+      "src": "/optimized/generated/related-rupantor-inventory-payroll-system-591e8ac4-960.webp",
+      "width": 960
+    },
+    {
+      "src": "/assets/generated/unique/related-rupantor-inventory-payroll-system.webp",
+      "width": 1200
+    }
+  ],
+  "/assets/generated/unique/related-rupantor-inventory-rupantor-erp.webp": [
+    {
+      "src": "/optimized/generated/related-rupantor-inventory-rupantor-erp-5cfc15da-320.webp",
+      "width": 320
+    },
+    {
+      "src": "/optimized/generated/related-rupantor-inventory-rupantor-erp-5cfc15da-640.webp",
+      "width": 640
+    },
+    {
+      "src": "/optimized/generated/related-rupantor-inventory-rupantor-erp-5cfc15da-960.webp",
+      "width": 960
+    },
+    {
+      "src": "/assets/generated/unique/related-rupantor-inventory-rupantor-erp.webp",
+      "width": 1200
+    }
+  ],
+  "/assets/generated/unique/related-transformer-monitoring-field-force-management.webp": [
+    {
+      "src": "/optimized/generated/related-transformer-monitoring-field-force-management-066abd2c-320.webp",
+      "width": 320
+    },
+    {
+      "src": "/optimized/generated/related-transformer-monitoring-field-force-management-066abd2c-640.webp",
+      "width": 640
+    },
+    {
+      "src": "/optimized/generated/related-transformer-monitoring-field-force-management-066abd2c-960.webp",
+      "width": 960
+    },
+    {
+      "src": "/assets/generated/unique/related-transformer-monitoring-field-force-management.webp",
+      "width": 1200
+    }
+  ],
+  "/assets/generated/unique/related-transformer-monitoring-payroll-system.webp": [
+    {
+      "src": "/optimized/generated/related-transformer-monitoring-payroll-system-6e1a3e5c-320.webp",
+      "width": 320
+    },
+    {
+      "src": "/optimized/generated/related-transformer-monitoring-payroll-system-6e1a3e5c-640.webp",
+      "width": 640
+    },
+    {
+      "src": "/optimized/generated/related-transformer-monitoring-payroll-system-6e1a3e5c-960.webp",
+      "width": 960
+    },
+    {
+      "src": "/assets/generated/unique/related-transformer-monitoring-payroll-system.webp",
+      "width": 1200
+    }
+  ],
+  "/assets/generated/unique/related-transformer-monitoring-rupantor-erp.webp": [
+    {
+      "src": "/optimized/generated/related-transformer-monitoring-rupantor-erp-d0d4e9df-320.webp",
+      "width": 320
+    },
+    {
+      "src": "/optimized/generated/related-transformer-monitoring-rupantor-erp-d0d4e9df-640.webp",
+      "width": 640
+    },
+    {
+      "src": "/optimized/generated/related-transformer-monitoring-rupantor-erp-d0d4e9df-960.webp",
+      "width": 960
+    },
+    {
+      "src": "/assets/generated/unique/related-transformer-monitoring-rupantor-erp.webp",
+      "width": 1200
+    }
+  ],
+  "/assets/company-original.png": [
+    {
+      "src": "/optimized/presentation-company-original-320.webp",
+      "width": 320
+    },
+    {
+      "src": "/optimized/presentation-company-original-640.webp",
+      "width": 640
+    },
+    {
+      "src": "/optimized/presentation-company-original-960.webp",
+      "width": 960
+    },
+    {
+      "src": "/optimized/presentation-company-original-1280.webp",
+      "width": 1280
+    }
+  ],
+  "/assets/field-force.497227c8.png": [
+    {
+      "src": "/optimized/presentation-field-force.497227c8-320.webp",
+      "width": 320
+    },
+    {
+      "src": "/optimized/presentation-field-force.497227c8-640.webp",
+      "width": 640
+    },
+    {
+      "src": "/optimized/presentation-field-force.497227c8-960.webp",
+      "width": 960
+    }
+  ],
+  "/assets/Dashboard_2.543c09b5.jpg": [
+    {
+      "src": "/optimized/presentation-Dashboard_2.543c09b5-320.webp",
+      "width": 320
+    },
+    {
+      "src": "/optimized/presentation-Dashboard_2.543c09b5-640.webp",
+      "width": 640
+    },
+    {
+      "src": "/optimized/presentation-Dashboard_2.543c09b5-960.webp",
+      "width": 960
+    },
+    {
+      "src": "/optimized/presentation-Dashboard_2.543c09b5-1280.webp",
+      "width": 1280
+    }
+  ],
+  "/assets/Dashboard_1.0929c23a.jpg": [
+    {
+      "src": "/optimized/presentation-Dashboard_1.0929c23a-320.webp",
+      "width": 320
+    },
+    {
+      "src": "/optimized/presentation-Dashboard_1.0929c23a-640.webp",
+      "width": 640
+    },
+    {
+      "src": "/optimized/presentation-Dashboard_1.0929c23a-960.webp",
+      "width": 960
+    },
+    {
+      "src": "/optimized/presentation-Dashboard_1.0929c23a-1280.webp",
+      "width": 1280
+    }
+  ],
+  "/assets/IEMS Diagram.d39e87e4.png": [
+    {
+      "src": "/optimized/presentation-iems-diagram-320.webp",
+      "width": 320
+    },
+    {
+      "src": "/optimized/presentation-iems-diagram-640.webp",
+      "width": 640
+    },
+    {
+      "src": "/optimized/presentation-iems-diagram-960.webp",
+      "width": 960
+    }
   ]
 }

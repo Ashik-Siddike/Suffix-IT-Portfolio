@@ -1,24 +1,39 @@
 import { test, expect } from '@playwright/test';
 
-test('Home hero reacts to the pointer, resets on leave and stays still with reduced motion', async ({
-  page,
-}) => {
+test('Home hero stays still on pointer movement without a canvas renderer', async ({ page }) => {
   await page.emulateMedia({ reducedMotion: 'no-preference' });
   await page.goto('/');
   const stage = page.locator('.hero-technology-stage');
   await expect(stage).toHaveCSS('opacity', '1');
+  const before = await page
+    .locator('.hero-stage-object')
+    .evaluate((el) => getComputedStyle(el).transform);
   const rect = await stage.boundingBox();
   await page.mouse.move(rect.x + rect.width * 0.9, rect.y + rect.height * 0.3);
-  await expect
-    .poll(() => stage.evaluate((el) => parseFloat(el.style.getPropertyValue('--stage-x'))))
-    .toBeGreaterThan(4);
-  await page.mouse.move(0, 0);
-  await expect
-    .poll(() => stage.evaluate((el) => el.style.getPropertyValue('--stage-x')))
-    .toBe('0px');
+  await expect(page.locator('.home-hero canvas')).toHaveCount(0);
+  expect(
+    await page.locator('.hero-stage-object').evaluate((el) => getComputedStyle(el).transform),
+  ).toBe(before);
+});
+
+test('hero backdrop pauses offscreen and respects live reduced motion settings', async ({
+  page,
+}) => {
+  await page.setViewportSize({ width: 1440, height: 900 });
+  await page.emulateMedia({ reducedMotion: 'no-preference' });
+  await page.goto('/');
+  const backdrop = page.locator('.hero-curves');
+  const curve = backdrop.locator('.hero-curve-right');
+  await expect(backdrop).toHaveAttribute('data-motion', 'active');
+  await expect(curve).toHaveCSS('animation-play-state', 'running');
+  await page.evaluate(() => window.scrollTo(0, document.body.scrollHeight));
+  await expect(backdrop).toHaveAttribute('data-motion', 'static');
+  await expect(curve).toHaveCSS('animation-play-state', 'paused');
+  await page.evaluate(() => window.scrollTo(0, 0));
+  await expect(backdrop).toHaveAttribute('data-motion', 'active');
   await page.emulateMedia({ reducedMotion: 'reduce' });
-  await page.mouse.move(rect.x + rect.width * 0.9, rect.y + rect.height * 0.3);
-  await expect(page.locator('.hero-stage-object')).toHaveCSS('transform', 'none');
+  await expect(backdrop).toHaveAttribute('data-motion', 'static');
+  await expect(curve).toHaveCSS('animation-name', 'none');
 });
 
 test('ambient canvases respond, pause offscreen and follow live motion preferences', async ({
