@@ -111,14 +111,13 @@
 }
 .field-feature-chips li {
   transform-origin: center;
+  transform: translate(var(--chip-tx, 0px), var(--chip-ty, 0px)) scale(var(--chip-scale, 1));
   transition:
-    transform 0.35s ease,
-    background 0.35s,
-    color 0.35s,
-    border-color 0.35s;
-}
-.field-feature-chips li:hover {
-  transform: scale(1.045);
+    transform 0.32s cubic-bezier(0.25, 1, 0.5, 1),
+    background 0.3s ease,
+    color 0.3s ease,
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
 }
 .restored-field .button {
   transition: transform 0.35s ease;

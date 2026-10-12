@@ -54,30 +54,21 @@ function SoftwareScene({ product, index }) {
 
 export default function SoftwareCircuitSection() {
   const section = useRef(null);
-  const [nearby, setNearby] = useState(false);
   const eligible = useSyncExternalStore(subscribeToStoryMode, storyModeSnapshot, () => false);
+  const [ready, setReady] = useState(false);
+
   useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          setNearby(true);
-          observer.disconnect();
-        }
-      },
-      { rootMargin: '1800px 0px' },
-    );
-    // Warm the controller near the entrance, not the entire long static transcript.
-    // Jumping straight to the footer must not activate a late pin above the reader.
-    observer.observe(section.current.querySelector('.software-story-size-probe'));
-    return () => observer.disconnect();
+    // Activate controller on client mount once eligible
+    setReady(true);
   }, []);
+
   return (
     <section
       ref={section}
       className="software-story"
       id="software-in-action"
       aria-labelledby="software-in-action-title"
-      data-story-mode="vertical"
+      data-story-mode={eligible ? 'horizontal' : 'vertical'}
     >
       <span className="software-story-size-probe" aria-hidden="true" />
       <div className="software-story-pin">
@@ -106,7 +97,7 @@ export default function SoftwareCircuitSection() {
           </div>
         </Container>
       </div>
-      {nearby && eligible && (
+      {ready && eligible && (
         <Suspense fallback={null}>
           <SoftwareScrollController section={section} />
         </Suspense>

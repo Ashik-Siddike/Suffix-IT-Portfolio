@@ -1,4 +1,4 @@
-﻿.software-story {
+.software-story {
   --story-header-height: 97px;
   --story-screen-height: calc(100svh - var(--story-header-height));
   --story-body-height: clamp(380px, calc(var(--story-screen-height) - 156px), 540px);
@@ -284,57 +284,532 @@
   height: auto;
   margin-bottom: 8px;
   color: var(--color-brand);
+  overflow: visible;
 }
-.software-circuit-inactive {
-  stroke: #cbe3f5;
-  stroke-width: 2;
+
+/* Secondary Auxiliary PCB Bus Trace */
+.software-circuit-aux-trace {
+  stroke: #d7eaf7;
+  stroke-width: 1.2;
+  stroke-dasharray: 4 3;
+  stroke-linecap: square;
+  stroke-linejoin: miter;
 }
-.software-circuit-progress {
-  stroke: var(--color-brand);
-  stroke-width: 2.4;
-  stroke-dasharray: 1;
-  stroke-dashoffset: 0;
-}
-.software-circuit-inactive,
-.software-circuit-progress {
-  stroke-linecap: round;
-  stroke-linejoin: round;
-}
-.software-circuit-branch {
-  stroke: #b7d7ed;
+
+.software-circuit-aux-via {
+  fill: #f0f7fd;
+  stroke: #c2dff5;
   stroke-width: 1;
 }
-.software-circuit-node-halo {
-  fill: transparent;
+
+/* Base Inactive Circuit Trace (45-degree mitered PCB track) */
+.software-circuit-inactive {
+  stroke: #c2dff5;
+  stroke-width: 2.2;
 }
-.software-circuit-node-ring {
+
+/* Energized Electric Progress Trace */
+.software-circuit-progress {
+  stroke: url(#software-circuit-progress-grad);
+  stroke-width: 3;
+  stroke-dasharray: 1;
+  stroke-dashoffset: 1;
+  filter: drop-shadow(0 0 5px rgba(0, 168, 255, 0.75)) drop-shadow(0 0 1px #0072bc);
+  transition: stroke-dashoffset 0.1s linear;
+}
+
+.software-circuit-inactive,
+.software-circuit-progress {
+  stroke-linecap: square;
+  stroke-linejoin: miter;
+}
+
+/* PCB Branches and Micro Components */
+.software-circuit-branch {
+  stroke: #b3d6ef;
+  stroke-width: 1.2;
+  stroke-linecap: square;
+  stroke-linejoin: miter;
+  transition: stroke 0.3s ease, filter 0.3s ease;
+}
+
+.software-circuit-via-ring {
+  fill: #f4faff;
+  stroke: #b3d6ef;
+  stroke-width: 1.2;
+  transition: stroke 0.3s ease, fill 0.3s ease;
+}
+
+.software-circuit-via-hole {
+  fill: #8ab6d6;
+  transition: fill 0.3s ease;
+}
+
+.software-circuit-smd {
+  fill: #c5e1f7;
+  stroke: #a2cceb;
+  stroke-width: 0.8;
+  transition: fill 0.3s ease, stroke 0.3s ease;
+}
+
+.software-circuit-smd-line {
+  stroke: #b3d6ef;
+  stroke-width: 1;
+  transition: stroke 0.3s ease;
+}
+
+.software-circuit-node {
+  cursor: pointer;
+  outline: none;
+  transform-origin: center;
+  transition: transform 0.2s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.software-circuit-node:hover {
+  transform: translateY(-1.5px);
+}
+
+.software-circuit-node:focus-visible .software-circuit-pad-land {
+  stroke: #00a8ff;
+  stroke-width: 2.4;
+  filter: drop-shadow(0 0 8px rgba(0, 168, 255, 0.75));
+}
+
+/* PCB Solder Pad Land (Rounded Outer Square Chip Body) */
+.software-circuit-pad-land {
   fill: #f6fbff;
   stroke: #b5d8ef;
+  stroke-width: 1.2;
+  transition: stroke 0.3s ease, fill 0.3s ease, filter 0.3s ease;
+}
+
+/* Sci-Fi Cyber Target HUD Corner Brackets */
+.software-circuit-cyber-brackets {
+  fill: none;
+  stroke: #c2dff5;
+  stroke-width: 1.2;
+  stroke-linecap: square;
+  stroke-linejoin: miter;
+  transition: stroke 0.3s ease, filter 0.3s ease;
+}
+
+.software-circuit-terminal-notches {
+  stroke: #9ec9e8;
+  stroke-width: 1.2;
+  stroke-linecap: square;
+  transition: stroke 0.3s ease;
+}
+
+.software-circuit-node-halo {
+  fill: transparent;
+  transform-origin: center;
+  transition: fill 0.3s ease;
+}
+
+/* Concentric Circle 1: Annular Outer Target Ring */
+.software-circuit-node-ring {
+  fill: #ffffff;
+  stroke: #aed5f1;
+  stroke-width: 1.6;
+  transition: stroke 0.3s ease, fill 0.3s ease;
+}
+
+/* Concentric Circle 2: Inner Cyber Reticle Ring */
+.software-circuit-node-inner-ring {
+  fill: none;
+  stroke: #cbe4f8;
+  stroke-width: 1;
+  transition: stroke 0.3s ease;
+}
+
+/* Concentric Circle 3: Plated Through-Hole Laser Diode Core */
+.software-circuit-node-core {
+  fill: #b2d7f0;
+  transition: fill 0.3s ease, filter 0.3s ease;
+}
+
+/* Secondary Micro Branch Trace & Extension Terminal Dots */
+.software-circuit-branch-micro {
+  fill: none;
+  stroke: #cfe4f5;
+  stroke-width: 1;
+  stroke-linecap: square;
+  stroke-linejoin: miter;
+  transition: stroke 0.3s ease;
+}
+
+.software-circuit-branch-dot-line {
+  stroke: #c2dff5;
+  stroke-width: 0.9;
+  stroke-dasharray: 2 2;
+  transition: stroke 0.3s ease;
+}
+
+.software-circuit-branch-dot {
+  fill: #b8dcf5;
+  stroke: #e4f4ff;
+  stroke-width: 0.8;
+  transition: fill 0.3s ease, stroke 0.3s ease, filter 0.3s ease;
+}
+
+.software-circuit-node-tag {
+  fill: #7da5c4;
+  font: 500 7.5px ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  letter-spacing: 0.08em;
+  user-select: none;
+  transition: fill 0.3s ease;
+}
+
+.software-circuit-node-num {
+  fill: #536475;
+  font: 600 11px ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  letter-spacing: 0.04em;
+  user-select: none;
+  transition: fill 0.3s ease, font-weight 0.3s ease;
+}
+
+/* INACTIVE UNREACHED NODES (Soft and unpowered) */
+.software-circuit-node:not([data-active='true']) .software-circuit-pad-land {
+  fill: #f8fcff;
+  stroke: #c8e2f5;
+}
+.software-circuit-node:not([data-active='true']) .software-circuit-cyber-brackets {
+  stroke: #c8e2f5;
+}
+.software-circuit-node:not([data-active='true']) .software-circuit-node-ring {
+  stroke: #c5e1f7;
+  fill: #ffffff;
+}
+.software-circuit-node:not([data-active='true']) .software-circuit-node-inner-ring {
+  stroke: #d4eaf9;
+}
+.software-circuit-node:not([data-active='true']) .software-circuit-node-core {
+  fill: #d2e7f7;
+  filter: none;
+}
+.software-circuit-node:not([data-active='true']) .software-circuit-branch {
+  stroke: #cfe4f5;
+}
+.software-circuit-node:not([data-active='true']) .software-circuit-branch-micro {
+  stroke: #cfe4f5;
+}
+.software-circuit-node:not([data-active='true']) .software-circuit-branch-dot {
+  fill: #cbe6fa;
+}
+
+/* STAGE 1 ACTIVE NODES: Chapters 01 - 04 (indexes 0, 1, 2, 3) - Brand Royal Blue */
+.software-circuit-node:is([data-index='0'], [data-index='1'], [data-index='2'], [data-index='3'])[data-active='true'] .software-circuit-pad-land {
+  stroke: #7ec2f2;
+  fill: #edf7ff;
+}
+.software-circuit-node:is([data-index='0'], [data-index='1'], [data-index='2'], [data-index='3'])[data-active='true'] .software-circuit-cyber-brackets {
+  stroke: #7ec2f2;
+  stroke-width: 1.4;
+}
+.software-circuit-node:is([data-index='0'], [data-index='1'], [data-index='2'], [data-index='3'])[data-active='true'] .software-circuit-node-ring {
+  stroke: #0072bc;
+  stroke-width: 2;
+}
+.software-circuit-node:is([data-index='0'], [data-index='1'], [data-index='2'], [data-index='3'])[data-active='true'] .software-circuit-node-inner-ring {
+  stroke: #38bdf8;
+  stroke-width: 1.2;
+}
+.software-circuit-node:is([data-index='0'], [data-index='1'], [data-index='2'], [data-index='3'])[data-active='true'] .software-circuit-node-core {
+  fill: #0072bc;
+  filter: drop-shadow(0 0 3px rgba(0, 114, 188, 0.6));
+}
+.software-circuit-node:is([data-index='0'], [data-index='1'], [data-index='2'], [data-index='3'])[data-active='true'] .software-circuit-branch {
+  stroke: #38bdf8;
+  filter: drop-shadow(0 0 2px rgba(56, 189, 248, 0.4));
+}
+.software-circuit-node:is([data-index='0'], [data-index='1'], [data-index='2'], [data-index='3'])[data-active='true'] .software-circuit-branch-micro {
+  stroke: #7ec2f2;
+}
+.software-circuit-node:is([data-index='0'], [data-index='1'], [data-index='2'], [data-index='3'])[data-active='true'] .software-circuit-branch-dot-line {
+  stroke: #7ec2f2;
+}
+.software-circuit-node:is([data-index='0'], [data-index='1'], [data-index='2'], [data-index='3'])[data-active='true'] .software-circuit-branch-dot {
+  fill: #0072bc;
+  stroke: #7ec2f2;
+  filter: drop-shadow(0 0 2px rgba(0, 114, 188, 0.5));
+}
+.software-circuit-node:is([data-index='0'], [data-index='1'], [data-index='2'], [data-index='3'])[data-active='true'] .software-circuit-via-ring {
+  stroke: #0072bc;
+  fill: #e0f2fe;
+}
+.software-circuit-node:is([data-index='0'], [data-index='1'], [data-index='2'], [data-index='3'])[data-active='true'] .software-circuit-via-hole {
+  fill: #0072bc;
+}
+.software-circuit-node:is([data-index='0'], [data-index='1'], [data-index='2'], [data-index='3'])[data-active='true'] .software-circuit-smd {
+  fill: #38bdf8;
+  stroke: #0072bc;
+}
+.software-circuit-node:is([data-index='0'], [data-index='1'], [data-index='2'], [data-index='3'])[data-active='true'] .software-circuit-terminal-notches {
+  stroke: #0072bc;
+}
+.software-circuit-node:is([data-index='0'], [data-index='1'], [data-index='2'], [data-index='3'])[data-active='true'] .software-circuit-node-tag {
+  fill: #0072bc;
+  font-weight: 600;
+}
+
+/* STAGE 2 ACTIVE NODES: Chapters 05 - 08 (indexes 4, 5, 6, 7) - Electric Cyan */
+.software-circuit-node:is([data-index='4'], [data-index='5'], [data-index='6'], [data-index='7'])[data-active='true'] .software-circuit-pad-land {
+  stroke: #38bdf8;
+  fill: #e6f6ff;
+}
+.software-circuit-node:is([data-index='4'], [data-index='5'], [data-index='6'], [data-index='7'])[data-active='true'] .software-circuit-cyber-brackets {
+  stroke: #38bdf8;
+  stroke-width: 1.4;
+}
+.software-circuit-node:is([data-index='4'], [data-index='5'], [data-index='6'], [data-index='7'])[data-active='true'] .software-circuit-node-ring {
+  stroke: #0284c7;
+  stroke-width: 2;
+}
+.software-circuit-node:is([data-index='4'], [data-index='5'], [data-index='6'], [data-index='7'])[data-active='true'] .software-circuit-node-inner-ring {
+  stroke: #00c8f8;
+  stroke-width: 1.2;
+}
+.software-circuit-node:is([data-index='4'], [data-index='5'], [data-index='6'], [data-index='7'])[data-active='true'] .software-circuit-node-core {
+  fill: #00a8ff;
+  filter: drop-shadow(0 0 4px rgba(0, 168, 255, 0.75));
+}
+.software-circuit-node:is([data-index='4'], [data-index='5'], [data-index='6'], [data-index='7'])[data-active='true'] .software-circuit-branch {
+  stroke: #00b4d8;
+  filter: drop-shadow(0 0 2px rgba(0, 180, 216, 0.5));
+}
+.software-circuit-node:is([data-index='4'], [data-index='5'], [data-index='6'], [data-index='7'])[data-active='true'] .software-circuit-branch-micro {
+  stroke: #38bdf8;
+}
+.software-circuit-node:is([data-index='4'], [data-index='5'], [data-index='6'], [data-index='7'])[data-active='true'] .software-circuit-branch-dot-line {
+  stroke: #38bdf8;
+}
+.software-circuit-node:is([data-index='4'], [data-index='5'], [data-index='6'], [data-index='7'])[data-active='true'] .software-circuit-branch-dot {
+  fill: #0284c7;
+  stroke: #38bdf8;
+  filter: drop-shadow(0 0 3px rgba(2, 132, 199, 0.6));
+}
+.software-circuit-node:is([data-index='4'], [data-index='5'], [data-index='6'], [data-index='7'])[data-active='true'] .software-circuit-via-ring {
+  stroke: #0284c7;
+  fill: #dff6ff;
+}
+.software-circuit-node:is([data-index='4'], [data-index='5'], [data-index='6'], [data-index='7'])[data-active='true'] .software-circuit-via-hole {
+  fill: #0284c7;
+}
+.software-circuit-node:is([data-index='4'], [data-index='5'], [data-index='6'], [data-index='7'])[data-active='true'] .software-circuit-smd {
+  fill: #00c8f8;
+  stroke: #0284c7;
+}
+.software-circuit-node:is([data-index='4'], [data-index='5'], [data-index='6'], [data-index='7'])[data-active='true'] .software-circuit-terminal-notches {
+  stroke: #0284c7;
+}
+.software-circuit-node:is([data-index='4'], [data-index='5'], [data-index='6'], [data-index='7'])[data-active='true'] .software-circuit-node-tag {
+  fill: #0284c7;
+  font-weight: 600;
+}
+
+/* STAGE 3 ACTIVE NODES: Chapters 09 - 11 (indexes 8, 9, 10) - High-Voltage Neon Aqua */
+.software-circuit-node:is([data-index='8'], [data-index='9'], [data-index='10'])[data-active='true'] .software-circuit-pad-land {
+  stroke: #00c8f8;
+  fill: #e0faff;
+}
+.software-circuit-node:is([data-index='8'], [data-index='9'], [data-index='10'])[data-active='true'] .software-circuit-cyber-brackets {
+  stroke: #00c8f8;
   stroke-width: 1.5;
 }
-.software-circuit-node-core {
-  fill: #bddbec;
+.software-circuit-node:is([data-index='8'], [data-index='9'], [data-index='10'])[data-active='true'] .software-circuit-node-ring {
+  stroke: #00b4d8;
+  stroke-width: 2.2;
 }
-.software-circuit-node text {
-  fill: #536475;
-  font: 11px var(--font-sans);
+.software-circuit-node:is([data-index='8'], [data-index='9'], [data-index='10'])[data-active='true'] .software-circuit-node-inner-ring {
+  stroke: #00e5ff;
+  stroke-width: 1.3;
 }
-.software-circuit-node[data-active='true'] .software-circuit-node-ring {
-  stroke: var(--color-brand);
+.software-circuit-node:is([data-index='8'], [data-index='9'], [data-index='10'])[data-active='true'] .software-circuit-node-core {
+  fill: #00e5ff;
+  filter: drop-shadow(0 0 5px rgba(0, 229, 255, 0.85));
 }
-.software-circuit-node[data-active='true'] .software-circuit-node-core {
-  fill: var(--color-brand);
+.software-circuit-node:is([data-index='8'], [data-index='9'], [data-index='10'])[data-active='true'] .software-circuit-branch {
+  stroke: #00e5ff;
+  filter: drop-shadow(0 0 3px rgba(0, 229, 255, 0.6));
 }
+.software-circuit-node:is([data-index='8'], [data-index='9'], [data-index='10'])[data-active='true'] .software-circuit-branch-micro {
+  stroke: #00c8f8;
+}
+.software-circuit-node:is([data-index='8'], [data-index='9'], [data-index='10'])[data-active='true'] .software-circuit-branch-dot-line {
+  stroke: #00c8f8;
+}
+.software-circuit-node:is([data-index='8'], [data-index='9'], [data-index='10'])[data-active='true'] .software-circuit-branch-dot {
+  fill: #00e5ff;
+  stroke: #00c8f8;
+  filter: drop-shadow(0 0 4px rgba(0, 229, 255, 0.8));
+}
+.software-circuit-node:is([data-index='8'], [data-index='9'], [data-index='10'])[data-active='true'] .software-circuit-via-ring {
+  stroke: #00b4d8;
+  fill: #d6f9ff;
+}
+.software-circuit-node:is([data-index='8'], [data-index='9'], [data-index='10'])[data-active='true'] .software-circuit-via-hole {
+  fill: #00b4d8;
+}
+.software-circuit-node:is([data-index='8'], [data-index='9'], [data-index='10'])[data-active='true'] .software-circuit-smd {
+  fill: #00f0ff;
+  stroke: #00b4d8;
+}
+.software-circuit-node:is([data-index='8'], [data-index='9'], [data-index='10'])[data-active='true'] .software-circuit-terminal-notches {
+  stroke: #00b4d8;
+}
+.software-circuit-node:is([data-index='8'], [data-index='9'], [data-index='10'])[data-active='true'] .software-circuit-node-tag {
+  fill: #0099b8;
+  font-weight: 600;
+}
+
+/* CURRENT ACTIVE CHAPTER (Live Power Head with Dynamic Stage Color) */
 .software-circuit-node[data-current='true'] .software-circuit-node-halo {
-  fill: #0072bc12;
+  animation: electric-pulse 2s infinite ease-out;
 }
-.software-circuit-node[data-current='true'] .software-circuit-node-ring {
-  fill: #d8efff;
-  stroke-width: 2.5;
+
+/* Stage 1 Current */
+.software-circuit-node:is([data-index='0'], [data-index='1'], [data-index='2'], [data-index='3'])[data-current='true'] .software-circuit-node-halo {
+  fill: rgba(0, 114, 188, 0.16);
 }
-.software-circuit-node[data-current='true'] text {
-  fill: var(--color-brand-deep);
+.software-circuit-node:is([data-index='0'], [data-index='1'], [data-index='2'], [data-index='3'])[data-current='true'] .software-circuit-pad-land {
+  stroke: #0072bc;
+  stroke-width: 1.8;
+  fill: #dbeffe;
+  filter: drop-shadow(0 0 6px rgba(0, 114, 188, 0.45));
+}
+.software-circuit-node:is([data-index='0'], [data-index='1'], [data-index='2'], [data-index='3'])[data-current='true'] .software-circuit-cyber-brackets {
+  stroke: #0072bc;
+  stroke-width: 1.8;
+  filter: drop-shadow(0 0 4px rgba(0, 114, 188, 0.6));
+}
+.software-circuit-node:is([data-index='0'], [data-index='1'], [data-index='2'], [data-index='3'])[data-current='true'] .software-circuit-node-ring {
+  stroke: #0072bc;
+  stroke-width: 2.6;
+  fill: #ffffff;
+}
+.software-circuit-node:is([data-index='0'], [data-index='1'], [data-index='2'], [data-index='3'])[data-current='true'] .software-circuit-node-inner-ring {
+  stroke: #0072bc;
+  stroke-width: 1.6;
+}
+.software-circuit-node:is([data-index='0'], [data-index='1'], [data-index='2'], [data-index='3'])[data-current='true'] .software-circuit-node-core {
+  fill: #38bdf8;
+  filter: drop-shadow(0 0 5px #38bdf8) drop-shadow(0 0 8px #0072bc);
+}
+.software-circuit-node:is([data-index='0'], [data-index='1'], [data-index='2'], [data-index='3'])[data-current='true'] .software-circuit-node-num {
+  fill: #005691;
+  font-weight: 800;
+}
+
+/* Stage 2 Current */
+.software-circuit-node:is([data-index='4'], [data-index='5'], [data-index='6'], [data-index='7'])[data-current='true'] .software-circuit-node-halo {
+  fill: rgba(0, 168, 255, 0.18);
+}
+.software-circuit-node:is([data-index='4'], [data-index='5'], [data-index='6'], [data-index='7'])[data-current='true'] .software-circuit-pad-land {
+  stroke: #0284c7;
+  stroke-width: 1.8;
+  fill: #d2f1ff;
+  filter: drop-shadow(0 0 7px rgba(0, 168, 255, 0.5));
+}
+.software-circuit-node:is([data-index='4'], [data-index='5'], [data-index='6'], [data-index='7'])[data-current='true'] .software-circuit-cyber-brackets {
+  stroke: #0284c7;
+  stroke-width: 1.8;
+  filter: drop-shadow(0 0 5px rgba(2, 132, 199, 0.7));
+}
+.software-circuit-node:is([data-index='4'], [data-index='5'], [data-index='6'], [data-index='7'])[data-current='true'] .software-circuit-node-ring {
+  stroke: #0284c7;
+  stroke-width: 2.6;
+  fill: #ffffff;
+}
+.software-circuit-node:is([data-index='4'], [data-index='5'], [data-index='6'], [data-index='7'])[data-current='true'] .software-circuit-node-inner-ring {
+  stroke: #0284c7;
+  stroke-width: 1.6;
+}
+.software-circuit-node:is([data-index='4'], [data-index='5'], [data-index='6'], [data-index='7'])[data-current='true'] .software-circuit-node-core {
+  fill: #00e5ff;
+  filter: drop-shadow(0 0 6px #00e5ff) drop-shadow(0 0 10px #0284c7);
+}
+.software-circuit-node:is([data-index='4'], [data-index='5'], [data-index='6'], [data-index='7'])[data-current='true'] .software-circuit-node-num {
+  fill: #0274af;
+  font-weight: 800;
+}
+
+/* Stage 3 Current */
+.software-circuit-node:is([data-index='8'], [data-index='9'], [data-index='10'])[data-current='true'] .software-circuit-node-halo {
+  fill: rgba(0, 229, 255, 0.22);
+}
+.software-circuit-node:is([data-index='8'], [data-index='9'], [data-index='10'])[data-current='true'] .software-circuit-pad-land {
+  stroke: #00b4d8;
+  stroke-width: 2;
+  fill: #cbf6ff;
+  filter: drop-shadow(0 0 8px rgba(0, 229, 255, 0.6));
+}
+.software-circuit-node:is([data-index='8'], [data-index='9'], [data-index='10'])[data-current='true'] .software-circuit-cyber-brackets {
+  stroke: #00b4d8;
+  stroke-width: 2;
+  filter: drop-shadow(0 0 6px rgba(0, 229, 255, 0.85));
+}
+.software-circuit-node:is([data-index='8'], [data-index='9'], [data-index='10'])[data-current='true'] .software-circuit-node-ring {
+  stroke: #00b4d8;
+  stroke-width: 2.8;
+  fill: #ffffff;
+}
+.software-circuit-node:is([data-index='8'], [data-index='9'], [data-index='10'])[data-current='true'] .software-circuit-node-inner-ring {
+  stroke: #00b4d8;
+  stroke-width: 1.8;
+}
+.software-circuit-node:is([data-index='8'], [data-index='9'], [data-index='10'])[data-current='true'] .software-circuit-node-core {
+  fill: #5df7ff;
+  filter: drop-shadow(0 0 7px #5df7ff) drop-shadow(0 0 12px #00e5ff);
+}
+.software-circuit-node:is([data-index='8'], [data-index='9'], [data-index='10'])[data-current='true'] .software-circuit-node-num {
+  fill: #008fa8;
+  font-weight: 800;
+}
+
+/* Interactive Hover States */
+.software-circuit-node:hover .software-circuit-pad-land {
+  stroke: #0284c7;
+  fill: #e6f6ff;
+  filter: drop-shadow(0 0 6px rgba(2, 132, 199, 0.45));
+}
+.software-circuit-node:hover .software-circuit-cyber-brackets {
+  stroke: #00a8ff;
+  filter: drop-shadow(0 0 4px rgba(0, 168, 255, 0.7));
+}
+.software-circuit-node:hover .software-circuit-node-ring {
+  stroke: #0284c7;
+  stroke-width: 2.2;
+}
+.software-circuit-node:hover .software-circuit-node-inner-ring {
+  stroke: #00a8ff;
+  stroke-width: 1.4;
+}
+.software-circuit-node:hover .software-circuit-node-core {
+  fill: #00f0ff;
+  filter: drop-shadow(0 0 5px #00f0ff);
+}
+.software-circuit-node:hover .software-circuit-node-tag {
+  fill: #0072bc;
   font-weight: 700;
+}
+.software-circuit-node:hover .software-circuit-node-num {
+  fill: #005691;
+  font-weight: 800;
+}
+
+@keyframes electric-pulse {
+  0% {
+    r: 12;
+    opacity: 0.9;
+  }
+  50% {
+    r: 18;
+    opacity: 0.35;
+  }
+  100% {
+    r: 24;
+    opacity: 0;
+  }
 }
 .software-story[data-story-mode='vertical'] .software-story-status {
   display: none;

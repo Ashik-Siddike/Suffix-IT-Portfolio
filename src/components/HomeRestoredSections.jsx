@@ -96,6 +96,89 @@ export function CompanyValuesSection() {
   );
 }
 
+function FieldFeatureChips({ items }) {
+  const listRef = useRef(null);
+
+  const handleMouseEnter = (index) => {
+    const list = listRef.current;
+    if (!list) return;
+    const chips = Array.from(list.children);
+    if (!chips[index]) return;
+
+    const hoveredTop = chips[index].offsetTop;
+    const hoveredLeft = chips[index].offsetLeft;
+    const hoveredWidth = chips[index].offsetWidth;
+    const hx = hoveredLeft + hoveredWidth / 2;
+
+    chips.forEach((chip, i) => {
+      if (i === index) {
+        chip.style.setProperty('--chip-scale', '1.14');
+        chip.style.setProperty('--chip-tx', '0px');
+        chip.style.setProperty('--chip-ty', '-3px');
+        chip.style.setProperty('z-index', '10');
+        chip.dataset.hovered = 'true';
+      } else {
+        const cx = chip.offsetLeft + chip.offsetWidth / 2;
+        const dx = cx - hx;
+        const rowDiff = chip.offsetTop - hoveredTop;
+
+        let tx = 0;
+        let ty = 0;
+
+        // Same row: offsetTop matches within 10px
+        if (Math.abs(rowDiff) < 10) {
+          tx = dx < 0 ? -16 : 16;
+          ty = 0;
+        } else if (Math.abs(rowDiff) < 60) {
+          // Immediately adjacent row (above or below)
+          tx = dx < 0 ? -10 : 10;
+          ty = rowDiff > 0 ? 6 : -6;
+        } else {
+          // Two rows away
+          tx = dx < 0 ? -6 : 6;
+          ty = rowDiff > 0 ? 10 : -10;
+        }
+
+        chip.style.setProperty('--chip-scale', '0.96');
+        chip.style.setProperty('--chip-tx', `${tx}px`);
+        chip.style.setProperty('--chip-ty', `${ty}px`);
+        chip.style.setProperty('z-index', '1');
+        delete chip.dataset.hovered;
+      }
+    });
+  };
+
+  const handleMouseLeave = () => {
+    const list = listRef.current;
+    if (!list) return;
+    const chips = Array.from(list.children);
+    chips.forEach((chip) => {
+      chip.style.removeProperty('--chip-scale');
+      chip.style.removeProperty('--chip-tx');
+      chip.style.removeProperty('--chip-ty');
+      chip.style.removeProperty('z-index');
+      delete chip.dataset.hovered;
+    });
+  };
+
+  return (
+    <ul ref={listRef} className="restored-checks field-feature-chips" onMouseLeave={handleMouseLeave}>
+      {items.map((text, index) => (
+        <li
+          key={text}
+          onMouseEnter={() => handleMouseEnter(index)}
+          onFocus={() => handleMouseEnter(index)}
+          onBlur={handleMouseLeave}
+          tabIndex={0}
+        >
+          <Check size={18} aria-hidden="true" />
+          {text}
+        </li>
+      ))}
+    </ul>
+  );
+}
+
 export function FieldForceSection() {
   return (
     <StickyShowcase
@@ -116,14 +199,7 @@ export function FieldForceSection() {
       }
     >
       <SectionHeading title={<span id="field-force-title">{original.fieldTitle}</span>} />
-      <ul className="restored-checks field-feature-chips">
-        {fieldFeatures.map((text) => (
-          <li key={text}>
-            <Check size={18} aria-hidden="true" />
-            {text}
-          </li>
-        ))}
-      </ul>
+      <FieldFeatureChips items={fieldFeatures} />
       <PrimaryButton to="/product/field-force-management">VIEW MORE DETAILS</PrimaryButton>
     </StickyShowcase>
   );
