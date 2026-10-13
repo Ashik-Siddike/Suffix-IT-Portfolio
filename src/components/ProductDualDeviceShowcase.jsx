@@ -133,6 +133,8 @@ export default function ProductDualDeviceShowcase({ item }) {
           hasMobile={hasMobile}
           mobileSrc={screenConfig.mobile}
           mobileLabel={screenConfig.mobileLabel}
+          desktopLabel={screenConfig.desktopLabel}
+          badgeText={screenConfig.badgeText}
           title={
             <div className="flex flex-col items-center">
               <div className="inline-flex items-center gap-2 px-3 py-1 mb-3 rounded-full bg-sky-100/90 border border-sky-300/60 text-sky-800 text-[11px] font-bold uppercase tracking-wider shadow-sm">

@@ -67,7 +67,19 @@ export default function SoftwareScrollController({ section }) {
           root.style.setProperty('--story-header-height', `${getHeaderHeight()}px`);
 
           const distance = () => Math.max(0, track.scrollWidth - viewport.clientWidth);
-          const hold = () => Math.min(140, (probe ? probe.clientHeight : 700) * 0.16);
+          const scrollTrackDistance = () => {
+            const transitions = Math.max(1, scenes.length - 1);
+            // Allocate ~210px of scroll per transition instead of full viewport width (1400px+).
+            // Total pinned scroll distance drops from ~15,000px to ~2,100px (~2 viewport heights),
+            // creating a snappy, engaging flow where visitors don't get stuck scrolling for too long.
+            const perTransition = Math.max(170, Math.min(240, (viewport.clientHeight || 700) * 0.26));
+            return Math.round(transitions * perTransition);
+          };
+          const hold = () => Math.min(60, Math.round((probe ? probe.clientHeight : 700) * 0.08));
+          const getHoldRatio = () => {
+            const std = scrollTrackDistance();
+            return std ? hold() / std : 0.03;
+          };
 
           let travelDistance = distance();
           let milestones = scenes.map((scene) => scene.offsetLeft);
@@ -83,7 +95,7 @@ export default function SoftwareScrollController({ section }) {
             viewportWidth = viewport.clientWidth;
             currentTravelDistance = travelDistance;
             currentMilestones = milestones;
-            currentHoldRatio = travelDistance ? hold() / travelDistance : 0.1;
+            currentHoldRatio = getHoldRatio();
             const rect = track.getBoundingClientRect();
             focusBounds = allLinks.map((link) => {
               const box = link.getBoundingClientRect();
@@ -134,7 +146,7 @@ export default function SoftwareScrollController({ section }) {
 
           gsap.set(track, { x: 0 });
           measureFocusBounds();
-          const holdRatio = travelDistance ? hold() / travelDistance : 0.1;
+          const holdRatio = getHoldRatio();
 
           const timeline = gsap.timeline({
             onUpdate: renderProgress,
@@ -143,8 +155,8 @@ export default function SoftwareScrollController({ section }) {
               trigger: root,
               pin,
               start: () => `top ${getHeaderHeight()}px`,
-              end: () => `+=${distance() + hold() * 2}`,
-              scrub: true,
+              end: () => `+=${scrollTrackDistance() + hold() * 2}`,
+              scrub: 0.6,
               pinSpacing: true,
               invalidateOnRefresh: true,
               onRefresh: (trigger) => {

@@ -29,14 +29,17 @@
 }
 .zoom-parallax {
   position: relative;
-  margin-block: 64px;
+  margin-block: 48px;
+  overflow-x: clip;
 }
 .zoom-parallax figure {
   margin: 0;
   border-radius: 24px;
-  border: 1px solid #dcebf4;
-  background: radial-gradient(ellipse at center, #e9f7ff, #f8fcff);
+  border: 1px solid rgba(186, 230, 253, 0.7);
+  background: radial-gradient(ellipse at center, rgba(235, 248, 255, 0.95), rgba(248, 252, 255, 0.9));
+  box-shadow: 0 12px 32px -8px rgba(2, 132, 199, 0.1), 0 2px 6px rgba(0, 0, 0, 0.02);
   overflow: hidden;
+  backdrop-filter: blur(8px);
 }
 .zoom-parallax img {
   display: block;
@@ -60,53 +63,65 @@
   position: sticky;
   top: 110px;
   height: calc(100svh - 140px);
-  min-height: 440px;
+  min-height: 480px;
   max-height: 760px;
-  overflow: hidden;
-  border-radius: 28px;
-  background: #eff8fd;
+  overflow: visible;
+  border-radius: 0;
+  background: transparent;
+  border: none;
 }
 .zoom-tile {
   position: absolute;
-  width: 21%;
-  height: 31%;
-  box-shadow: 0 16px 40px #075a910a;
   will-change: transform;
 }
 .zoom-tile-0 {
-  left: 29%;
-  top: 25%;
-  width: 42%;
-  height: 50%;
-  z-index: 2;
+  left: 28%;
+  top: 21%;
+  width: 44%;
+  height: 56%;
+  z-index: 10;
 }
 .zoom-tile-1 {
-  left: 5%;
-  top: 8%;
+  left: 1%;
+  top: 1%;
+  width: 25%;
+  height: 35%;
+  z-index: 3;
 }
 .zoom-tile-2 {
-  left: 5%;
-  top: 43%;
-  height: 46%;
+  left: 1%;
+  bottom: 1%;
+  width: 25%;
+  height: 38%;
+  z-index: 3;
 }
 .zoom-tile-3 {
-  right: 5%;
-  top: 11%;
-  height: 39%;
+  right: 1%;
+  top: 1%;
+  width: 25%;
+  height: 35%;
+  z-index: 3;
 }
 .zoom-tile-4 {
-  right: 5%;
-  bottom: 11%;
+  right: 1%;
+  bottom: 1%;
+  width: 25%;
+  height: 38%;
+  z-index: 3;
 }
 .zoom-tile-5 {
-  left: 29%;
-  top: -12%;
-  width: 42%;
+  left: 33%;
+  top: 0;
+  width: 34%;
+  height: 19%;
+  z-index: 4;
 }
 .zoom-tile-6 {
-  left: 29%;
-  bottom: -12%;
-  width: 42%;
+  left: 33%;
+  bottom: 0;
+  width: 34%;
+  height: 19%;
+  z-index: 4;
 }
 @media (max-width: 899px) {
   .zoom-parallax.is-static .zoom-parallax-stage {

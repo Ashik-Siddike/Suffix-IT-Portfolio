@@ -1,7 +1,17 @@
 "use client";
 import React, { useEffect, useRef, useState } from "react";
-import { MotionValue, motion, useScroll, useTransform } from "motion/react";
+import { MotionValue, motion, useScroll, useTransform } from "framer-motion";
 import { cn } from "@/lib/utils";
+import {
+  Activity,
+  ShieldCheck,
+  Smartphone,
+  Zap,
+  RefreshCw,
+  Lock,
+  Cpu,
+  Monitor,
+} from "lucide-react";
 
 export interface MacbookScrollProps {
   src?: string;
@@ -11,6 +21,8 @@ export interface MacbookScrollProps {
   mobileSrc?: string;
   hasMobile?: boolean;
   mobileLabel?: string;
+  desktopLabel?: string;
+  badgeText?: string;
   className?: string;
   children?: React.ReactNode;
 }
@@ -20,7 +32,9 @@ export const MacbookScroll = ({
   title,
   mobileSrc,
   hasMobile,
-  mobileLabel = "Mobile Application",
+  mobileLabel = "Mobile Companion App",
+  desktopLabel = "Web Command Center",
+  badgeText = "Ecosystem Live",
   className,
   children,
 }: MacbookScrollProps) => {
@@ -38,69 +52,100 @@ export const MacbookScroll = ({
     }
   }, []);
 
-  // 1. Text title: fades out smoothly as user scrolls into the showcase
-  const textTransform = useTransform(scrollYProgress, [0, 0.14], [0, -25]);
-  const textOpacity = useTransform(scrollYProgress, [0, 0.12], [1, 0]);
+  // 1. Title / Intro: smooth parallax exit as scroll engages
+  const textTransform = useTransform(scrollYProgress, [0, 0.12], [0, -30], { clamp: true });
+  const textOpacity = useTransform(scrollYProgress, [0, 0.12], [1, 0], { clamp: true });
 
-  // 2. 3D Keyboard Base & Hinge: Folds 90° on the table in realistic perspective, stays back & fades as tablet lifts
-  const keyboardOpacity = useTransform(scrollYProgress, [0, 0.12, 0.32], [1, 0.6, 0]);
-  const hingeOpacity = useTransform(scrollYProgress, [0, 0.12, 0.28], [1, 0.5, 0]);
-  const cameraNotchOpacity = useTransform(scrollYProgress, [0, 0.12, 0.25], [1, 0.4, 0]);
+  // Executive System Status Banner (appears smoothly as title fades, anchoring the cockpit)
+  const statusBannerOpacity = useTransform(scrollYProgress, [0.08, 0.18], [0, 1], { clamp: true });
+  const statusBannerY = useTransform(scrollYProgress, [0.08, 0.18], [-14, 0], { clamp: true });
+
+  // 2. 3D Keyboard Base & Hinge: Folds 90° on the table in realistic perspective, recedes with depth
+  const keyboardOpacity = useTransform(scrollYProgress, [0, 0.12, 0.32], [1, 0.65, 0.15], { clamp: true });
+  const hingeOpacity = useTransform(scrollYProgress, [0, 0.12, 0.28], [1, 0.5, 0], { clamp: true });
+  const cameraNotchOpacity = useTransform(scrollYProgress, [0, 0.10, 0.24], [1, 0.4, 0], { clamp: true });
 
   // 3. Display Screen -> Morphs into sleek Tablet and Zooms Forward into Hero View
   const tabletScale = useTransform(
     scrollYProgress,
-    [0, 0.15, 0.48],
-    [1.0, 1.08, isMobile ? 1.08 : 1.30],
+    [0, 0.10, 0.34],
+    [1.0, 1.04, isMobile ? 1.04 : 1.15],
+    { clamp: true }
   );
   const tabletTranslateY = useTransform(
     scrollYProgress,
-    [0, 0.15, 0.48],
-    [0, 20, isMobile ? 30 : 55],
+    [0, 0.10, 0.34],
+    [0, 10, isMobile ? 14 : 22],
+    { clamp: true }
   );
   const tabletBorderRadius = useTransform(
     scrollYProgress,
-    [0, 0.3],
-    [18, 28],
+    [0, 0.26],
+    [18, 26],
+    { clamp: true }
   );
   const screenInnerRadius = useTransform(
     scrollYProgress,
-    [0, 0.3],
-    [12, 20],
+    [0, 0.26],
+    [12, 18],
+    { clamp: true }
   );
 
   // 4. Companion Mobile Device: Zooms forward in tandem beside the Tablet
   const mobileScale = useTransform(
     scrollYProgress,
-    [0, 0.15, 0.48],
-    [1.0, 1.06, isMobile ? 1.04 : 1.22],
+    [0, 0.10, 0.34],
+    [1.0, 1.03, isMobile ? 1.02 : 1.12],
+    { clamp: true }
   );
   const mobileTranslateY = useTransform(
     scrollYProgress,
-    [0, 0.15, 0.48],
-    [0, 12, isMobile ? 18 : 35],
+    [0, 0.10, 0.34],
+    [0, 8, isMobile ? 10 : 16],
+    { clamp: true }
   );
 
-  // 5. Hero Device Labels: fade in cleanly when morph completes
-  const labelOpacity = useTransform(scrollYProgress, [0.28, 0.45], [0, 1]);
-  const labelY = useTransform(scrollYProgress, [0.28, 0.45], [10, 0]);
+  // 5. Real-Time Cloud Sync Bridge (between Laptop and Mobile)
+  const syncOpacity = useTransform(scrollYProgress, [0.09, 0.22], [0, 1], { clamp: true });
+  const syncScale = useTransform(scrollYProgress, [0.09, 0.22], [0.85, 1], { clamp: true });
+
+  // 6. Floating Surrounding Components (Moving into place on scroll to form a meaningful system)
+  // Left Wing (around Laptop Web Console)
+  const leftCard1X = useTransform(scrollYProgress, [0.07, 0.22], [-70, 0], { clamp: true });
+  const leftCard1Opacity = useTransform(scrollYProgress, [0.07, 0.20], [0, 1], { clamp: true });
+
+  const leftCard2X = useTransform(scrollYProgress, [0.11, 0.26], [-60, 0], { clamp: true });
+  const leftCard2Y = useTransform(scrollYProgress, [0.11, 0.26], [25, 0], { clamp: true });
+  const leftCard2Opacity = useTransform(scrollYProgress, [0.11, 0.24], [0, 1], { clamp: true });
+
+  // Right Wing (around Mobile Companion)
+  const rightCard1X = useTransform(scrollYProgress, [0.07, 0.22], [70, 0], { clamp: true });
+  const rightCard1Opacity = useTransform(scrollYProgress, [0.07, 0.20], [0, 1], { clamp: true });
+
+  const rightCard2X = useTransform(scrollYProgress, [0.11, 0.26], [60, 0], { clamp: true });
+  const rightCard2Y = useTransform(scrollYProgress, [0.11, 0.26], [25, 0], { clamp: true });
+  const rightCard2Opacity = useTransform(scrollYProgress, [0.11, 0.24], [0, 1], { clamp: true });
+
+  // 7. Hero Device Labels: fade in cleanly when morph completes
+  const labelOpacity = useTransform(scrollYProgress, [0.14, 0.28], [0, 1], { clamp: true });
+  const labelY = useTransform(scrollYProgress, [0.14, 0.28], [10, 0], { clamp: true });
 
   return (
     <div
       ref={ref}
       className={cn(
-        "relative h-[180vh] md:h-[200vh] w-full",
+        "relative h-[150vh] md:h-[175vh] w-full",
         className,
       )}
     >
-      <div className="sticky top-10 sm:top-14 md:top-16 flex flex-col items-center justify-start overflow-visible pt-1 md:pt-3">
+      <div className="sticky top-16 sm:top-20 md:top-24 flex flex-col items-center justify-start overflow-visible pt-1 md:pt-2">
         {/* Title / Hero intro */}
         <motion.div
           style={{
             translateY: textTransform,
             opacity: textOpacity,
           }}
-          className="mb-3 md:mb-5 text-center max-w-4xl px-4 z-20"
+          className="mb-2 md:mb-3 text-center max-w-4xl px-4 z-20"
         >
           {typeof title === "string" ? (
             <h2 className="text-3xl font-extrabold tracking-tight text-slate-900 md:text-5xl">
@@ -111,13 +156,108 @@ export const MacbookScroll = ({
           )}
         </motion.div>
 
-        {/* Dual Device Stage: Laptop/Morphing Tablet + Companion Mobile */}
-        <div className="relative flex flex-col lg:flex-row items-center justify-center gap-8 lg:gap-14 scale-[0.62] sm:scale-[0.75] md:scale-[0.85] lg:scale-[0.92] xl:scale-100 transition-transform origin-top">
+        {/* Live Ecosystem HUD Header Banner (Slides into view when title fades) */}
+        <motion.div
+          style={{
+            opacity: statusBannerOpacity,
+            y: statusBannerY,
+          }}
+          className="mb-3 hidden sm:inline-flex items-center gap-2.5 rounded-full border border-sky-300/80 bg-white/95 px-4 py-1.5 text-xs font-semibold text-slate-800 shadow-lg shadow-sky-500/10 backdrop-blur-md z-25"
+        >
+          <span className="relative flex h-2 w-2">
+            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75" />
+            <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500" />
+          </span>
+          <span className="font-bold text-sky-800 tracking-wide uppercase text-[10px]">
+            {badgeText}
+          </span>
+          <span className="text-slate-300">•</span>
+          <span className="text-slate-700">Central Web Console &amp; Mobile Companion Synced</span>
+          <span className="text-slate-300">•</span>
+          <span className="text-emerald-700 font-mono text-[11px] font-bold">99.98% Active Telemetry</span>
+        </motion.div>
+
+        {/* Unified Ecosystem Stage */}
+        <div className="relative flex items-center justify-center scale-[0.55] sm:scale-[0.66] md:scale-[0.74] lg:scale-[0.82] xl:scale-[0.90] 2xl:scale-[0.96] transition-transform origin-top">
           
-          {/* Left: Laptop & Morphing Tablet Container */}
+          {/* Left Wing HUD Cards (Moving in on scroll) */}
+          <div className="hidden xl:flex flex-col gap-4 w-64 mr-6 z-25 self-center">
+            {/* HUD Card 1: Live Web Console */}
+            <motion.div
+              style={{
+                x: leftCard1X,
+                opacity: leftCard1Opacity,
+              }}
+              className="rounded-2xl border border-sky-200/90 bg-white/90 p-4 shadow-xl shadow-sky-900/5 backdrop-blur-xl transition-all hover:border-sky-400 hover:shadow-sky-500/15"
+            >
+              <div className="flex items-center justify-between mb-2">
+                <span className="text-[10px] font-extrabold tracking-wider text-sky-700 uppercase">
+                  Live Operations
+                </span>
+                <span className="inline-flex items-center gap-1 rounded-full bg-emerald-50 border border-emerald-200 px-2 py-0.5 text-[10px] font-bold text-emerald-700">
+                  <span className="h-1.5 w-1.5 rounded-full bg-emerald-500 animate-pulse" />
+                  Primary
+                </span>
+              </div>
+              <div className="flex items-center gap-2.5">
+                <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-sky-500/10 text-sky-600 shrink-0">
+                  <Activity className="h-4 w-4" />
+                </div>
+                <div>
+                  <h4 className="text-xs font-bold text-slate-900 leading-tight">
+                    {desktopLabel}
+                  </h4>
+                  <p className="text-[11px] font-semibold text-sky-600 mt-0.5">
+                    99.99% Cloud Uptime
+                  </p>
+                </div>
+              </div>
+              <p className="mt-2 text-[11px] text-slate-500 leading-snug">
+                Real-time multi-tenant dashboard, high-throughput batch operations &amp; audit logging.
+              </p>
+            </motion.div>
+
+            {/* HUD Card 2: Enterprise Security */}
+            <motion.div
+              style={{
+                x: leftCard2X,
+                y: leftCard2Y,
+                opacity: leftCard2Opacity,
+              }}
+              className="rounded-2xl border border-sky-200/90 bg-white/90 p-4 shadow-xl shadow-sky-900/5 backdrop-blur-xl transition-all hover:border-indigo-400 hover:shadow-indigo-500/15"
+            >
+              <div className="flex items-center justify-between mb-2">
+                <span className="text-[10px] font-extrabold tracking-wider text-indigo-700 uppercase">
+                  Data Security
+                </span>
+                <span className="inline-flex items-center gap-1 rounded-full bg-indigo-50 border border-indigo-200 px-2 py-0.5 text-[10px] font-bold text-indigo-700">
+                  <Lock className="h-2.5 w-2.5 text-indigo-600" />
+                  AES-256
+                </span>
+              </div>
+              <div className="flex items-center gap-2.5">
+                <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-indigo-500/10 text-indigo-600 shrink-0">
+                  <ShieldCheck className="h-4 w-4" />
+                </div>
+                <div>
+                  <h4 className="text-xs font-bold text-slate-900 leading-tight">
+                    Zero-Trust Protection
+                  </h4>
+                  <p className="text-[11px] font-semibold text-indigo-600 mt-0.5">
+                    Granular RBAC &amp; 2FA
+                  </p>
+                </div>
+              </div>
+              <p className="mt-2 text-[11px] text-slate-500 leading-snug">
+                Full cryptographic verification, continuous data backups &amp; ISO-aligned controls.
+              </p>
+            </motion.div>
+          </div>
+
+          {/* Center Stage: Laptop / Morphing Tablet Container */}
           <div className="relative flex flex-col items-center">
             
-            {/* 1. Display Screen -> Detaches & Morphs into Tablet */}
+            {/* 1. Display Screen -> Morphs into sleek Tablet */}
             <motion.div
               style={{
                 scale: tabletScale,
@@ -135,24 +275,43 @@ export const MacbookScroll = ({
                 <div className="h-1.5 w-1.5 rounded-full bg-[#181920] ring-1 ring-sky-900/60" />
               </motion.div>
 
-              {/* Screen Glass Area - Crisp, straight to user */}
+              {/* Screen Glass Area with Browser / Command Bar */}
               <motion.div
                 style={{ borderRadius: screenInnerRadius }}
-                className="relative h-full w-full overflow-hidden bg-[#111218] border border-white/5"
+                className="relative h-full w-full overflow-hidden bg-[#111218] border border-white/5 flex flex-col"
               >
-                {src ? (
-                  <img
-                    src={src}
-                    alt="Product software preview"
-                    className="h-full w-full object-cover object-left-top"
-                  />
-                ) : (
-                  <div className="flex h-full w-full items-center justify-center bg-[#0d0e12] text-slate-400">
-                    Software Preview
+                {/* Active Software Console Header Bar */}
+                <div className="h-6 w-full bg-[#16171e] border-b border-white/10 px-3 flex items-center justify-between shrink-0">
+                  <div className="flex items-center gap-1.5">
+                    <div className="h-2 w-2 rounded-full bg-[#ff5f56]" />
+                    <div className="h-2 w-2 rounded-full bg-[#ffbd2e]" />
+                    <div className="h-2 w-2 rounded-full bg-[#27c93f]" />
                   </div>
-                )}
-                {/* Subtle glass reflection highlight */}
-                <div className="pointer-events-none absolute inset-0 bg-gradient-to-tr from-transparent via-white/5 to-white/10" />
+                  <div className="flex items-center gap-1.5 px-2.5 py-0.5 rounded-md bg-[#0c0d12] text-[10px] text-slate-300 font-mono">
+                    <Lock className="h-2.5 w-2.5 text-emerald-400" />
+                    <span>suffix-cloud.console/live</span>
+                  </div>
+                  <div className="flex items-center gap-1 text-[10px] text-emerald-400 font-semibold">
+                    <span className="h-1.5 w-1.5 rounded-full bg-emerald-400 animate-pulse" />
+                    <span>LIVE</span>
+                  </div>
+                </div>
+
+                <div className="relative flex-1 w-full overflow-hidden">
+                  {src ? (
+                    <img
+                      src={src}
+                      alt="Product software preview"
+                      className="h-full w-full object-cover object-left-top"
+                    />
+                  ) : (
+                    <div className="flex h-full w-full items-center justify-center bg-[#0d0e12] text-slate-400">
+                      Software Preview
+                    </div>
+                  )}
+                  {/* Subtle glass reflection highlight */}
+                  <div className="pointer-events-none absolute inset-0 bg-gradient-to-tr from-transparent via-white/5 to-white/10" />
+                </div>
               </motion.div>
             </motion.div>
 
@@ -184,18 +343,48 @@ export const MacbookScroll = ({
               className="mt-4 hidden sm:inline-flex items-center gap-1.5 rounded-full border border-sky-200 bg-white/95 px-3 py-1 text-[11px] font-semibold text-slate-800 shadow-sm backdrop-blur"
             >
               <span className="h-1.5 w-1.5 rounded-full bg-sky-500 animate-pulse" />
-              Central Web &amp; Tablet Console
+              {desktopLabel}
             </motion.div>
           </div>
 
-          {/* Right: Companion Mobile Device Mockup */}
+          {/* Real-Time Sync Bridge between Laptop & Phone (Visible when hasMobile) */}
+          {hasMobile && (
+            <motion.div
+              style={{
+                opacity: syncOpacity,
+                scale: syncScale,
+              }}
+              className="hidden lg:flex flex-col items-center justify-center mx-1 xl:mx-3 z-30 self-center"
+            >
+              {/* Badge */}
+              <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-white/95 border border-sky-300 shadow-md shadow-sky-500/15 backdrop-blur-md">
+                <RefreshCw className="h-3 w-3 text-sky-600 animate-spin" style={{ animationDuration: "3s" }} />
+                <span className="text-[10px] font-bold text-slate-800 uppercase tracking-wider">
+                  Cloud Sync
+                </span>
+                <span className="h-1.5 w-1.5 rounded-full bg-emerald-500 animate-pulse" />
+              </div>
+
+              {/* Glowing Pulse Line */}
+              <div className="relative w-14 xl:w-20 h-5 flex items-center justify-center my-1">
+                <div className="w-full h-[2px] bg-gradient-to-r from-sky-400 via-blue-500 to-emerald-400 shadow-[0_0_8px_rgba(56,189,248,0.8)]" />
+                <div className="absolute h-2 w-2 rounded-full bg-sky-400 ring-2 ring-sky-300 animate-ping" />
+              </div>
+
+              <div className="text-[9px] font-bold text-sky-700 bg-sky-50/90 px-2 py-0.5 rounded-md border border-sky-200/70 whitespace-nowrap">
+                &lt; 40ms stream
+              </div>
+            </motion.div>
+          )}
+
+          {/* Right Stage: Companion Mobile Device Mockup */}
           {hasMobile && (
             <motion.div
               style={{
                 scale: mobileScale,
                 translateY: mobileTranslateY,
               }}
-              className="relative z-20 flex flex-col items-center group self-center lg:self-end mb-2 mt-6 lg:mt-0"
+              className="relative z-20 flex flex-col items-center group self-center mb-2 mt-4 lg:mt-0"
             >
               <MobileDevice
                 src={mobileSrc || src}
@@ -206,6 +395,118 @@ export const MacbookScroll = ({
             </motion.div>
           )}
 
+          {/* Right Wing HUD Cards (Moving in on scroll) */}
+          <div className="hidden xl:flex flex-col gap-4 w-64 ml-6 z-25 self-center">
+            {/* HUD Card 3: Mobile Field Companion */}
+            <motion.div
+              style={{
+                x: rightCard1X,
+                opacity: rightCard1Opacity,
+              }}
+              className="rounded-2xl border border-sky-200/90 bg-white/90 p-4 shadow-xl shadow-sky-900/5 backdrop-blur-xl transition-all hover:border-emerald-400 hover:shadow-emerald-500/15"
+            >
+              <div className="flex items-center justify-between mb-2">
+                <span className="text-[10px] font-extrabold tracking-wider text-emerald-700 uppercase">
+                  Handheld Mobility
+                </span>
+                <span className="inline-flex items-center gap-1 rounded-full bg-emerald-50 border border-emerald-200 px-2 py-0.5 text-[10px] font-bold text-emerald-700">
+                  <span className="h-1.5 w-1.5 rounded-full bg-emerald-500 animate-pulse" />
+                  Online
+                </span>
+              </div>
+              <div className="flex items-center gap-2.5">
+                <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-emerald-500/10 text-emerald-600 shrink-0">
+                  <Smartphone className="h-4 w-4" />
+                </div>
+                <div>
+                  <h4 className="text-xs font-bold text-slate-900 leading-tight">
+                    {mobileLabel}
+                  </h4>
+                  <p className="text-[11px] font-semibold text-emerald-600 mt-0.5">
+                    Instant Push Alerts
+                  </p>
+                </div>
+              </div>
+              <p className="mt-2 text-[11px] text-slate-500 leading-snug">
+                Native iOS &amp; Android connectivity with local offline caching and rapid field sync.
+              </p>
+            </motion.div>
+
+            {/* HUD Card 4: Edge Telemetry */}
+            <motion.div
+              style={{
+                x: rightCard2X,
+                y: rightCard2Y,
+                opacity: rightCard2Opacity,
+              }}
+              className="rounded-2xl border border-sky-200/90 bg-white/90 p-4 shadow-xl shadow-sky-900/5 backdrop-blur-xl transition-all hover:border-amber-400 hover:shadow-amber-500/15"
+            >
+              <div className="flex items-center justify-between mb-2">
+                <span className="text-[10px] font-extrabold tracking-wider text-amber-700 uppercase">
+                  Edge Network
+                </span>
+                <span className="inline-flex items-center gap-1 rounded-full bg-amber-50 border border-amber-200 px-2 py-0.5 text-[10px] font-bold text-amber-700">
+                  <Zap className="h-2.5 w-2.5 text-amber-600" />
+                  &lt; 85ms
+                </span>
+              </div>
+              <div className="flex items-center gap-2.5">
+                <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-amber-500/10 text-amber-600 shrink-0">
+                  <Cpu className="h-4 w-4" />
+                </div>
+                <div>
+                  <h4 className="text-xs font-bold text-slate-900 leading-tight">
+                    High-Velocity Pipeline
+                  </h4>
+                  <p className="text-[11px] font-semibold text-amber-600 mt-0.5">
+                    Bi-Directional Stream
+                  </p>
+                </div>
+              </div>
+              <p className="mt-2 text-[11px] text-slate-500 leading-snug">
+                Sub-second data replication across distributed edge clusters and IoT gateways.
+              </p>
+            </motion.div>
+          </div>
+
+        </div>
+
+        {/* Compact Mobile & Tablet Telemetry Chips (Visible on screen < xl) */}
+        <div className="flex xl:hidden flex-wrap items-center justify-center gap-2 mt-3 px-4 max-w-2xl z-20">
+          <motion.div
+            style={{ opacity: leftCard1Opacity }}
+            className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-white/95 border border-sky-200/90 shadow-sm text-xs text-slate-800"
+          >
+            <Activity className="h-3.5 w-3.5 text-sky-600" />
+            <span className="font-semibold">{desktopLabel}</span>
+            <span className="h-1.5 w-1.5 rounded-full bg-emerald-500 animate-pulse ml-1" />
+          </motion.div>
+          {hasMobile && (
+            <motion.div
+              style={{ opacity: rightCard1Opacity }}
+              className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-white/95 border border-sky-200/90 shadow-sm text-xs text-slate-800"
+            >
+              <Smartphone className="h-3.5 w-3.5 text-emerald-600" />
+              <span className="font-semibold">{mobileLabel}</span>
+              <span className="h-1.5 w-1.5 rounded-full bg-emerald-500 animate-pulse ml-1" />
+            </motion.div>
+          )}
+          <motion.div
+            style={{ opacity: leftCard2Opacity }}
+            className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-white/95 border border-sky-200/90 shadow-sm text-xs text-slate-800"
+          >
+            <ShieldCheck className="h-3.5 w-3.5 text-indigo-600" />
+            <span className="font-semibold">AES-256 Cloud Encryption</span>
+          </motion.div>
+          {hasMobile && (
+            <motion.div
+              style={{ opacity: rightCard2Opacity }}
+              className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-white/95 border border-sky-200/90 shadow-sm text-xs text-slate-800"
+            >
+              <Zap className="h-3.5 w-3.5 text-amber-600" />
+              <span className="font-semibold">&lt; 40ms Live Cloud Sync</span>
+            </motion.div>
+          )}
         </div>
       </div>
 
@@ -434,6 +735,17 @@ export const MobileDevice = ({
 
         {/* Screen */}
         <div className="relative h-full w-full overflow-hidden rounded-[30px] bg-[#111215]">
+          {/* Mobile Top Status Row */}
+          <div className="absolute top-0 left-0 right-0 z-20 px-4 pt-2.5 pb-1 flex items-center justify-between text-[10px] text-white/80 font-medium pointer-events-none">
+            <span className="font-semibold tracking-tight">09:41</span>
+            <div className="flex items-center gap-1.5">
+              <span className="text-[9px] font-bold text-white/90">5G</span>
+              <div className="h-2 w-3.5 rounded-[2px] border border-white/60 p-[1px] flex items-center">
+                <div className="h-full w-full bg-emerald-400 rounded-[0.5px]" />
+              </div>
+            </div>
+          </div>
+
           {src ? (
             <img
               src={src}

@@ -222,45 +222,18 @@
 
 .solution-details-layout {
   display: grid;
-  grid-template-columns: 210px minmax(0, 1fr);
+  grid-template-columns: 260px minmax(0, 1fr);
   align-items: start;
-  gap: 42px;
+  gap: 48px;
 }
 .solution-details-body {
   min-width: 0;
 }
 .solution-section-nav {
   position: sticky;
-  top: 122px;
-  padding-right: 18px;
-  border-right: 1px solid #dceaf4;
-}
-.solution-section-nav h2 {
-  font-size: 17px;
-  margin-bottom: 14px;
-}
-.solution-section-nav > div {
-  display: grid;
-  gap: 3px;
-  max-height: calc(100svh - 210px);
-  overflow-y: auto;
-  scrollbar-width: thin;
-}
-.solution-section-nav a {
-  display: block;
-  font-size: 12px;
-  line-height: 1.55;
-  padding: 8px 9px;
-  border-radius: 8px;
-  color: #536475;
-  transition:
-    background 200ms ease,
-    color 200ms ease;
-}
-.solution-section-nav a:hover,
-.solution-section-nav a:focus-visible {
-  background: #e8f4fd;
-  color: #075a91;
+  top: 110px;
+  border-right: none;
+  padding-right: 0;
 }
 .solution-details-body .capability-grid {
   grid-template-columns: repeat(2, minmax(0, 1fr));

@@ -244,16 +244,29 @@ export default function SolutionPage() {
           </div>
         </Container>
       </section>
-      <section className="section products-section">
+      <section className="section products-section bg-gradient-to-b from-white via-sky-50/20 to-[#edf6fc] py-16 md:py-24 border-t border-slate-200/80">
         <Container>
-          <SectionHeading title={isProduct ? 'Our Products' : 'Our Services'} />
-          <div className="three-grid">
+          <div className="text-center max-w-3xl mx-auto mb-12">
+            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-sky-100/90 border border-sky-300/60 text-sky-800 text-xs font-bold uppercase tracking-wider mb-3 shadow-sm">
+              <Layers className="h-3.5 w-3.5 text-sky-600" />
+              <span>{isProduct ? 'Suffix IT Ecosystem' : 'Professional Services'}</span>
+            </div>
+            <h2 className="text-3xl sm:text-4xl font-extrabold tracking-tight text-slate-900 leading-tight">
+              {isProduct ? 'Explore Our Complementary Products' : 'Enterprise Services Portfolio'}
+            </h2>
+            <p className="mt-2.5 text-slate-600 text-base leading-relaxed">
+              {isProduct
+                ? 'Discover seamlessly connected enterprise software solutions designed for high performance.'
+                : 'Accelerate your digital transformation with our specialized engineering capabilities.'}
+            </p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
             {related.map((other) =>
               isProduct ? (
                 <ProductCard
                   item={other}
                   key={other.path}
-                  image={visuals.relatedCards[pathname][other.path]}
+                  image={visuals.relatedCards[pathname]?.[other.path]}
                 />
               ) : (
                 <ServiceCard item={other} key={other.path} />

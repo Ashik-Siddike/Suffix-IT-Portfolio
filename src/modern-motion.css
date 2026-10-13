@@ -44,32 +44,71 @@
   pointer-events: none;
 }
 .modern-card-layer {
-  position: absolute;
-  inset: 4px 0 -4px;
-  border-radius: inherit;
-  pointer-events: none;
-  transition:
-    transform 0.55s cubic-bezier(0.2, 0.7, 0.2, 1),
-    border-color 0.45s;
+  display: none !important;
 }
-.modern-card-layer-fill {
-  z-index: -3;
-  background: linear-gradient(145deg, #f0f9ff 15%, #b6dff9);
-  border: 1px solid #a9d3f0;
-  transform: translateY(9px) rotate(-0.8deg) scale(0.992);
+
+/* Modern High-Tech Feature Grid Checklist */
+.modern-feature-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 10px;
+  list-style: none !important;
+  padding: 0 !important;
+  margin: 20px 0 !important;
 }
-.modern-card-layer-stroke {
-  z-index: -2;
-  border: 1px solid #80bde5;
-  background: #e0f1fd55;
-  transform: translateY(5px) rotate(-1.25deg);
+.modern-feature-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 11px 15px;
+  background: rgba(240, 249, 255, 0.7);
+  border: 1px solid rgba(186, 230, 253, 0.7);
+  border-radius: 14px;
+  font-size: 13.5px;
+  font-weight: 600;
+  color: #1e293b;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.02);
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
 }
-.modern-card-shell:is(:hover, :focus-within) .modern-card-layer-fill {
-  transform: translateY(8px) rotate(0deg) scale(0.992);
+.modern-feature-item:hover {
+  background: #ffffff;
+  border-color: #38bdf8;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px -4px rgba(56, 189, 248, 0.18);
+  color: #0369a1;
 }
-.modern-card-shell:is(:hover, :focus-within) .modern-card-layer-stroke {
-  transform: translateY(4px) rotate(0deg);
-  border-color: #38a9e6;
+.feature-item-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 8px;
+  background: #e0f2fe;
+  color: #0284c7;
+  flex-shrink: 0;
+  transition: all 0.2s ease;
+}
+.modern-feature-item:hover .feature-item-icon {
+  background: #0284c7;
+  color: #ffffff;
+}
+.feature-item-text {
+  line-height: 1.45;
+}
+
+.modern-content-p {
+  font-size: 15px;
+  line-height: 1.8;
+  color: #475569;
+  margin-bottom: 16px;
+}
+.modern-content-heading {
+  font-size: 18px;
+  font-weight: 700;
+  color: #0f172a;
+  margin-top: 20px;
+  margin-bottom: 12px;
 }
 .modern-card-shell
   > :is(

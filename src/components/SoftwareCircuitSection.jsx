@@ -1,6 +1,6 @@
 import { lazy, Suspense, useEffect, useRef, useState, useSyncExternalStore } from 'react';
 import { Container, PrimaryButton } from './ui';
-import { ChevronDown, Check } from './GeneratedIcons';
+import { ChevronDown, Check, ArrowLeft, ArrowRight } from './GeneratedIcons';
 import ProductVisualCluster from './ProductVisualCluster';
 import SoftwareCircuitProgress from './ui/SoftwareCircuitProgress';
 import { softwareChapters } from '../data/software-story';
@@ -62,6 +62,46 @@ export default function SoftwareCircuitSection() {
     setReady(true);
   }, []);
 
+  const handlePrev = () => {
+    const currentIndex = Number(section.current?.dataset.storyCurrentIndex || 0);
+    const targetIndex = Math.max(0, currentIndex - 1);
+    const event = new CustomEvent('circuit-node-jump', {
+      bubbles: true,
+      detail: { index: targetIndex },
+    });
+    section.current?.dispatchEvent(event);
+  };
+
+  const handleNext = () => {
+    const currentIndex = Number(section.current?.dataset.storyCurrentIndex || 0);
+    const targetIndex = Math.min(softwareChapters.length - 1, currentIndex + 1);
+    const event = new CustomEvent('circuit-node-jump', {
+      bubbles: true,
+      detail: { index: targetIndex },
+    });
+    section.current?.dispatchEvent(event);
+  };
+
+  useEffect(() => {
+    const onKeyDown = (e) => {
+      if (['INPUT', 'TEXTAREA', 'SELECT'].includes(document.activeElement?.tagName)) return;
+      if (!section.current) return;
+      const rect = section.current.getBoundingClientRect();
+      const inView = rect.top <= window.innerHeight * 0.7 && rect.bottom >= window.innerHeight * 0.3;
+      if (!inView) return;
+
+      if (e.key === 'ArrowRight') {
+        e.preventDefault();
+        handleNext();
+      } else if (e.key === 'ArrowLeft') {
+        e.preventDefault();
+        handlePrev();
+      }
+    };
+    window.addEventListener('keydown', onKeyDown);
+    return () => window.removeEventListener('keydown', onKeyDown);
+  }, []);
+
   return (
     <section
       ref={section}
@@ -85,7 +125,27 @@ export default function SoftwareCircuitSection() {
         </div>
         <Container className="software-story-footer">
           <SoftwareCircuitProgress chapters={softwareChapters} />
-          <div className="software-story-status" aria-hidden="true">
+          <div className="software-story-status">
+            <div className="software-story-nav-buttons" aria-label="Chapter quick navigation">
+              <button
+                type="button"
+                className="software-story-nav-arrow is-prev"
+                onClick={handlePrev}
+                aria-label="Previous product chapter"
+                title="Previous product"
+              >
+                <ArrowLeft size={13} />
+              </button>
+              <button
+                type="button"
+                className="software-story-nav-arrow is-next"
+                onClick={handleNext}
+                aria-label="Next product chapter"
+                title="Next product"
+              >
+                <ArrowRight size={13} />
+              </button>
+            </div>
             <span className="software-story-counter">
               <span data-story-counter>01</span>
               <span> / {String(softwareChapters.length).padStart(2, '0')}</span>
