@@ -878,6 +878,14 @@
   max-height: 100%;
   padding-block: 10px;
   box-sizing: border-box;
+  opacity: 0.55;
+  transform: scale(0.97);
+  transition: opacity 0.35s cubic-bezier(0.16, 1, 0.3, 1), transform 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: transform, opacity;
+}
+.software-story[data-story-mode='horizontal'] .software-story-scene[data-active='true'] {
+  opacity: 1;
+  transform: scale(1);
 }
 .software-story[data-story-mode='horizontal'] .software-story-scene-inner {
   max-height: 100%;

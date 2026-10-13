@@ -35,7 +35,10 @@ export default function SoftwareScrollController({ section }) {
         delete root.dataset.storyCurrentIndex;
         delete root.dataset.storyStart;
         delete root.dataset.storyEnd;
-        scenes.forEach((scene) => scene.removeAttribute('aria-hidden'));
+        scenes.forEach((scene) => {
+          scene.removeAttribute('aria-hidden');
+          scene.removeAttribute('data-active');
+        });
         allLinks.forEach((link, index) => {
           if (originalTabIndexes[index] === null) link.removeAttribute('tabindex');
           else link.setAttribute('tabindex', originalTabIndexes[index]);
@@ -87,6 +90,24 @@ export default function SoftwareScrollController({ section }) {
           let viewportWidth = viewport.clientWidth;
           let focusBounds = [];
           let lastChapter = -1;
+          let snapPoints = [0, 1];
+
+          // Compute magnetic snap milestones so no slide is ever left half-way or cut-off
+          const computeSnapPoints = () => {
+            if (!scenes.length) return [0, 1];
+            const hRatio = getHoldRatio();
+            const denom = 1 + hRatio * 2;
+            const dist = distance();
+            const points = [0];
+            scenes.forEach((scene, index) => {
+              const fraction = dist ? scene.offsetLeft / dist : index / Math.max(1, scenes.length - 1);
+              const p = (hRatio + fraction) / denom;
+              points.push(Number(p.toFixed(5)));
+            });
+            points.push(1);
+            snapPoints = [...new Set(points)].sort((a, b) => a - b);
+            return snapPoints;
+          };
 
           const measureFocusBounds = () => {
             travelDistance = distance();
@@ -96,6 +117,7 @@ export default function SoftwareScrollController({ section }) {
             currentTravelDistance = travelDistance;
             currentMilestones = milestones;
             currentHoldRatio = getHoldRatio();
+            computeSnapPoints();
             const rect = track.getBoundingClientRect();
             focusBounds = allLinks.map((link) => {
               const box = link.getBoundingClientRect();
@@ -129,6 +151,9 @@ export default function SoftwareScrollController({ section }) {
                 node.dataset.active = String(nodeIndex <= index);
                 node.dataset.current = String(nodeIndex === index);
               });
+              scenes.forEach((scene, sceneIndex) => {
+                scene.dataset.active = String(sceneIndex === index);
+              });
               lastChapter = index;
             }
             scenes.forEach((scene, sceneIndex) => {
@@ -159,6 +184,12 @@ export default function SoftwareScrollController({ section }) {
               scrub: 0.6,
               pinSpacing: true,
               invalidateOnRefresh: true,
+              snap: {
+                snapTo: (value) => gsap.utils.snap(snapPoints, value),
+                duration: { min: 0.22, max: 0.45 },
+                delay: 0.08,
+                ease: 'power2.out',
+              },
               onRefresh: (trigger) => {
                 measureFocusBounds();
                 root.dataset.storyStart = String(trigger.start);
@@ -173,6 +204,9 @@ export default function SoftwareScrollController({ section }) {
           timeline.to(track, { x: () => -distance(), duration: holdRatio, ease: 'none' });
 
           renderProgress();
+          scenes.forEach((scene, sceneIndex) => {
+            scene.dataset.active = String(sceneIndex === 0);
+          });
 
           // Refresh metrics in-place on resize, font loaded, or image load WITHOUT destroying the pin
           const refreshTrigger = () => {
